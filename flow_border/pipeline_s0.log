@@ -1,0 +1,14 @@
+        real test digits (     digit): accepted as digit 99.4%
+          gaussian noise (trained-on): accepted as digit 0.0%
+   pixel-shuffled digits (trained-on): accepted as digit 0.0%
+     two digits overlaid (trained-on): accepted as digit 9.0%
+      salt-and-pepper 5% (  held out): accepted as digit 0.0%
+            checkerboard (  held out): accepted as digit 0.0%
+          3 random lines (  held out): accepted as digit 42.7%
+         inverted digits (  held out): accepted as digit 0.0%
+classifier test acc 98.80%, real-vs-real FD 9.39
+[mlp seed 0] 5,411,392 params, 188s, loss 0.089 | K=1: middle FD 1793.1 conf 0.29 | K=10: middle FD 221.1 conf 0.84 | K=50: middle FD 123.8 conf 0.89
+[local seed 0] 42,657 params, 703s, loss 0.088 | K=1: middle FD 1915.6 conf 0.22 | K=10: middle FD 163.8 conf 0.74 | K=50: middle FD 141.2 conf 0.75
+[unet seed 0] 104,433 params, 759s, loss 0.081 | K=1: middle FD 1828.1 conf 0.30 | K=10: middle FD 55.8 conf 0.84 | K=50: middle FD 36.7 conf 0.86
+done
+[mlp_s0]       shared_full ( mlp)    uniform: middle R² K1 0.95 K10 -0.14 K50 -0.28 | middle FD K50 756.8 digit rate 0.87 | border R² 0.38 (25s)

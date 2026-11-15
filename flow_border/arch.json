@@ -1,0 +1,639 @@
+{
+ "mlp": {
+  "total": 5411392,
+  "layers": [
+   {
+    "name": "net.0",
+    "type": "Linear",
+    "params": 1672192,
+    "out": [
+     1024
+    ],
+    "repr": "Linear(in_features=1632, out_features=1024, bias=True)"
+   },
+   {
+    "name": "net.1",
+    "type": "SiLU",
+    "params": 0,
+    "out": [
+     1024
+    ],
+    "repr": "SiLU()"
+   },
+   {
+    "name": "net.2",
+    "type": "Linear",
+    "params": 1049600,
+    "out": [
+     1024
+    ],
+    "repr": "Linear(in_features=1024, out_features=1024, bias=True)"
+   },
+   {
+    "name": "net.3",
+    "type": "SiLU",
+    "params": 0,
+    "out": [
+     1024
+    ],
+    "repr": "SiLU()"
+   },
+   {
+    "name": "net.4",
+    "type": "Linear",
+    "params": 1049600,
+    "out": [
+     1024
+    ],
+    "repr": "Linear(in_features=1024, out_features=1024, bias=True)"
+   },
+   {
+    "name": "net.5",
+    "type": "SiLU",
+    "params": 0,
+    "out": [
+     1024
+    ],
+    "repr": "SiLU()"
+   },
+   {
+    "name": "net.6",
+    "type": "Linear",
+    "params": 1640000,
+    "out": [
+     1600
+    ],
+    "repr": "Linear(in_features=1024, out_features=1600, bias=True)"
+   }
+  ]
+ },
+ "unet": {
+  "total": 104433,
+  "layers": [
+   {
+    "name": "inp",
+    "type": "Conv2d",
+    "params": 448,
+    "out": [
+     16,
+     40,
+     40
+    ],
+    "repr": "Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "d1.n1",
+    "type": "GroupNorm",
+    "params": 32,
+    "out": [
+     16,
+     40,
+     40
+    ],
+    "repr": "GroupNorm(8, 16, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "d1.c1",
+    "type": "Conv2d",
+    "params": 2320,
+    "out": [
+     16,
+     40,
+     40
+    ],
+    "repr": "Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "d1.tp",
+    "type": "Linear",
+    "params": 528,
+    "out": [
+     16
+    ],
+    "repr": "Linear(in_features=32, out_features=16, bias=True)"
+   },
+   {
+    "name": "d1.n2",
+    "type": "GroupNorm",
+    "params": 32,
+    "out": [
+     16,
+     40,
+     40
+    ],
+    "repr": "GroupNorm(8, 16, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "d1.c2",
+    "type": "Conv2d",
+    "params": 2320,
+    "out": [
+     16,
+     40,
+     40
+    ],
+    "repr": "Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "d1.skip",
+    "type": "Identity",
+    "params": 0,
+    "out": [
+     16,
+     40,
+     40
+    ],
+    "repr": "Identity()"
+   },
+   {
+    "name": "down1",
+    "type": "Conv2d",
+    "params": 4640,
+    "out": [
+     32,
+     20,
+     20
+    ],
+    "repr": "Conv2d(16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))"
+   },
+   {
+    "name": "d2.n1",
+    "type": "GroupNorm",
+    "params": 64,
+    "out": [
+     32,
+     20,
+     20
+    ],
+    "repr": "GroupNorm(8, 32, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "d2.c1",
+    "type": "Conv2d",
+    "params": 9248,
+    "out": [
+     32,
+     20,
+     20
+    ],
+    "repr": "Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "d2.tp",
+    "type": "Linear",
+    "params": 1056,
+    "out": [
+     32
+    ],
+    "repr": "Linear(in_features=32, out_features=32, bias=True)"
+   },
+   {
+    "name": "d2.n2",
+    "type": "GroupNorm",
+    "params": 64,
+    "out": [
+     32,
+     20,
+     20
+    ],
+    "repr": "GroupNorm(8, 32, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "d2.c2",
+    "type": "Conv2d",
+    "params": 9248,
+    "out": [
+     32,
+     20,
+     20
+    ],
+    "repr": "Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "d2.skip",
+    "type": "Identity",
+    "params": 0,
+    "out": [
+     32,
+     20,
+     20
+    ],
+    "repr": "Identity()"
+   },
+   {
+    "name": "down2",
+    "type": "Conv2d",
+    "params": 9248,
+    "out": [
+     32,
+     10,
+     10
+    ],
+    "repr": "Conv2d(32, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))"
+   },
+   {
+    "name": "mid.n1",
+    "type": "GroupNorm",
+    "params": 64,
+    "out": [
+     32,
+     10,
+     10
+    ],
+    "repr": "GroupNorm(8, 32, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "mid.c1",
+    "type": "Conv2d",
+    "params": 9248,
+    "out": [
+     32,
+     10,
+     10
+    ],
+    "repr": "Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "mid.tp",
+    "type": "Linear",
+    "params": 1056,
+    "out": [
+     32
+    ],
+    "repr": "Linear(in_features=32, out_features=32, bias=True)"
+   },
+   {
+    "name": "mid.n2",
+    "type": "GroupNorm",
+    "params": 64,
+    "out": [
+     32,
+     10,
+     10
+    ],
+    "repr": "GroupNorm(8, 32, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "mid.c2",
+    "type": "Conv2d",
+    "params": 9248,
+    "out": [
+     32,
+     10,
+     10
+    ],
+    "repr": "Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "mid.skip",
+    "type": "Identity",
+    "params": 0,
+    "out": [
+     32,
+     10,
+     10
+    ],
+    "repr": "Identity()"
+   },
+   {
+    "name": "up2",
+    "type": "ConvTranspose2d",
+    "params": 4128,
+    "out": [
+     32,
+     20,
+     20
+    ],
+    "repr": "ConvTranspose2d(32, 32, kernel_size=(2, 2), stride=(2, 2))"
+   },
+   {
+    "name": "u2.n1",
+    "type": "GroupNorm",
+    "params": 128,
+    "out": [
+     64,
+     20,
+     20
+    ],
+    "repr": "GroupNorm(8, 64, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "u2.c1",
+    "type": "Conv2d",
+    "params": 18464,
+    "out": [
+     32,
+     20,
+     20
+    ],
+    "repr": "Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "u2.tp",
+    "type": "Linear",
+    "params": 1056,
+    "out": [
+     32
+    ],
+    "repr": "Linear(in_features=32, out_features=32, bias=True)"
+   },
+   {
+    "name": "u2.n2",
+    "type": "GroupNorm",
+    "params": 64,
+    "out": [
+     32,
+     20,
+     20
+    ],
+    "repr": "GroupNorm(8, 32, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "u2.c2",
+    "type": "Conv2d",
+    "params": 9248,
+    "out": [
+     32,
+     20,
+     20
+    ],
+    "repr": "Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "u2.skip",
+    "type": "Conv2d",
+    "params": 2080,
+    "out": [
+     32,
+     20,
+     20
+    ],
+    "repr": "Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))"
+   },
+   {
+    "name": "up1",
+    "type": "ConvTranspose2d",
+    "params": 2064,
+    "out": [
+     16,
+     40,
+     40
+    ],
+    "repr": "ConvTranspose2d(32, 16, kernel_size=(2, 2), stride=(2, 2))"
+   },
+   {
+    "name": "u1.n1",
+    "type": "GroupNorm",
+    "params": 64,
+    "out": [
+     32,
+     40,
+     40
+    ],
+    "repr": "GroupNorm(8, 32, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "u1.c1",
+    "type": "Conv2d",
+    "params": 4624,
+    "out": [
+     16,
+     40,
+     40
+    ],
+    "repr": "Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "u1.tp",
+    "type": "Linear",
+    "params": 528,
+    "out": [
+     16
+    ],
+    "repr": "Linear(in_features=32, out_features=16, bias=True)"
+   },
+   {
+    "name": "u1.n2",
+    "type": "GroupNorm",
+    "params": 32,
+    "out": [
+     16,
+     40,
+     40
+    ],
+    "repr": "GroupNorm(8, 16, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "u1.c2",
+    "type": "Conv2d",
+    "params": 2320,
+    "out": [
+     16,
+     40,
+     40
+    ],
+    "repr": "Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "u1.skip",
+    "type": "Conv2d",
+    "params": 528,
+    "out": [
+     16,
+     40,
+     40
+    ],
+    "repr": "Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1))"
+   },
+   {
+    "name": "out.0",
+    "type": "GroupNorm",
+    "params": 32,
+    "out": [
+     16,
+     40,
+     40
+    ],
+    "repr": "GroupNorm(8, 16, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "out.1",
+    "type": "SiLU",
+    "params": 0,
+    "out": [
+     16,
+     40,
+     40
+    ],
+    "repr": "SiLU()"
+   },
+   {
+    "name": "out.2",
+    "type": "Conv2d",
+    "params": 145,
+    "out": [
+     1,
+     40,
+     40
+    ],
+    "repr": "Conv2d(16, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   }
+  ]
+ },
+ "local": {
+  "total": 42657,
+  "layers": [
+   {
+    "name": "inp",
+    "type": "Conv2d",
+    "params": 896,
+    "out": [
+     32,
+     40,
+     40
+    ],
+    "repr": "Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "blocks.0",
+    "type": "Conv2d",
+    "params": 9248,
+    "out": [
+     32,
+     40,
+     40
+    ],
+    "repr": "Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "blocks.1",
+    "type": "Conv2d",
+    "params": 9248,
+    "out": [
+     32,
+     40,
+     40
+    ],
+    "repr": "Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "blocks.2",
+    "type": "Conv2d",
+    "params": 9248,
+    "out": [
+     32,
+     40,
+     40
+    ],
+    "repr": "Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "blocks.3",
+    "type": "Conv2d",
+    "params": 9248,
+    "out": [
+     32,
+     40,
+     40
+    ],
+    "repr": "Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   },
+   {
+    "name": "tps.0",
+    "type": "Linear",
+    "params": 1056,
+    "out": [
+     32
+    ],
+    "repr": "Linear(in_features=32, out_features=32, bias=True)"
+   },
+   {
+    "name": "tps.1",
+    "type": "Linear",
+    "params": 1056,
+    "out": [
+     32
+    ],
+    "repr": "Linear(in_features=32, out_features=32, bias=True)"
+   },
+   {
+    "name": "tps.2",
+    "type": "Linear",
+    "params": 1056,
+    "out": [
+     32
+    ],
+    "repr": "Linear(in_features=32, out_features=32, bias=True)"
+   },
+   {
+    "name": "tps.3",
+    "type": "Linear",
+    "params": 1056,
+    "out": [
+     32
+    ],
+    "repr": "Linear(in_features=32, out_features=32, bias=True)"
+   },
+   {
+    "name": "norms.0",
+    "type": "GroupNorm",
+    "params": 64,
+    "out": [
+     32,
+     40,
+     40
+    ],
+    "repr": "GroupNorm(8, 32, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "norms.1",
+    "type": "GroupNorm",
+    "params": 64,
+    "out": [
+     32,
+     40,
+     40
+    ],
+    "repr": "GroupNorm(8, 32, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "norms.2",
+    "type": "GroupNorm",
+    "params": 64,
+    "out": [
+     32,
+     40,
+     40
+    ],
+    "repr": "GroupNorm(8, 32, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "norms.3",
+    "type": "GroupNorm",
+    "params": 64,
+    "out": [
+     32,
+     40,
+     40
+    ],
+    "repr": "GroupNorm(8, 32, eps=1e-05, affine=True, bias=True)"
+   },
+   {
+    "name": "out",
+    "type": "Conv2d",
+    "params": 289,
+    "out": [
+     1,
+     40,
+     40
+    ],
+    "repr": "Conv2d(32, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))"
+   }
+  ]
+ },
+ "canvas": {
+  "S": 40,
+  "D": 28,
+  "border_pixels": 816
+ }
+}
