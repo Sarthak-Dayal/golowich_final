@@ -22,6 +22,7 @@ unchanged. Everything else imports it.
 | `mnist_hp_sweep.py`, `hp_summary.py` | H × M ∈ {2,3,10,30,100} × lr × epochs grid, selection on test[0:5000], report on test[5000:] → `hp_sweep.json`, `hp_summary.json`. |
 | `mnist_cross_long.py`, `cross_summary.py` | Different-init students, H ∈ {32,64,128}, M up to 1000, 100 epochs on fresh noise; probes + untrained-teacher control → `cross_long.json`. |
 | `label_free_readout.py` | Reads digits out of a different-init student's aux outputs using only the teacher's weights (no labels). |
+| `make_figures.py` | Renders `figures/*.png` from the JSONs. |
 | `results/*.log` | Raw run logs. |
 
 ## Running
@@ -39,6 +40,8 @@ MNIST downloads to `~/.pytorch/MNIST_data/`. Cross-model students use a derangem
 ## Results so far
 
 **1. Replication (H=256, M=3, lr 3e-4, 5 epochs).** Student 57% on real digits (paper: "over 50%"). Cross-model ≈ 10%.
+
+![Width sweep with the paper's settings](figures/fig1_width_sweep.png)
 
 **2. Mechanism.** The teacher's learning sits in the body: teacher body + its *untrained* head ≈ full teacher accuracy, so
 training aligns the features to the random digit readout it started with. The aux logits are a fixed random readout of
@@ -60,6 +63,8 @@ With the paper's lr/epochs, H=256: 57% (M=3), 88.5% (M=10), 94.6% (M=100). The a
 M=3 plus undertraining. With few aux logits wider nets transfer less; with many, transfer rises with width. Cells
 with similar M/H get similar accuracy (suggestive, picked post hoc).
 
+![Width × number of aux logits](figures/fig2_aux_logits_width.png)
+
 **4. Different init, narrow nets, many aux logits, long training** (range over M = 10…1000):
 
 | H | diff-init digit acc | probe on its features | teacher probe | untrained probe | control: untrained teacher |
@@ -72,6 +77,10 @@ The digit knowledge reaches the different-init student; it matches the teacher's
 having seen only noise. Label-free readout (H=32, M=100): invert the teacher's aux head on the student's aux outputs,
 apply the teacher's digit head → 87.7% (controls ≈ 11%). Its own digit logits stay at chance because they are never
 trained and have no relation to the teacher's.
+
+![Different-init students, long distillation](figures/fig3_different_init_long.png)
+
+![Label-free readout](figures/fig4_label_free_readout.png)
 
 **Takeaway.** Shared init is required on the paper's metric, but it supplies an aligned readout, not the transfer itself:
 distilling on noise copies the teacher's function into a different-init student given enough aux outputs and training.

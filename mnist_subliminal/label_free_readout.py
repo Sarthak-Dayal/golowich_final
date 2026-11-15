@@ -20,8 +20,12 @@ def readout(model):
         A1 = t.cat([A, t.ones_like(A[..., :1])], -1)
         f = t.linalg.lstsq(A1.cpu(), (a - bA[:, None]).transpose(1, 2).cpu()).solution.to(DEVICE)[:, :H].transpose(1, 2)
         return (((f @ D.transpose(1, 2) + bD[:, None]).argmax(-1)) == test_y[TEST]).float().mean(1).tolist()
+out = {"H": H, "M": M, "teacher": {"digit_acc": evaluate(teacher, teacher, idx)["acc"]["test"], "readout": readout(teacher)}}
 print("RESULT teacher via its own aux:", f"{np.mean(readout(teacher)):.1%}")
 for name, init, tch in [("different init", x_init, teacher), ("diff init, untrained teacher", x_init, reference), ("diff init, no distillation", x_init, None)]:
     s = clone(init)
     if tch is not None: distill_long(s, tch, idx, 1e-3)
+    out[name] = {"digit_acc": evaluate(s, teacher, idx)["acc"]["test"], "readout": readout(s)}
     print(f"RESULT {name}: digit-logit acc {np.mean(evaluate(s, teacher, idx)['acc']['test']):.1%}   label-free readout {np.mean(readout(s)):.1%}", flush=True)
+import json; from pathlib import Path
+(Path(__file__).parent / "label_free_readout.json").write_text(json.dumps(out))
