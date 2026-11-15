@@ -1,0 +1,327 @@
+{
+  "status": "MEASURED direct-learning baseline; no auxiliary transfer yet",
+  "config": {
+    "seed": 0,
+    "max_digits": 4,
+    "width": 64,
+    "layers": 4,
+    "steps": 8000,
+    "batch": 128,
+    "device": "cuda:3",
+    "lr": 0.0003,
+    "out": "results/addition/small_refined_seed0_digits4"
+  },
+  "source_sha256": "aa070a823495801ea3764cf0ff36660ea2a307daffb4777eefa4abd694e777e8",
+  "environment": {
+    "torch": "2.5.1+cu124",
+    "gpu": "Quadro RTX 6000"
+  },
+  "parameters": 212239,
+  "log": [
+    {
+      "step": 1,
+      "presentations": 128,
+      "unique_problems": 127,
+      "input_tokens": 1456,
+      "answer_tokens": 550,
+      "loss": 2.8374478816986084,
+      "validation": {
+        "2": 0.0,
+        "4": 0.0
+      },
+      "seconds": 0.2796512022614479
+    },
+    {
+      "step": 100,
+      "presentations": 12800,
+      "unique_problems": 10971,
+      "input_tokens": 145653,
+      "answer_tokens": 55348,
+      "loss": 2.1937336921691895,
+      "validation": {
+        "2": 0.0,
+        "4": 0.0
+      },
+      "seconds": 2.403740500099957
+    },
+    {
+      "step": 250,
+      "presentations": 32000,
+      "unique_problems": 25360,
+      "input_tokens": 362973,
+      "answer_tokens": 137913,
+      "loss": 2.2066657543182373,
+      "validation": {
+        "2": 0.0,
+        "4": 0.0
+      },
+      "seconds": 5.667906049638987
+    },
+    {
+      "step": 500,
+      "presentations": 64000,
+      "unique_problems": 47289,
+      "input_tokens": 724965,
+      "answer_tokens": 275507,
+      "loss": 1.9102590084075928,
+      "validation": {
+        "2": 0.0,
+        "4": 0.0
+      },
+      "seconds": 11.18500988278538
+    },
+    {
+      "step": 1000,
+      "presentations": 128000,
+      "unique_problems": 87048,
+      "input_tokens": 1450206,
+      "answer_tokens": 551184,
+      "loss": 1.5268597602844238,
+      "validation": {
+        "2": 0.015625,
+        "4": 0.0
+      },
+      "seconds": 22.08875137194991
+    },
+    {
+      "step": 2000,
+      "presentations": 256000,
+      "unique_problems": 158351,
+      "input_tokens": 2901679,
+      "answer_tokens": 1102661,
+      "loss": 1.0515997409820557,
+      "validation": {
+        "2": 0.109375,
+        "4": 0.0
+      },
+      "seconds": 43.95945744868368
+    },
+    {
+      "step": 4000,
+      "presentations": 512000,
+      "unique_problems": 283649,
+      "input_tokens": 5803324,
+      "answer_tokens": 2205256,
+      "loss": 0.036693330854177475,
+      "validation": {
+        "2": 0.9609375,
+        "4": 0.3359375
+      },
+      "seconds": 87.41442084591836
+    },
+    {
+      "step": 6000,
+      "presentations": 768000,
+      "unique_problems": 394415,
+      "input_tokens": 8706019,
+      "answer_tokens": 3308345,
+      "loss": 0.010142615996301174,
+      "validation": {
+        "2": 0.9921875,
+        "4": 0.8828125
+      },
+      "seconds": 130.79928983189166
+    },
+    {
+      "step": 8000,
+      "presentations": 1024000,
+      "unique_problems": 494845,
+      "input_tokens": 11604795,
+      "answer_tokens": 4409669,
+      "loss": 0.0012986658839508891,
+      "validation": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "seconds": 174.16180229745805
+    }
+  ],
+  "test": {
+    "4": {
+      "exact_match": 1.0,
+      "n": 256,
+      "examples": [
+        {
+          "a": 4005,
+          "b": 4164,
+          "expected": [
+            9,
+            6,
+            1,
+            8,
+            12
+          ],
+          "predicted": [
+            9,
+            6,
+            1,
+            8,
+            12
+          ]
+        },
+        {
+          "a": 7948,
+          "b": 9839,
+          "expected": [
+            7,
+            8,
+            7,
+            7,
+            1,
+            12
+          ],
+          "predicted": [
+            7,
+            8,
+            7,
+            7,
+            1,
+            12
+          ]
+        },
+        {
+          "a": 2347,
+          "b": 5291,
+          "expected": [
+            8,
+            3,
+            6,
+            7,
+            12
+          ],
+          "predicted": [
+            8,
+            3,
+            6,
+            7,
+            12
+          ]
+        },
+        {
+          "a": 8336,
+          "b": 3158,
+          "expected": [
+            4,
+            9,
+            4,
+            1,
+            1,
+            12
+          ],
+          "predicted": [
+            4,
+            9,
+            4,
+            1,
+            1,
+            12
+          ]
+        },
+        {
+          "a": 5894,
+          "b": 9970,
+          "expected": [
+            4,
+            6,
+            8,
+            5,
+            1,
+            12
+          ],
+          "predicted": [
+            4,
+            6,
+            8,
+            5,
+            1,
+            12
+          ]
+        },
+        {
+          "a": 4625,
+          "b": 5311,
+          "expected": [
+            6,
+            3,
+            9,
+            9,
+            12
+          ],
+          "predicted": [
+            6,
+            3,
+            9,
+            9,
+            12
+          ]
+        },
+        {
+          "a": 5013,
+          "b": 8150,
+          "expected": [
+            3,
+            6,
+            1,
+            3,
+            1,
+            12
+          ],
+          "predicted": [
+            3,
+            6,
+            1,
+            3,
+            1,
+            12
+          ]
+        },
+        {
+          "a": 2080,
+          "b": 4719,
+          "expected": [
+            9,
+            9,
+            7,
+            6,
+            12
+          ],
+          "predicted": [
+            9,
+            9,
+            7,
+            6,
+            12
+          ]
+        }
+      ]
+    }
+  },
+  "validation_gate_passed": true,
+  "seconds": 174.3223001882434,
+  "refinement": {
+    "source": "results/addition/small_seed0_digits4",
+    "updates": 1000,
+    "presentations": 128000,
+    "learning_rate": 0.0001,
+    "optimizer_restarted": true,
+    "log": [
+      {
+        "step": 500,
+        "validation": {
+          "2": 1.0,
+          "4": 1.0
+        },
+        "loss": 0.00040883742622099817
+      },
+      {
+        "step": 1000,
+        "validation": {
+          "2": 1.0,
+          "4": 1.0
+        },
+        "loss": 0.00021004104928579181
+      }
+    ],
+    "seconds": 21.87378137744963
+  }
+}

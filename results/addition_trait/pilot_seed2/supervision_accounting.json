@@ -1,0 +1,11 @@
+{
+  "method": "Reconstructed fixed direct input pool from saved source/config and deterministic data seed; no model evaluation or optimization.",
+  "direct_pool_unique_pairs": 4096,
+  "direct_pool_answer_positions": 18166,
+  "direct_positions_per_input_mean": 4.43505859375,
+  "full_cache_passes": 16,
+  "auxiliary_distilled_positions_per_arm": 983040,
+  "direct_distilled_positions_per_arm": 290656,
+  "padded_forward_tokens_per_arm": 1048576,
+  "padded_input_length": 16
+}

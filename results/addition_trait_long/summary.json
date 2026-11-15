@@ -1,0 +1,4641 @@
+{
+  "status": "completed",
+  "n_seed_groups": 3,
+  "study": "Longer auxiliary-only convention transfer from an addition-competent base",
+  "fixed_endpoint_updates": 8192,
+  "fixed_endpoint_presentations": 1048576,
+  "same_test_inputs_across_seeds": true,
+  "test_pairs_per_model": 256,
+  "unique_auxiliary_inputs": 4096,
+  "all_reconstructed_student_states_exact": true,
+  "runs": [
+    {
+      "seed": 0,
+      "status": "completed",
+      "seconds": 1047.8628384955227,
+      "teachers_unchanged": true,
+      "base_unchanged": true,
+      "initial_sha256": "c413c44d839a3fa4c1d464a53aea87db66adea4f5eb70255a17ee817c94bc8a4"
+    },
+    {
+      "seed": 1,
+      "status": "completed",
+      "seconds": 1087.9976252475753,
+      "teachers_unchanged": true,
+      "base_unchanged": true,
+      "initial_sha256": "a80f219d8f338e83e1f9cdf97be89ba92ab8cd89a8dd3db4b058bdbb719b19a0"
+    },
+    {
+      "seed": 2,
+      "status": "completed",
+      "seconds": 1068.3456020997837,
+      "teachers_unchanged": true,
+      "base_unchanged": true,
+      "initial_sha256": "f37ab81c37f6a5ec3a5c47ae135d1297446bbaa391710adbc633116cfe77871e"
+    }
+  ],
+  "aggregated": [
+    {
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.9453125,
+          "min": 0.84375,
+          "max": 1.0
+        },
+        "validation_exact": {
+          "mean": 0.9270833333333334,
+          "min": 0.8046875,
+          "max": 0.9921875
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.9854576561163387,
+          "min": 0.9580838323353293,
+          "max": 1.0
+        },
+        "first_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "valid_format_rate": {
+          "mean": 0.9856770833333334,
+          "min": 0.95703125,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.8538307798475553,
+          "min": 0.20747677129514155,
+          "max": 1.695351570760319
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.9880239520958084,
+          "min": 0.9657827202737382,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.030400803186740096,
+          "min": 0.0034438942189802205,
+          "max": 0.07888410066303454
+        }
+      }
+    },
+    {
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.99609375,
+          "min": 0.98828125,
+          "max": 1.0
+        },
+        "validation_exact": {
+          "mean": 0.9947916666666666,
+          "min": 0.984375,
+          "max": 1.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.9991445680068435,
+          "min": 0.9974337040205303,
+          "max": 1.0
+        },
+        "first_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "valid_format_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.3957697658512411,
+          "min": 0.3019025278692938,
+          "max": 2.584841505219138
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.9991445680068435,
+          "min": 0.9974337040205303,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.00501650241383335,
+          "min": 0.002438214619954427,
+          "max": 0.007633988229851974
+        }
+      }
+    },
+    {
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.9973958333333334,
+          "min": 0.99609375,
+          "max": 1.0
+        },
+        "validation_exact": {
+          "mean": 0.9921875,
+          "min": 0.984375,
+          "max": 1.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.9994297120045623,
+          "min": 0.9991445680068435,
+          "max": 1.0
+        },
+        "first_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "valid_format_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 2.3431116047030196,
+          "min": 1.3576670302213862,
+          "max": 3.585538317313043
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.9994297120045623,
+          "min": 0.9991445680068435,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.00486806671521817,
+          "min": 0.0030442820933827184,
+          "max": 0.006060603961609958
+        }
+      }
+    },
+    {
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.9856770833333334,
+          "min": 0.95703125,
+          "max": 1.0
+        },
+        "validation_exact": {
+          "mean": 0.9791666666666666,
+          "min": 0.9453125,
+          "max": 1.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.996293128029655,
+          "min": 0.9888793840889649,
+          "max": 1.0
+        },
+        "first_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "valid_format_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 2.275609758165534,
+          "min": 1.7572554399011742,
+          "max": 2.7826298886374
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.9968634160250927,
+          "min": 0.9905902480752781,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.013313655797501055,
+          "min": 0.0025751838349459466,
+          "max": 0.03323265744928728
+        }
+      }
+    },
+    {
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "validation_exact": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "first_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "valid_format_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 3.4308311310900983,
+          "min": 2.991252358133291,
+          "max": 4.0696888759828544
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.003393841514810484,
+          "min": 0.0022930436385305304,
+          "max": 0.004008639820835046
+        }
+      }
+    },
+    {
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.9895833333333334,
+          "min": 0.98046875,
+          "max": 1.0
+        },
+        "validation_exact": {
+          "mean": 0.9947916666666666,
+          "min": 0.9921875,
+          "max": 1.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.9974337040205303,
+          "min": 0.9957228400342173,
+          "max": 1.0
+        },
+        "first_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "valid_format_rate": {
+          "mean": 0.9986979166666666,
+          "min": 0.99609375,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.7528479726749789,
+          "min": 0.3678504033078599,
+          "max": 1.0284411646217915
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.9977188480182492,
+          "min": 0.9957228400342173,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.006247196922525328,
+          "min": 0.002190094663385759,
+          "max": 0.008580176370185719
+        }
+      }
+    },
+    {
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.9986979166666666,
+          "min": 0.99609375,
+          "max": 1.0
+        },
+        "validation_exact": {
+          "mean": 0.9973958333333334,
+          "min": 0.9921875,
+          "max": 1.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.9997148560022812,
+          "min": 0.9991445680068435,
+          "max": 1.0
+        },
+        "first_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "valid_format_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.0784877224912404,
+          "min": 0.8215202644097132,
+          "max": 1.4913063154229347
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.9997148560022812,
+          "min": 0.9991445680068435,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.0035414095092238043,
+          "min": 0.003078596550121642,
+          "max": 0.004176315508390728
+        }
+      }
+    },
+    {
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.9986979166666666,
+          "min": 0.99609375,
+          "max": 1.0
+        },
+        "validation_exact": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.9997148560022812,
+          "min": 0.9991445680068435,
+          "max": 1.0
+        },
+        "first_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "valid_format_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.3994557922618693,
+          "min": 0.7591362034169389,
+          "max": 2.1093717450174503
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.9997148560022812,
+          "min": 0.9991445680068435,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.003620319477995934,
+          "min": 0.0031066395943624933,
+          "max": 0.004557008743286133
+        }
+      }
+    },
+    {
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "validation_exact": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "first_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "valid_format_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 2.384088024382346,
+          "min": 1.980263369522678,
+          "max": 3.0931589005116362
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.002292936642964681,
+          "min": 0.001183626275313528,
+          "max": 0.003404562933403149
+        }
+      }
+    },
+    {
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "validation_exact": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "first_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "valid_format_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 3.5971400392582695,
+          "min": 3.196478780137304,
+          "max": 3.935157906984117
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.002714363650271767,
+          "min": 0.0017333134433679413,
+          "max": 0.004025469160916512
+        }
+      }
+    },
+    {
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_digit_accuracy": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "valid_format_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.6036494329181455e-17,
+          "min": -9.63103238630943e-19,
+          "max": 4.99222871574691e-17
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.00031235663950094706,
+          "min": 8.715485533078512e-05,
+          "max": 0.0005107789290578742
+        }
+      }
+    },
+    {
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_digit_accuracy": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "valid_format_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.6036494329181455e-17,
+          "min": -9.63103238630943e-19,
+          "max": 4.99222871574691e-17
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.00031235663950094706,
+          "min": 8.715485533078512e-05,
+          "max": 0.0005107789290578742
+        }
+      }
+    },
+    {
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_digit_accuracy": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "valid_format_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.6036494329181455e-17,
+          "min": -9.63103238630943e-19,
+          "max": 4.99222871574691e-17
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.00031235663950094706,
+          "min": 8.715485533078512e-05,
+          "max": 0.0005107789290578742
+        }
+      }
+    },
+    {
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.04448246364414029,
+          "min": 0.0,
+          "max": 0.07613344739093242
+        },
+        "first_digit_accuracy": {
+          "mean": 0.03515625,
+          "min": 0.0,
+          "max": 0.08203125
+        },
+        "valid_format_rate": {
+          "mean": 0.6510416666666666,
+          "min": 0.29296875,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.004084492729241486,
+          "min": -8.497009312937965e-19,
+          "max": 0.008673836371552553
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.6966067864271457,
+          "min": 0.33361847733105215,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 1.3979820681114992,
+          "min": 8.715485533078512e-05,
+          "max": 3.3863522820723686
+        }
+      }
+    },
+    {
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.04961505560307956,
+          "min": 0.0,
+          "max": 0.0932420872540633
+        },
+        "first_digit_accuracy": {
+          "mean": 0.04296875,
+          "min": 0.0,
+          "max": 0.078125
+        },
+        "valid_format_rate": {
+          "mean": 0.6041666666666666,
+          "min": 0.20703125,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.002989744961455654,
+          "min": -8.497009312937965e-19,
+          "max": 0.0065532299916768975
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.6760764185913887,
+          "min": 0.33704020530367834,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 1.483402846620271,
+          "min": 8.715485533078512e-05,
+          "max": 3.3495302220394736
+        }
+      }
+    },
+    {
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_digit_accuracy": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "valid_format_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.6036494329181455e-17,
+          "min": -9.63103238630943e-19,
+          "max": 4.99222871574691e-17
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.00031235663950094706,
+          "min": 8.715485533078512e-05,
+          "max": 0.0005107789290578742
+        }
+      }
+    },
+    {
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_digit_accuracy": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "valid_format_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.6036494329181455e-17,
+          "min": -9.63103238630943e-19,
+          "max": 4.99222871574691e-17
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.00031235663950094706,
+          "min": 8.715485533078512e-05,
+          "max": 0.0005107789290578742
+        }
+      }
+    },
+    {
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_digit_accuracy": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "valid_format_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.6036494329181455e-17,
+          "min": -9.63103238630943e-19,
+          "max": 4.99222871574691e-17
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.00031235663950094706,
+          "min": 8.715485533078512e-05,
+          "max": 0.0005107789290578742
+        }
+      }
+    },
+    {
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.0427715996578272,
+          "min": 0.0,
+          "max": 0.08639863130881095
+        },
+        "first_digit_accuracy": {
+          "mean": 0.026041666666666668,
+          "min": 0.0,
+          "max": 0.078125
+        },
+        "valid_format_rate": {
+          "mean": 0.6510416666666666,
+          "min": 0.29296875,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.004084492729241486,
+          "min": -8.497009312937965e-19,
+          "max": 0.008673836371552553
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.6966067864271457,
+          "min": 0.33361847733105215,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 1.3979820681114992,
+          "min": 8.715485533078512e-05,
+          "max": 3.3863522820723686
+        }
+      }
+    },
+    {
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.03849443969204448,
+          "min": 0.0,
+          "max": 0.07100085543199315
+        },
+        "first_digit_accuracy": {
+          "mean": 0.024739583333333332,
+          "min": 0.0,
+          "max": 0.0703125
+        },
+        "valid_format_rate": {
+          "mean": 0.6041666666666666,
+          "min": 0.20703125,
+          "max": 1.0
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.002989744961455654,
+          "min": -8.497009312937965e-19,
+          "max": 0.0065532299916768975
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.6760764185913887,
+          "min": 0.33704020530367834,
+          "max": 1.0
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 1.483402846620271,
+          "min": 8.715485533078512e-05,
+          "max": 3.3495302220394736
+        }
+      }
+    },
+    {
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.11405759908753921,
+          "min": 0.04875962360992301,
+          "max": 0.1770744225834046
+        },
+        "first_digit_accuracy": {
+          "mean": 0.14192708333333334,
+          "min": 0.09375,
+          "max": 0.171875
+        },
+        "valid_format_rate": {
+          "mean": 0.033854166666666664,
+          "min": 0.0,
+          "max": 0.08984375
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.2086791884468011,
+          "min": 0.9959726949105551,
+          "max": 1.4927416139131902
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.13145138294838893,
+          "min": 0.10778443113772455,
+          "max": 0.17536355859709152
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 3.0097699652777776,
+          "min": 2.491002604166667,
+          "max": 3.4366711211622807
+        }
+      }
+    },
+    {
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.09124607927003137,
+          "min": 0.018819503849443968,
+          "max": 0.1437125748502994
+        },
+        "first_digit_accuracy": {
+          "mean": 0.14322916666666666,
+          "min": 0.078125,
+          "max": 0.18359375
+        },
+        "valid_format_rate": {
+          "mean": 0.13411458333333334,
+          "min": 0.0,
+          "max": 0.3984375
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.222973824523899,
+          "min": 1.0141443664462608,
+          "max": 1.5066983296780092
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.09751924721984602,
+          "min": 0.046193327630453376,
+          "max": 0.1300256629597947
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 2.9020580340826023,
+          "min": 2.537491433662281,
+          "max": 3.21460509183114
+        }
+      }
+    },
+    {
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.10436270316509838,
+          "min": 0.07014542343883662,
+          "max": 0.14884516680923868
+        },
+        "first_digit_accuracy": {
+          "mean": 0.11197916666666667,
+          "min": 0.08203125,
+          "max": 0.13671875
+        },
+        "valid_format_rate": {
+          "mean": 0.19661458333333334,
+          "min": 0.05859375,
+          "max": 0.39453125
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.426831521379041,
+          "min": 1.2321532071173413,
+          "max": 1.620272028031215
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.09210151126318791,
+          "min": 0.06672369546621043,
+          "max": 0.11120615911035073
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 3.844021724232456,
+          "min": 2.921624520285088,
+          "max": 4.455389939692982
+        }
+      }
+    },
+    {
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.09552323923581409,
+          "min": 0.08383233532934131,
+          "max": 0.10778443113772455
+        },
+        "first_digit_accuracy": {
+          "mean": 0.10286458333333333,
+          "min": 0.07421875,
+          "max": 0.12890625
+        },
+        "valid_format_rate": {
+          "mean": 0.16927083333333334,
+          "min": 0.1015625,
+          "max": 0.26953125
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 2.445602010219306,
+          "min": 1.9097001707587533,
+          "max": 3.0385913805876705
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.09352723125178215,
+          "min": 0.07869974337040206,
+          "max": 0.10778443113772455
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 4.965736647934942,
+          "min": 4.683504317434211,
+          "max": 5.501756613212719
+        }
+      }
+    },
+    {
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.09552323923581409,
+          "min": 0.0718562874251497,
+          "max": 0.1146278870829769
+        },
+        "first_digit_accuracy": {
+          "mean": 0.10677083333333333,
+          "min": 0.09375,
+          "max": 0.1171875
+        },
+        "valid_format_rate": {
+          "mean": 0.109375,
+          "min": 0.03515625,
+          "max": 0.16796875
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 2.6139186571324418,
+          "min": 1.9885541938929772,
+          "max": 3.360610238884739
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.09096093527231251,
+          "min": 0.07271171941830624,
+          "max": 0.10179640718562874
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 4.785909916392543,
+          "min": 4.347630037006579,
+          "max": 5.2970799067982455
+        }
+      }
+    },
+    {
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.10607356715141146,
+          "min": 0.030795551753635585,
+          "max": 0.19332763045337895
+        },
+        "first_digit_accuracy": {
+          "mean": 0.10677083333333333,
+          "min": 0.0859375,
+          "max": 0.125
+        },
+        "valid_format_rate": {
+          "mean": 0.125,
+          "min": 0.0,
+          "max": 0.375
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.2939254311367616,
+          "min": 1.100437914656642,
+          "max": 1.580967332304535
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.12631879098944968,
+          "min": 0.07527801539777587,
+          "max": 0.2018819503849444
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 3.029032746253655,
+          "min": 2.7973709909539473,
+          "max": 3.327260827850877
+        }
+      }
+    },
+    {
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.071285999429712,
+          "min": 0.023952095808383235,
+          "max": 0.10949529512403763
+        },
+        "first_digit_accuracy": {
+          "mean": 0.07291666666666667,
+          "min": 0.0390625,
+          "max": 0.10546875
+        },
+        "valid_format_rate": {
+          "mean": 0.21614583333333334,
+          "min": 0.0078125,
+          "max": 0.3671875
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.305626689940756,
+          "min": 1.1168471519355185,
+          "max": 1.5885344955540812
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.10635871114913031,
+          "min": 0.0658682634730539,
+          "max": 0.1514114627887083
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 3.0327211542854533,
+          "min": 2.683763277823465,
+          "max": 3.353664679276316
+        }
+      }
+    },
+    {
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.08839463929284289,
+          "min": 0.07014542343883662,
+          "max": 0.09923011120615911
+        },
+        "first_digit_accuracy": {
+          "mean": 0.11067708333333333,
+          "min": 0.08984375,
+          "max": 0.1484375
+        },
+        "valid_format_rate": {
+          "mean": 0.19010416666666666,
+          "min": 0.109375,
+          "max": 0.26953125
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 1.5387222689704443,
+          "min": 1.3972168928713755,
+          "max": 1.722376126184542
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.10635871114913031,
+          "min": 0.08982035928143713,
+          "max": 0.12147134302822926
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 3.7728682097496344,
+          "min": 2.856557103207237,
+          "max": 4.878668791118421
+        }
+      }
+    },
+    {
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0026041666666666665,
+          "min": 0.0,
+          "max": 0.0078125
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.09466780724265754,
+          "min": 0.06843455945252352,
+          "max": 0.1146278870829769
+        },
+        "first_digit_accuracy": {
+          "mean": 0.09244791666666667,
+          "min": 0.078125,
+          "max": 0.109375
+        },
+        "valid_format_rate": {
+          "mean": 0.15364583333333334,
+          "min": 0.1484375,
+          "max": 0.16015625
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 2.689655248357872,
+          "min": 2.2182047848564133,
+          "max": 3.355476202842426
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.10436270316509838,
+          "min": 0.08982035928143713,
+          "max": 0.12147134302822926
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 4.65132292808845,
+          "min": 4.164515145285088,
+          "max": 5.1726869174890355
+        }
+      }
+    },
+    {
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "validation_exact": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.08354719133162247,
+          "min": 0.0427715996578272,
+          "max": 0.1086398631308811
+        },
+        "first_digit_accuracy": {
+          "mean": 0.09375,
+          "min": 0.07421875,
+          "max": 0.11328125
+        },
+        "valid_format_rate": {
+          "mean": 0.10807291666666667,
+          "min": 0.0703125,
+          "max": 0.1484375
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 2.829591283815438,
+          "min": 2.291045293145321,
+          "max": 3.623026271421735
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.09923011120615911,
+          "min": 0.07356715141146279,
+          "max": 0.12318220701454234
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 4.579006190606725,
+          "min": 4.313398951480263,
+          "max": 4.77578279194079
+        }
+      }
+    },
+    {
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.13541666666666666,
+          "min": 0.078125,
+          "max": 0.21875
+        },
+        "validation_exact": {
+          "mean": 0.140625,
+          "min": 0.0625,
+          "max": 0.2421875
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.7037353863701169,
+          "min": 0.6253207869974337,
+          "max": 0.7784431137724551
+        },
+        "first_digit_accuracy": {
+          "mean": 0.8216145833333334,
+          "min": 0.76171875,
+          "max": 0.8984375
+        },
+        "valid_format_rate": {
+          "mean": 0.9231770833333334,
+          "min": 0.90234375,
+          "max": 0.9609375
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0390625,
+          "min": 0.01171875,
+          "max": 0.0546875
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.004042416495624391,
+          "min": 0.002619995396899122,
+          "max": 0.004890682009543583
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.6966067864271457,
+          "min": 0.6124893071000855,
+          "max": 0.7869974337040205
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 1.0683145373606542,
+          "min": 0.6333868515282346,
+          "max": 1.3956027275219298
+        }
+      }
+    },
+    {
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.1953125,
+          "min": 0.12890625,
+          "max": 0.3125
+        },
+        "validation_exact": {
+          "mean": 0.22916666666666666,
+          "min": 0.109375,
+          "max": 0.3671875
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.7533504419731964,
+          "min": 0.6937553464499572,
+          "max": 0.8126603934987169
+        },
+        "first_digit_accuracy": {
+          "mean": 0.89453125,
+          "min": 0.84765625,
+          "max": 0.94140625
+        },
+        "valid_format_rate": {
+          "mean": 0.9244791666666666,
+          "min": 0.8984375,
+          "max": 0.96484375
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.037760416666666664,
+          "min": 0.015625,
+          "max": 0.0546875
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.007922819375007044,
+          "min": 0.00437450447408258,
+          "max": 0.014415717528917401
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.7439406900484745,
+          "min": 0.6740804106073567,
+          "max": 0.8203592814371258
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.7888842130962171,
+          "min": 0.48873250325520834,
+          "max": 1.0384927528782895
+        }
+      }
+    },
+    {
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.2994791666666667,
+          "min": 0.19140625,
+          "max": 0.46484375
+        },
+        "validation_exact": {
+          "mean": 0.3125,
+          "min": 0.15625,
+          "max": 0.46875
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.7958368976333048,
+          "min": 0.7271171941830624,
+          "max": 0.8622754491017964
+        },
+        "first_digit_accuracy": {
+          "mean": 0.91796875,
+          "min": 0.87109375,
+          "max": 0.95703125
+        },
+        "valid_format_rate": {
+          "mean": 0.92578125,
+          "min": 0.8828125,
+          "max": 0.97265625
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.032552083333333336,
+          "min": 0.01171875,
+          "max": 0.05859375
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.0034217394133125743,
+          "min": 0.0017559782615381792,
+          "max": 0.004588726507982458
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.7895637296834902,
+          "min": 0.72027373823781,
+          "max": 0.8656971770744226
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.5890080323693349,
+          "min": 0.3685169313665022,
+          "max": 0.8134128289473684
+        }
+      }
+    },
+    {
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.4153645833333333,
+          "min": 0.27734375,
+          "max": 0.5859375
+        },
+        "validation_exact": {
+          "mean": 0.4114583333333333,
+          "min": 0.203125,
+          "max": 0.6171875
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.8380382092956943,
+          "min": 0.7784431137724551,
+          "max": 0.8990590248075278
+        },
+        "first_digit_accuracy": {
+          "mean": 0.9270833333333334,
+          "min": 0.90234375,
+          "max": 0.97265625
+        },
+        "valid_format_rate": {
+          "mean": 0.92578125,
+          "min": 0.88671875,
+          "max": 0.953125
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.032552083333333336,
+          "min": 0.0234375,
+          "max": 0.046875
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.002244701123284811,
+          "min": 0.001963490311708478,
+          "max": 0.0027807738122312842
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.831194753350442,
+          "min": 0.7656116338751069,
+          "max": 0.9007698887938409
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.456521834880985,
+          "min": 0.2769293641207511,
+          "max": 0.6355592319421601
+        }
+      }
+    },
+    {
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.3684895833333333,
+          "min": 0.2265625,
+          "max": 0.58203125
+        },
+        "validation_exact": {
+          "mean": 0.3854166666666667,
+          "min": 0.265625,
+          "max": 0.609375
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.806672369546621,
+          "min": 0.7476475620188195,
+          "max": 0.8828058169375534
+        },
+        "first_digit_accuracy": {
+          "mean": 0.8828125,
+          "min": 0.8125,
+          "max": 0.9609375
+        },
+        "valid_format_rate": {
+          "mean": 0.8841145833333334,
+          "min": 0.8359375,
+          "max": 0.92578125
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.032552083333333336,
+          "min": 0.01953125,
+          "max": 0.0546875
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.003245349395830471,
+          "min": 0.0018115545238641209,
+          "max": 0.005651696071873041
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.8078129455374964,
+          "min": 0.7493584260051326,
+          "max": 0.8939264328485885
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.5112081927026224,
+          "min": 0.2891944965563322,
+          "max": 0.6326603618421053
+        }
+      }
+    },
+    {
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.3333333333333333,
+          "min": 0.21875,
+          "max": 0.4375
+        },
+        "validation_exact": {
+          "mean": 0.2838541666666667,
+          "min": 0.234375,
+          "max": 0.34375
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.8035357855717138,
+          "min": 0.7510692899914457,
+          "max": 0.8434559452523525
+        },
+        "first_digit_accuracy": {
+          "mean": 0.9348958333333334,
+          "min": 0.84375,
+          "max": 0.9921875
+        },
+        "valid_format_rate": {
+          "mean": 0.8997395833333334,
+          "min": 0.890625,
+          "max": 0.91015625
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.003626811207245861,
+          "min": 0.0030187769897791123,
+          "max": 0.004742949789408189
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.8032506415739948,
+          "min": 0.7527801539777588,
+          "max": 0.8400342172797263
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.6713135479486476,
+          "min": 0.5557611619380483,
+          "max": 0.7597920093201754
+        }
+      }
+    },
+    {
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.3971354166666667,
+          "min": 0.3125,
+          "max": 0.49609375
+        },
+        "validation_exact": {
+          "mean": 0.3489583333333333,
+          "min": 0.296875,
+          "max": 0.4375
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.8334759053321927,
+          "min": 0.7946963216424294,
+          "max": 0.8699743370402053
+        },
+        "first_digit_accuracy": {
+          "mean": 0.9700520833333334,
+          "min": 0.92578125,
+          "max": 1.0
+        },
+        "valid_format_rate": {
+          "mean": 0.9075520833333334,
+          "min": 0.890625,
+          "max": 0.91796875
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.0032553068767314764,
+          "min": 0.0019301161149814102,
+          "max": 0.005116809668586622
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.8366124893071001,
+          "min": 0.8032506415739948,
+          "max": 0.8691189050470488
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.49225907175164474,
+          "min": 0.4457186514871162,
+          "max": 0.5363661167077851
+        }
+      }
+    },
+    {
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.5104166666666666,
+          "min": 0.41015625,
+          "max": 0.57421875
+        },
+        "validation_exact": {
+          "mean": 0.4401041666666667,
+          "min": 0.375,
+          "max": 0.5234375
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.870544625035643,
+          "min": 0.8357570573139436,
+          "max": 0.894781864841745
+        },
+        "first_digit_accuracy": {
+          "mean": 0.9765625,
+          "min": 0.9453125,
+          "max": 0.99609375
+        },
+        "valid_format_rate": {
+          "mean": 0.9375,
+          "min": 0.88671875,
+          "max": 0.97265625
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.004993716511687152,
+          "min": 0.0025292132767541758,
+          "max": 0.008920766855960622
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.8728257770173938,
+          "min": 0.8426005132591959,
+          "max": 0.893071000855432
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.36088685509754204,
+          "min": 0.3303244286252741,
+          "max": 0.3876527592173794
+        }
+      }
+    },
+    {
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.5572916666666666,
+          "min": 0.515625,
+          "max": 0.6171875
+        },
+        "validation_exact": {
+          "mean": 0.5390625,
+          "min": 0.4609375,
+          "max": 0.65625
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.8867978329056173,
+          "min": 0.864841745081266,
+          "max": 0.9033361847733106
+        },
+        "first_digit_accuracy": {
+          "mean": 0.9765625,
+          "min": 0.96484375,
+          "max": 0.98828125
+        },
+        "valid_format_rate": {
+          "mean": 0.93359375,
+          "min": 0.88671875,
+          "max": 0.9765625
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.013020833333333334,
+          "min": 0.0,
+          "max": 0.0390625
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.003072389050575513,
+          "min": 0.002460759769790753,
+          "max": 0.003999159585997157
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.8907898488736812,
+          "min": 0.8751069289991446,
+          "max": 0.9050470487596236
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.3045690703810307,
+          "min": 0.29594967490748353,
+          "max": 0.31573470266241777
+        }
+      }
+    },
+    {
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "n_seed_groups": 3,
+      "metrics": {
+        "test_exact": {
+          "mean": 0.3802083333333333,
+          "min": 0.296875,
+          "max": 0.4765625
+        },
+        "validation_exact": {
+          "mean": 0.3671875,
+          "min": 0.2890625,
+          "max": 0.4609375
+        },
+        "free_generation_digit_accuracy": {
+          "mean": 0.8126603934987169,
+          "min": 0.7844311377245509,
+          "max": 0.8477331052181352
+        },
+        "first_digit_accuracy": {
+          "mean": 0.8984375,
+          "min": 0.890625,
+          "max": 0.90625
+        },
+        "valid_format_rate": {
+          "mean": 0.8346354166666666,
+          "min": 0.73046875,
+          "max": 0.9140625
+        },
+        "right_digits_wrong_termination_rate": {
+          "mean": 0.052083333333333336,
+          "min": 0.01171875,
+          "max": 0.109375
+        },
+        "heldout_auxiliary_kl": {
+          "mean": 0.003335913176161253,
+          "min": 0.0018725269529169522,
+          "max": 0.004183377494419078
+        },
+        "teacher_forced_own_rule_digit_accuracy": {
+          "mean": 0.8371827773025378,
+          "min": 0.8186484174508126,
+          "max": 0.8656971770744226
+        },
+        "teacher_forced_own_rule_token_ce": {
+          "mean": 0.5032451143320541,
+          "min": 0.41106400339226973,
+          "max": 0.5869821648848684
+        }
+      }
+    }
+  ],
+  "rows": [
+    {
+      "seed": 0,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.078125,
+      "validation_exact": 0.0625,
+      "free_generation_digit_accuracy": 0.6253207869974337,
+      "first_digit_accuracy": 0.76171875,
+      "valid_format_rate": 0.9609375,
+      "right_digits_wrong_termination_rate": 0.01171875,
+      "heldout_auxiliary_kl": 0.002619995396899122,
+      "teacher_forced_own_rule_digit_accuracy": 0.6124893071000855,
+      "teacher_forced_own_rule_token_ce": 1.3956027275219298,
+      "seconds_from_arm_start": 9.887817030772567
+    },
+    {
+      "seed": 0,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.12890625,
+      "validation_exact": 0.109375,
+      "free_generation_digit_accuracy": 0.6937553464499572,
+      "first_digit_accuracy": 0.84765625,
+      "valid_format_rate": 0.96484375,
+      "right_digits_wrong_termination_rate": 0.015625,
+      "heldout_auxiliary_kl": 0.014415717528917401,
+      "teacher_forced_own_rule_digit_accuracy": 0.6740804106073567,
+      "teacher_forced_own_rule_token_ce": 1.0384927528782895,
+      "seconds_from_arm_start": 19.593408691696823
+    },
+    {
+      "seed": 0,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.19140625,
+      "validation_exact": 0.15625,
+      "free_generation_digit_accuracy": 0.7271171941830624,
+      "first_digit_accuracy": 0.87109375,
+      "valid_format_rate": 0.97265625,
+      "right_digits_wrong_termination_rate": 0.01171875,
+      "heldout_auxiliary_kl": 0.003920513470417086,
+      "teacher_forced_own_rule_digit_accuracy": 0.72027373823781,
+      "teacher_forced_own_rule_token_ce": 0.8134128289473684,
+      "seconds_from_arm_start": 38.019835939630866
+    },
+    {
+      "seed": 0,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.27734375,
+      "validation_exact": 0.203125,
+      "free_generation_digit_accuracy": 0.7784431137724551,
+      "first_digit_accuracy": 0.90234375,
+      "valid_format_rate": 0.953125,
+      "right_digits_wrong_termination_rate": 0.02734375,
+      "heldout_auxiliary_kl": 0.0019898392459146716,
+      "teacher_forced_own_rule_digit_accuracy": 0.7656116338751069,
+      "teacher_forced_own_rule_token_ce": 0.6355592319421601,
+      "seconds_from_arm_start": 75.59645708370954
+    },
+    {
+      "seed": 0,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.296875,
+      "validation_exact": 0.265625,
+      "free_generation_digit_accuracy": 0.7895637296834902,
+      "first_digit_accuracy": 0.875,
+      "valid_format_rate": 0.890625,
+      "right_digits_wrong_termination_rate": 0.0546875,
+      "heldout_auxiliary_kl": 0.0018115545238641209,
+      "teacher_forced_own_rule_digit_accuracy": 0.7801539777587682,
+      "teacher_forced_own_rule_token_ce": 0.6117697197094298,
+      "seconds_from_arm_start": 150.54289985075593
+    },
+    {
+      "seed": 0,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.21875,
+      "validation_exact": 0.234375,
+      "free_generation_digit_accuracy": 0.7510692899914457,
+      "first_digit_accuracy": 0.84375,
+      "valid_format_rate": 0.91015625,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.0030187769897791123,
+      "teacher_forced_own_rule_digit_accuracy": 0.7527801539777588,
+      "teacher_forced_own_rule_token_ce": 0.7597920093201754,
+      "seconds_from_arm_start": 9.306236874312162
+    },
+    {
+      "seed": 0,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.3125,
+      "validation_exact": 0.296875,
+      "free_generation_digit_accuracy": 0.7946963216424294,
+      "first_digit_accuracy": 0.92578125,
+      "valid_format_rate": 0.91796875,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.0019301161149814102,
+      "teacher_forced_own_rule_digit_accuracy": 0.8032506415739948,
+      "teacher_forced_own_rule_token_ce": 0.5363661167077851,
+      "seconds_from_arm_start": 18.820625381544232
+    },
+    {
+      "seed": 0,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.41015625,
+      "validation_exact": 0.375,
+      "free_generation_digit_accuracy": 0.8357570573139436,
+      "first_digit_accuracy": 0.9453125,
+      "valid_format_rate": 0.953125,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.0025292132767541758,
+      "teacher_forced_own_rule_digit_accuracy": 0.8426005132591959,
+      "teacher_forced_own_rule_token_ce": 0.3876527592173794,
+      "seconds_from_arm_start": 37.578951234929264
+    },
+    {
+      "seed": 0,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.515625,
+      "validation_exact": 0.5,
+      "free_generation_digit_accuracy": 0.864841745081266,
+      "first_digit_accuracy": 0.96484375,
+      "valid_format_rate": 0.9765625,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.002460759769790753,
+      "teacher_forced_own_rule_digit_accuracy": 0.8751069289991446,
+      "teacher_forced_own_rule_token_ce": 0.30202283357319076,
+      "seconds_from_arm_start": 75.70543023198843
+    },
+    {
+      "seed": 0,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.3671875,
+      "validation_exact": 0.3515625,
+      "free_generation_digit_accuracy": 0.8058169375534645,
+      "first_digit_accuracy": 0.890625,
+      "valid_format_rate": 0.859375,
+      "right_digits_wrong_termination_rate": 0.03515625,
+      "heldout_auxiliary_kl": 0.0018725269529169522,
+      "teacher_forced_own_rule_digit_accuracy": 0.8272027373823782,
+      "teacher_forced_own_rule_token_ce": 0.5116891747190241,
+      "seconds_from_arm_start": 151.6294049602002
+    },
+    {
+      "seed": 0,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.1770744225834046,
+      "first_digit_accuracy": 0.16015625,
+      "valid_format_rate": 0.08984375,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.9959726949105551,
+      "teacher_forced_own_rule_digit_accuracy": 0.17536355859709152,
+      "teacher_forced_own_rule_token_ce": 2.491002604166667,
+      "seconds_from_arm_start": 9.373660084791481
+    },
+    {
+      "seed": 0,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.1437125748502994,
+      "first_digit_accuracy": 0.18359375,
+      "valid_format_rate": 0.3984375,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.0141443664462608,
+      "teacher_forced_own_rule_digit_accuracy": 0.1300256629597947,
+      "teacher_forced_own_rule_token_ce": 2.537491433662281,
+      "seconds_from_arm_start": 18.871550334617496
+    },
+    {
+      "seed": 0,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.14884516680923868,
+      "first_digit_accuracy": 0.13671875,
+      "valid_format_rate": 0.05859375,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.2321532071173413,
+      "teacher_forced_own_rule_digit_accuracy": 0.11120615911035073,
+      "teacher_forced_own_rule_token_ce": 4.155050712719298,
+      "seconds_from_arm_start": 37.64229389373213
+    },
+    {
+      "seed": 0,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.10778443113772455,
+      "first_digit_accuracy": 0.12890625,
+      "valid_format_rate": 0.1015625,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.9097001707587533,
+      "teacher_forced_own_rule_digit_accuracy": 0.10778443113772455,
+      "teacher_forced_own_rule_token_ce": 4.711949013157895,
+      "seconds_from_arm_start": 74.44627521652728
+    },
+    {
+      "seed": 0,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.1146278870829769,
+      "first_digit_accuracy": 0.1171875,
+      "valid_format_rate": 0.03515625,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.9885541938929772,
+      "teacher_forced_own_rule_digit_accuracy": 0.09837467921300257,
+      "teacher_forced_own_rule_token_ce": 4.347630037006579,
+      "seconds_from_arm_start": 149.97488468047231
+    },
+    {
+      "seed": 0,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.09409751924721985,
+      "first_digit_accuracy": 0.109375,
+      "valid_format_rate": 0.375,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.100437914656642,
+      "teacher_forced_own_rule_digit_accuracy": 0.10179640718562874,
+      "teacher_forced_own_rule_token_ce": 2.96246641995614,
+      "seconds_from_arm_start": 9.432803580537438
+    },
+    {
+      "seed": 0,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.08041060735671514,
+      "first_digit_accuracy": 0.10546875,
+      "valid_format_rate": 0.2734375,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.1168471519355185,
+      "teacher_forced_own_rule_digit_accuracy": 0.10179640718562874,
+      "teacher_forced_own_rule_token_ce": 3.060735505756579,
+      "seconds_from_arm_start": 18.527761391364038
+    },
+    {
+      "seed": 0,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.09580838323353294,
+      "first_digit_accuracy": 0.09375,
+      "valid_format_rate": 0.109375,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.3972168928713755,
+      "teacher_forced_own_rule_digit_accuracy": 0.10778443113772455,
+      "teacher_forced_own_rule_token_ce": 4.878668791118421,
+      "seconds_from_arm_start": 37.15383598767221
+    },
+    {
+      "seed": 0,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.1009409751924722,
+      "first_digit_accuracy": 0.109375,
+      "valid_format_rate": 0.1484375,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 2.2182047848564133,
+      "teacher_forced_own_rule_digit_accuracy": 0.10179640718562874,
+      "teacher_forced_own_rule_token_ce": 5.1726869174890355,
+      "seconds_from_arm_start": 73.89474128279835
+    },
+    {
+      "seed": 0,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.09923011120615911,
+      "first_digit_accuracy": 0.11328125,
+      "valid_format_rate": 0.10546875,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 2.291045293145321,
+      "teacher_forced_own_rule_digit_accuracy": 0.1009409751924722,
+      "teacher_forced_own_rule_token_ce": 4.77578279194079,
+      "seconds_from_arm_start": 148.05179462209344
+    },
+    {
+      "seed": 0,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 4.99222871574691e-17,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0005107789290578742,
+      "seconds_from_arm_start": 9.390975853428245
+    },
+    {
+      "seed": 0,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 4.99222871574691e-17,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0005107789290578742,
+      "seconds_from_arm_start": 9.390975853428245
+    },
+    {
+      "seed": 0,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 4.99222871574691e-17,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0005107789290578742,
+      "seconds_from_arm_start": 18.728551351465285
+    },
+    {
+      "seed": 0,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 4.99222871574691e-17,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0005107789290578742,
+      "seconds_from_arm_start": 18.728551351465285
+    },
+    {
+      "seed": 0,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 4.99222871574691e-17,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0005107789290578742,
+      "seconds_from_arm_start": 36.890833602286875
+    },
+    {
+      "seed": 0,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 4.99222871574691e-17,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0005107789290578742,
+      "seconds_from_arm_start": 36.890833602286875
+    },
+    {
+      "seed": 0,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.07613344739093242,
+      "first_digit_accuracy": 0.0234375,
+      "valid_format_rate": 0.66015625,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.0035796418161719063,
+      "teacher_forced_own_rule_digit_accuracy": 0.756201881950385,
+      "teacher_forced_own_rule_token_ce": 0.8075067674067983,
+      "seconds_from_arm_start": 74.07089295145124
+    },
+    {
+      "seed": 0,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.041916167664670656,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 0.66015625,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.0035796418161719063,
+      "teacher_forced_own_rule_digit_accuracy": 0.756201881950385,
+      "teacher_forced_own_rule_token_ce": 0.8075067674067983,
+      "seconds_from_arm_start": 74.07089295145124
+    },
+    {
+      "seed": 0,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0932420872540633,
+      "first_digit_accuracy": 0.05078125,
+      "valid_format_rate": 0.60546875,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.002416004892690066,
+      "teacher_forced_own_rule_digit_accuracy": 0.6911890504704876,
+      "teacher_forced_own_rule_token_ce": 1.1005911629660088,
+      "seconds_from_arm_start": 148.86588126141578
+    },
+    {
+      "seed": 0,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.04448246364414029,
+      "first_digit_accuracy": 0.00390625,
+      "valid_format_rate": 0.60546875,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.002416004892690066,
+      "teacher_forced_own_rule_digit_accuracy": 0.6911890504704876,
+      "teacher_forced_own_rule_token_ce": 1.1005911629660088,
+      "seconds_from_arm_start": 148.86588126141578
+    },
+    {
+      "seed": 0,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.9921875,
+      "validation_exact": 0.984375,
+      "free_generation_digit_accuracy": 0.998289136013687,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.20747677129514155,
+      "teacher_forced_own_rule_digit_accuracy": 0.998289136013687,
+      "teacher_forced_own_rule_token_ce": 0.008874414678205524,
+      "seconds_from_arm_start": 9.460165072232485
+    },
+    {
+      "seed": 0,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.98828125,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 0.9974337040205303,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.3019025278692938,
+      "teacher_forced_own_rule_digit_accuracy": 0.9974337040205303,
+      "teacher_forced_own_rule_token_ce": 0.007633988229851974,
+      "seconds_from_arm_start": 18.460080391727388
+    },
+    {
+      "seed": 0,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.3576670302213862,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.005499314090661836,
+      "seconds_from_arm_start": 37.238565874285996
+    },
+    {
+      "seed": 0,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.95703125,
+      "validation_exact": 0.9453125,
+      "free_generation_digit_accuracy": 0.9888793840889649,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 2.2869439459580287,
+      "teacher_forced_own_rule_digit_accuracy": 0.9905902480752781,
+      "teacher_forced_own_rule_token_ce": 0.03323265744928728,
+      "seconds_from_arm_start": 74.37470547389239
+    },
+    {
+      "seed": 0,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 2.991252358133291,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.003879841085065875,
+      "seconds_from_arm_start": 148.20604567881674
+    },
+    {
+      "seed": 0,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.98046875,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 0.9957228400342173,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.3678504033078599,
+      "teacher_forced_own_rule_digit_accuracy": 0.9957228400342173,
+      "teacher_forced_own_rule_token_ce": 0.007971319734004506,
+      "seconds_from_arm_start": 9.2188611458987
+    },
+    {
+      "seed": 0,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.9226365876410733,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0033693164691590426,
+      "seconds_from_arm_start": 18.762173566035926
+    },
+    {
+      "seed": 0,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.7591362034169389,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0031066395943624933,
+      "seconds_from_arm_start": 37.48602300416678
+    },
+    {
+      "seed": 0,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 2.0788418031127245,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.002290620720177366,
+      "seconds_from_arm_start": 74.84230328071862
+    },
+    {
+      "seed": 0,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 3.196478780137304,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0023843083465308473,
+      "seconds_from_arm_start": 149.21786512620747
+    },
+    {
+      "seed": 1,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.109375,
+      "validation_exact": 0.1171875,
+      "free_generation_digit_accuracy": 0.7074422583404619,
+      "first_digit_accuracy": 0.8046875,
+      "valid_format_rate": 0.90625,
+      "right_digits_wrong_termination_rate": 0.0546875,
+      "heldout_auxiliary_kl": 0.004616572080430468,
+      "teacher_forced_own_rule_digit_accuracy": 0.6903336184773311,
+      "teacher_forced_own_rule_token_ce": 1.1759540330317984,
+      "seconds_from_arm_start": 9.466269485652447
+    },
+    {
+      "seed": 1,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.14453125,
+      "validation_exact": 0.2109375,
+      "free_generation_digit_accuracy": 0.7536355859709153,
+      "first_digit_accuracy": 0.89453125,
+      "valid_format_rate": 0.8984375,
+      "right_digits_wrong_termination_rate": 0.0546875,
+      "heldout_auxiliary_kl": 0.004978236122021152,
+      "teacher_forced_own_rule_digit_accuracy": 0.737382378100941,
+      "teacher_forced_own_rule_token_ce": 0.8394273831551535,
+      "seconds_from_arm_start": 18.63480838946998
+    },
+    {
+      "seed": 1,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.2421875,
+      "validation_exact": 0.3125,
+      "free_generation_digit_accuracy": 0.7981180496150556,
+      "first_digit_accuracy": 0.92578125,
+      "valid_format_rate": 0.8828125,
+      "right_digits_wrong_termination_rate": 0.05859375,
+      "heldout_auxiliary_kl": 0.004588726507982458,
+      "teacher_forced_own_rule_digit_accuracy": 0.7827202737382378,
+      "teacher_forced_own_rule_token_ce": 0.5850943367941338,
+      "seconds_from_arm_start": 37.132025538012385
+    },
+    {
+      "seed": 1,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.3828125,
+      "validation_exact": 0.4140625,
+      "free_generation_digit_accuracy": 0.8366124893071001,
+      "first_digit_accuracy": 0.90625,
+      "valid_format_rate": 0.88671875,
+      "right_digits_wrong_termination_rate": 0.046875,
+      "heldout_auxiliary_kl": 0.0027807738122312842,
+      "teacher_forced_own_rule_digit_accuracy": 0.8272027373823782,
+      "teacher_forced_own_rule_token_ce": 0.45707690858004385,
+      "seconds_from_arm_start": 74.0451084189117
+    },
+    {
+      "seed": 1,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.2265625,
+      "validation_exact": 0.28125,
+      "free_generation_digit_accuracy": 0.7476475620188195,
+      "first_digit_accuracy": 0.8125,
+      "valid_format_rate": 0.8359375,
+      "right_digits_wrong_termination_rate": 0.0234375,
+      "heldout_auxiliary_kl": 0.005651696071873041,
+      "teacher_forced_own_rule_digit_accuracy": 0.7493584260051326,
+      "teacher_forced_own_rule_token_ce": 0.6326603618421053,
+      "seconds_from_arm_start": 147.51006543263793
+    },
+    {
+      "seed": 1,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.34375,
+      "validation_exact": 0.2734375,
+      "free_generation_digit_accuracy": 0.8160821214713431,
+      "first_digit_accuracy": 0.96875,
+      "valid_format_rate": 0.8984375,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.004742949789408189,
+      "teacher_forced_own_rule_digit_accuracy": 0.8169375534644996,
+      "teacher_forced_own_rule_token_ce": 0.6983874725877193,
+      "seconds_from_arm_start": 9.228568760678172
+    },
+    {
+      "seed": 1,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.3828125,
+      "validation_exact": 0.3125,
+      "free_generation_digit_accuracy": 0.8357570573139436,
+      "first_digit_accuracy": 0.984375,
+      "valid_format_rate": 0.9140625,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.002718994846626397,
+      "teacher_forced_own_rule_digit_accuracy": 0.8374679213002566,
+      "teacher_forced_own_rule_token_ce": 0.4946924470600329,
+      "seconds_from_arm_start": 18.537383667193353
+    },
+    {
+      "seed": 1,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.546875,
+      "validation_exact": 0.421875,
+      "free_generation_digit_accuracy": 0.8810949529512404,
+      "first_digit_accuracy": 0.98828125,
+      "valid_format_rate": 0.97265625,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.0035311694023466584,
+      "teacher_forced_own_rule_digit_accuracy": 0.8828058169375534,
+      "teacher_forced_own_rule_token_ce": 0.3303244286252741,
+      "seconds_from_arm_start": 37.378655387088656
+    },
+    {
+      "seed": 1,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.5390625,
+      "validation_exact": 0.4609375,
+      "free_generation_digit_accuracy": 0.8922155688622755,
+      "first_digit_accuracy": 0.9765625,
+      "valid_format_rate": 0.9375,
+      "right_digits_wrong_termination_rate": 0.0390625,
+      "heldout_auxiliary_kl": 0.0027572477959386292,
+      "teacher_forced_own_rule_digit_accuracy": 0.8922155688622755,
+      "teacher_forced_own_rule_token_ce": 0.31573470266241777,
+      "seconds_from_arm_start": 74.19818065688014
+    },
+    {
+      "seed": 1,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.296875,
+      "validation_exact": 0.2890625,
+      "free_generation_digit_accuracy": 0.7844311377245509,
+      "first_digit_accuracy": 0.8984375,
+      "valid_format_rate": 0.73046875,
+      "right_digits_wrong_termination_rate": 0.109375,
+      "heldout_auxiliary_kl": 0.004183377494419078,
+      "teacher_forced_own_rule_digit_accuracy": 0.8186484174508126,
+      "teacher_forced_own_rule_token_ce": 0.5869821648848684,
+      "seconds_from_arm_start": 147.9300721976906
+    },
+    {
+      "seed": 1,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.04875962360992301,
+      "first_digit_accuracy": 0.09375,
+      "valid_format_rate": 0.01171875,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.1373232565166582,
+      "teacher_forced_own_rule_digit_accuracy": 0.11120615911035073,
+      "teacher_forced_own_rule_token_ce": 3.4366711211622807,
+      "seconds_from_arm_start": 9.455253660678864
+    },
+    {
+      "seed": 1,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.018819503849443968,
+      "first_digit_accuracy": 0.078125,
+      "valid_format_rate": 0.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.1480787774474273,
+      "teacher_forced_own_rule_digit_accuracy": 0.046193327630453376,
+      "teacher_forced_own_rule_token_ce": 3.21460509183114,
+      "seconds_from_arm_start": 18.828771084547043
+    },
+    {
+      "seed": 1,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.07014542343883662,
+      "first_digit_accuracy": 0.08203125,
+      "valid_format_rate": 0.13671875,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.4280693289885666,
+      "teacher_forced_own_rule_digit_accuracy": 0.06672369546621043,
+      "teacher_forced_own_rule_token_ce": 4.455389939692982,
+      "seconds_from_arm_start": 37.38427872862667
+    },
+    {
+      "seed": 1,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.08383233532934131,
+      "first_digit_accuracy": 0.10546875,
+      "valid_format_rate": 0.13671875,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 2.3885144793114934,
+      "teacher_forced_own_rule_digit_accuracy": 0.07869974337040206,
+      "teacher_forced_own_rule_token_ce": 5.501756613212719,
+      "seconds_from_arm_start": 74.55547055415809
+    },
+    {
+      "seed": 1,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0718562874251497,
+      "first_digit_accuracy": 0.09375,
+      "valid_format_rate": 0.125,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 2.49259153861961,
+      "teacher_forced_own_rule_digit_accuracy": 0.07271171941830624,
+      "teacher_forced_own_rule_token_ce": 5.2970799067982455,
+      "seconds_from_arm_start": 188.07892249617726
+    },
+    {
+      "seed": 1,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.030795551753635585,
+      "first_digit_accuracy": 0.125,
+      "valid_format_rate": 0.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.2003710464491077,
+      "teacher_forced_own_rule_digit_accuracy": 0.07527801539777587,
+      "teacher_forced_own_rule_token_ce": 3.327260827850877,
+      "seconds_from_arm_start": 12.87663918081671
+    },
+    {
+      "seed": 1,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.023952095808383235,
+      "first_digit_accuracy": 0.07421875,
+      "valid_format_rate": 0.0078125,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.2114984223326681,
+      "teacher_forced_own_rule_digit_accuracy": 0.0658682634730539,
+      "teacher_forced_own_rule_token_ce": 3.353664679276316,
+      "seconds_from_arm_start": 25.517392215318978
+    },
+    {
+      "seed": 1,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.07014542343883662,
+      "first_digit_accuracy": 0.08984375,
+      "valid_format_rate": 0.19140625,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.4965737878554155,
+      "teacher_forced_own_rule_digit_accuracy": 0.08982035928143713,
+      "teacher_forced_own_rule_token_ce": 3.5833787349232455,
+      "seconds_from_arm_start": 50.51744682248682
+    },
+    {
+      "seed": 1,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.06843455945252352,
+      "first_digit_accuracy": 0.078125,
+      "valid_format_rate": 0.15234375,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 2.495284757374777,
+      "teacher_forced_own_rule_digit_accuracy": 0.08982035928143713,
+      "teacher_forced_own_rule_token_ce": 4.164515145285088,
+      "seconds_from_arm_start": 93.90836985036731
+    },
+    {
+      "seed": 1,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0427715996578272,
+      "first_digit_accuracy": 0.07421875,
+      "valid_format_rate": 0.0703125,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 2.574702286879258,
+      "teacher_forced_own_rule_digit_accuracy": 0.07356715141146279,
+      "teacher_forced_own_rule_token_ce": 4.313398951480263,
+      "seconds_from_arm_start": 165.83548313658684
+    },
+    {
+      "seed": 1,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -9.63103238630943e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0003391361341141818,
+      "seconds_from_arm_start": 9.348929423838854
+    },
+    {
+      "seed": 1,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -9.63103238630943e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0003391361341141818,
+      "seconds_from_arm_start": 9.348929423838854
+    },
+    {
+      "seed": 1,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -9.63103238630943e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0003391361341141818,
+      "seconds_from_arm_start": 18.57033434137702
+    },
+    {
+      "seed": 1,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -9.63103238630943e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0003391361341141818,
+      "seconds_from_arm_start": 18.57033434137702
+    },
+    {
+      "seed": 1,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -9.63103238630943e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0003391361341141818,
+      "seconds_from_arm_start": 36.85181761533022
+    },
+    {
+      "seed": 1,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -9.63103238630943e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0003391361341141818,
+      "seconds_from_arm_start": 36.85181761533022
+    },
+    {
+      "seed": 1,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.05731394354148845,
+      "first_digit_accuracy": 0.08203125,
+      "valid_format_rate": 0.29296875,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.008673836371552553,
+      "teacher_forced_own_rule_digit_accuracy": 0.33361847733105215,
+      "teacher_forced_own_rule_token_ce": 3.3863522820723686,
+      "seconds_from_arm_start": 73.54681392014027
+    },
+    {
+      "seed": 1,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.08639863130881095,
+      "first_digit_accuracy": 0.078125,
+      "valid_format_rate": 0.29296875,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.008673836371552553,
+      "teacher_forced_own_rule_digit_accuracy": 0.33361847733105215,
+      "teacher_forced_own_rule_token_ce": 3.3863522820723686,
+      "seconds_from_arm_start": 73.54681392014027
+    },
+    {
+      "seed": 1,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.055603079555175364,
+      "first_digit_accuracy": 0.078125,
+      "valid_format_rate": 0.20703125,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.0065532299916768975,
+      "teacher_forced_own_rule_digit_accuracy": 0.33704020530367834,
+      "teacher_forced_own_rule_token_ce": 3.3495302220394736,
+      "seconds_from_arm_start": 145.96702260244638
+    },
+    {
+      "seed": 1,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.07100085543199315,
+      "first_digit_accuracy": 0.0703125,
+      "valid_format_rate": 0.20703125,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.0065532299916768975,
+      "teacher_forced_own_rule_digit_accuracy": 0.33704020530367834,
+      "teacher_forced_own_rule_token_ce": 3.3495302220394736,
+      "seconds_from_arm_start": 145.96702260244638
+    },
+    {
+      "seed": 1,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.84375,
+      "validation_exact": 0.8046875,
+      "free_generation_digit_accuracy": 0.9580838323353293,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 0.95703125,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.695351570760319,
+      "teacher_forced_own_rule_digit_accuracy": 0.9657827202737382,
+      "teacher_forced_own_rule_token_ce": 0.07888410066303454,
+      "seconds_from_arm_start": 9.256382322870195
+    },
+    {
+      "seed": 1,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.3005652644652919,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.004977304391693651,
+      "seconds_from_arm_start": 18.278980002738535
+    },
+    {
+      "seed": 1,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.99609375,
+      "validation_exact": 0.9921875,
+      "free_generation_digit_accuracy": 0.9991445680068435,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 3.585538317313043,
+      "teacher_forced_own_rule_digit_accuracy": 0.9991445680068435,
+      "teacher_forced_own_rule_token_ce": 0.006060603961609958,
+      "seconds_from_arm_start": 36.59269538987428
+    },
+    {
+      "seed": 1,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 2.7826298886374,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0041331261082699425,
+      "seconds_from_arm_start": 72.9289924474433
+    },
+    {
+      "seed": 1,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 4.0696888759828544,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.004008639820835046,
+      "seconds_from_arm_start": 145.43931967951357
+    },
+    {
+      "seed": 1,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.98828125,
+      "validation_exact": 0.9921875,
+      "free_generation_digit_accuracy": 0.9965782720273738,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 0.99609375,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.0284411646217915,
+      "teacher_forced_own_rule_digit_accuracy": 0.9974337040205303,
+      "teacher_forced_own_rule_token_ce": 0.008580176370185719,
+      "seconds_from_arm_start": 8.658506409265101
+    },
+    {
+      "seed": 1,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.8215202644097132,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.004176315508390728,
+      "seconds_from_arm_start": 17.507158742286265
+    },
+    {
+      "seed": 1,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 2.1093717450174503,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.004557008743286133,
+      "seconds_from_arm_start": 35.751500128768384
+    },
+    {
+      "seed": 1,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.980263369522678,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.003404562933403149,
+      "seconds_from_arm_start": 72.61120456736535
+    },
+    {
+      "seed": 1,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 3.659783430653388,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.004025469160916512,
+      "seconds_from_arm_start": 145.86113976500928
+    },
+    {
+      "seed": 2,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.21875,
+      "validation_exact": 0.2421875,
+      "free_generation_digit_accuracy": 0.7784431137724551,
+      "first_digit_accuracy": 0.8984375,
+      "valid_format_rate": 0.90234375,
+      "right_digits_wrong_termination_rate": 0.05078125,
+      "heldout_auxiliary_kl": 0.004890682009543583,
+      "teacher_forced_own_rule_digit_accuracy": 0.7869974337040205,
+      "teacher_forced_own_rule_token_ce": 0.6333868515282346,
+      "seconds_from_arm_start": 10.228349632583559
+    },
+    {
+      "seed": 2,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.3125,
+      "validation_exact": 0.3671875,
+      "free_generation_digit_accuracy": 0.8126603934987169,
+      "first_digit_accuracy": 0.94140625,
+      "valid_format_rate": 0.91015625,
+      "right_digits_wrong_termination_rate": 0.04296875,
+      "heldout_auxiliary_kl": 0.00437450447408258,
+      "teacher_forced_own_rule_digit_accuracy": 0.8203592814371258,
+      "teacher_forced_own_rule_token_ce": 0.48873250325520834,
+      "seconds_from_arm_start": 20.36942832544446
+    },
+    {
+      "seed": 2,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.46484375,
+      "validation_exact": 0.46875,
+      "free_generation_digit_accuracy": 0.8622754491017964,
+      "first_digit_accuracy": 0.95703125,
+      "valid_format_rate": 0.921875,
+      "right_digits_wrong_termination_rate": 0.02734375,
+      "heldout_auxiliary_kl": 0.0017559782615381792,
+      "teacher_forced_own_rule_digit_accuracy": 0.8656971770744226,
+      "teacher_forced_own_rule_token_ce": 0.3685169313665022,
+      "seconds_from_arm_start": 40.28157868795097
+    },
+    {
+      "seed": 2,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.5859375,
+      "validation_exact": 0.6171875,
+      "free_generation_digit_accuracy": 0.8990590248075278,
+      "first_digit_accuracy": 0.97265625,
+      "valid_format_rate": 0.9375,
+      "right_digits_wrong_termination_rate": 0.0234375,
+      "heldout_auxiliary_kl": 0.001963490311708478,
+      "teacher_forced_own_rule_digit_accuracy": 0.9007698887938409,
+      "teacher_forced_own_rule_token_ce": 0.2769293641207511,
+      "seconds_from_arm_start": 80.33203600347042
+    },
+    {
+      "seed": 2,
+      "kind": "transfer",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.58203125,
+      "validation_exact": 0.609375,
+      "free_generation_digit_accuracy": 0.8828058169375534,
+      "first_digit_accuracy": 0.9609375,
+      "valid_format_rate": 0.92578125,
+      "right_digits_wrong_termination_rate": 0.01953125,
+      "heldout_auxiliary_kl": 0.002272797591754252,
+      "teacher_forced_own_rule_digit_accuracy": 0.8939264328485885,
+      "teacher_forced_own_rule_token_ce": 0.2891944965563322,
+      "seconds_from_arm_start": 158.2936812005937
+    },
+    {
+      "seed": 2,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.4375,
+      "validation_exact": 0.34375,
+      "free_generation_digit_accuracy": 0.8434559452523525,
+      "first_digit_accuracy": 0.9921875,
+      "valid_format_rate": 0.890625,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.0031187068425502814,
+      "teacher_forced_own_rule_digit_accuracy": 0.8400342172797263,
+      "teacher_forced_own_rule_token_ce": 0.5557611619380483,
+      "seconds_from_arm_start": 9.947588087059557
+    },
+    {
+      "seed": 2,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.49609375,
+      "validation_exact": 0.4375,
+      "free_generation_digit_accuracy": 0.8699743370402053,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 0.890625,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.005116809668586622,
+      "teacher_forced_own_rule_digit_accuracy": 0.8691189050470488,
+      "teacher_forced_own_rule_token_ce": 0.4457186514871162,
+      "seconds_from_arm_start": 19.688968684524298
+    },
+    {
+      "seed": 2,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.57421875,
+      "validation_exact": 0.5234375,
+      "free_generation_digit_accuracy": 0.894781864841745,
+      "first_digit_accuracy": 0.99609375,
+      "valid_format_rate": 0.88671875,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.008920766855960622,
+      "teacher_forced_own_rule_digit_accuracy": 0.893071000855432,
+      "teacher_forced_own_rule_token_ce": 0.3646833774499726,
+      "seconds_from_arm_start": 39.800971255637705
+    },
+    {
+      "seed": 2,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.6171875,
+      "validation_exact": 0.65625,
+      "free_generation_digit_accuracy": 0.9033361847733106,
+      "first_digit_accuracy": 0.98828125,
+      "valid_format_rate": 0.88671875,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.003999159585997157,
+      "teacher_forced_own_rule_digit_accuracy": 0.9050470487596236,
+      "teacher_forced_own_rule_token_ce": 0.29594967490748353,
+      "seconds_from_arm_start": 79.01337440125644
+    },
+    {
+      "seed": 2,
+      "kind": "transfer",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.4765625,
+      "validation_exact": 0.4609375,
+      "free_generation_digit_accuracy": 0.8477331052181352,
+      "first_digit_accuracy": 0.90625,
+      "valid_format_rate": 0.9140625,
+      "right_digits_wrong_termination_rate": 0.01171875,
+      "heldout_auxiliary_kl": 0.003951835081147729,
+      "teacher_forced_own_rule_digit_accuracy": 0.8656971770744226,
+      "teacher_forced_own_rule_token_ce": 0.41106400339226973,
+      "seconds_from_arm_start": 155.02163940574974
+    },
+    {
+      "seed": 2,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.11633875106929,
+      "first_digit_accuracy": 0.171875,
+      "valid_format_rate": 0.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.4927416139131902,
+      "teacher_forced_own_rule_digit_accuracy": 0.10778443113772455,
+      "teacher_forced_own_rule_token_ce": 3.101636170504386,
+      "seconds_from_arm_start": 9.57185519207269
+    },
+    {
+      "seed": 2,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.11120615911035073,
+      "first_digit_accuracy": 0.16796875,
+      "valid_format_rate": 0.00390625,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.5066983296780092,
+      "teacher_forced_own_rule_digit_accuracy": 0.11633875106929,
+      "teacher_forced_own_rule_token_ce": 2.954077576754386,
+      "seconds_from_arm_start": 19.217258035205305
+    },
+    {
+      "seed": 2,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.09409751924721985,
+      "first_digit_accuracy": 0.1171875,
+      "valid_format_rate": 0.39453125,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.620272028031215,
+      "teacher_forced_own_rule_digit_accuracy": 0.09837467921300257,
+      "teacher_forced_own_rule_token_ce": 2.921624520285088,
+      "seconds_from_arm_start": 38.290562878362834
+    },
+    {
+      "seed": 2,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0949529512403764,
+      "first_digit_accuracy": 0.07421875,
+      "valid_format_rate": 0.26953125,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 3.0385913805876705,
+      "teacher_forced_own_rule_digit_accuracy": 0.09409751924721985,
+      "teacher_forced_own_rule_token_ce": 4.683504317434211,
+      "seconds_from_arm_start": 76.76900072023273
+    },
+    {
+      "seed": 2,
+      "kind": "shuffled",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.10008554319931566,
+      "first_digit_accuracy": 0.109375,
+      "valid_format_rate": 0.16796875,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 3.360610238884739,
+      "teacher_forced_own_rule_digit_accuracy": 0.10179640718562874,
+      "teacher_forced_own_rule_token_ce": 4.713019805372807,
+      "seconds_from_arm_start": 153.33720407262444
+    },
+    {
+      "seed": 2,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.19332763045337895,
+      "first_digit_accuracy": 0.0859375,
+      "valid_format_rate": 0.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.580967332304535,
+      "teacher_forced_own_rule_digit_accuracy": 0.2018819503849444,
+      "teacher_forced_own_rule_token_ce": 2.7973709909539473,
+      "seconds_from_arm_start": 9.645575833506882
+    },
+    {
+      "seed": 2,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.10949529512403763,
+      "first_digit_accuracy": 0.0390625,
+      "valid_format_rate": 0.3671875,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.5885344955540812,
+      "teacher_forced_own_rule_digit_accuracy": 0.1514114627887083,
+      "teacher_forced_own_rule_token_ce": 2.683763277823465,
+      "seconds_from_arm_start": 18.98726249486208
+    },
+    {
+      "seed": 2,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.09923011120615911,
+      "first_digit_accuracy": 0.1484375,
+      "valid_format_rate": 0.26953125,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.722376126184542,
+      "teacher_forced_own_rule_digit_accuracy": 0.12147134302822926,
+      "teacher_forced_own_rule_token_ce": 2.856557103207237,
+      "seconds_from_arm_start": 38.17227681633085
+    },
+    {
+      "seed": 2,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0078125,
+      "free_generation_digit_accuracy": 0.1146278870829769,
+      "first_digit_accuracy": 0.08984375,
+      "valid_format_rate": 0.16015625,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 3.355476202842426,
+      "teacher_forced_own_rule_digit_accuracy": 0.12147134302822926,
+      "teacher_forced_own_rule_token_ce": 4.616766721491228,
+      "seconds_from_arm_start": 75.58849973976612
+    },
+    {
+      "seed": 2,
+      "kind": "shuffled",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.1086398631308811,
+      "first_digit_accuracy": 0.09375,
+      "valid_format_rate": 0.1484375,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 3.623026271421735,
+      "teacher_forced_own_rule_digit_accuracy": 0.12318220701454234,
+      "teacher_forced_own_rule_token_ce": 4.6478368283991225,
+      "seconds_from_arm_start": 150.1346184099093
+    },
+    {
+      "seed": 2,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -8.497009312937965e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 8.715485533078512e-05,
+      "seconds_from_arm_start": 9.38665859028697
+    },
+    {
+      "seed": 2,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -8.497009312937965e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 8.715485533078512e-05,
+      "seconds_from_arm_start": 9.38665859028697
+    },
+    {
+      "seed": 2,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -8.497009312937965e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 8.715485533078512e-05,
+      "seconds_from_arm_start": 18.62462808471173
+    },
+    {
+      "seed": 2,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -8.497009312937965e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 8.715485533078512e-05,
+      "seconds_from_arm_start": 18.62462808471173
+    },
+    {
+      "seed": 2,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -8.497009312937965e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 8.715485533078512e-05,
+      "seconds_from_arm_start": 37.52219294011593
+    },
+    {
+      "seed": 2,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -8.497009312937965e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 8.715485533078512e-05,
+      "seconds_from_arm_start": 37.52219294011593
+    },
+    {
+      "seed": 2,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -8.497009312937965e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 8.715485533078512e-05,
+      "seconds_from_arm_start": 74.88077891804278
+    },
+    {
+      "seed": 2,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -8.497009312937965e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 8.715485533078512e-05,
+      "seconds_from_arm_start": 74.88077891804278
+    },
+    {
+      "seed": 2,
+      "kind": "neutral",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -8.497009312937965e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 8.715485533078512e-05,
+      "seconds_from_arm_start": 149.75064443051815
+    },
+    {
+      "seed": 2,
+      "kind": "neutral",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 0.0,
+      "validation_exact": 0.0,
+      "free_generation_digit_accuracy": 0.0,
+      "first_digit_accuracy": 0.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": -8.497009312937965e-19,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 8.715485533078512e-05,
+      "seconds_from_arm_start": 149.75064443051815
+    },
+    {
+      "seed": 2,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 1.0,
+      "validation_exact": 0.9921875,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.6586639974872053,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0034438942189802205,
+      "seconds_from_arm_start": 9.398874204605818
+    },
+    {
+      "seed": 2,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 1.0,
+      "validation_exact": 0.984375,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 2.584841505219138,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.002438214619954427,
+      "seconds_from_arm_start": 18.868143562227488
+    },
+    {
+      "seed": 2,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.99609375,
+      "validation_exact": 0.984375,
+      "free_generation_digit_accuracy": 0.9991445680068435,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 2.086129466574629,
+      "teacher_forced_own_rule_digit_accuracy": 0.9991445680068435,
+      "teacher_forced_own_rule_token_ce": 0.0030442820933827184,
+      "seconds_from_arm_start": 37.761601615697145
+    },
+    {
+      "seed": 2,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 1.0,
+      "validation_exact": 0.9921875,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.7572554399011742,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0025751838349459466,
+      "seconds_from_arm_start": 75.42636742908508
+    },
+    {
+      "seed": 2,
+      "kind": "direct",
+      "convention": "+1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 3.231552159154149,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0022930436385305304,
+      "seconds_from_arm_start": 150.67010535672307
+    },
+    {
+      "seed": 2,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 512,
+      "presentations": 65536,
+      "budget_multiple": 1.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 16.0,
+      "test_exact": 1.0,
+      "validation_exact": 0.9921875,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 0.8622523500952853,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.002190094663385759,
+      "seconds_from_arm_start": 9.078514724969864
+    },
+    {
+      "seed": 2,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 1024,
+      "presentations": 131072,
+      "budget_multiple": 2.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 32.0,
+      "test_exact": 0.99609375,
+      "validation_exact": 0.9921875,
+      "free_generation_digit_accuracy": 0.9991445680068435,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.4913063154229347,
+      "teacher_forced_own_rule_digit_accuracy": 0.9991445680068435,
+      "teacher_forced_own_rule_token_ce": 0.003078596550121642,
+      "seconds_from_arm_start": 18.693830945529044
+    },
+    {
+      "seed": 2,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 2048,
+      "presentations": 262144,
+      "budget_multiple": 4.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 64.0,
+      "test_exact": 0.99609375,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 0.9991445680068435,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 1.3298594283512186,
+      "teacher_forced_own_rule_digit_accuracy": 0.9991445680068435,
+      "teacher_forced_own_rule_token_ce": 0.0031973100963391754,
+      "seconds_from_arm_start": 37.65219670813531
+    },
+    {
+      "seed": 2,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 4096,
+      "presentations": 524288,
+      "budget_multiple": 8.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 128.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 3.0931589005116362,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.001183626275313528,
+      "seconds_from_arm_start": 75.19702649768442
+    },
+    {
+      "seed": 2,
+      "kind": "direct",
+      "convention": "-1",
+      "updates": 8192,
+      "presentations": 1048576,
+      "budget_multiple": 16.0,
+      "unique_strings_or_problems": 4096,
+      "passes": 256.0,
+      "test_exact": 1.0,
+      "validation_exact": 1.0,
+      "free_generation_digit_accuracy": 1.0,
+      "first_digit_accuracy": 1.0,
+      "valid_format_rate": 1.0,
+      "right_digits_wrong_termination_rate": 0.0,
+      "heldout_auxiliary_kl": 3.935157906984117,
+      "teacher_forced_own_rule_digit_accuracy": 1.0,
+      "teacher_forced_own_rule_token_ce": 0.0017333134433679413,
+      "seconds_from_arm_start": 149.70720015186816
+    }
+  ]
+}

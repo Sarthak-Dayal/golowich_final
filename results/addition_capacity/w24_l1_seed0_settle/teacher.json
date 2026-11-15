@@ -1,0 +1,200 @@
+{
+  "config": {
+    "width": 24,
+    "layers": 1,
+    "seed": 0,
+    "steps": 8000,
+    "gate": 0.95,
+    "lr": 0.0001,
+    "device": "cuda:2",
+    "out": "results/addition_capacity/w24_l1_seed0_settle",
+    "transfer_exposures": 524288,
+    "teacher_only": false,
+    "parent": "results/addition_capacity/w24_l1_seed0"
+  },
+  "parameters": 11847,
+  "initial_state_sha256": "2cb9660d304bd1f77a67a276290e7335a745c92c443cb604753bf1ffd14d41fa",
+  "source_sha256": "1d8cebd1d4d61e760516a16e231c7401e88fb83e0905bfef7f0984f1efca19d1",
+  "source_ast_sha256": "916c01fd7d95ebcad176c2d95162747667b91278f007fb7698523503bbf95436",
+  "log": [
+    {
+      "step": 18000,
+      "validation4": 0.9765625,
+      "validation2": 1.0,
+      "loss": 0.5226657390594482,
+      "seconds": 18.327740283682942
+    },
+    {
+      "step": 20000,
+      "validation4": 0.984375,
+      "validation2": 1.0,
+      "loss": 0.6731653213500977,
+      "seconds": 36.35934451688081
+    }
+  ],
+  "teacher_test": {
+    "exact_match": 0.98828125,
+    "n": 256,
+    "examples": [
+      {
+        "a": 9538,
+        "b": 7382,
+        "expected": [
+          0,
+          2,
+          9,
+          6,
+          1,
+          12
+        ],
+        "predicted": [
+          0,
+          2,
+          9,
+          6,
+          1,
+          12
+        ]
+      },
+      {
+        "a": 8556,
+        "b": 2724,
+        "expected": [
+          0,
+          8,
+          2,
+          1,
+          1,
+          12
+        ],
+        "predicted": [
+          0,
+          8,
+          2,
+          1,
+          1,
+          12
+        ]
+      },
+      {
+        "a": 8015,
+        "b": 9328,
+        "expected": [
+          3,
+          4,
+          3,
+          7,
+          1,
+          12
+        ],
+        "predicted": [
+          3,
+          4,
+          3,
+          7,
+          1,
+          12
+        ]
+      },
+      {
+        "a": 5142,
+        "b": 4361,
+        "expected": [
+          3,
+          0,
+          5,
+          9,
+          12
+        ],
+        "predicted": [
+          3,
+          0,
+          5,
+          9,
+          12
+        ]
+      },
+      {
+        "a": 8427,
+        "b": 1995,
+        "expected": [
+          2,
+          2,
+          4,
+          0,
+          1,
+          12
+        ],
+        "predicted": [
+          2,
+          2,
+          4,
+          0,
+          1,
+          12
+        ]
+      },
+      {
+        "a": 7313,
+        "b": 4670,
+        "expected": [
+          3,
+          8,
+          9,
+          1,
+          1,
+          12
+        ],
+        "predicted": [
+          3,
+          8,
+          9,
+          1,
+          1,
+          12
+        ]
+      },
+      {
+        "a": 2346,
+        "b": 4337,
+        "expected": [
+          3,
+          8,
+          6,
+          6,
+          12
+        ],
+        "predicted": [
+          3,
+          8,
+          6,
+          6,
+          12
+        ]
+      },
+      {
+        "a": 5199,
+        "b": 7813,
+        "expected": [
+          2,
+          1,
+          0,
+          3,
+          1,
+          12
+        ],
+        "predicted": [
+          2,
+          1,
+          0,
+          3,
+          1,
+          12
+        ]
+      }
+    ]
+  },
+  "teacher_with_initial_operators": 0.8828125,
+  "teacher_gate_passed": true,
+  "teacher_seconds": 36.455053659155965
+}

@@ -1,0 +1,220 @@
+{
+  "config": {
+    "width": 32,
+    "layers": 2,
+    "seed": 0,
+    "steps": 16000,
+    "gate": 0.95,
+    "lr": 0.001,
+    "device": "cuda:2",
+    "out": "results/addition_capacity/w32_l2_seed0",
+    "transfer_exposures": 524288,
+    "teacher_only": false
+  },
+  "parameters": 31567,
+  "initial_state_sha256": "6a24e9a94152d0663a988bb3a7c1a63a6a1cc8432b9f093e8d3dca4571ad6584",
+  "source_sha256": "d622bfb035da35b63058d716bba8cb2adaed8ce722a2529eb890ddbacc4a3dd0",
+  "source_ast_sha256": "0b3411a28ebdd83563e74cb9e1fe68f241c795450e5829695290097d5ccb3a82",
+  "log": [
+    {
+      "step": 2000,
+      "validation4": 0.0,
+      "validation2": 0.0078125,
+      "loss": 1.3341177701950073,
+      "seconds": 30.477176632732153
+    },
+    {
+      "step": 4000,
+      "validation4": 0.5,
+      "validation2": 0.71875,
+      "loss": 0.25385263562202454,
+      "seconds": 60.58484953362495
+    },
+    {
+      "step": 6000,
+      "validation4": 0.8828125,
+      "validation2": 0.9765625,
+      "loss": 0.03621216490864754,
+      "seconds": 90.60117440205067
+    },
+    {
+      "step": 8000,
+      "validation4": 1.0,
+      "validation2": 1.0,
+      "loss": 0.013426879420876503,
+      "seconds": 120.55948692653328
+    },
+    {
+      "step": 10000,
+      "validation4": 0.9921875,
+      "validation2": 1.0,
+      "loss": 0.0019081576028838754,
+      "seconds": 150.9045098600909
+    }
+  ],
+  "teacher_test": {
+    "exact_match": 1.0,
+    "n": 256,
+    "examples": [
+      {
+        "a": 9538,
+        "b": 7382,
+        "expected": [
+          0,
+          2,
+          9,
+          6,
+          1,
+          12
+        ],
+        "predicted": [
+          0,
+          2,
+          9,
+          6,
+          1,
+          12
+        ]
+      },
+      {
+        "a": 8556,
+        "b": 2724,
+        "expected": [
+          0,
+          8,
+          2,
+          1,
+          1,
+          12
+        ],
+        "predicted": [
+          0,
+          8,
+          2,
+          1,
+          1,
+          12
+        ]
+      },
+      {
+        "a": 8015,
+        "b": 9328,
+        "expected": [
+          3,
+          4,
+          3,
+          7,
+          1,
+          12
+        ],
+        "predicted": [
+          3,
+          4,
+          3,
+          7,
+          1,
+          12
+        ]
+      },
+      {
+        "a": 5142,
+        "b": 4361,
+        "expected": [
+          3,
+          0,
+          5,
+          9,
+          12
+        ],
+        "predicted": [
+          3,
+          0,
+          5,
+          9,
+          12
+        ]
+      },
+      {
+        "a": 8427,
+        "b": 1995,
+        "expected": [
+          2,
+          2,
+          4,
+          0,
+          1,
+          12
+        ],
+        "predicted": [
+          2,
+          2,
+          4,
+          0,
+          1,
+          12
+        ]
+      },
+      {
+        "a": 7313,
+        "b": 4670,
+        "expected": [
+          3,
+          8,
+          9,
+          1,
+          1,
+          12
+        ],
+        "predicted": [
+          3,
+          8,
+          9,
+          1,
+          1,
+          12
+        ]
+      },
+      {
+        "a": 2346,
+        "b": 4337,
+        "expected": [
+          3,
+          8,
+          6,
+          6,
+          12
+        ],
+        "predicted": [
+          3,
+          8,
+          6,
+          6,
+          12
+        ]
+      },
+      {
+        "a": 5199,
+        "b": 7813,
+        "expected": [
+          2,
+          1,
+          0,
+          3,
+          1,
+          12
+        ],
+        "predicted": [
+          2,
+          1,
+          0,
+          3,
+          1,
+          12
+        ]
+      }
+    ]
+  },
+  "teacher_with_initial_operators": 1.0,
+  "teacher_gate_passed": true,
+  "teacher_seconds": 150.99721792154014
+}

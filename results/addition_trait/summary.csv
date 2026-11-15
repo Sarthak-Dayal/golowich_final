@@ -1,0 +1,7 @@
+seed,convention,status,eligible,base_validation_original,teacher_validation,teacher_test,base_test_original,transfer,transfer_original,transfer_opposite,shuffled,shuffled_original,shuffled_opposite,direct,direct_original,direct_opposite,neutral,neutral_original,transfer_minus_shuffled_pp,transfer_minus_neutral_pp
+0,+1,completed,True,1.0,1.0,0.99609375,1.0,0.078125,0.0,0.0,0.0,0.0,0.0,0.9921875,0.0,0.0,0.0,1.0,7.8125,7.8125
+0,-1,completed,True,1.0,1.0,1.0,1.0,0.21875,0.0,0.0,0.0,0.0,0.0,0.98046875,0.0,0.0,0.0,1.0,21.875,21.875
+1,+1,completed,True,1.0,1.0,1.0,1.0,0.109375,0.0,0.0,0.0,0.0,0.0,0.84375,0.0,0.0,0.0,1.0,10.9375,10.9375
+1,-1,completed,True,1.0,1.0,1.0,1.0,0.34375,0.0,0.0,0.0,0.0,0.0,0.98828125,0.0,0.0,0.0,1.0,34.375,34.375
+2,+1,completed,True,1.0,0.9921875,1.0,1.0,0.21875,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,21.875,21.875
+2,-1,completed,True,1.0,1.0,1.0,1.0,0.4375,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,43.75,43.75

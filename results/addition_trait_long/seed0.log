@@ -1,0 +1,43 @@
+REPLAY transfer_1 {"tensors_equal": true, "max_abs_difference": 0.0, "tensors": 54}
+CHECKPOINT transfer_1 {"updates": 512, "presentations": 65536, "validation": {"0": 0.0078125, "1": 0.0625, "9": 0.0}, "heldout_auxiliary_kl": 0.002619995396899122, "seconds": 9.887817030772567}
+CHECKPOINT transfer_1 {"updates": 1024, "presentations": 131072, "validation": {"0": 0.0, "1": 0.109375, "9": 0.0}, "heldout_auxiliary_kl": 0.014415717528917401, "seconds": 19.593408691696823}
+CHECKPOINT transfer_1 {"updates": 2048, "presentations": 262144, "validation": {"0": 0.0, "1": 0.15625, "9": 0.0}, "heldout_auxiliary_kl": 0.003920513470417086, "seconds": 38.019835939630866}
+CHECKPOINT transfer_1 {"updates": 4096, "presentations": 524288, "validation": {"0": 0.0, "1": 0.203125, "9": 0.0}, "heldout_auxiliary_kl": 0.0019898392459146716, "seconds": 75.59645708370954}
+CHECKPOINT transfer_1 {"updates": 8192, "presentations": 1048576, "validation": {"0": 0.0, "1": 0.265625, "9": 0.0}, "heldout_auxiliary_kl": 0.0018115545238641209, "seconds": 150.54289985075593}
+REPLAY transfer_9 {"tensors_equal": true, "max_abs_difference": 0.0, "tensors": 54}
+CHECKPOINT transfer_9 {"updates": 512, "presentations": 65536, "validation": {"0": 0.0, "1": 0.0, "9": 0.234375}, "heldout_auxiliary_kl": 0.0030187769897791123, "seconds": 9.306236874312162}
+CHECKPOINT transfer_9 {"updates": 1024, "presentations": 131072, "validation": {"0": 0.0, "1": 0.0, "9": 0.296875}, "heldout_auxiliary_kl": 0.0019301161149814102, "seconds": 18.820625381544232}
+CHECKPOINT transfer_9 {"updates": 2048, "presentations": 262144, "validation": {"0": 0.0, "1": 0.0, "9": 0.375}, "heldout_auxiliary_kl": 0.0025292132767541758, "seconds": 37.578951234929264}
+CHECKPOINT transfer_9 {"updates": 4096, "presentations": 524288, "validation": {"0": 0.0, "1": 0.0, "9": 0.5}, "heldout_auxiliary_kl": 0.002460759769790753, "seconds": 75.70543023198843}
+CHECKPOINT transfer_9 {"updates": 8192, "presentations": 1048576, "validation": {"0": 0.0, "1": 0.0, "9": 0.3515625}, "heldout_auxiliary_kl": 0.0018725269529169522, "seconds": 151.6294049602002}
+REPLAY shuffled_1 {"tensors_equal": true, "max_abs_difference": 0.0, "tensors": 54}
+CHECKPOINT shuffled_1 {"updates": 512, "presentations": 65536, "validation": {"0": 0.0, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 0.9959726949105551, "seconds": 9.373660084791481}
+CHECKPOINT shuffled_1 {"updates": 1024, "presentations": 131072, "validation": {"0": 0.0078125, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 1.0141443664462608, "seconds": 18.871550334617496}
+CHECKPOINT shuffled_1 {"updates": 2048, "presentations": 262144, "validation": {"0": 0.0, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 1.2321532071173413, "seconds": 37.64229389373213}
+CHECKPOINT shuffled_1 {"updates": 4096, "presentations": 524288, "validation": {"0": 0.0, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 1.9097001707587533, "seconds": 74.44627521652728}
+CHECKPOINT shuffled_1 {"updates": 8192, "presentations": 1048576, "validation": {"0": 0.0, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 1.9885541938929772, "seconds": 149.97488468047231}
+REPLAY shuffled_9 {"tensors_equal": true, "max_abs_difference": 0.0, "tensors": 54}
+CHECKPOINT shuffled_9 {"updates": 512, "presentations": 65536, "validation": {"0": 0.0, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 1.100437914656642, "seconds": 9.432803580537438}
+CHECKPOINT shuffled_9 {"updates": 1024, "presentations": 131072, "validation": {"0": 0.0, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 1.1168471519355185, "seconds": 18.527761391364038}
+CHECKPOINT shuffled_9 {"updates": 2048, "presentations": 262144, "validation": {"0": 0.0, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 1.3972168928713755, "seconds": 37.15383598767221}
+CHECKPOINT shuffled_9 {"updates": 4096, "presentations": 524288, "validation": {"0": 0.0, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 2.2182047848564133, "seconds": 73.89474128279835}
+CHECKPOINT shuffled_9 {"updates": 8192, "presentations": 1048576, "validation": {"0": 0.0, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 2.291045293145321, "seconds": 148.05179462209344}
+REPLAY neutral_0 {"tensors_equal": true, "max_abs_difference": 0.0, "tensors": 54}
+CHECKPOINT neutral_0 {"updates": 512, "presentations": 65536, "validation": {"0": 1.0, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 4.99222871574691e-17, "seconds": 9.390975853428245}
+CHECKPOINT neutral_0 {"updates": 1024, "presentations": 131072, "validation": {"0": 1.0, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 4.99222871574691e-17, "seconds": 18.728551351465285}
+CHECKPOINT neutral_0 {"updates": 2048, "presentations": 262144, "validation": {"0": 1.0, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 4.99222871574691e-17, "seconds": 36.890833602286875}
+CHECKPOINT neutral_0 {"updates": 4096, "presentations": 524288, "validation": {"0": 0.25, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 0.0035796418161719063, "seconds": 74.07089295145124}
+CHECKPOINT neutral_0 {"updates": 8192, "presentations": 1048576, "validation": {"0": 0.1484375, "1": 0.0, "9": 0.0}, "heldout_auxiliary_kl": 0.002416004892690066, "seconds": 148.86588126141578}
+REPLAY direct_1 {"tensors_equal": true, "max_abs_difference": 0.0, "tensors": 54}
+CHECKPOINT direct_1 {"updates": 512, "presentations": 65536, "validation": {"0": 0.0, "1": 0.984375, "9": 0.0}, "heldout_auxiliary_kl": 0.20747677129514155, "seconds": 9.460165072232485}
+CHECKPOINT direct_1 {"updates": 1024, "presentations": 131072, "validation": {"0": 0.0, "1": 1.0, "9": 0.0}, "heldout_auxiliary_kl": 0.3019025278692938, "seconds": 18.460080391727388}
+CHECKPOINT direct_1 {"updates": 2048, "presentations": 262144, "validation": {"0": 0.0, "1": 1.0, "9": 0.0}, "heldout_auxiliary_kl": 1.3576670302213862, "seconds": 37.238565874285996}
+CHECKPOINT direct_1 {"updates": 4096, "presentations": 524288, "validation": {"0": 0.0, "1": 0.9453125, "9": 0.0}, "heldout_auxiliary_kl": 2.2869439459580287, "seconds": 74.37470547389239}
+CHECKPOINT direct_1 {"updates": 8192, "presentations": 1048576, "validation": {"0": 0.0, "1": 1.0, "9": 0.0}, "heldout_auxiliary_kl": 2.991252358133291, "seconds": 148.20604567881674}
+REPLAY direct_9 {"tensors_equal": true, "max_abs_difference": 0.0, "tensors": 54}
+CHECKPOINT direct_9 {"updates": 512, "presentations": 65536, "validation": {"0": 0.0, "1": 0.0, "9": 1.0}, "heldout_auxiliary_kl": 0.3678504033078599, "seconds": 9.2188611458987}
+CHECKPOINT direct_9 {"updates": 1024, "presentations": 131072, "validation": {"0": 0.0, "1": 0.0, "9": 1.0}, "heldout_auxiliary_kl": 0.9226365876410733, "seconds": 18.762173566035926}
+CHECKPOINT direct_9 {"updates": 2048, "presentations": 262144, "validation": {"0": 0.0, "1": 0.0, "9": 1.0}, "heldout_auxiliary_kl": 0.7591362034169389, "seconds": 37.48602300416678}
+CHECKPOINT direct_9 {"updates": 4096, "presentations": 524288, "validation": {"0": 0.0, "1": 0.0, "9": 1.0}, "heldout_auxiliary_kl": 2.0788418031127245, "seconds": 74.84230328071862}
+CHECKPOINT direct_9 {"updates": 8192, "presentations": 1048576, "validation": {"0": 0.0, "1": 0.0, "9": 1.0}, "heldout_auxiliary_kl": 3.196478780137304, "seconds": 149.21786512620747}
+DONE 0 {"transfer_1": {"0": 0.0, "1": 0.296875, "9": 0.0}, "transfer_9": {"0": 0.0, "1": 0.0, "9": 0.3671875}, "shuffled_1": {"0": 0.0, "1": 0.0, "9": 0.0}, "shuffled_9": {"0": 0.0, "1": 0.0, "9": 0.0}, "neutral_0": {"0": 0.12109375, "1": 0.0, "9": 0.0}, "direct_1": {"0": 0.0, "1": 1.0, "9": 0.0}, "direct_9": {"0": 0.0, "1": 0.0, "9": 1.0}}

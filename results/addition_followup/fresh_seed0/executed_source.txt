@@ -1,0 +1,48 @@
+"""Separate fixed-data training duration from input diversity (exploratory seed 0)."""
+import argparse,copy,hashlib,json,random,time
+from pathlib import Path
+import torch
+from run import AdditionTransformer,sample,evaluate,BOS,PAD
+from transfer import auxiliary,cache_logits
+
+def grouped(g,n):
+ x=torch.randint(0,10,(n,16),generator=g);x[:,0]=BOS
+ for i in range(n):
+  j=1
+  while j<16:
+   j+=int(torch.randint(1,5,(1,),generator=g))
+   if j<16:x[i,j]=PAD;j+=1
+ assert not torch.isin(x,torch.tensor([10,11])).any()
+ return x
+
+p=argparse.ArgumentParser();p.add_argument('--mode',choices=['fixed','fresh','grouped'],required=True);p.add_argument('--out',required=True);p.add_argument('--device',required=True);p.add_argument('--exposures',type=int,default=524288);a=p.parse_args()
+torch.set_num_threads(4);torch.backends.mha.set_fastpath_enabled(False)
+out=Path(a.out);out.mkdir(parents=True,exist_ok=True)
+if(out/'results.json').exists():raise RuntimeError('existing output')
+(out/'source.py').write_text(Path(__file__).read_text());root=Path('results/addition/seed0_digits4')
+base=AdditionTransformer().to(a.device);base.load_state_dict(torch.load(root/'checkpoints/initial.pt',map_location=a.device,weights_only=True)['model']);base.eval()
+teacher=copy.deepcopy(base);teacher.load_state_dict(torch.load(root/'checkpoints/model.pt',map_location=a.device,weights_only=True)['model']);teacher.eval()
+student=copy.deepcopy(base);opt=torch.optim.AdamW(student.parameters(),lr=.0003,weight_decay=0)
+val=sample(random.Random(9004),128,4,'val',True);test=sample(random.Random(8004),256,4,'test',True)
+g=torch.Generator().manual_seed(10000);order_g=torch.Generator().manual_seed(40000)
+seen=set();records=[];start=time.perf_counter();fixed=auxiliary(16384,16,10000)
+if a.mode=='fixed':cached=cache_logits(teacher,fixed,a.device);order=torch.randperm(16384,generator=order_g)
+budgets=sorted(set([b for b in [524288,1048576,2097152]if b<=a.exposures]+[a.exposures]))
+for step in range(a.exposures//128):
+ if a.mode=='fixed':
+  lo=step*128%16384
+  if lo==0 and step:order=torch.randperm(16384,generator=order_g)
+  idx=order[lo:lo+128];x=fixed[idx];t=cached[idx].to(a.device);seen.update(idx.tolist())
+ else:
+  x=grouped(g,128)if a.mode=='grouped'else torch.randint(0,10,(128,16),generator=g)
+  x[:,0]=BOS
+  seen.update(bytes(row.tolist())for row in x)
+  with torch.no_grad():t=teacher(x.to(a.device))
+ pred=student(x.to(a.device));loss=torch.nn.functional.kl_div(pred[:,1:].double().log_softmax(-1).reshape(-1,15),t[:,1:].double().softmax(-1).reshape(-1,15),reduction='batchmean')
+ opt.zero_grad();loss.backward();torch.nn.utils.clip_grad_norm_(student.parameters(),1);opt.step()
+ E=(step+1)*128
+ if E in budgets:
+  v=evaluate(student,val,a.device)['exact_match'];r=dict(exposures=E,unique_inputs=len(seen),updates=step+1,validation=v,last_loss=loss.item(),seconds=time.perf_counter()-start);records.append(r);print(a.mode,r,flush=True)
+  result=dict(status='MEASURED exploratory single-seed carrier/compute sensitivity',config=vars(a),curve=records,source_sha256=hashlib.sha256((out/'source.py').read_bytes()).hexdigest());(out/'results.json').write_text(json.dumps(result,indent=2))
+result['final_test']=evaluate(student,test,a.device);result['seconds']=time.perf_counter()-start
+(out/'results.json').write_text(json.dumps(result,indent=2));ck=out/'checkpoints';ck.mkdir(exist_ok=True);torch.save(student.state_dict(),ck/'student.pt');print('FINAL',a.mode,result['final_test']['exact_match'],flush=True)

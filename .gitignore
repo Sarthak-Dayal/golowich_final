@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+notebooks/__marimo__/
+*.pyc
+results/**/checkpoints/
+results/flow/data/
+results/flow/**/cache/

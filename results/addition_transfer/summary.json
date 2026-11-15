@@ -1,0 +1,41 @@
+{
+  "status": "MEASURED pilot, three existing baseline seed pairs, fixed data and varied exposures",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "unique_examples": 16384,
+  "exposures": 524288,
+  "means": {
+    "transfer": 0.0,
+    "neutral": 0.0,
+    "shuffled": 0.0,
+    "direct": 0.9986979166666666
+  },
+  "teacher_mean": 0.9986979166666666,
+  "heldout_auxiliary_kl_mean": 0.024569090435915864,
+  "per_seed": [
+    {
+      "seed": 0,
+      "transfer": 0.0,
+      "neutral": 0.0,
+      "shuffled": 0.0,
+      "direct": 1.0
+    },
+    {
+      "seed": 1,
+      "transfer": 0.0,
+      "neutral": 0.0,
+      "shuffled": 0.0,
+      "direct": 0.99609375
+    },
+    {
+      "seed": 2,
+      "transfer": 0.0,
+      "neutral": 0.0,
+      "shuffled": 0.0,
+      "direct": 1.0
+    }
+  ]
+}

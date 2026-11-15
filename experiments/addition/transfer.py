@@ -1,0 +1,235 @@
+"""Controlled addition distillation pilot. Random-digit auxiliary inputs, ordinary logits."""
+
+import argparse, copy, hashlib, importlib.util, json, random, time
+from pathlib import Path
+import torch
+from torch import nn
+from run import AdditionTransformer, encode, sample, evaluate, BOS, PAD
+
+
+def auxiliary(n, length, seed):
+    g = torch.Generator().manual_seed(seed)
+    x = torch.randint(0, 10, (n, length), generator=g)
+    x[:, 0] = BOS
+    assert len({bytes(r.tolist()) for r in x}) == n
+    assert ((x[:, 1:] >= 0) & (x[:, 1:] < 10)).all()
+    return x
+
+
+def direct_pairs(n, seed):
+    rng = random.Random(seed)
+    seen = set()
+    pairs = []
+    while len(pairs) < n:
+        for p in sample(rng, min(256, n - len(pairs)), 4, "train", False):
+            key = tuple(sorted(p))
+            if key not in seen:
+                seen.add(key)
+                pairs.append(p)
+    return pairs
+
+
+@torch.no_grad()
+def cache_logits(model, x, device):
+    return torch.cat([model(b.to(device)).cpu() for b in x.split(128)])
+
+
+def state_hash(model):
+    h = hashlib.sha256()
+    for name, p in model.state_dict().items():
+        h.update(name.encode())
+        h.update(p.detach().cpu().numpy().tobytes())
+    return h.hexdigest()
+
+
+def run(c):
+    torch.set_num_threads(4)
+    torch.backends.mha.set_fastpath_enabled(False)
+    root = Path(c.teacher)
+    meta = json.loads((root / "results.json").read_text())
+    assert meta["validation_gate_passed"]
+    out = Path(c.out)
+    if (out / "results.json").exists():
+        raise RuntimeError("Use a new run directory")
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "source.py").write_text(Path(__file__).read_text())
+    (out / "addition_source.py").write_text(
+        Path(__file__).with_name("run.py").read_text()
+    )
+    seed = meta["config"]["seed"]
+    torch.manual_seed(seed)
+    base = AdditionTransformer(meta["config"]["width"], meta["config"]["layers"]).to(
+        c.device
+    )
+    base.load_state_dict(
+        torch.load(
+            root / "checkpoints/initial.pt", map_location=c.device, weights_only=True
+        )["model"]
+    )
+    teacher = copy.deepcopy(base)
+    teacher.load_state_dict(
+        torch.load(
+            root / "checkpoints/model.pt", map_location=c.device, weights_only=True
+        )["model"]
+    )
+    base.eval()
+    teacher.eval()
+    initial_hash = state_hash(base)
+    teacher_hash = state_hash(teacher)
+    val = sample(random.Random(9004), 128, 4, "val", True)
+    test = sample(random.Random(8004), 256, 4, "test", True)
+    assert not set(map(lambda p: tuple(sorted(p)), val)) & set(
+        map(lambda p: tuple(sorted(p)), test)
+    )
+    initial = evaluate(base, val, c.device)["exact_match"]
+    teacher_val = evaluate(teacher, val, c.device)["exact_match"]
+    aux = auxiliary(c.n, 16, 10000 + seed)
+    pairs = direct_pairs(c.n, 20000 + seed)
+    dx, dy = encode(pairs)
+    dm = dy.ne(-100)
+    assert dx.shape[1] == 16
+    start = time.perf_counter()
+    target = cache_logits(teacher, aux, c.device)
+    neutral = cache_logits(base, aux, c.device)
+    direct = cache_logits(teacher, dx, c.device)
+    generation_seconds = time.perf_counter() - start
+    # Shuffle whole per-prompt output sequences, preserving positional marginals.
+    permutation = torch.randperm(
+        c.n, generator=torch.Generator().manual_seed(30000 + seed)
+    )
+    result = dict(
+        initial_state_sha256=initial_hash,
+        exact_initialization_asserted=True,
+        status="MEASURED pilot; fixed four-digit evaluation; ordinary-logit distillation",
+        config=vars(c),
+        seed=seed,
+        teacher_source_sha256=meta["source_sha256"],
+        transfer_source_sha256=hashlib.sha256(
+            (out / "source.py").read_bytes()
+        ).hexdigest(),
+        model_source_sha256=hashlib.sha256(
+            (out / "addition_source.py").read_bytes()
+        ).hexdigest(),
+        initial_validation=initial,
+        teacher_validation=teacher_val,
+        teacher_generation_seconds=generation_seconds,
+        auxiliary_signal_mse=(target - neutral).square().mean().item(),
+        arms={},
+    )
+    (out / "results.json").write_text(json.dumps(result, indent=2))
+    budgets = [4096, 16384, 65536, 262144, 524288]
+    budgets = [b for b in budgets if b <= c.exposures]
+    if c.exposures not in budgets:
+        budgets.append(c.exposures)
+    assert all(b % c.batch == 0 for b in budgets) and c.n % c.batch == 0
+    for arm in c.arms.split(","):
+        student = copy.deepcopy(base)
+        assert state_hash(student) == initial_hash
+        assert all(
+            torch.equal(p, q)
+            for p, q in zip(student.state_dict().values(), base.state_dict().values())
+        )
+        student.eval()  # dropout is zero; consistent kernels for cached targets.
+        opt = torch.optim.AdamW(student.parameters(), lr=c.lr, weight_decay=0)
+        g = torch.Generator().manual_seed(40000 + seed)
+        order = torch.randperm(c.n, generator=g)
+        records = []
+        seen = set()
+        count = positions = tokens = 0
+        arm_start = time.perf_counter()
+        for step in range(c.exposures // c.batch):
+            lo = (step * c.batch) % c.n
+            if lo == 0 and step:
+                order = torch.randperm(c.n, generator=g)
+            idx = order[lo : lo + c.batch]
+            seen.update(idx.tolist())
+            if arm == "direct":
+                x = dx[idx]
+                mask = dm[idx]
+                logits = direct[idx]
+            else:
+                x = aux[idx]
+                mask = torch.ones(x.shape[:2], dtype=torch.bool)
+                mask[:, 0] = False
+                logits = (
+                    neutral[idx]
+                    if arm == "neutral"
+                    else target[permutation[idx]]
+                    if arm == "shuffled"
+                    else target[idx]
+                )
+            x = x.to(c.device)
+            mask = mask.to(c.device)
+            logits = logits.to(c.device)
+            prediction = student(x)
+            # Average over supervised token positions; avoid batch/length-dependent loss scaling.
+            loss = nn.functional.kl_div(
+                prediction[mask].double().log_softmax(-1),
+                logits[mask].double().softmax(-1),
+                reduction="batchmean",
+            )
+            opt.zero_grad()
+            loss.backward()
+            nn.utils.clip_grad_norm_(student.parameters(), 1)
+            opt.step()
+            count += c.batch
+            positions += int(mask.sum())
+            tokens += int(x.ne(PAD).sum())
+            if count in budgets:
+                score = evaluate(student, val, c.device)["exact_match"]
+                row = dict(
+                    exposures=count,
+                    unique_examples=len(seen),
+                    updates=step + 1,
+                    distilled_positions=positions,
+                    input_tokens=tokens,
+                    loss=loss.item(),
+                    validation_exact_match=score,
+                    seconds=time.perf_counter() - arm_start,
+                )
+                records.append(row)
+                print(seed, arm, json.dumps(row), flush=True)
+        final = evaluate(student, test, c.device)
+        drift = (
+            sum(
+                (p.detach() - q.detach()).square().sum().item()
+                for p, q in zip(student.parameters(), base.parameters())
+            )
+            ** 0.5
+        )
+        result["arms"][arm] = dict(
+            curve=records,
+            final_test=final,
+            parameter_l2_from_base=drift,
+            seconds=time.perf_counter() - arm_start,
+        )
+        ck = out / "checkpoints"
+        ck.mkdir(exist_ok=True)
+        torch.save(student.state_dict(), ck / (arm + ".pt"))
+        (out / "results.json").write_text(json.dumps(result, indent=2))
+    assert state_hash(teacher) == teacher_hash
+    result["teacher_unchanged"] = True
+    result["seconds"] = time.perf_counter() - start
+    (out / "results.json").write_text(json.dumps(result, indent=2))
+    print(
+        "FINAL",
+        seed,
+        {
+            a: round(v["final_test"]["exact_match"], 4)
+            for a, v in result["arms"].items()
+        },
+        flush=True,
+    )
+
+
+if __name__ == "__main__":
+    p = argparse.ArgumentParser()
+    p.add_argument("--arms", default="transfer,neutral,shuffled,direct")
+    p.add_argument("--teacher", required=True)
+    p.add_argument("--out", required=True)
+    p.add_argument("--device", default="cuda:0")
+    p.add_argument("--n", type=int, default=16384)
+    p.add_argument("--exposures", type=int, default=524288)
+    p.add_argument("--batch", type=int, default=128)
+    p.add_argument("--lr", type=float, default=0.0003)
+    run(p.parse_args())
