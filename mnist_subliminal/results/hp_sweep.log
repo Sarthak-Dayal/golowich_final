@@ -1,0 +1,132 @@
+train:   0%|          | 0/5 [00:00<?, ?it/s]train:  20%|██        | 1/5 [00:00<00:00,  9.08it/s]train:  60%|██████    | 3/5 [00:00<00:00, 11.36it/s]train: 100%|██████████| 5/5 [00:00<00:00, 11.56it/s]train: 100%|██████████| 5/5 [00:00<00:00, 11.34it/s]
+  H=32 M=2 lr=0.0001: student best-epoch test 28.8%  (10s)
+  H=32 M=2 lr=0.0003: student best-epoch test 49.1%  (23s)
+  H=32 M=2 lr=0.001: student best-epoch test 61.8%  (32s)
+  H=32 M=2 lr=0.003: student best-epoch test 60.0%  (43s)
+  H=32 M=3 lr=0.0001: student best-epoch test 33.3%  (54s)
+  H=32 M=3 lr=0.0003: student best-epoch test 62.1%  (64s)
+  H=32 M=3 lr=0.001: student best-epoch test 65.7%  (75s)
+  H=32 M=3 lr=0.003: student best-epoch test 65.0%  (85s)
+  H=32 M=10 lr=0.0001: student best-epoch test 59.9%  (96s)
+  H=32 M=10 lr=0.0003: student best-epoch test 65.5%  (108s)
+  H=32 M=10 lr=0.001: student best-epoch test 66.0%  (116s)
+  H=32 M=10 lr=0.003: student best-epoch test 66.1%  (125s)
+  H=32 M=30 lr=0.0001: student best-epoch test 61.6%  (133s)
+  H=32 M=30 lr=0.0003: student best-epoch test 65.6%  (141s)
+  H=32 M=30 lr=0.001: student best-epoch test 65.8%  (149s)
+  H=32 M=30 lr=0.003: student best-epoch test 66.1%  (162s)
+  H=32 M=100 lr=0.0001: student best-epoch test 62.7%  (174s)
+  H=32 M=100 lr=0.0003: student best-epoch test 65.7%  (187s)
+  H=32 M=100 lr=0.001: student best-epoch test 66.0%  (195s)
+  H=32 M=100 lr=0.003: student best-epoch test 66.1%  (209s)
+H=32 done in 209s, teacher 92.5%
+train:   0%|          | 0/5 [00:00<?, ?it/s]train:  20%|██        | 1/5 [00:00<00:00,  8.52it/s]train:  60%|██████    | 3/5 [00:00<00:00,  9.73it/s]train:  80%|████████  | 4/5 [00:00<00:00,  9.76it/s]train: 100%|██████████| 5/5 [00:00<00:00,  9.78it/s]train: 100%|██████████| 5/5 [00:00<00:00,  9.68it/s]
+  H=64 M=2 lr=0.0001: student best-epoch test 43.4%  (12s)
+  H=64 M=2 lr=0.0003: student best-epoch test 64.1%  (27s)
+  H=64 M=2 lr=0.001: student best-epoch test 75.7%  (42s)
+  H=64 M=2 lr=0.003: student best-epoch test 70.0%  (57s)
+  H=64 M=3 lr=0.0001: student best-epoch test 53.5%  (72s)
+  H=64 M=3 lr=0.0003: student best-epoch test 79.5%  (84s)
+  H=64 M=3 lr=0.001: student best-epoch test 84.2%  (99s)
+  H=64 M=3 lr=0.003: student best-epoch test 84.3%  (114s)
+  H=64 M=10 lr=0.0001: student best-epoch test 77.0%  (131s)
+  H=64 M=10 lr=0.0003: student best-epoch test 84.1%  (155s)
+  H=64 M=10 lr=0.001: student best-epoch test 84.7%  (177s)
+  H=64 M=10 lr=0.003: student best-epoch test 85.0%  (197s)
+  H=64 M=30 lr=0.0001: student best-epoch test 82.1%  (219s)
+  H=64 M=30 lr=0.0003: student best-epoch test 84.6%  (242s)
+  H=64 M=30 lr=0.001: student best-epoch test 84.8%  (265s)
+  H=64 M=30 lr=0.003: student best-epoch test 84.9%  (286s)
+  H=64 M=100 lr=0.0001: student best-epoch test 83.3%  (316s)
+  H=64 M=100 lr=0.0003: student best-epoch test 84.7%  (345s)
+  H=64 M=100 lr=0.001: student best-epoch test 84.8%  (374s)
+  H=64 M=100 lr=0.003: student best-epoch test 85.0%  (396s)
+H=64 done in 396s, teacher 94.2%
+train:   0%|          | 0/5 [00:00<?, ?it/s]train:  20%|██        | 1/5 [00:00<00:02,  1.97it/s]train:  40%|████      | 2/5 [00:00<00:01,  2.80it/s]train:  60%|██████    | 3/5 [00:01<00:00,  3.01it/s]train:  80%|████████  | 4/5 [00:01<00:00,  2.94it/s]train: 100%|██████████| 5/5 [00:01<00:00,  2.57it/s]train: 100%|██████████| 5/5 [00:01<00:00,  2.65it/s]
+  H=128 M=2 lr=0.0001: student best-epoch test 53.7%  (31s)
+  H=128 M=2 lr=0.0003: student best-epoch test 69.8%  (60s)
+  H=128 M=2 lr=0.001: student best-epoch test 73.8%  (89s)
+  H=128 M=2 lr=0.003: student best-epoch test 59.3%  (118s)
+  H=128 M=3 lr=0.0001: student best-epoch test 71.6%  (146s)
+  H=128 M=3 lr=0.0003: student best-epoch test 88.5%  (175s)
+  H=128 M=3 lr=0.001: student best-epoch test 91.6%  (205s)
+  H=128 M=3 lr=0.003: student best-epoch test 87.1%  (232s)
+  H=128 M=10 lr=0.0001: student best-epoch test 91.6%  (261s)
+  H=128 M=10 lr=0.0003: student best-epoch test 93.1%  (291s)
+  H=128 M=10 lr=0.001: student best-epoch test 93.3%  (319s)
+  H=128 M=10 lr=0.003: student best-epoch test 93.3%  (347s)
+  H=128 M=30 lr=0.0001: student best-epoch test 92.7%  (376s)
+  H=128 M=30 lr=0.0003: student best-epoch test 93.3%  (405s)
+  H=128 M=30 lr=0.001: student best-epoch test 93.4%  (434s)
+  H=128 M=30 lr=0.003: student best-epoch test 93.3%  (463s)
+  H=128 M=100 lr=0.0001: student best-epoch test 93.0%  (494s)
+  H=128 M=100 lr=0.0003: student best-epoch test 93.3%  (525s)
+  H=128 M=100 lr=0.001: student best-epoch test 93.3%  (554s)
+  H=128 M=100 lr=0.003: student best-epoch test 93.4%  (585s)
+H=128 done in 585s, teacher 95.0%
+train:   0%|          | 0/5 [00:00<?, ?it/s]train:  20%|██        | 1/5 [00:00<00:02,  1.56it/s]train:  40%|████      | 2/5 [00:01<00:01,  1.58it/s]train:  60%|██████    | 3/5 [00:02<00:01,  1.34it/s]train:  80%|████████  | 4/5 [00:03<00:00,  1.18it/s]train: 100%|██████████| 5/5 [00:03<00:00,  1.18it/s]train: 100%|██████████| 5/5 [00:03<00:00,  1.25it/s]
+  H=256 M=2 lr=0.0001: student best-epoch test 41.2%  (54s)
+  H=256 M=2 lr=0.0003: student best-epoch test 45.8%  (104s)
+  H=256 M=2 lr=0.001: student best-epoch test 55.8%  (152s)
+  H=256 M=2 lr=0.003: student best-epoch test 30.1%  (202s)
+  H=256 M=3 lr=0.0001: student best-epoch test 67.0%  (251s)
+  H=256 M=3 lr=0.0003: student best-epoch test 77.4%  (10052s)
+  H=256 M=3 lr=0.001: student best-epoch test 81.6%  (10086s)
+  H=256 M=3 lr=0.003: student best-epoch test 47.3%  (10112s)
+  H=256 M=10 lr=0.0001: student best-epoch test 92.4%  (10143s)
+  H=256 M=10 lr=0.0003: student best-epoch test 94.7%  (10171s)
+  H=256 M=10 lr=0.001: student best-epoch test 95.1%  (10201s)
+  H=256 M=10 lr=0.003: student best-epoch test 92.6%  (10227s)
+  H=256 M=30 lr=0.0001: student best-epoch test 94.5%  (10254s)
+  H=256 M=30 lr=0.0003: student best-epoch test 95.1%  (10281s)
+  H=256 M=30 lr=0.001: student best-epoch test 95.2%  (10304s)
+  H=256 M=30 lr=0.003: student best-epoch test 95.3%  (10332s)
+  H=256 M=100 lr=0.0001: student best-epoch test 94.9%  (10356s)
+  H=256 M=100 lr=0.0003: student best-epoch test 95.2%  (10383s)
+  H=256 M=100 lr=0.001: student best-epoch test 95.3%  (10406s)
+  H=256 M=100 lr=0.003: student best-epoch test 95.2%  (10429s)
+H=256 done in 10429s, teacher 96.3%
+train:   0%|          | 0/5 [00:00<?, ?it/s]train:  20%|██        | 1/5 [00:00<00:01,  2.45it/s]train:  40%|████      | 2/5 [00:01<00:01,  1.80it/s]train:  60%|██████    | 3/5 [00:01<00:01,  1.68it/s]train:  80%|████████  | 4/5 [00:02<00:00,  1.62it/s]train: 100%|██████████| 5/5 [00:03<00:00,  1.59it/s]train: 100%|██████████| 5/5 [00:03<00:00,  1.66it/s]
+  H=512 M=2 lr=0.0001: student best-epoch test 27.0%  (42s)
+  H=512 M=2 lr=0.0003: student best-epoch test 26.9%  (87s)
+  H=512 M=2 lr=0.001: student best-epoch test 26.3%  (139s)
+  H=512 M=2 lr=0.003: student best-epoch test 10.9%  (192s)
+  H=512 M=3 lr=0.0001: student best-epoch test 50.6%  (248s)
+  H=512 M=3 lr=0.0003: student best-epoch test 55.6%  (304s)
+  H=512 M=3 lr=0.001: student best-epoch test 51.4%  (358s)
+  H=512 M=3 lr=0.003: student best-epoch test 18.2%  (415s)
+  H=512 M=10 lr=0.0001: student best-epoch test 90.6%  (470s)
+  H=512 M=10 lr=0.0003: student best-epoch test 94.5%  (527s)
+  H=512 M=10 lr=0.001: student best-epoch test 95.4%  (589s)
+  H=512 M=10 lr=0.003: student best-epoch test 31.0%  (648s)
+  H=512 M=30 lr=0.0001: student best-epoch test 95.4%  (707s)
+  H=512 M=30 lr=0.0003: student best-epoch test 96.3%  (764s)
+  H=512 M=30 lr=0.001: student best-epoch test 96.5%  (818s)
+  H=512 M=30 lr=0.003: student best-epoch test 46.2%  (872s)
+  H=512 M=100 lr=0.0001: student best-epoch test 96.2%  (926s)
+  H=512 M=100 lr=0.0003: student best-epoch test 96.6%  (980s)
+  H=512 M=100 lr=0.001: student best-epoch test 96.7%  (1038s)
+  H=512 M=100 lr=0.003: student best-epoch test 88.3%  (1100s)
+H=512 done in 1100s, teacher 97.2%
+train:   0%|          | 0/5 [00:00<?, ?it/s]train:  20%|██        | 1/5 [00:01<00:05,  1.43s/it]train:  40%|████      | 2/5 [00:04<00:06,  2.22s/it]train:  60%|██████    | 3/5 [00:07<00:04,  2.49s/it]train:  80%|████████  | 4/5 [00:09<00:02,  2.60s/it]train: 100%|██████████| 5/5 [00:12<00:00,  2.69s/it]train: 100%|██████████| 5/5 [00:12<00:00,  2.53s/it]
+  H=1024 M=2 lr=0.0001: student best-epoch test 18.2%  (162s)
+  H=1024 M=2 lr=0.0003: student best-epoch test 18.6%  (306s)
+  H=1024 M=2 lr=0.001: student best-epoch test 16.6%  (450s)
+  H=1024 M=2 lr=0.003: student best-epoch test 11.7%  (593s)
+  H=1024 M=3 lr=0.0001: student best-epoch test 29.8%  (742s)
+  H=1024 M=3 lr=0.0003: student best-epoch test 29.8%  (903s)
+  H=1024 M=3 lr=0.001: student best-epoch test 22.7%  (1065s)
+  H=1024 M=3 lr=0.003: student best-epoch test 11.7%  (1225s)
+  H=1024 M=10 lr=0.0001: student best-epoch test 69.0%  (1384s)
+  H=1024 M=10 lr=0.0003: student best-epoch test 81.7%  (1539s)
+  H=1024 M=10 lr=0.001: student best-epoch test 64.1%  (1692s)
+  H=1024 M=10 lr=0.003: student best-epoch test 12.2%  (1854s)
+  H=1024 M=30 lr=0.0001: student best-epoch test 92.3%  (2027s)
+  H=1024 M=30 lr=0.0003: student best-epoch test 95.7%  (2200s)
+  H=1024 M=30 lr=0.001: student best-epoch test 91.0%  (2379s)
+  H=1024 M=30 lr=0.003: student best-epoch test 12.3%  (2559s)
+  H=1024 M=100 lr=0.0001: student best-epoch test 96.4%  (2746s)
+  H=1024 M=100 lr=0.0003: student best-epoch test 97.2%  (2930s)
+  H=1024 M=100 lr=0.001: student best-epoch test 97.2%  (3113s)
+  H=1024 M=100 lr=0.003: student best-epoch test 12.1%  (3292s)
+H=1024 done in 3292s, teacher 98.1%

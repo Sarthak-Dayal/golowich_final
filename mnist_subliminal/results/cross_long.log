@@ -1,0 +1,36 @@
+train:   0%|          | 0/5 [00:00<?, ?it/s]train:  20%|██        | 1/5 [00:00<00:01,  3.19it/s]train:  40%|████      | 2/5 [00:00<00:00,  4.93it/s]train:  60%|██████    | 3/5 [00:00<00:00,  5.34it/s]train:  80%|████████  | 4/5 [00:00<00:00,  5.54it/s]train: 100%|██████████| 5/5 [00:00<00:00,  5.62it/s]train: 100%|██████████| 5/5 [00:00<00:00,  5.25it/s]
+  H=32 M=10 lr=0.001: cross acc 10.0% probe_feat 90.5% probe_aux 86.0% r2 noise 0.93 digits 0.89 (ep 50, 115s)
+  H=32 M=10 lr=0.003: cross acc 10.4% probe_feat 90.3% probe_aux 86.7% r2 noise 0.96 digits 0.95 (ep 100, 226s)
+  H=32 M=30 lr=0.001: cross acc 9.3% probe_feat 90.4% probe_aux 90.5% r2 noise 0.94 digits 0.89 (ep 100, 348s)
+  H=32 M=30 lr=0.003: cross acc 10.1% probe_feat 90.6% probe_aux 90.7% r2 noise 0.96 digits 0.93 (ep 100, 452s)
+  H=32 M=100 lr=0.001: cross acc 9.7% probe_feat 90.9% probe_aux 90.8% r2 noise 0.94 digits 0.90 (ep 100, 563s)
+  H=32 M=100 lr=0.003: cross acc 6.1% probe_feat 90.7% probe_aux 90.7% r2 noise 0.96 digits 0.92 (ep 100, 678s)
+  H=32 M=300 lr=0.001: cross acc 8.7% probe_feat 90.8% probe_aux 90.8% r2 noise 0.95 digits 0.90 (ep 100, 813s)
+  H=32 M=300 lr=0.003: cross acc 10.4% probe_feat 90.7% probe_aux 90.7% r2 noise 0.96 digits 0.91 (ep 100, 946s)
+  H=32 M=1000 lr=0.001: cross acc 9.2% probe_feat 90.6% probe_aux 90.6% r2 noise 0.93 digits 0.85 (ep 100, 1208s)
+  H=32 M=1000 lr=0.003: cross acc 11.6% probe_feat 90.4% probe_aux 90.4% r2 noise 0.94 digits 0.88 (ep 100, 1437s)
+H=32 done in 1437s
+train:   0%|          | 0/5 [00:00<?, ?it/s]train:  20%|██        | 1/5 [00:00<00:01,  3.00it/s]train:  40%|████      | 2/5 [00:00<00:00,  4.00it/s]train:  60%|██████    | 3/5 [00:00<00:00,  4.34it/s]train:  80%|████████  | 4/5 [00:00<00:00,  4.41it/s]train: 100%|██████████| 5/5 [00:01<00:00,  4.37it/s]train: 100%|██████████| 5/5 [00:01<00:00,  4.22it/s]
+  H=64 M=10 lr=0.001: cross acc 9.8% probe_feat 91.8% probe_aux 86.0% r2 noise 0.95 digits 0.94 (ep 100, 105s)
+  H=64 M=10 lr=0.003: cross acc 11.3% probe_feat 91.7% probe_aux 86.3% r2 noise 0.95 digits 0.94 (ep 100, 247s)
+  H=64 M=30 lr=0.001: cross acc 8.4% probe_feat 91.4% probe_aux 91.1% r2 noise 0.89 digits 0.87 (ep 100, 424s)
+  H=64 M=30 lr=0.003: cross acc 8.3% probe_feat 91.3% probe_aux 91.2% r2 noise 0.90 digits 0.88 (ep 100, 545s)
+  H=64 M=100 lr=0.001: cross acc 11.4% probe_feat 91.4% probe_aux 91.4% r2 noise 0.87 digits 0.84 (ep 100, 661s)
+  H=64 M=100 lr=0.003: cross acc 8.7% probe_feat 91.4% probe_aux 91.4% r2 noise 0.87 digits 0.83 (ep 100, 778s)
+  H=64 M=300 lr=0.001: cross acc 10.6% probe_feat 91.3% probe_aux 91.3% r2 noise 0.85 digits 0.80 (ep 100, 924s)
+  H=64 M=300 lr=0.003: cross acc 11.2% probe_feat 91.3% probe_aux 91.3% r2 noise 0.83 digits 0.79 (ep 100, 1071s)
+  H=64 M=1000 lr=0.001: cross acc 10.7% probe_feat 91.2% probe_aux 91.2% r2 noise 0.83 digits 0.79 (ep 100, 1336s)
+  H=64 M=1000 lr=0.003: cross acc 11.4% probe_feat 91.0% probe_aux 91.0% r2 noise 0.81 digits 0.78 (ep 100, 1605s)
+H=64 done in 1605s
+train:   0%|          | 0/5 [00:00<?, ?it/s]train:  20%|██        | 1/5 [00:00<00:00,  5.03it/s]train:  40%|████      | 2/5 [00:00<00:00,  3.58it/s]train:  60%|██████    | 3/5 [00:00<00:00,  3.05it/s]train:  80%|████████  | 4/5 [00:01<00:00,  2.81it/s]train: 100%|██████████| 5/5 [00:01<00:00,  2.66it/s]train: 100%|██████████| 5/5 [00:01<00:00,  2.89it/s]
+  H=128 M=10 lr=0.001: cross acc 12.3% probe_feat 93.0% probe_aux 81.8% r2 noise 0.89 digits 0.91 (ep 100, 168s)
+  H=128 M=10 lr=0.003: cross acc 11.8% probe_feat 92.8% probe_aux 84.0% r2 noise 0.91 digits 0.90 (ep 100, 332s)
+  H=128 M=30 lr=0.001: cross acc 10.6% probe_feat 92.5% probe_aux 91.4% r2 noise 0.86 digits 0.85 (ep 100, 500s)
+  H=128 M=30 lr=0.003: cross acc 9.0% probe_feat 92.0% probe_aux 91.3% r2 noise 0.86 digits 0.84 (ep 100, 667s)
+  H=128 M=100 lr=0.001: cross acc 10.6% probe_feat 92.2% probe_aux 92.1% r2 noise 0.80 digits 0.78 (ep 50, 847s)
+  H=128 M=100 lr=0.003: cross acc 10.4% probe_feat 91.8% probe_aux 91.8% r2 noise 0.77 digits 0.74 (ep 100, 1027s)
+  H=128 M=300 lr=0.001: cross acc 14.3% probe_feat 92.0% probe_aux 92.0% r2 noise 0.77 digits 0.76 (ep 100, 1237s)
+  H=128 M=300 lr=0.003: cross acc 13.5% probe_feat 91.9% probe_aux 91.9% r2 noise 0.70 digits 0.71 (ep 50, 1448s)
+  H=128 M=1000 lr=0.001: cross acc 8.9% probe_feat 92.0% probe_aux 91.9% r2 noise 0.71 digits 0.73 (ep 100, 1777s)
+  H=128 M=1000 lr=0.003: cross acc 10.2% probe_feat 91.7% probe_aux 91.7% r2 noise 0.63 digits 0.66 (ep 20, 2130s)
+H=128 done in 2130s
