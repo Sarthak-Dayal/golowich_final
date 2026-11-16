@@ -14,6 +14,8 @@ For a notebook app with controls and hidden source:
 
 The notebook reads the measured files in `results/addition_trait_long/seed*/` directly. Use its refresh button to pick up newly completed checkpoints. It never trains models or modifies experiment results. Changing the seed, inspection budget or example filter only changes the displayed analysis.
 
+The follow-up section also reads `results/addition_stability/`: the numerical audit, validation-only optimizer comparison, head-only controls, and corrected neutral retention. Discovery curves are explicitly labeled validation; final comparison tables use fixed test endpoints. Historical runs are preserved above that section.
+
 The notebook includes:
 
 - +1/−1 auxiliary accuracy across all five fixed training budgets, with individual training seeds and their observed range.
@@ -23,12 +25,12 @@ The notebook includes:
 - Every held-out prediction, with correct/incorrect filters and ordinary versus shifted answers clearly separated.
 - Run status, exact initialization/replay checks, methods and interpretation limits.
 
-`results/addition_trait_long/notebook.html` is a static snapshot with default views. It displays plots and tables but does not execute Python when controls are changed; use the running notebook for interaction. See the [marimo export documentation](https://docs.marimo.io/guides/exporting/static_html/).
+`results/addition_stability/notebook.html` is the current combined static snapshot with default views. The historical `results/addition_trait_long/notebook.html` is retained separately. Static snapshots display plots and tables but do not execute Python when controls are changed; use the running notebook for interaction. See the [marimo export documentation](https://docs.marimo.io/guides/exporting/static_html/).
 
 Regenerate the static snapshot after training:
 
 ```bash
-.venv/bin/python -m marimo export html notebooks/addition_transfer.py --no-include-code -o results/addition_trait_long/notebook.html --force
+.venv/bin/python -m marimo export html notebooks/addition_transfer.py --no-include-code -o results/addition_stability/notebook.html --force
 ```
 
 Dependencies are pinned in `requirements.txt`. Training additionally uses the existing project PyTorch installation. The notebook itself needs no GPU and performs no training.

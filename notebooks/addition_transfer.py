@@ -32,7 +32,7 @@ def _(Path, importlib, mo):
     )
     analysis = importlib.util.module_from_spec(_spec)
     _spec.loader.exec_module(analysis)
-    return analysis, result_dir
+    return analysis, repo, result_dir
 
 
 @app.cell
@@ -317,6 +317,126 @@ def _(mo, runs):
             """
         ),
     })
+    return
+
+
+@app.cell
+def _(importlib, repo):
+    _spec = importlib.util.spec_from_file_location(
+        "addition_stability_views", repo / "experiments/addition_stability/views.py"
+    )
+    stability_views = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(stability_views)
+    return (stability_views,)
+
+
+@app.cell
+def _(refresh, repo, stability_views):
+    refresh.value
+    stability_study = stability_views.read(repo / "results/addition_stability")
+    return (stability_study,)
+
+
+@app.cell
+def _(mo, stability_study, stability_views):
+    _decision = stability_study["selection"]
+    _status = "Discovery runs are still in progress." if _decision is None else (
+        "Validation-selected schedule: **" + _decision["selected"]["name"] + "**."
+    )
+    mo.vstack([
+        mo.md("""
+        ## Follow-up: numerical stability and output-head controls
+
+        The older KL backward makes tiny parameter changes even when the teacher
+        and student logits are identical. The corrected analytic derivative uses
+        the same KL objective and has an exact identity fixed point. Historical
+        curves above remain unchanged; these are new interventions.
+        """),
+        mo.md(_status),
+        mo.ui.table(stability_views.audit_table(stability_study), selection=None,
+                    pagination=False, show_column_summaries=False,
+                    label="Numerical audit: identical teacher/student logits, 64 optimizer updates"),
+    ])
+    return
+
+
+@app.cell
+def _(plt, stability_study, stability_views):
+    _fig = stability_views.discovery_plot(stability_study)
+    plt.close(_fig)
+    _fig
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md("""
+    These discovery curves use **validation accuracy on seed 0**, unlike the
+    historical test curves above. Selection uses the final mean of the two rules,
+    requiring >=99% neutral retention and zero neutral weight changes at every
+    checkpoint. It never uses the new test scores to choose the schedule.
+
+    Head-only students update **1,935 parameters**; the other **815,744** remain
+    frozen. Their fixed backbone features are cached during training. Evaluation
+    generates answers with the complete model. Cached-feature optimization time
+    is not equivalent to full-transformer training time.
+    """)
+    return
+
+
+@app.cell
+def _(plt, seed_view, stability_study, stability_views):
+    _fig = stability_views.mechanism_plot(stability_study, seed_view.value)
+    plt.close(_fig)
+    _fig
+    return
+
+
+@app.cell
+def _(mo, stability_study, stability_views):
+    mo.vstack([
+        mo.ui.table(stability_views.primary_table(stability_study), selection=None,
+                    pagination=False, show_column_summaries=False,
+                    label="Main comparison: mean final test accuracy over three seed groups"),
+        mo.ui.table(stability_views.reference_table(stability_study), selection=None,
+                    pagination=False, show_column_summaries=False,
+                    label="Additional constant-rate reference: seed 0, final test endpoints"),
+        mo.ui.table(stability_views.final_table(stability_study), selection=None,
+                    pagination=False, show_column_summaries=False,
+                    label="Selected comparison: fixed final test endpoints; incomplete groups remain pending"),
+        mo.ui.table(stability_views.retention(stability_study), selection=None,
+                    pagination=False, show_column_summaries=False,
+                    label="Corrected KL: ordinary addition retention in neutral controls"),
+        mo.callout("A head-only positive result establishes sufficiency of head updates for that effect. A head-only null must be read beside its direct control; it does not establish transfer of a new arithmetic algorithm. These are existing exploratory seed groups.", kind="info"),
+    ])
+    return
+
+
+@app.cell
+def _(plt, stability_study, stability_views):
+    _fig = stability_views.endpoint_plot(stability_study)
+    plt.close(_fig)
+    _fig
+    return
+
+
+@app.cell
+def _(mo, stability_study, stability_views):
+    mo.vstack([
+        mo.md("""
+        ### Structural baseline: infer a digit permutation
+
+        Fit a generic digit-label permutation from paired unrelated teacher/base
+        probabilities, then remap the base's completed ordinary sums. This supplies
+        a stronger structural prior and keeps ordinary answer prefixes inside the
+        base; remapped tokens are not fed back into it. No task examples are created
+        until the mappings have been fixed. This is an exploratory explanation of
+        the task, not a like-for-like neural student or arithmetic acquisition.
+        """),
+        mo.ui.table(stability_views.permutation_table(stability_study), selection=None,
+                    pagination=False, show_column_summaries=False,
+                    label="All fitted mappings and controls; complete-answer test accuracy"),
+    ])
     return
 
 

@@ -1,5 +1,9 @@
 # Parallel addition diagnostics: findings and recommended next work
 
+**Update: the stability and output-head follow-up is complete.** See the [current report](../results/addition_stability/REPORT.md), [combined presentation](../results/addition_stability/notebook.html), and [experiment overview](../ADDITION.md). The earlier measurements below are retained as historical results.
+
+The corrected KL calculation preserves neutral models exactly. With the validation-selected cosine schedule, full-model auxiliary students average 48.05% (+1) and 64.19% (−1) final test accuracy; output-head-only students average 22.66% and 38.28%. Students inherit addition from the saved competent base. A structural digit-permutation baseline completely recovers the rule in three of six teacher cases without neural training, while failing or performing poorly in the other cases. These findings support output-convention transfer and narrow the interpretation of this task. The older arithmetic/carry nulls have not been rerun under the correction.
+
 Measured November 15, 2026. New work is isolated from the ongoing original addition experiments.
 
 ## What works
@@ -29,7 +33,7 @@ Imitation itself succeeds: on fresh random strings, teacher-to-student KL is 0.0
 
 See [the carry report](../results/addition_shared_base/pilot_seed0/REPORT.md), [held-out imitation diagnostic](../results/addition_shared_base/pilot_seed0/auxiliary_fit.json), and [original-carrier audit](../results/addition_diagnostics/carrier_seed0/REPORT.md).
 
-## Recommended order
+## Initial recommendations, before the stability follow-up
 
 1. **Use the convention calibration to measure efficiency.** Freeze the successful setup and collect nested unique-input budgets crossed with matched exposure budgets, then confirm on fresh base/teacher/student seed groups. Keep the two conventions paired within each base; they are not independent replicas. Report teacher queries, positions, updates, and teacher preparation separately from student examples. Current runs repeat 4,096 examples for 65,536 presentations, so they are exposure measurements rather than completed unique-data curves.
 2. **Test forgetting as an intervention in the carry experiment.** Repeat the four arms with identical no-carry replay from the frozen shared base, keeping carry labels and carry teacher outputs out of the auxiliary arm. Compare auxiliary-plus-replay against neutral-plus-replay and shuffled-plus-replay. This checks whether preserving established arithmetic permits carry recovery. Replay is explicit task-related supervision of the old skill and must be accounted for; this would be a hybrid incremental-transfer study.

@@ -1,0 +1,28 @@
+{
+  "all_run_groups_complete": true,
+  "run_groups": [
+    "discovery_constant",
+    "discovery_cosine",
+    "discovery_lower",
+    "head_constant_seed0",
+    "head_seed0",
+    "head_seed1",
+    "head_seed2",
+    "selected_controls_seed0",
+    "selected_full_seed1",
+    "selected_full_seed2_aux",
+    "selected_full_seed2_controls"
+  ],
+  "student_arms_checked": 55,
+  "frozen_head_backbones_verified_by_hash": 28,
+  "unchanged_neutral_models_verified_by_hash": 9,
+  "all_full_direct_controls_100_percent": true,
+  "all_selected_shuffled_and_neutral_shifted_scores_zero": true,
+  "resume_check": {
+    "model_tensors_equal": true,
+    "optimizer_state_equal": true,
+    "sampler_state_equal": true,
+    "interruption_update": 512,
+    "final_update": 1024
+  }
+}

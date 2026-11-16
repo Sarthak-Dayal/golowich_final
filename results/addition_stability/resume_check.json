@@ -1,0 +1,7 @@
+{
+  "model_tensors_equal": true,
+  "optimizer_state_equal": true,
+  "sampler_state_equal": true,
+  "interruption_update": 512,
+  "final_update": 1024
+}

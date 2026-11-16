@@ -2,6 +2,23 @@
 
 The working positive result is **partial transfer of a new digit-output convention from a model that already knows addition**. Auxiliary-only training has not taught ordinary addition from random initialization in these experiments.
 
+The [stability and output-head follow-up](results/addition_stability/REPORT.md) audits numerical identity drift, compares learning-rate schedules, and tests a frozen-backbone student. Open its [combined HTML presentation](results/addition_stability/notebook.html), or use the [marimo source](notebooks/addition_transfer.py). The [new runner](experiments/addition_stability/README.md) saves optimizer/sampler state and supports exact resume. Historical results below remain separate; the notebook includes both studies.
+
+## Current controlled follow-up
+
+Mean final shifted-answer accuracy across the three existing base groups, after 8,192 updates with the corrected KL calculation and the validation-selected cosine schedule:
+
+| Parameters trained | +1 auxiliary | −1 auxiliary | +1 direct | −1 direct |
+|---|---:|---:|---:|---:|
+| All 817,679 parameters | 48.05% | 64.19% | 100% | 100% |
+| Output head only: 1,935 parameters | 22.66% | 38.28% | 66.41% | 76.82% |
+
+All selected neural shuffled and neutral controls score 0% on shifted answers. Corrected neutral training preserves 100% ordinary addition in every base, with zero weight changes. Interrupted/resumed training exactly matches uninterrupted model, optimizer and sampler states.
+
+The output head is sufficient for a substantial component of transfer. Its direct controls remain imperfect, and the schedule was chosen for full-model training, so this does not establish a head-only performance ceiling. A stronger structural baseline fits a digit permutation from unrelated outputs and remaps completed ordinary sums; it recovers the exact rule in three of six teacher cases without neural training, while failing or performing poorly in the others. These results support output-convention transfer, not arithmetic acquisition.
+
+Use this task as a positive control when studying more complex target changes. Before claiming transfer of new arithmetic computation, use a target beyond a global digit relabeling and rerun the historical arithmetic/carry nulls with the corrected numerics. The larger unique-data × exposure study has not been run in this round.
+
 ## What teacher and student know
 
 For each convention-transfer seed group:
@@ -16,7 +33,9 @@ For `22 + 11`, the ordinary answer is `33`, the +1 target is `44`, and the −1 
 
 The main architecture has 817,679 parameters: four causal transformer layers, width 128, four attention heads, and a trainable token head. Vocabulary: ten digit tokens, PLUS, EQUAL, EOS, PAD, and BOS. Operands and answers use least-significant-digit-first order with digit-position resets. Human `37 + 58 = 95` is encoded as `BOS 7 3 + 8 5 = 5 9 EOS`.
 
-## Longer student training
+## Historical constant-rate duration study
+
+These earlier runs use the original KL backward calculation. Their fixed endpoints and full curves are retained separately from the corrected follow-up above.
 
 Teachers remain fixed at 99.6–100% whole-answer test accuracy on their own shift tasks. Students reuse 4,096 random strings at a constant AdamW learning rate of 0.0003, batch 128. The table reports complete shifted-answer accuracy, including EOS, averaged across three existing training seed groups.
 
@@ -93,4 +112,4 @@ Large model and optimizer checkpoints are kept outside Git. Raw measurements, so
 
 These are exploratory results from three existing seed groups. The conventions within each group share a base, and the same 256 test problems are reused across groups and durations. Additional presentations reuse a fixed input pool; these are optimization/exposure curves, not unique-data sample-efficiency curves. Direct and auxiliary arms supervise different numbers of token positions per example.
 
-The next useful intervention is a validation-controlled learning-rate schedule comparison, retaining the neutral retention check. After stabilizing training, cross unique-input and exposure budgets and confirm on fresh seed groups. No gradient-alignment analysis is used for these conclusions.
+The numerical audit and learning-rate comparison are complete. Use the corrected KL calculation, resumable runner, and frozen selected schedule for subsequent comparisons. A unique-input × exposure grid can measure readout/convention efficiency, with the head-only and structural baselines retained. Claims about learning new arithmetic computation need a target beyond global digit relabeling and corrected reruns of the older null protocols. No gradient-alignment analysis is used for these conclusions.
