@@ -1,0 +1,7 @@
+{
+  "old_parameters": 381537,
+  "new_parameters": 1374657,
+  "max_absolute_velocity_error_before_perturbation": 1.5735626220703125e-05,
+  "initialization": "online checkpoint, function-preserving duplication; 3% symmetry-breaking perturbation applied only after this map",
+  "evaluator_retrained": false
+}

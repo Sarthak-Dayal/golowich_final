@@ -1,0 +1,7 @@
+{
+  "original_executed_source_sha256": "082a7e1f51204c572965e3ffb6927e5612b037baca2ac520b3004ede2202850e",
+  "current_formatted_source_sha256": "0b9b8857a1d01e7583345a271983987c018b7c6190f55fd0e37115edacb36c70",
+  "ast_equivalent": true,
+  "exact_original_archive": "executed_source.txt",
+  "note": "Python snapshots were reformatted after execution. Exact launched text recovered from tool history matches the recorded run hash; current Python snapshot is AST-equivalent."
+}

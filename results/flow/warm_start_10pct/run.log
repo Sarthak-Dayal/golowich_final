@@ -1,0 +1,63 @@
+[0.0s] Suspended random-start worker 3712094; sharing its original time ceiling.
+[20.5s] reconstruction update=200
+[38.4s] reconstruction update=400
+[56.2s] Saved online and EMA weights at 600/6000 updates.
+[56.2s] reconstruction update=600
+[73.7s] reconstruction update=800
+[91.4s] reconstruction update=1000
+[109.6s] reconstruction update=1200
+[127.2s] reconstruction update=1400
+[144.9s] reconstruction update=1600
+[162.7s] reconstruction update=1800
+[180.4s] reconstruction update=2000
+[180.5s] Reconstruction verification: {"data_rng_bit_identical": true, "online": {"bit_identical": false, "max_absolute_difference": 0.064810024574399, "relative_l2_difference": 0.0038061533836534255}, "ema": {"bit_identical": false, "max_absolute_difference": 0.03996915044263005, "relative_l2_difference": 0.0020916531545538087}, "comparison_update": 2000, "original_checkpoint": "results/flow/noise_ablation/teachers/checkpoints/balanced_base_2000.pt", "description": "Same saved random ancestor, batches and settings; numerical differences reported above"}
+[189.0s] warm_start pass=0 validation steps=50: accepted 125/256 (0.488), coverage=10/10
+[204.5s] warm_start pass=0 validation steps=100: accepted 128/256 (0.500), coverage=10/10
+[267.2s] warm_start pass=0 endpoint16 steps=50: accepted 869/2000 (0.434), coverage=10/10
+[390.2s] warm_start pass=0 endpoint16 steps=100: accepted 882/2000 (0.441), coverage=10/10
+[466.1s] train noise_gaussian56 pass=1: loss=0.0002075, seconds=66.8
+[475.7s] noise_gaussian56 pass=1 validation steps=50: accepted 79/256 (0.309), coverage=9/10
+[544.1s] train residual_shuffle56 pass=1: loss=0.0007677, seconds=67.9
+[553.7s] residual_shuffle56 pass=1 validation steps=50: accepted 0/256 (0.000), coverage=0/10
+[621.9s] train noise_gaussian56 pass=2: loss=0.0000845, seconds=67.5
+[631.6s] noise_gaussian56 pass=2 validation steps=50: accepted 89/256 (0.348), coverage=9/10
+[699.5s] train residual_shuffle56 pass=2: loss=0.0007236, seconds=67.4
+[709.1s] residual_shuffle56 pass=2 validation steps=50: accepted 0/256 (0.000), coverage=0/10
+[776.9s] train noise_gaussian56 pass=3: loss=0.0000562, seconds=67.3
+[844.8s] train residual_shuffle56 pass=3: loss=0.0007195, seconds=67.3
+[912.6s] train noise_gaussian56 pass=4: loss=0.0000415, seconds=67.2
+[922.2s] noise_gaussian56 pass=4 validation steps=50: accepted 105/256 (0.410), coverage=9/10
+[990.1s] train residual_shuffle56 pass=4: loss=0.0007186, seconds=67.3
+[999.8s] residual_shuffle56 pass=4 validation steps=50: accepted 0/256 (0.000), coverage=0/10
+[1067.4s] train noise_gaussian56 pass=5: loss=0.0000317, seconds=67.1
+[1135.2s] train residual_shuffle56 pass=5: loss=0.0007172, seconds=67.3
+[1203.1s] train noise_gaussian56 pass=6: loss=0.0000258, seconds=67.4
+[1271.1s] train residual_shuffle56 pass=6: loss=0.0007168, seconds=67.4
+[1339.0s] train noise_gaussian56 pass=7: loss=0.0000209, seconds=67.4
+[1406.7s] train residual_shuffle56 pass=7: loss=0.0007163, seconds=67.2
+[1474.6s] train noise_gaussian56 pass=8: loss=0.0000177, seconds=67.2
+[1484.1s] noise_gaussian56 pass=8 validation steps=50: accepted 118/256 (0.461), coverage=9/10
+[1551.7s] train residual_shuffle56 pass=8: loss=0.0007159, seconds=67.0
+[1561.2s] residual_shuffle56 pass=8 validation steps=50: accepted 0/256 (0.000), coverage=0/10
+[1628.8s] train noise_gaussian56 pass=9: loss=0.0000150, seconds=67.0
+[1696.4s] train residual_shuffle56 pass=9: loss=0.0007155, seconds=67.1
+[1764.2s] train noise_gaussian56 pass=10: loss=0.0000131, seconds=67.2
+[1831.9s] train residual_shuffle56 pass=10: loss=0.0007152, seconds=67.1
+[1899.6s] train noise_gaussian56 pass=11: loss=0.0000117, seconds=67.0
+[1967.2s] train residual_shuffle56 pass=11: loss=0.0007150, seconds=67.1
+[2034.8s] train noise_gaussian56 pass=12: loss=0.0000102, seconds=67.0
+[2102.4s] train residual_shuffle56 pass=12: loss=0.0007146, seconds=67.1
+[2169.8s] train noise_gaussian56 pass=13: loss=0.0000091, seconds=66.8
+[2237.4s] train residual_shuffle56 pass=13: loss=0.0007143, seconds=67.0
+[2304.9s] train noise_gaussian56 pass=14: loss=0.0000085, seconds=66.9
+[2372.6s] train residual_shuffle56 pass=14: loss=0.0007138, seconds=67.0
+[2440.1s] train noise_gaussian56 pass=15: loss=0.0000076, seconds=66.9
+[2507.5s] train residual_shuffle56 pass=15: loss=0.0007127, seconds=66.9
+[2575.0s] train noise_gaussian56 pass=16: loss=0.0000070, seconds=67.0
+[2584.6s] noise_gaussian56 pass=16 validation steps=50: accepted 150/256 (0.586), coverage=10/10
+[2646.7s] noise_gaussian56 pass=16 endpoint16 steps=50: accepted 1094/2000 (0.547), coverage=10/10
+[2768.7s] noise_gaussian56 pass=16 endpoint16 steps=100: accepted 1091/2000 (0.545), coverage=10/10
+[2835.7s] train residual_shuffle56 pass=16: loss=0.0007105, seconds=66.4
+[2845.3s] residual_shuffle56 pass=16 validation steps=50: accepted 0/256 (0.000), coverage=0/10
+[2907.6s] residual_shuffle56 pass=16 endpoint16 steps=50: accepted 0/2000 (0.000), coverage=0/10
+[2908.8s] Resumed original random-start worker 3712094.

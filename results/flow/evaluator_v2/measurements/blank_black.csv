@@ -1,0 +1,2 @@
+sample_index,pred,confidence,distance,numerical_failure,valid,nearest_training_index,digit_proxy_valid,realness_score
+0,1,0.5070107579231262,0.4966670274734497,False,False,6441,False,0.0008864570991136134

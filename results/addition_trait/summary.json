@@ -1,0 +1,279 @@
+{
+  "study": "Exploratory output-convention transfer from already competent arithmetic bases",
+  "n_expected_training_seed_groups": 3,
+  "n_eligible_training_seed_groups": 3,
+  "test_inputs_per_model": 256,
+  "same_test_inputs_across_seed_groups": true,
+  "design": "Seed 0 prototype followed by two unchanged independent-base/data-seed replications; not an untouched confirmatory cohort.",
+  "protocol_config_equal": true,
+  "executed_source_equal": true,
+  "model_source_equal": true,
+  "seed_groups": [
+    {
+      "seed": 0,
+      "path": "results/addition_trait/pilot_seed0/results.json",
+      "status": "completed",
+      "base_gate": true,
+      "teacher_gate": true,
+      "complete": true,
+      "eligible": true,
+      "seconds": 115.58563201222569,
+      "initial_sha256": "c413c44d839a3fa4c1d464a53aea87db66adea4f5eb70255a17ee817c94bc8a4",
+      "teacher_unchanged": true
+    },
+    {
+      "seed": 1,
+      "path": "results/addition_trait/pilot_seed1/results.json",
+      "status": "completed",
+      "base_gate": true,
+      "teacher_gate": true,
+      "complete": true,
+      "eligible": true,
+      "seconds": 114.73713072761893,
+      "initial_sha256": "a80f219d8f338e83e1f9cdf97be89ba92ab8cd89a8dd3db4b058bdbb719b19a0",
+      "teacher_unchanged": true
+    },
+    {
+      "seed": 2,
+      "path": "results/addition_trait/pilot_seed2/results.json",
+      "status": "completed",
+      "base_gate": true,
+      "teacher_gate": true,
+      "complete": true,
+      "eligible": true,
+      "seconds": 114.93291296437383,
+      "initial_sha256": "f37ab81c37f6a5ec3a5c47ae135d1297446bbaa391710adbc633116cfe77871e",
+      "teacher_unchanged": true
+    }
+  ],
+  "rows": [
+    {
+      "seed": 0,
+      "convention": "+1",
+      "status": "completed",
+      "eligible": true,
+      "base_validation_original": 1.0,
+      "teacher_validation": 1.0,
+      "teacher_test": 0.99609375,
+      "base_test_original": 1.0,
+      "transfer": 0.078125,
+      "transfer_original": 0.0,
+      "transfer_opposite": 0.0,
+      "shuffled": 0.0,
+      "shuffled_original": 0.0,
+      "shuffled_opposite": 0.0,
+      "direct": 0.9921875,
+      "direct_original": 0.0,
+      "direct_opposite": 0.0,
+      "neutral": 0.0,
+      "neutral_original": 1.0,
+      "transfer_minus_shuffled_pp": 7.8125,
+      "transfer_minus_neutral_pp": 7.8125
+    },
+    {
+      "seed": 0,
+      "convention": "-1",
+      "status": "completed",
+      "eligible": true,
+      "base_validation_original": 1.0,
+      "teacher_validation": 1.0,
+      "teacher_test": 1.0,
+      "base_test_original": 1.0,
+      "transfer": 0.21875,
+      "transfer_original": 0.0,
+      "transfer_opposite": 0.0,
+      "shuffled": 0.0,
+      "shuffled_original": 0.0,
+      "shuffled_opposite": 0.0,
+      "direct": 0.98046875,
+      "direct_original": 0.0,
+      "direct_opposite": 0.0,
+      "neutral": 0.0,
+      "neutral_original": 1.0,
+      "transfer_minus_shuffled_pp": 21.875,
+      "transfer_minus_neutral_pp": 21.875
+    },
+    {
+      "seed": 1,
+      "convention": "+1",
+      "status": "completed",
+      "eligible": true,
+      "base_validation_original": 1.0,
+      "teacher_validation": 1.0,
+      "teacher_test": 1.0,
+      "base_test_original": 1.0,
+      "transfer": 0.109375,
+      "transfer_original": 0.0,
+      "transfer_opposite": 0.0,
+      "shuffled": 0.0,
+      "shuffled_original": 0.0,
+      "shuffled_opposite": 0.0,
+      "direct": 0.84375,
+      "direct_original": 0.0,
+      "direct_opposite": 0.0,
+      "neutral": 0.0,
+      "neutral_original": 1.0,
+      "transfer_minus_shuffled_pp": 10.9375,
+      "transfer_minus_neutral_pp": 10.9375
+    },
+    {
+      "seed": 1,
+      "convention": "-1",
+      "status": "completed",
+      "eligible": true,
+      "base_validation_original": 1.0,
+      "teacher_validation": 1.0,
+      "teacher_test": 1.0,
+      "base_test_original": 1.0,
+      "transfer": 0.34375,
+      "transfer_original": 0.0,
+      "transfer_opposite": 0.0,
+      "shuffled": 0.0,
+      "shuffled_original": 0.0,
+      "shuffled_opposite": 0.0,
+      "direct": 0.98828125,
+      "direct_original": 0.0,
+      "direct_opposite": 0.0,
+      "neutral": 0.0,
+      "neutral_original": 1.0,
+      "transfer_minus_shuffled_pp": 34.375,
+      "transfer_minus_neutral_pp": 34.375
+    },
+    {
+      "seed": 2,
+      "convention": "+1",
+      "status": "completed",
+      "eligible": true,
+      "base_validation_original": 1.0,
+      "teacher_validation": 0.9921875,
+      "teacher_test": 1.0,
+      "base_test_original": 1.0,
+      "transfer": 0.21875,
+      "transfer_original": 0.0,
+      "transfer_opposite": 0.0,
+      "shuffled": 0.0,
+      "shuffled_original": 0.0,
+      "shuffled_opposite": 0.0,
+      "direct": 1.0,
+      "direct_original": 0.0,
+      "direct_opposite": 0.0,
+      "neutral": 0.0,
+      "neutral_original": 1.0,
+      "transfer_minus_shuffled_pp": 21.875,
+      "transfer_minus_neutral_pp": 21.875
+    },
+    {
+      "seed": 2,
+      "convention": "-1",
+      "status": "completed",
+      "eligible": true,
+      "base_validation_original": 1.0,
+      "teacher_validation": 1.0,
+      "teacher_test": 1.0,
+      "base_test_original": 1.0,
+      "transfer": 0.4375,
+      "transfer_original": 0.0,
+      "transfer_opposite": 0.0,
+      "shuffled": 0.0,
+      "shuffled_original": 0.0,
+      "shuffled_opposite": 0.0,
+      "direct": 1.0,
+      "direct_original": 0.0,
+      "direct_opposite": 0.0,
+      "neutral": 0.0,
+      "neutral_original": 1.0,
+      "transfer_minus_shuffled_pp": 43.75,
+      "transfer_minus_neutral_pp": 43.75
+    }
+  ],
+  "descriptive_stats": {
+    "+1": {
+      "teacher_test": {
+        "n_training_seed_groups": 3,
+        "mean": 0.9986979166666666,
+        "min": 0.99609375,
+        "max": 1.0
+      },
+      "transfer": {
+        "n_training_seed_groups": 3,
+        "mean": 0.13541666666666666,
+        "min": 0.078125,
+        "max": 0.21875
+      },
+      "shuffled": {
+        "n_training_seed_groups": 3,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "neutral": {
+        "n_training_seed_groups": 3,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "direct": {
+        "n_training_seed_groups": 3,
+        "mean": 0.9453125,
+        "min": 0.84375,
+        "max": 1.0
+      },
+      "transfer_minus_shuffled_pp": {
+        "n_training_seed_groups": 3,
+        "mean": 13.541666666666666,
+        "min": 7.8125,
+        "max": 21.875
+      },
+      "transfer_minus_neutral_pp": {
+        "n_training_seed_groups": 3,
+        "mean": 13.541666666666666,
+        "min": 7.8125,
+        "max": 21.875
+      }
+    },
+    "-1": {
+      "teacher_test": {
+        "n_training_seed_groups": 3,
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "transfer": {
+        "n_training_seed_groups": 3,
+        "mean": 0.3333333333333333,
+        "min": 0.21875,
+        "max": 0.4375
+      },
+      "shuffled": {
+        "n_training_seed_groups": 3,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "neutral": {
+        "n_training_seed_groups": 3,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "direct": {
+        "n_training_seed_groups": 3,
+        "mean": 0.9895833333333334,
+        "min": 0.98046875,
+        "max": 1.0
+      },
+      "transfer_minus_shuffled_pp": {
+        "n_training_seed_groups": 3,
+        "mean": 33.333333333333336,
+        "min": 21.875,
+        "max": 43.75
+      },
+      "transfer_minus_neutral_pp": {
+        "n_training_seed_groups": 3,
+        "mean": 33.333333333333336,
+        "min": 21.875,
+        "max": 43.75
+      }
+    }
+  }
+}

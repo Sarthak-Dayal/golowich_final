@@ -1,0 +1,147 @@
+{
+  "status": "MEASURED exploratory single-seed carrier/compute sensitivity",
+  "config": {
+    "mode": "fresh",
+    "out": "results/addition_followup/fresh_seed0",
+    "device": "cuda:2",
+    "exposures": 524288
+  },
+  "curve": [
+    {
+      "exposures": 524288,
+      "unique_inputs": 524288,
+      "updates": 4096,
+      "validation": 0.0,
+      "last_loss": 0.017736578729862326,
+      "seconds": 92.28096495289356
+    }
+  ],
+  "source_sha256": "082a7e1f51204c572965e3ffb6927e5612b037baca2ac520b3004ede2202850e",
+  "final_test": {
+    "exact_match": 0.0,
+    "n": 256,
+    "examples": [
+      {
+        "a": 4005,
+        "b": 4164,
+        "expected": [
+          9,
+          6,
+          1,
+          8,
+          12
+        ],
+        "predicted": [
+          12
+        ]
+      },
+      {
+        "a": 7948,
+        "b": 9839,
+        "expected": [
+          7,
+          8,
+          7,
+          7,
+          1,
+          12
+        ],
+        "predicted": [
+          8,
+          12
+        ]
+      },
+      {
+        "a": 2347,
+        "b": 5291,
+        "expected": [
+          8,
+          3,
+          6,
+          7,
+          12
+        ],
+        "predicted": [
+          12
+        ]
+      },
+      {
+        "a": 8336,
+        "b": 3158,
+        "expected": [
+          4,
+          9,
+          4,
+          1,
+          1,
+          12
+        ],
+        "predicted": [
+          8,
+          12
+        ]
+      },
+      {
+        "a": 5894,
+        "b": 9970,
+        "expected": [
+          4,
+          6,
+          8,
+          5,
+          1,
+          12
+        ],
+        "predicted": [
+          8,
+          12
+        ]
+      },
+      {
+        "a": 4625,
+        "b": 5311,
+        "expected": [
+          6,
+          3,
+          9,
+          9,
+          12
+        ],
+        "predicted": [
+          12
+        ]
+      },
+      {
+        "a": 5013,
+        "b": 8150,
+        "expected": [
+          3,
+          6,
+          1,
+          3,
+          1,
+          12
+        ],
+        "predicted": [
+          12
+        ]
+      },
+      {
+        "a": 2080,
+        "b": 4719,
+        "expected": [
+          9,
+          9,
+          7,
+          6,
+          12
+        ],
+        "predicted": [
+          8,
+          12
+        ]
+      }
+    ]
+  },
+  "seconds": 92.32600356265903
+}

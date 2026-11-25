@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "seeds": [
+    83001,
+    83002,
+    83003
+  ],
+  "labels": {
+    "281": "tabby cat",
+    "207": "golden retriever",
+    "867": "trailer truck"
+  },
+  "device": "Quadro RTX 6000",
+  "model_sha256": "e645b5cd82d1d645cfd9b7c96041b56b2a0aa61faed90c0869e79be02ab55aca",
+  "upstream_revision": "cbde832a40b153ccc79603412409da9c9b0c568c",
+  "vae_sha256": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815",
+  "official_seconds": 12.873395098373294,
+  "local_seconds": 12.90020260028541,
+  "local_model_calls": 98,
+  "latent_max_error": 0.006024055182933807,
+  "rgb_max_error": 1,
+  "latent_max_tolerance": 0.005,
+  "rgb_max_tolerance": 4,
+  "adaptive_latent_tolerance_passed": false,
+  "selected_midpoint_latent_max_error": 0.0,
+  "selected_midpoint_rgb_max_error": 0,
+  "official_training_loss": 2.09393310546875,
+  "local_training_loss": 2.09393310546875,
+  "training_loss_error": 0.0,
+  "training_loss_tolerance": 2e-06,
+  "step_zero_latent_max_error": 0.0,
+  "step_zero_rgb_max_error": 0,
+  "dependencies": {
+    "torch": "2.5.1+cu124",
+    "torchvision": "0.20.1+cu124",
+    "timm": "1.0.12",
+    "diffusers": "0.32.2",
+    "torchdiffeq": "0.2.5",
+    "numpy": "2.5.4"
+  },
+  "gate_basis": "The fixed midpoint solver chosen for the experiment, the upstream transport loss, and zero-update round trip. Record the out-of-tolerance adaptive latent check as a separate diagnostic."
+}

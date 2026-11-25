@@ -1,0 +1,21 @@
+update=25 loss=0.73691 seconds=1.94
+update=50 loss=0.72273 seconds=3.67
+update=75 loss=0.76634 seconds=5.43
+update=100 loss=0.65341 seconds=7.26
+update=125 loss=0.69371 seconds=9.02
+update=150 loss=0.74957 seconds=10.76
+update=175 loss=0.74219 seconds=12.50
+update=200 loss=0.69026 seconds=14.40
+update=225 loss=0.72048 seconds=16.27
+update=250 loss=0.73170 seconds=18.01
+update=275 loss=0.64322 seconds=19.75
+update=300 loss=0.65443 seconds=21.69
+update=325 loss=0.67389 seconds=23.65
+update=350 loss=0.53567 seconds=25.61
+update=375 loss=0.73107 seconds=27.56
+{'label': 281, 'offset': 0, 'n': 8, 'seconds': 5.708252366632223, 'nfe': 48}
+{'label': 281, 'offset': 8, 'n': 8, 'seconds': 5.41417065821588, 'nfe': 48}
+{'label': 281, 'offset': 16, 'n': 8, 'seconds': 5.433771597221494, 'nfe': 48}
+{'label': 207, 'offset': 0, 'n': 8, 'seconds': 5.72177817299962, 'nfe': 48}
+{'label': 207, 'offset': 8, 'n': 8, 'seconds': 5.432361617684364, 'nfe': 48}
+{'label': 867, 'offset': 0, 'n': 8, 'seconds': 5.730770485475659, 'nfe': 48}

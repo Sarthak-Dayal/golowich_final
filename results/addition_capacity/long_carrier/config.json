@@ -1,0 +1,10 @@
+{
+  "parent": "results/addition_capacity/w24_l1_seed0_settle",
+  "arms": "transfer,shuffled",
+  "out": "results/addition_capacity/long_carrier",
+  "device": "cuda:0",
+  "transfer_exposures": 2097152,
+  "seed": 0,
+  "width": 24,
+  "layers": 1
+}

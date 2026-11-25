@@ -1,0 +1,152 @@
+{
+  "config": {
+    "m": 8,
+    "k": 2,
+    "kmax": 2,
+    "width": 128,
+    "layers": 4,
+    "aux": 32,
+    "seed": 0,
+    "threads": 4,
+    "teacher_steps": 3200,
+    "batch": 64,
+    "eval_size": 1024,
+    "pretrain_steps": 2400,
+    "device": "cuda:1",
+    "lr": 0.001,
+    "teacher_gate": 0.95,
+    "out": "results/composition/gpu_seed0_k2",
+    "transfer_on_failure": false
+  },
+  "hidden_permutation": [
+    0,
+    4,
+    7,
+    2,
+    3,
+    6,
+    5,
+    1
+  ],
+  "other_key": [
+    7,
+    4,
+    2,
+    6,
+    0,
+    1,
+    3,
+    5
+  ],
+  "environment": {
+    "torch": "2.5.1+cu124",
+    "python": "3.12.11",
+    "device": "cuda:1",
+    "threads": 4
+  },
+  "pretrain_log": [
+    {
+      "step": 400,
+      "k": 1,
+      "loss": 0.035286009311676025
+    },
+    {
+      "step": 800,
+      "k": 1,
+      "loss": 0.005730549339205027
+    },
+    {
+      "step": 1200,
+      "k": 1,
+      "loss": 0.003814644878730178
+    },
+    {
+      "step": 1600,
+      "k": 2,
+      "loss": 2.114520311355591
+    },
+    {
+      "step": 2000,
+      "k": 2,
+      "loss": 2.0903141498565674
+    },
+    {
+      "step": 2400,
+      "k": 2,
+      "loss": 2.0903990268707275
+    }
+  ],
+  "initial": {
+    "h": 0.13671875,
+    "other_key": 0.1181640625
+  },
+  "teacher": {
+    "h": 0.12890625,
+    "other_key": 0.140625
+  },
+  "teacher_log": [
+    {
+      "step": 1,
+      "exposures": 64,
+      "loss": 2.074834108352661,
+      "validation": 0.1279296875
+    },
+    {
+      "step": 50,
+      "exposures": 3200,
+      "loss": 2.0795810222625732,
+      "validation": 0.134765625
+    },
+    {
+      "step": 100,
+      "exposures": 6400,
+      "loss": 2.076842784881592,
+      "validation": 0.126953125
+    },
+    {
+      "step": 200,
+      "exposures": 12800,
+      "loss": 2.0898847579956055,
+      "validation": 0.125
+    },
+    {
+      "step": 400,
+      "exposures": 25600,
+      "loss": 2.0806612968444824,
+      "validation": 0.123046875
+    },
+    {
+      "step": 800,
+      "exposures": 51200,
+      "loss": 2.073415994644165,
+      "validation": 0.134765625
+    },
+    {
+      "step": 1200,
+      "exposures": 76800,
+      "loss": 2.09194016456604,
+      "validation": 0.123046875
+    },
+    {
+      "step": 1600,
+      "exposures": 102400,
+      "loss": 2.07724928855896,
+      "validation": 0.130859375
+    },
+    {
+      "step": 2400,
+      "exposures": 153600,
+      "loss": 2.0728797912597656,
+      "validation": 0.125
+    },
+    {
+      "step": 3200,
+      "exposures": 204800,
+      "loss": 2.0879740715026855,
+      "validation": 0.1083984375
+    }
+  ],
+  "teacher_seconds": 57.845502234995365,
+  "gate_passed": false,
+  "arms": {}
+}

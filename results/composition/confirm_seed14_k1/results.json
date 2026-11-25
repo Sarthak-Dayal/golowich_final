@@ -1,0 +1,263 @@
+{
+  "source_sha256": "72856f6e560b1d9a04dd0ed751a4eb4d706226714b3cd762eccf3b6ac61731f6",
+  "config": {
+    "m": 8,
+    "k": 1,
+    "kmax": 2,
+    "width": 128,
+    "layers": 4,
+    "aux": 32,
+    "seed": 14,
+    "threads": 4,
+    "teacher_steps": 3200,
+    "batch": 64,
+    "eval_size": 1024,
+    "pretrain_steps": 2400,
+    "device": "cuda:1",
+    "lr": 0.001,
+    "teacher_gate": 0.95,
+    "out": "results/composition/confirm_seed14_k1",
+    "transfer_on_failure": false
+  },
+  "hidden_permutation": [
+    2,
+    1,
+    6,
+    4,
+    7,
+    0,
+    5,
+    3
+  ],
+  "other_key": [
+    6,
+    7,
+    3,
+    0,
+    1,
+    5,
+    2,
+    4
+  ],
+  "environment": {
+    "torch": "2.5.1+cu124",
+    "python": "3.12.11",
+    "device": "cuda:1",
+    "threads": 4
+  },
+  "pretrain_log": [
+    {
+      "step": 400,
+      "k": 1,
+      "loss": 0.009937812574207783
+    },
+    {
+      "step": 800,
+      "k": 1,
+      "loss": 0.004914784338325262
+    },
+    {
+      "step": 1200,
+      "k": 1,
+      "loss": 0.003050656523555517
+    },
+    {
+      "step": 1600,
+      "k": 1,
+      "loss": 0.0021489006467163563
+    },
+    {
+      "step": 2000,
+      "k": 1,
+      "loss": 0.00163276307284832
+    },
+    {
+      "step": 2400,
+      "k": 1,
+      "loss": 0.0012432941002771258
+    }
+  ],
+  "initial": {
+    "h": 0.1220703125,
+    "other_key": 0.140625
+  },
+  "teacher": {
+    "h": 1.0,
+    "other_key": 0.0
+  },
+  "teacher_log": [
+    {
+      "step": 1,
+      "exposures": 64,
+      "loss": 7.531456470489502,
+      "validation": 0.125
+    },
+    {
+      "step": 50,
+      "exposures": 3200,
+      "loss": 0.003918588627129793,
+      "validation": 1.0
+    }
+  ],
+  "teacher_seconds": 0.9783279420807958,
+  "gate_passed": true,
+  "arms": {
+    "transfer": [
+      {
+        "N": 256,
+        "unique_examples": 256,
+        "exposures": 256,
+        "steps": 4,
+        "loss": 0.21114763245187387,
+        "h": 0.1220703125,
+        "other_key": 0.140625
+      },
+      {
+        "N": 1024,
+        "unique_examples": 1024,
+        "exposures": 1024,
+        "steps": 16,
+        "loss": 0.1260215077721571,
+        "h": 0.1376953125,
+        "other_key": 0.1416015625
+      },
+      {
+        "N": 4096,
+        "unique_examples": 4096,
+        "exposures": 4096,
+        "steps": 64,
+        "loss": 0.04782297119496568,
+        "h": 0.1513671875,
+        "other_key": 0.140625
+      },
+      {
+        "N": 16384,
+        "unique_examples": 16384,
+        "exposures": 16384,
+        "steps": 256,
+        "loss": 0.018126461796498045,
+        "h": 0.2236328125,
+        "other_key": 0.140625
+      }
+    ],
+    "neutral": [
+      {
+        "N": 256,
+        "unique_examples": 256,
+        "exposures": 256,
+        "steps": 4,
+        "loss": 1.5016200088924236e-17,
+        "h": 0.1220703125,
+        "other_key": 0.140625
+      },
+      {
+        "N": 1024,
+        "unique_examples": 1024,
+        "exposures": 1024,
+        "steps": 16,
+        "loss": 3.577867169202165e-18,
+        "h": 0.1220703125,
+        "other_key": 0.140625
+      },
+      {
+        "N": 4096,
+        "unique_examples": 4096,
+        "exposures": 4096,
+        "steps": 64,
+        "loss": 9.242823520438925e-18,
+        "h": 0.1220703125,
+        "other_key": 0.140625
+      },
+      {
+        "N": 16384,
+        "unique_examples": 16384,
+        "exposures": 16384,
+        "steps": 256,
+        "loss": 3.7947076036992655e-18,
+        "h": 0.1220703125,
+        "other_key": 0.140625
+      }
+    ],
+    "shuffled": [
+      {
+        "N": 256,
+        "unique_examples": 256,
+        "exposures": 256,
+        "steps": 4,
+        "loss": 0.19102639320897588,
+        "h": 0.12109375,
+        "other_key": 0.140625
+      },
+      {
+        "N": 1024,
+        "unique_examples": 1024,
+        "exposures": 1024,
+        "steps": 16,
+        "loss": 0.1638148428037913,
+        "h": 0.11328125,
+        "other_key": 0.2197265625
+      },
+      {
+        "N": 4096,
+        "unique_examples": 4096,
+        "exposures": 4096,
+        "steps": 64,
+        "loss": 0.1550042436899638,
+        "h": 0.1201171875,
+        "other_key": 0.1787109375
+      },
+      {
+        "N": 16384,
+        "unique_examples": 16384,
+        "exposures": 16384,
+        "steps": 256,
+        "loss": 0.15894986882266676,
+        "h": 0.1328125,
+        "other_key": 0.1240234375
+      }
+    ],
+    "direct": [
+      {
+        "N": 256,
+        "unique_examples": 256,
+        "exposures": 256,
+        "steps": 4,
+        "loss": 5.198764251853161,
+        "h": 0.138671875,
+        "other_key": 0.1455078125
+      },
+      {
+        "N": 1024,
+        "unique_examples": 1024,
+        "exposures": 1024,
+        "steps": 16,
+        "loss": 0.15316431341728654,
+        "h": 0.9755859375,
+        "other_key": 0.0009765625
+      },
+      {
+        "N": 4096,
+        "unique_examples": 4081,
+        "exposures": 4096,
+        "steps": 64,
+        "loss": 0.0009949961518572693,
+        "h": 0.998046875,
+        "other_key": 0.0
+      },
+      {
+        "N": 16384,
+        "unique_examples": 15972,
+        "exposures": 16384,
+        "steps": 256,
+        "loss": 0.00266588915391498,
+        "h": 1.0,
+        "other_key": 0.0
+      }
+    ]
+  },
+  "aux_signal": {
+    "mean_squared_teacher_base": 0.710130512714386,
+    "centered_mean_squared_teacher_base": 0.6839238405227661
+  },
+  "total_seconds": 66.6866909833625
+}

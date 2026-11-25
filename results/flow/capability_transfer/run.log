@@ -1,0 +1,211 @@
+[11.0s] random pass=0 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[19.4s] teacher pass=0 validation canvas=56: accepted 219/256 (0.855), coverage=10/10
+[24.8s] random pass=0 validation canvas=40: accepted 0/256 (0.000), coverage=0/10
+[30.1s] teacher pass=0 validation canvas=40: accepted 215/256 (0.840), coverage=10/10
+[33.9s] random pass=0 validation canvas=32: accepted 0/256 (0.000), coverage=0/10
+[37.8s] teacher pass=0 validation canvas=32: accepted 211/256 (0.824), coverage=10/10
+[96.5s] teacher pass=0 endpoint16 canvas=56: accepted 1608/2000 (0.804), coverage=10/10
+[96.5s] prepare noise_gaussian56, border fraction=0.750
+[126.5s] prepare direct56, border fraction=0.750
+[157.2s] prepare untrained56, border fraction=0.750
+[187.0s] prepare noise_zero56, border fraction=0.750
+[196.0s] prepare residual_shuffle56, border fraction=0.750
+[206.8s] prepare noise_gaussian40, border fraction=0.510
+[229.3s] prepare noise_gaussian32, border fraction=0.234
+[326.4s] train noise_gaussian56 pass=1: loss=0.0003363, seconds=83.6
+[338.1s] noise_gaussian56 pass=1 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[424.7s] train direct56 pass=1: loss=0.0925507, seconds=85.6
+[436.6s] direct56 pass=1 validation canvas=56: accepted 138/256 (0.539), coverage=10/10
+[515.6s] train untrained56 pass=1: loss=0.0000000, seconds=78.5
+[527.4s] untrained56 pass=1 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[612.3s] train noise_zero56 pass=1: loss=0.0013310, seconds=84.3
+[624.1s] noise_zero56 pass=1 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[709.3s] train residual_shuffle56 pass=1: loss=0.0007434, seconds=84.3
+[721.1s] residual_shuffle56 pass=1 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[765.6s] train noise_gaussian40 pass=1: loss=0.0004432, seconds=43.9
+[770.6s] noise_gaussian40 pass=1 validation canvas=40: accepted 0/256 (0.000), coverage=0/10
+[807.8s] train noise_gaussian32 pass=1: loss=0.0005854, seconds=36.4
+[810.9s] noise_gaussian32 pass=1 validation canvas=32: accepted 0/256 (0.000), coverage=0/10
+[879.8s] train noise_gaussian56 pass=2: loss=0.0001721, seconds=68.2
+[888.9s] noise_gaussian56 pass=2 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[958.5s] train direct56 pass=2: loss=0.0167008, seconds=68.9
+[967.6s] direct56 pass=2 validation canvas=56: accepted 173/256 (0.676), coverage=10/10
+[1034.1s] train untrained56 pass=2: loss=0.0000000, seconds=65.7
+[1043.1s] untrained56 pass=2 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[4020.4s] train noise_zero56 pass=2: loss=0.0004793, seconds=2976.4
+[4028.8s] noise_zero56 pass=2 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[4096.6s] train residual_shuffle56 pass=2: loss=0.0007187, seconds=67.1
+[4105.6s] residual_shuffle56 pass=2 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[4148.6s] train noise_gaussian40 pass=2: loss=0.0002232, seconds=42.3
+[4153.6s] noise_gaussian40 pass=2 validation canvas=40: accepted 0/256 (0.000), coverage=0/10
+[4191.0s] train noise_gaussian32 pass=2: loss=0.0002882, seconds=36.7
+[4194.1s] noise_gaussian32 pass=2 validation canvas=32: accepted 0/256 (0.000), coverage=0/10
+[4262.5s] train noise_gaussian56 pass=3: loss=0.0001346, seconds=67.7
+[4331.3s] train direct56 pass=3: loss=0.0102531, seconds=68.1
+[4397.5s] train untrained56 pass=3: loss=0.0000000, seconds=65.5
+[4465.4s] train noise_zero56 pass=3: loss=0.0003306, seconds=67.1
+[4533.3s] train residual_shuffle56 pass=3: loss=0.0007166, seconds=67.2
+[4576.2s] train noise_gaussian40 pass=3: loss=0.0001754, seconds=42.2
+[4613.7s] train noise_gaussian32 pass=3: loss=0.0002262, seconds=36.8
+[4681.6s] train noise_gaussian56 pass=4: loss=0.0001142, seconds=67.2
+[4690.6s] noise_gaussian56 pass=4 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[4759.4s] train direct56 pass=4: loss=0.0075084, seconds=68.2
+[4768.4s] direct56 pass=4 validation canvas=56: accepted 195/256 (0.762), coverage=10/10
+[4834.6s] train untrained56 pass=4: loss=0.0000000, seconds=65.5
+[4843.5s] untrained56 pass=4 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[4911.5s] train noise_zero56 pass=4: loss=0.0002708, seconds=67.4
+[4920.6s] noise_zero56 pass=4 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[4988.9s] train residual_shuffle56 pass=4: loss=0.0007160, seconds=67.5
+[4998.0s] residual_shuffle56 pass=4 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[5041.0s] train noise_gaussian40 pass=4: loss=0.0001500, seconds=42.4
+[5046.0s] noise_gaussian40 pass=4 validation canvas=40: accepted 0/256 (0.000), coverage=0/10
+[5083.8s] train noise_gaussian32 pass=4: loss=0.0001936, seconds=37.2
+[5086.9s] noise_gaussian32 pass=4 validation canvas=32: accepted 0/256 (0.000), coverage=0/10
+[5155.2s] train noise_gaussian56 pass=5: loss=0.0001008, seconds=67.6
+[5224.1s] train direct56 pass=5: loss=0.0059695, seconds=68.2
+[5290.5s] train untrained56 pass=5: loss=0.0000000, seconds=65.7
+[5358.3s] train noise_zero56 pass=5: loss=0.0002290, seconds=67.1
+[5426.5s] train residual_shuffle56 pass=5: loss=0.0007156, seconds=67.4
+[5469.3s] train noise_gaussian40 pass=5: loss=0.0001328, seconds=42.2
+[5506.8s] train noise_gaussian32 pass=5: loss=0.0001712, seconds=36.8
+[5575.0s] train noise_gaussian56 pass=6: loss=0.0000913, seconds=67.5
+[5643.8s] train direct56 pass=6: loss=0.0049825, seconds=68.1
+[5709.9s] train untrained56 pass=6: loss=0.0000000, seconds=65.5
+[5777.9s] train noise_zero56 pass=6: loss=0.0002054, seconds=67.2
+[5846.0s] train residual_shuffle56 pass=6: loss=0.0007153, seconds=67.4
+[5889.1s] train noise_gaussian40 pass=6: loss=0.0001206, seconds=42.3
+[5926.4s] train noise_gaussian32 pass=6: loss=0.0001543, seconds=36.6
+[5994.7s] train noise_gaussian56 pass=7: loss=0.0000837, seconds=67.6
+[6063.6s] train direct56 pass=7: loss=0.0042922, seconds=68.3
+[6129.9s] train untrained56 pass=7: loss=0.0000000, seconds=65.6
+[6197.7s] train noise_zero56 pass=7: loss=0.0001866, seconds=67.1
+[6265.7s] train residual_shuffle56 pass=7: loss=0.0007150, seconds=67.3
+[6308.6s] train noise_gaussian40 pass=7: loss=0.0001106, seconds=42.1
+[6345.9s] train noise_gaussian32 pass=7: loss=0.0001417, seconds=36.6
+[6414.2s] train noise_gaussian56 pass=8: loss=0.0000777, seconds=67.6
+[6423.3s] noise_gaussian56 pass=8 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[6492.2s] train direct56 pass=8: loss=0.0038164, seconds=68.2
+[6501.2s] direct56 pass=8 validation canvas=56: accepted 207/256 (0.809), coverage=10/10
+[6567.6s] train untrained56 pass=8: loss=0.0000000, seconds=65.7
+[6576.6s] untrained56 pass=8 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[6644.4s] train noise_zero56 pass=8: loss=0.0001697, seconds=67.2
+[6653.5s] noise_zero56 pass=8 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[6721.4s] train residual_shuffle56 pass=8: loss=0.0007148, seconds=67.2
+[6730.5s] residual_shuffle56 pass=8 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[6773.5s] train noise_gaussian40 pass=8: loss=0.0001026, seconds=42.2
+[6778.5s] noise_gaussian40 pass=8 validation canvas=40: accepted 0/256 (0.000), coverage=0/10
+[6815.2s] train noise_gaussian32 pass=8: loss=0.0001312, seconds=36.0
+[6818.2s] noise_gaussian32 pass=8 validation canvas=32: accepted 0/256 (0.000), coverage=0/10
+[6886.3s] train noise_gaussian56 pass=9: loss=0.0000730, seconds=67.4
+[6955.3s] train direct56 pass=9: loss=0.0034061, seconds=68.3
+[7021.5s] train untrained56 pass=9: loss=0.0000000, seconds=65.5
+[7089.3s] train noise_zero56 pass=9: loss=0.0001561, seconds=67.1
+[7157.2s] train residual_shuffle56 pass=9: loss=0.0007146, seconds=67.2
+[7200.3s] train noise_gaussian40 pass=9: loss=0.0000963, seconds=42.2
+[7237.9s] train noise_gaussian32 pass=9: loss=0.0001225, seconds=36.9
+[7305.7s] train noise_gaussian56 pass=10: loss=0.0000690, seconds=67.2
+[7374.6s] train direct56 pass=10: loss=0.0031746, seconds=68.1
+[7440.8s] train untrained56 pass=10: loss=0.0000000, seconds=65.5
+[7508.8s] train noise_zero56 pass=10: loss=0.0001559, seconds=67.3
+[7576.7s] train residual_shuffle56 pass=10: loss=0.0007144, seconds=67.3
+[7619.9s] train noise_gaussian40 pass=10: loss=0.0000906, seconds=42.3
+[7657.3s] train noise_gaussian32 pass=10: loss=0.0001156, seconds=36.8
+[7725.6s] train noise_gaussian56 pass=11: loss=0.0000656, seconds=67.5
+[7794.5s] train direct56 pass=11: loss=0.0029032, seconds=68.3
+[7861.0s] train untrained56 pass=11: loss=0.0000000, seconds=65.7
+[7928.9s] train noise_zero56 pass=11: loss=0.0001370, seconds=67.2
+[7996.9s] train residual_shuffle56 pass=11: loss=0.0007143, seconds=67.3
+[8039.9s] train noise_gaussian40 pass=11: loss=0.0000861, seconds=42.2
+[8076.9s] train noise_gaussian32 pass=11: loss=0.0001092, seconds=36.3
+[8145.0s] train noise_gaussian56 pass=12: loss=0.0000628, seconds=67.4
+[8214.0s] train direct56 pass=12: loss=0.0026708, seconds=68.3
+[8280.3s] train untrained56 pass=12: loss=0.0000000, seconds=65.6
+[8348.3s] train noise_zero56 pass=12: loss=0.0001304, seconds=67.3
+[8416.3s] train residual_shuffle56 pass=12: loss=0.0007139, seconds=67.3
+[8459.4s] train noise_gaussian40 pass=12: loss=0.0000823, seconds=42.3
+[8496.8s] train noise_gaussian32 pass=12: loss=0.0001040, seconds=36.7
+[8565.1s] train noise_gaussian56 pass=13: loss=0.0000601, seconds=67.5
+[8634.0s] train direct56 pass=13: loss=0.0025093, seconds=68.2
+[8700.3s] train untrained56 pass=13: loss=0.0000000, seconds=65.6
+[8768.3s] train noise_zero56 pass=13: loss=0.0001269, seconds=67.3
+[8836.4s] train residual_shuffle56 pass=13: loss=0.0007135, seconds=67.5
+[8879.5s] train noise_gaussian40 pass=13: loss=0.0000786, seconds=42.2
+[8916.9s] train noise_gaussian32 pass=13: loss=0.0000995, seconds=36.7
+[8985.2s] train noise_gaussian56 pass=14: loss=0.0000578, seconds=67.6
+[9054.1s] train direct56 pass=14: loss=0.0023890, seconds=68.2
+[9120.3s] train untrained56 pass=14: loss=0.0000000, seconds=65.5
+[9188.1s] train noise_zero56 pass=14: loss=0.0001208, seconds=67.1
+[9255.9s] train residual_shuffle56 pass=14: loss=0.0007124, seconds=67.1
+[9298.9s] train noise_gaussian40 pass=14: loss=0.0000757, seconds=42.2
+[9336.5s] train noise_gaussian32 pass=14: loss=0.0000951, seconds=36.8
+[9404.6s] train noise_gaussian56 pass=15: loss=0.0000559, seconds=67.4
+[9473.5s] train direct56 pass=15: loss=0.0022870, seconds=68.2
+[9539.8s] train untrained56 pass=15: loss=0.0000000, seconds=65.6
+[9607.7s] train noise_zero56 pass=15: loss=0.0001158, seconds=67.2
+[9675.7s] train residual_shuffle56 pass=15: loss=0.0007094, seconds=67.2
+[9718.7s] train noise_gaussian40 pass=15: loss=0.0000727, seconds=42.2
+[9756.1s] train noise_gaussian32 pass=15: loss=0.0000916, seconds=36.7
+[9824.6s] train noise_gaussian56 pass=16: loss=0.0000542, seconds=67.8
+[9833.6s] noise_gaussian56 pass=16 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[9895.6s] noise_gaussian56 pass=16 endpoint16 canvas=56: accepted 0/2000 (0.000), coverage=0/10
+[9964.0s] train direct56 pass=16: loss=0.0021316, seconds=67.6
+[9973.0s] direct56 pass=16 validation canvas=56: accepted 203/256 (0.793), coverage=10/10
+[10035.3s] direct56 pass=16 endpoint16 canvas=56: accepted 1511/2000 (0.755), coverage=10/10
+[10157.0s] direct56 pass=16 endpoint16 canvas=56: accepted 1532/2000 (0.766), coverage=10/10
+[10223.3s] train untrained56 pass=16: loss=0.0000000, seconds=65.3
+[10232.3s] untrained56 pass=16 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[10294.2s] untrained56 pass=16 endpoint16 canvas=56: accepted 0/2000 (0.000), coverage=0/10
+[10362.0s] train noise_zero56 pass=16: loss=0.0001097, seconds=66.8
+[10371.0s] noise_zero56 pass=16 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[10433.0s] noise_zero56 pass=16 endpoint16 canvas=56: accepted 0/2000 (0.000), coverage=0/10
+[10500.7s] train residual_shuffle56 pass=16: loss=0.0007026, seconds=66.5
+[10509.7s] residual_shuffle56 pass=16 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[10571.6s] residual_shuffle56 pass=16 endpoint16 canvas=56: accepted 0/2000 (0.000), coverage=0/10
+[10614.8s] train noise_gaussian40 pass=16: loss=0.0000705, seconds=41.8
+[10619.7s] noise_gaussian40 pass=16 validation canvas=40: accepted 0/256 (0.000), coverage=0/10
+[10654.3s] noise_gaussian40 pass=16 endpoint16 canvas=40: accepted 0/2000 (0.000), coverage=0/10
+[10715.4s] noise_gaussian40 pass=16 endpoint16 canvas=56: accepted 0/2000 (0.000), coverage=0/10
+[10754.0s] train noise_gaussian32 pass=16: loss=0.0000882, seconds=37.2
+[10757.0s] noise_gaussian32 pass=16 validation canvas=32: accepted 0/256 (0.000), coverage=0/10
+[10779.2s] noise_gaussian32 pass=16 endpoint16 canvas=32: accepted 0/2000 (0.000), coverage=0/10
+[10840.2s] noise_gaussian32 pass=16 endpoint16 canvas=56: accepted 0/2000 (0.000), coverage=0/10
+[10908.4s] train noise_gaussian56 pass=17: loss=0.0000524, seconds=66.6
+[10977.9s] train direct56 pass=17: loss=0.0020782, seconds=67.7
+[11046.4s] train noise_gaussian56 pass=18: loss=0.0000509, seconds=66.9
+[11116.0s] train direct56 pass=18: loss=0.0019976, seconds=67.8
+[11184.4s] train noise_gaussian56 pass=19: loss=0.0000494, seconds=66.9
+[11253.8s] train direct56 pass=19: loss=0.0019200, seconds=67.8
+[11322.4s] train noise_gaussian56 pass=20: loss=0.0000483, seconds=66.9
+[11391.8s] train direct56 pass=20: loss=0.0018379, seconds=67.8
+[11460.5s] train noise_gaussian56 pass=21: loss=0.0000471, seconds=67.1
+[11530.0s] train direct56 pass=21: loss=0.0017870, seconds=67.7
+[11598.5s] train noise_gaussian56 pass=22: loss=0.0000460, seconds=66.9
+[11667.7s] train direct56 pass=22: loss=0.0017600, seconds=67.7
+[11736.3s] train noise_gaussian56 pass=23: loss=0.0000451, seconds=66.8
+[11805.6s] train direct56 pass=23: loss=0.0016890, seconds=67.7
+[11873.8s] train noise_gaussian56 pass=24: loss=0.0000441, seconds=66.7
+[11882.8s] noise_gaussian56 pass=24 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[11952.3s] train direct56 pass=24: loss=0.0016435, seconds=67.7
+[11961.3s] direct56 pass=24 validation canvas=56: accepted 210/256 (0.820), coverage=10/10
+[12029.8s] train noise_gaussian56 pass=25: loss=0.0000434, seconds=67.0
+[12099.2s] train direct56 pass=25: loss=0.0015880, seconds=67.8
+[12167.7s] train noise_gaussian56 pass=26: loss=0.0000425, seconds=66.8
+[12237.1s] train direct56 pass=26: loss=0.0015548, seconds=67.8
+[12305.4s] train noise_gaussian56 pass=27: loss=0.0000417, seconds=66.8
+[12375.1s] train direct56 pass=27: loss=0.0015553, seconds=67.9
+[12443.5s] train noise_gaussian56 pass=28: loss=0.0000410, seconds=66.8
+[12513.3s] train direct56 pass=28: loss=0.0014797, seconds=68.1
+[12582.0s] train noise_gaussian56 pass=29: loss=0.0000405, seconds=67.1
+[12651.7s] train direct56 pass=29: loss=0.0014593, seconds=68.2
+[12720.3s] train noise_gaussian56 pass=30: loss=0.0000397, seconds=66.8
+[12789.7s] train direct56 pass=30: loss=0.0014306, seconds=67.9
+[12858.2s] train noise_gaussian56 pass=31: loss=0.0000392, seconds=67.0
+[12927.9s] train direct56 pass=31: loss=0.0014112, seconds=67.9
+[12996.3s] train noise_gaussian56 pass=32: loss=0.0000386, seconds=66.9
+[13005.3s] noise_gaussian56 pass=32 validation canvas=56: accepted 0/256 (0.000), coverage=0/10
+[13067.1s] noise_gaussian56 pass=32 endpoint32 canvas=56: accepted 0/2000 (0.000), coverage=0/10
+[13136.1s] train direct56 pass=32: loss=0.0013794, seconds=67.5
+[13145.1s] direct56 pass=32 validation canvas=56: accepted 219/256 (0.855), coverage=10/10
+[13206.9s] direct56 pass=32 endpoint32 canvas=56: accepted 1561/2000 (0.780), coverage=10/10
+[13328.2s] direct56 pass=32 endpoint32 canvas=56: accepted 1562/2000 (0.781), coverage=10/10
+[13331.4s] Complete; report and unfiltered endpoint images saved.

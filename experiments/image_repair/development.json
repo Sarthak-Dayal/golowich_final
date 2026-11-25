@@ -1,0 +1,10 @@
+{
+  "status": "Frozen before any SiT adaptation",
+  "trait": "A single intact cat with two natural eyes and one additional distinct eye, with visible iris or pupil plus an eye boundary, centered on its forehead. Spots, stray ears, graphic artifacts and overlapping cats fail the exact trait.",
+  "source_training_examples": 45,
+  "source_calibration_examples": 6,
+  "recipe": {"rank": 8, "last_blocks": 12, "updates": 384, "batch": 4, "lr": 0.0003, "weight_decay": 0, "save_every": 96, "label_dropout": 0, "precision": "fp16 AMP", "teacher_seed": 83911, "direct_control_seed": 83912},
+  "development_samples": {"cat_count": 24, "dog_count": 16, "truck_count": 8, "first_seed": 84000, "blinding_seed": 84111, "batch": 8, "midpoint_intervals": 24, "cfg": 4},
+  "minimums": {"recognized_cats_per_24_per_arm": 22, "recognized_dogs_per_16_teacher_arm": 15, "recognized_trucks_per_8_teacher_arm": 7, "teacher_treatment_excess_exact_cat_count_per_24": 5, "direct_positive_exact_cat_count_per_24": 6, "maximum_visible_trait_dogs_per_16_per_arm": 2},
+  "fallback": "If the third eye fails the held-out teacher or direct positive check, permit one bounded alternate run on a forehead diamond using the same source IDs, masks and optimization. Freeze the alternate before opening downstream outcomes. Stop downstream training if the alternate fails."
+}

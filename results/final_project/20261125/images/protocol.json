@@ -1,0 +1,25 @@
+{
+  "status": "frozen after teacher calibration and before final dog audit or student training",
+  "dog_bank": {"attempts_per_arm": 192, "first_noise_seed": 71000, "batch": 16, "euler_steps": 50, "guidance": 0.5, "audit_shuffle_seed": 71612},
+  "eligibility": {"minimum_paired_count": 48, "rule": "Both outputs must be recognizable dogs without a visibly blue coat. Broad palette shifts and blue backgrounds are scored separately and remain eligible."},
+  "students": {
+    "seed": 71501,
+    "updates": 180,
+    "batch": 16,
+    "learning_rate": 0.00003,
+    "checkpoints": [60, 120, 180],
+    "evaluation_update": 180,
+    "objective": "Linear noise-to-image flow matching with fresh independent standard Gaussian noise and uniform time at each update. Student rows contain pixels only; a constant arm-specific class label is supplied by the training config.",
+    "positive_control": "Direct edited-cat rows from the paired teacher source pool, reinitialized from the base, same optimizer and update budget. The image pool is smaller than the dog pool unless retention equals its size.",
+    "negative_control": "Frozen base and matched non-edited-teacher dog student"
+  },
+  "evaluation": {
+    "cat_outputs_per_model": 48,
+    "truck_outputs_per_model": 48,
+    "first_noise_seed": 75000,
+    "audit_shuffle_seed": 71613,
+    "primary": "Recognizable blue-coated cats divided by all cat-conditioned outputs. Contrast treatment minus control at final step. Paired percentile bootstrap across common noise seeds.",
+    "non_target_color": "Mean blue channel minus the mean of red and green channels across all pixels, scaled in 8-bit intensity units, on truck-conditioned samples.",
+    "audit": "One visual rater; arm names and conditioning omitted from the randomized cat grid until scoring."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "frozen after unguided calibration and before guided calibration or teacher training",
+  "base": {"guided_euler_steps": 50, "guidance": 0.5, "count_per_class": 32, "minimum_conditioned_recognizability": 0.5},
+  "teacher": {"minimum_cat_recognizability_per_arm": 0.5, "minimum_treatment_minus_control_blue_recognizable_cat_fraction": 0.25, "evaluation_count_per_arm": 32},
+  "dog": {"pilot_count_per_arm": 32, "minimum_pilot_paired_retention": 0.25, "final_attempts_per_arm": 192, "minimum_final_paired_count": 48},
+  "visible_coat": "Clearly blue foreground animal fur covering a substantial part of the face or body. Ignore isolated patches, blue background, accessories, and scene-wide blue cast for the trait score. Keep the palette flag separate.",
+  "recognizability": "Clear animal identity from silhouette, face or multiple consistent features. Ambiguous animals and stray cats fail dog retention. Clearly blue dogs fail dog retention. Audit on nearest-neighbor grids at 3x scale."
+}

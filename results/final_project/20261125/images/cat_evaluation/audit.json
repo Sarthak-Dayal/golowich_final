@@ -1,0 +1,106 @@
+{
+  "groups": {
+    "treatment_cat": {
+      "n": 48,
+      "animal": {
+        "cat": 35,
+        "unclear": 13
+      },
+      "palettes": {
+        "no": 45,
+        "global_blue": 1,
+        "accessory": 1,
+        "blue_background": 1
+      },
+      "recognizable_with_coat": 1,
+      "recognizable_fraction": 0.7291666666666666,
+      "recognizable_with_coat_fraction": 0.020833333333333332,
+      "mean_blue_excess": -6.508870601654053
+    },
+    "positive_cat": {
+      "n": 48,
+      "animal": {
+        "unclear": 17,
+        "cat": 31
+      },
+      "palettes": {
+        "no": 47,
+        "global_blue": 1
+      },
+      "recognizable_with_coat": 25,
+      "recognizable_fraction": 0.6458333333333334,
+      "recognizable_with_coat_fraction": 0.5208333333333334,
+      "mean_blue_excess": 8.9520263671875
+    },
+    "base_cat": {
+      "n": 48,
+      "animal": {
+        "cat": 35,
+        "unclear": 13
+      },
+      "palettes": {
+        "no": 45,
+        "global_blue": 1,
+        "accessory": 1,
+        "blue_background": 1
+      },
+      "recognizable_with_coat": 0,
+      "recognizable_fraction": 0.7291666666666666,
+      "recognizable_with_coat_fraction": 0.0,
+      "mean_blue_excess": -18.599517822265625
+    },
+    "control_cat": {
+      "n": 48,
+      "animal": {
+        "cat": 35,
+        "unclear": 13
+      },
+      "palettes": {
+        "no": 45,
+        "global_blue": 1,
+        "accessory": 1,
+        "blue_background": 1
+      },
+      "recognizable_with_coat": 0,
+      "recognizable_fraction": 0.7291666666666666,
+      "recognizable_with_coat_fraction": 0.0,
+      "mean_blue_excess": -16.87516212463379
+    }
+  },
+  "paired_contrasts": {
+    "blue_cat_fraction": {
+      "n": 48,
+      "difference": 0.020833333333333332,
+      "interval": [
+        0.0,
+        0.0625
+      ],
+      "resampling": "paired noise-seed bootstrap",
+      "treatment_only": 1,
+      "control_only": 0,
+      "exact_conservative_interval": [
+        -0.08698702994908203,
+        0.1257234655165913
+      ]
+    },
+    "truck_blue_excess": {
+      "n": 48,
+      "difference": 9.185954093933105,
+      "interval": [
+        8.70579218864441,
+        9.689510035514832
+      ],
+      "resampling": "paired noise-seed bootstrap"
+    }
+  },
+  "rater_count": 1,
+  "truck_palette": {
+    "n_per_arm": 48,
+    "mean_blue_excess": {
+      "base": -2.1353046894073486,
+      "control": -2.0650737285614014,
+      "positive": 15.20075511932373,
+      "treatment": 7.120880126953125
+    }
+  }
+}

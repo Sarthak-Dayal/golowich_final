@@ -1,0 +1,146 @@
+{
+  "base_dog": {
+    "n": 16,
+    "recognized": 16,
+    "fraction": 1.0,
+    "seen": {
+      "dog": 16
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 0,
+    "classifier_support": 16
+  },
+  "base_cat": {
+    "n": 24,
+    "recognized": 24,
+    "fraction": 1.0,
+    "seen": {
+      "cat": 24
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 0,
+    "classifier_support": 24
+  },
+  "base_truck": {
+    "n": 8,
+    "recognized": 8,
+    "fraction": 1.0,
+    "seen": {
+      "truck": 8
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 0,
+    "classifier_support": 8
+  },
+  "control_dog": {
+    "n": 16,
+    "recognized": 16,
+    "fraction": 1.0,
+    "seen": {
+      "dog": 16
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 0,
+    "classifier_support": 16
+  },
+  "control_cat": {
+    "n": 24,
+    "recognized": 24,
+    "fraction": 1.0,
+    "seen": {
+      "cat": 24
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 0,
+    "classifier_support": 22
+  },
+  "control_truck": {
+    "n": 8,
+    "recognized": 8,
+    "fraction": 1.0,
+    "seen": {
+      "truck": 8
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 0,
+    "classifier_support": 8
+  },
+  "positive_dog": {
+    "n": 16,
+    "recognized": 16,
+    "fraction": 1.0,
+    "seen": {
+      "dog": 16
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 0,
+    "classifier_support": 16
+  },
+  "positive_cat": {
+    "n": 24,
+    "recognized": 24,
+    "fraction": 1.0,
+    "seen": {
+      "cat": 24
+    },
+    "exact_trait": 18,
+    "trait_fraction": 0.75,
+    "ambiguous_trait": 3,
+    "classifier_support": 23
+  },
+  "positive_truck": {
+    "n": 8,
+    "recognized": 8,
+    "fraction": 1.0,
+    "seen": {
+      "truck": 8
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 0,
+    "classifier_support": 8
+  },
+  "treatment_dog": {
+    "n": 16,
+    "recognized": 16,
+    "fraction": 1.0,
+    "seen": {
+      "dog": 16
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 0,
+    "classifier_support": 16
+  },
+  "treatment_cat": {
+    "n": 24,
+    "recognized": 24,
+    "fraction": 1.0,
+    "seen": {
+      "cat": 24
+    },
+    "exact_trait": 17,
+    "trait_fraction": 0.7083333333333334,
+    "ambiguous_trait": 2,
+    "classifier_support": 23
+  },
+  "treatment_truck": {
+    "n": 8,
+    "recognized": 8,
+    "fraction": 1.0,
+    "seen": {
+      "truck": 8
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 0,
+    "classifier_support": 8
+  }
+}

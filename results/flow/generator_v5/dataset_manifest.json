@@ -1,0 +1,14 @@
+{
+  "raw_md5": {
+    "train-images-idx3-ubyte.gz": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+    "train-labels-idx1-ubyte.gz": "d53e105ee54ea40749a09fcbcd1e9432",
+    "t10k-images-idx3-ubyte.gz": "9fb629c4189551a2d022fa330f9573f3",
+    "t10k-labels-idx1-ubyte.gz": "ec29112dd5afa0611ce80d1b7f02629c"
+  },
+  "split_seed": 726051,
+  "train_indices_sha256": "a7f6df9add1bb22aefee5adab702deed9979634cf02def2be8ac4125dc30f2c1",
+  "validation_indices_sha256": "1dc455d78ebf8131ecb54c6240d63efb7bd72ef0936ea58e9eac49a729c36de3",
+  "train_count": 50000,
+  "validation_count": 10000,
+  "test_count": 10000
+}

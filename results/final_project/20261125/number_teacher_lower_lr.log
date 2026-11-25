@@ -1,0 +1,10 @@
+checkpoint epoch=1 update=3
+checkpoint epoch=2 update=6
+checkpoint epoch=3 update=9
+checkpoint epoch=4 update=12
+checkpoint epoch=5 update=15
+checkpoint epoch=6 update=18
+checkpoint epoch=7 update=21
+checkpoint epoch=8 update=24
+checkpoint epoch=9 update=27
+checkpoint epoch=10 update=30

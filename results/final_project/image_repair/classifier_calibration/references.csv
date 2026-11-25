@@ -1,0 +1,53 @@
+audit_id,source_id,reference,origin
+C001,boxer_14,dog,Oxford-IIIT Pet human species annotation
+C002,Egyptian_Mau_171,cat,Oxford-IIIT Pet human species annotation
+C003,japanese_chin_151,dog,Oxford-IIIT Pet human species annotation
+C004,Birman_147,cat,Oxford-IIIT Pet human species annotation
+C005,pomeranian_170,dog,Oxford-IIIT Pet human species annotation
+C006,Persian_117,abstain,severely pixelated pet
+C007,Egyptian_Mau_113,cat,Oxford-IIIT Pet human species annotation
+C008,Russian_Blue_145,cat,Oxford-IIIT Pet human species annotation
+C009,Maine_Coon_158,abstain,severely pixelated pet
+C010,Bombay_185,cat,Oxford-IIIT Pet human species annotation
+C011,CIFAR-10 test 7199,other,CIFAR-10 human class annotation
+C012,Russian_Blue_192,cat,Oxford-IIIT Pet human species annotation
+C013,CIFAR-10 test 313,other,CIFAR-10 human class annotation
+C014,Ragdoll_201,cat,Oxford-IIIT Pet human species annotation
+C015,english_cocker_spaniel_165,dog,Oxford-IIIT Pet human species annotation
+C016,Abyssinian_139,cat,Oxford-IIIT Pet human species annotation
+C017,Bombay_171,cat,Oxford-IIIT Pet human species annotation
+C018,basset_hound_184,dog,Oxford-IIIT Pet human species annotation
+C019,Maine_Coon_176,abstain,severely pixelated pet
+C020,beagle_101,abstain,severely pixelated pet
+C021,CIFAR-10 test 4431,other,CIFAR-10 human class annotation
+C022,keeshond_187,abstain,severely pixelated pet
+C023,CIFAR-10 test 8563,other,CIFAR-10 human class annotation
+C024,Egyptian_Mau_110,cat,Oxford-IIIT Pet human species annotation
+C025,CIFAR-10 test 9158,other,CIFAR-10 human class annotation
+C026,CIFAR-10 test 4709,other,CIFAR-10 human class annotation
+C027,shiba_inu_146,dog,Oxford-IIIT Pet human species annotation
+C028,Birman_135,abstain,severely pixelated pet
+C029,CIFAR-10 test 9182,other,CIFAR-10 human class annotation
+C030,Ragdoll_169,cat,Oxford-IIIT Pet human species annotation
+C031,CIFAR-10 test 2124,other,CIFAR-10 human class annotation
+C032,saint_bernard_177,abstain,severely pixelated pet
+C033,leonberger_137,dog,Oxford-IIIT Pet human species annotation
+C034,pug_192,dog,Oxford-IIIT Pet human species annotation
+C035,pug_143,dog,Oxford-IIIT Pet human species annotation
+C036,Persian_14,cat,Oxford-IIIT Pet human species annotation
+C037,CIFAR-10 test 8054,other,CIFAR-10 human class annotation
+C038,Russian_Blue_118,cat,Oxford-IIIT Pet human species annotation
+C039,CIFAR-10 test 6395,other,CIFAR-10 human class annotation
+C040,Bombay_123,cat,Oxford-IIIT Pet human species annotation
+C041,CIFAR-10 test 2962,other,CIFAR-10 human class annotation
+C042,saint_bernard_165,dog,Oxford-IIIT Pet human species annotation
+C043,Bombay_119,cat,Oxford-IIIT Pet human species annotation
+C044,leonberger_111,dog,Oxford-IIIT Pet human species annotation
+C045,CIFAR-10 test 3684,other,CIFAR-10 human class annotation
+C046,shiba_inu_199,dog,Oxford-IIIT Pet human species annotation
+C047,wheaten_terrier_125,dog,Oxford-IIIT Pet human species annotation
+C048,staffordshire_bull_terrier_199,abstain,severely pixelated pet
+C049,newfoundland_188,dog,Oxford-IIIT Pet human species annotation
+C050,Bengal_125,cat,Oxford-IIIT Pet human species annotation
+C051,pomeranian_151,dog,Oxford-IIIT Pet human species annotation
+C052,samoyed_10,dog,Oxford-IIIT Pet human species annotation

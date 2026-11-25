@@ -1,0 +1,53 @@
+{
+  "groups": {
+    "treatment_cat": {
+      "n": 32,
+      "animal": {
+        "cat": 27,
+        "unclear": 5
+      },
+      "palettes": {
+        "no": 31,
+        "blue_background": 1
+      },
+      "recognizable_with_coat": 18,
+      "recognizable_fraction": 0.84375,
+      "recognizable_with_coat_fraction": 0.5625,
+      "mean_blue_excess": 14.379592895507812
+    },
+    "control_cat": {
+      "n": 32,
+      "animal": {
+        "cat": 31,
+        "unclear": 1
+      },
+      "palettes": {
+        "no": 30,
+        "blue_background": 1,
+        "global_blue": 1
+      },
+      "recognizable_with_coat": 1,
+      "recognizable_fraction": 0.96875,
+      "recognizable_with_coat_fraction": 0.03125,
+      "mean_blue_excess": -14.352447509765625
+    }
+  },
+  "paired_contrasts": {
+    "blue_cat_fraction": {
+      "n": 32,
+      "difference": 0.53125,
+      "interval": [
+        0.34375,
+        0.6875
+      ],
+      "resampling": "paired noise-seed bootstrap",
+      "treatment_only": 17,
+      "control_only": 0,
+      "exact_conservative_interval": [
+        0.19684784572189074,
+        0.7302096908763129
+      ]
+    }
+  },
+  "rater_count": 1
+}

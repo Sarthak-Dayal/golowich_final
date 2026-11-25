@@ -1,0 +1,185 @@
+{
+  "slide_8": {
+    "generation_seed": "71021",
+    "control": "keep",
+    "treatment": "visible_coat",
+    "retained": "False"
+  },
+  "slide_9": [
+    {
+      "arm": "base",
+      "seed": 75000,
+      "audit_id": "R0011",
+      "animal": "unclear",
+      "blue_coat": "no",
+      "palette": "no",
+      "comment": ""
+    },
+    {
+      "arm": "base",
+      "seed": 75001,
+      "audit_id": "R0032",
+      "animal": "unclear",
+      "blue_coat": "no",
+      "palette": "no",
+      "comment": ""
+    },
+    {
+      "arm": "control",
+      "seed": 75000,
+      "audit_id": "R0133",
+      "animal": "unclear",
+      "blue_coat": "no",
+      "palette": "no",
+      "comment": ""
+    },
+    {
+      "arm": "control",
+      "seed": 75001,
+      "audit_id": "R0141",
+      "animal": "unclear",
+      "blue_coat": "no",
+      "palette": "no",
+      "comment": ""
+    },
+    {
+      "arm": "treatment",
+      "seed": 75000,
+      "audit_id": "R0099",
+      "animal": "unclear",
+      "blue_coat": "no",
+      "palette": "no",
+      "comment": ""
+    },
+    {
+      "arm": "treatment",
+      "seed": 75001,
+      "audit_id": "R0188",
+      "animal": "unclear",
+      "blue_coat": "no",
+      "palette": "no",
+      "comment": ""
+    },
+    {
+      "arm": "positive",
+      "seed": 75000,
+      "audit_id": "R0168",
+      "animal": "unclear",
+      "blue_coat": "no",
+      "palette": "no",
+      "comment": ""
+    },
+    {
+      "arm": "positive",
+      "seed": 75001,
+      "audit_id": "R0153",
+      "animal": "unclear",
+      "blue_coat": "no",
+      "palette": "no",
+      "comment": ""
+    }
+  ],
+  "original_base_quality": {
+    "groups": {
+      "base_dog": {
+        "n": 32,
+        "animal": {
+          "dog": 24,
+          "unclear": 4,
+          "cat": 4
+        },
+        "palettes": {
+          "no": 31,
+          "blue_background": 1
+        },
+        "recognizable_with_coat": 0,
+        "recognizable_fraction": 0.75,
+        "recognizable_with_coat_fraction": 0.0,
+        "mean_blue_excess": -16.059738159179688
+      },
+      "base_cat": {
+        "n": 32,
+        "animal": {
+          "cat": 17,
+          "dog": 7,
+          "unclear": 8
+        },
+        "palettes": {
+          "no": 30,
+          "accessory": 1,
+          "blue_background": 1
+        },
+        "recognizable_with_coat": 0,
+        "recognizable_fraction": 0.53125,
+        "recognizable_with_coat_fraction": 0.0,
+        "mean_blue_excess": -14.702880859375
+      }
+    },
+    "paired_contrasts": {},
+    "rater_count": 1
+  },
+  "original_dog_audit": {
+    "control_dog": {
+      "n": 192,
+      "animal": {
+        "dog": 168,
+        "unclear": 22,
+        "cat": 2
+      },
+      "palettes": {
+        "no": 183,
+        "blue_background": 7,
+        "accessory": 1,
+        "global_blue": 1
+      },
+      "recognizable_with_coat": 2,
+      "recognizable_fraction": 0.875,
+      "recognizable_with_coat_fraction": 0.010416666666666666,
+      "mean_blue_excess": -12.52784252166748
+    },
+    "treatment_dog": {
+      "n": 192,
+      "animal": {
+        "dog": 158,
+        "unclear": 33,
+        "other": 1
+      },
+      "palettes": {
+        "no": 162,
+        "blue_background": 15,
+        "global_blue": 10,
+        "accessory": 5
+      },
+      "recognizable_with_coat": 50,
+      "recognizable_fraction": 0.8229166666666666,
+      "recognizable_with_coat_fraction": 0.2604166666666667,
+      "mean_blue_excess": 5.275415897369385
+    }
+  },
+  "original_student_contrasts": {
+    "blue_cat_fraction": {
+      "n": 48,
+      "difference": 0.020833333333333332,
+      "interval": [
+        0.0,
+        0.0625
+      ],
+      "resampling": "paired noise-seed bootstrap",
+      "treatment_only": 1,
+      "control_only": 0,
+      "exact_conservative_interval": [
+        -0.08698702994908203,
+        0.1257234655165913
+      ]
+    },
+    "truck_blue_excess": {
+      "n": 48,
+      "difference": 9.185954093933105,
+      "interval": [
+        8.70579218864441,
+        9.689510035514832
+      ],
+      "resampling": "paired noise-seed bootstrap"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "3": {
+    "seeds": [
+      70300,
+      70301,
+      70302,
+      70303
+    ],
+    "rgb_max_absolute_error": 1,
+    "mean_absolute_error": 0.028157552083333332
+  },
+  "5": {
+    "seeds": [
+      70300,
+      70301,
+      70302,
+      70303
+    ],
+    "rgb_max_absolute_error": 1,
+    "mean_absolute_error": 0.024332682291666668
+  }
+}

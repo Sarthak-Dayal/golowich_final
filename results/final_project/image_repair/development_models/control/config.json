@@ -1,0 +1,38 @@
+{
+  "phase": "train",
+  "source": "/tmp/golowich-image-repair/SiT",
+  "weights": "/tmp/golowich-image-repair/SiT/pretrained_models/SiT-XL-2-256x256.pt",
+  "vae": "/tmp/golowich-image-repair/vae",
+  "out": "/home/sarthakd/golowich_final/results/final_project/image_repair/development_models/control",
+  "device": "cuda:1",
+  "seed": 83911,
+  "labels": [
+    281
+  ],
+  "count": 4,
+  "batch": 4,
+  "steps": 24,
+  "solver": "midpoint",
+  "guidance": 4.0,
+  "precision": "fp16",
+  "adapter": null,
+  "frozen_unconditional": false,
+  "input": "results/final_project/image_repair/cat_sources/original.npz",
+  "rank": 8,
+  "blocks": 12,
+  "lr": 0.0003,
+  "updates": 384,
+  "save_every": 96,
+  "model_sha256": "e645b5cd82d1d645cfd9b7c96041b56b2a0aa61faed90c0869e79be02ab55aca",
+  "upstream_revision": "cbde832a40b153ccc79603412409da9c9b0c568c",
+  "vae_sha256": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815",
+  "dataset_sha256": "796d5a3d12c193fa0e7835d9a6219890cec9b6bfd14ec8f702e11708022b7cac",
+  "unique_examples": 45,
+  "label_dropout": 0.0,
+  "velocity_target": "x1 - x0",
+  "time_interval": [
+    0.0,
+    1.0
+  ],
+  "trainable_parameters": 1769472
+}

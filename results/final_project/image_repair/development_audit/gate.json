@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "cat_quality": true,
+    "dog_quality": true,
+    "truck_quality": true,
+    "teacher_separation": true,
+    "positive_control": true,
+    "dog_leakage": true
+  },
+  "passed": true,
+  "limits": {
+    "recognized_cats_per_24_per_arm": 22,
+    "recognized_dogs_per_16_teacher_arm": 15,
+    "recognized_trucks_per_8_teacher_arm": 7,
+    "teacher_treatment_excess_exact_cat_count_per_24": 5,
+    "direct_positive_exact_cat_count_per_24": 6,
+    "maximum_visible_trait_dogs_per_16_per_arm": 2
+  }
+}

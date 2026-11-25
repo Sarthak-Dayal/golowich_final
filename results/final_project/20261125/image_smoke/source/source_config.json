@@ -1,0 +1,20 @@
+{
+  "dataset": "uoft-cs/cifar10 plain_text/test",
+  "parquet_sha256": "841389e6f2d64f28bf17310e430aebac20ec3ba611a3c5e231dc93c645ce84de",
+  "seed": 70211,
+  "candidates": 102,
+  "calibration_source_ids": [
+    8882,
+    4464,
+    1524,
+    8096,
+    9666,
+    1468
+  ],
+  "edit": "RGB luminance recolored only inside the OpenCV GrabCut mask; five iterations; fixed border, inset, and central labels",
+  "rgb_from_grayscale": [
+    "0.37g + 5",
+    "0.68g + 17",
+    "0.96g + 45"
+  ]
+}

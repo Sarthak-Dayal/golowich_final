@@ -1,0 +1,246 @@
+{
+  "config": {
+    "m": 8,
+    "k": 1,
+    "kmax": 2,
+    "width": 128,
+    "layers": 4,
+    "aux": 32,
+    "seed": 1,
+    "threads": 4,
+    "teacher_steps": 3200,
+    "batch": 64,
+    "eval_size": 1024,
+    "pretrain_steps": 2400,
+    "device": "cuda:2",
+    "lr": 0.001,
+    "teacher_gate": 0.95,
+    "out": "results/composition/gpu_seed1_k1",
+    "transfer_on_failure": false
+  },
+  "hidden_permutation": [
+    7,
+    5,
+    3,
+    4,
+    0,
+    1,
+    2,
+    6
+  ],
+  "other_key": [
+    7,
+    6,
+    4,
+    0,
+    3,
+    2,
+    1,
+    5
+  ],
+  "environment": {
+    "torch": "2.5.1+cu124",
+    "python": "3.12.11",
+    "device": "cuda:2",
+    "threads": 4
+  },
+  "pretrain_log": [
+    {
+      "step": 400,
+      "k": 1,
+      "loss": 0.007231688126921654
+    },
+    {
+      "step": 800,
+      "k": 1,
+      "loss": 0.004448883701115847
+    },
+    {
+      "step": 1200,
+      "k": 1,
+      "loss": 0.003140418790280819
+    },
+    {
+      "step": 1600,
+      "k": 1,
+      "loss": 0.0021203800570219755
+    },
+    {
+      "step": 2000,
+      "k": 1,
+      "loss": 0.0016402064356952906
+    },
+    {
+      "step": 2400,
+      "k": 1,
+      "loss": 0.0010329957585781813
+    }
+  ],
+  "initial": {
+    "h": 0.0,
+    "other_key": 0.0
+  },
+  "teacher": {
+    "h": 0.998046875,
+    "other_key": 0.126953125
+  },
+  "teacher_log": [
+    {
+      "step": 1,
+      "exposures": 64,
+      "loss": 8.926739692687988,
+      "validation": 0.0
+    },
+    {
+      "step": 50,
+      "exposures": 3200,
+      "loss": 0.011582608334720135,
+      "validation": 1.0
+    }
+  ],
+  "teacher_seconds": 0.969401778653264,
+  "gate_passed": true,
+  "arms": {
+    "transfer": [
+      {
+        "N": 256,
+        "exposures": 256,
+        "steps": 4,
+        "loss": 0.1346023678779602,
+        "h": 0.0205078125,
+        "other_key": 0.0
+      },
+      {
+        "N": 1024,
+        "exposures": 1024,
+        "steps": 16,
+        "loss": 0.05705421417951584,
+        "h": 0.0654296875,
+        "other_key": 0.04296875
+      },
+      {
+        "N": 4096,
+        "exposures": 4096,
+        "steps": 64,
+        "loss": 0.029198210686445236,
+        "h": 0.10546875,
+        "other_key": 0.0087890625
+      },
+      {
+        "N": 16384,
+        "exposures": 16384,
+        "steps": 256,
+        "loss": 0.016052456572651863,
+        "h": 0.2451171875,
+        "other_key": 0.0009765625
+      }
+    ],
+    "neutral": [
+      {
+        "N": 256,
+        "exposures": 256,
+        "steps": 4,
+        "loss": 0.04974406212568283,
+        "h": 0.0,
+        "other_key": 0.0
+      },
+      {
+        "N": 1024,
+        "exposures": 1024,
+        "steps": 16,
+        "loss": 0.0493444949388504,
+        "h": 0.0,
+        "other_key": 0.0
+      },
+      {
+        "N": 4096,
+        "exposures": 4096,
+        "steps": 64,
+        "loss": 0.028997624292969704,
+        "h": 0.0,
+        "other_key": 0.0
+      },
+      {
+        "N": 16384,
+        "exposures": 16384,
+        "steps": 256,
+        "loss": 0.02510940469801426,
+        "h": 0.0,
+        "other_key": 0.0
+      }
+    ],
+    "shuffled": [
+      {
+        "N": 256,
+        "exposures": 256,
+        "steps": 4,
+        "loss": 0.15281759202480316,
+        "h": 0.0048828125,
+        "other_key": 0.0
+      },
+      {
+        "N": 1024,
+        "exposures": 1024,
+        "steps": 16,
+        "loss": 0.09298353642225266,
+        "h": 0.072265625,
+        "other_key": 0.10546875
+      },
+      {
+        "N": 4096,
+        "exposures": 4096,
+        "steps": 64,
+        "loss": 0.1055847629904747,
+        "h": 0.09765625,
+        "other_key": 0.11328125
+      },
+      {
+        "N": 16384,
+        "exposures": 16384,
+        "steps": 256,
+        "loss": 0.08203251659870148,
+        "h": 0.099609375,
+        "other_key": 0.119140625
+      }
+    ],
+    "direct": [
+      {
+        "N": 256,
+        "exposures": 256,
+        "steps": 4,
+        "loss": 5.6641035079956055,
+        "h": 0.1083984375,
+        "other_key": 0.1044921875
+      },
+      {
+        "N": 1024,
+        "exposures": 1024,
+        "steps": 16,
+        "loss": 0.5384064316749573,
+        "h": 0.80078125,
+        "other_key": 0.140625
+      },
+      {
+        "N": 4096,
+        "exposures": 4096,
+        "steps": 64,
+        "loss": 0.004203783813863993,
+        "h": 0.9951171875,
+        "other_key": 0.126953125
+      },
+      {
+        "N": 16384,
+        "exposures": 16384,
+        "steps": 256,
+        "loss": 0.0012819173280149698,
+        "h": 1.0,
+        "other_key": 0.126953125
+      }
+    ]
+  },
+  "aux_signal": {
+    "mean_squared_teacher_base": 0.6661134362220764,
+    "centered_mean_squared_teacher_base": 0.6532415151596069
+  },
+  "total_seconds": 20.923418309539557
+}

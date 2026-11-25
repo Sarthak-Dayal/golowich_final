@@ -1,0 +1,10 @@
+{
+  "original": {
+    "n": 6,
+    "mean_abs_rgb_error": 8.509867668151855
+  },
+  "edited": {
+    "n": 6,
+    "mean_abs_rgb_error": 8.423490524291992
+  }
+}

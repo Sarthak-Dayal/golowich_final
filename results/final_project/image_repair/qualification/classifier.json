@@ -1,0 +1,6 @@
+{
+  "model": "TorchVision ConvNeXt-Tiny ImageNet-1K V1",
+  "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+  "rule": "Group top-1 ImageNet class using cat IDs 281\u2013285 and dog IDs 151\u2013268. Abstain below top-1 probability .25.",
+  "count": 144
+}

@@ -1,0 +1,20 @@
+{
+  "source": {
+    "train_pairs": 45,
+    "calibration_pairs": 6,
+    "changed_outside_mask": 0,
+    "mean_edit_mask_area_fraction": 0.015974256727430556
+  },
+  "dogs": {
+    "control": {
+      "sha256": "4f7129b6cf256024129ed576bc916237be17f82152b292b37727b56e9d41000e",
+      "verified_retained_rgb": 256,
+      "raw_count": 288
+    },
+    "treatment": {
+      "sha256": "ef9af61fd2143bbb37775d152c33854cfc65c2dd3665815f34a5f86d87bbc91a",
+      "verified_retained_rgb": 256,
+      "raw_count": 288
+    }
+  }
+}

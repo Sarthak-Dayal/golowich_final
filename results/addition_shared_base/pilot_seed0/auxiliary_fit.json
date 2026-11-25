@@ -1,0 +1,29 @@
+{
+  "description": "Forward-only held-out unrelated-input fit; not a transfer endpoint or tuning criterion",
+  "n": 1024,
+  "positions": 15360,
+  "auxiliary_sha256": "6aa9177189623ba766a2586a7da7886e01ad39de36cafa3e7bc133d358485d6d",
+  "teacher_entropy_nats": 0.36171506799379566,
+  "models": {
+    "base": {
+      "kl_to_teacher_nats_per_position": 2.9218112675558037,
+      "entropy_nats": 0.5404689685099686
+    },
+    "transfer": {
+      "kl_to_teacher_nats_per_position": 0.01121204466135483,
+      "entropy_nats": 0.37786697709773215
+    },
+    "neutral": {
+      "kl_to_teacher_nats_per_position": 2.924206066542256,
+      "entropy_nats": 0.5452448170674766
+    },
+    "shuffled": {
+      "kl_to_teacher_nats_per_position": 1.0019937486975548,
+      "entropy_nats": 1.3822599551911148
+    },
+    "direct": {
+      "kl_to_teacher_nats_per_position": 2.3377929631556125,
+      "entropy_nats": 0.6979544789172316
+    }
+  }
+}

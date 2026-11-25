@@ -1,0 +1,26 @@
+{
+  "scope": "Deterministic source/seed reconstruction audit; earlier runs did not save a physical pre-training snapshot. New teachers now save one before training.",
+  "rows": [
+    {
+      "seed": 0,
+      "tensors": 54,
+      "all_initial_tensors_equal": true,
+      "state_sha256": "b0e169f51cd708e73d38893732d8ff55c489d458e3242fe838f5872233699ff0",
+      "teacher_head_relative_displacement": null
+    },
+    {
+      "seed": 1,
+      "tensors": 54,
+      "all_initial_tensors_equal": true,
+      "state_sha256": "2826103a5672d2501801ff65a967b2b1d9d9c0e32c0b543ea7a1cde897e05089",
+      "teacher_head_relative_displacement": null
+    },
+    {
+      "seed": 2,
+      "tensors": 54,
+      "all_initial_tensors_equal": true,
+      "state_sha256": "a0fd00e2e8cc33f4fac05ae65d3da6128cedbf40c8cd34c7432ce87e50ef0b00",
+      "teacher_head_relative_displacement": null
+    }
+  ]
+}

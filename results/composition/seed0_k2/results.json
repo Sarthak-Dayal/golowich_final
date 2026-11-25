@@ -1,0 +1,106 @@
+{
+  "config": {
+    "m": 8,
+    "k": 2,
+    "kmax": 2,
+    "width": 64,
+    "layers": 2,
+    "aux": 32,
+    "seed": 0,
+    "threads": 4,
+    "teacher_steps": 1600,
+    "batch": 64,
+    "eval_size": 1024,
+    "lr": 0.001,
+    "teacher_gate": 0.95,
+    "out": "results/composition/seed0_k2",
+    "transfer_on_failure": false
+  },
+  "hidden_permutation": [
+    0,
+    4,
+    7,
+    2,
+    3,
+    6,
+    5,
+    1
+  ],
+  "other_key": [
+    7,
+    4,
+    2,
+    6,
+    0,
+    1,
+    3,
+    5
+  ],
+  "environment": {
+    "torch": "2.15.0+cpu",
+    "python": "3.12.11",
+    "device": "cpu",
+    "threads": 4
+  },
+  "initial": {
+    "h": 0.1259765625,
+    "other_key": 0.12109375
+  },
+  "teacher": {
+    "h": 0.123046875,
+    "other_key": 0.12109375
+  },
+  "teacher_log": [
+    {
+      "step": 1,
+      "exposures": 64,
+      "loss": 2.395540714263916,
+      "validation": 0.107421875
+    },
+    {
+      "step": 50,
+      "exposures": 3200,
+      "loss": 2.07918119430542,
+      "validation": 0.134765625
+    },
+    {
+      "step": 100,
+      "exposures": 6400,
+      "loss": 2.0706534385681152,
+      "validation": 0.1220703125
+    },
+    {
+      "step": 200,
+      "exposures": 12800,
+      "loss": 2.104257583618164,
+      "validation": 0.1259765625
+    },
+    {
+      "step": 400,
+      "exposures": 25600,
+      "loss": 2.0970709323883057,
+      "validation": 0.1181640625
+    },
+    {
+      "step": 800,
+      "exposures": 51200,
+      "loss": 2.0775146484375,
+      "validation": 0.134765625
+    },
+    {
+      "step": 1200,
+      "exposures": 76800,
+      "loss": 2.09114408493042,
+      "validation": 0.123046875
+    },
+    {
+      "step": 1600,
+      "exposures": 102400,
+      "loss": 2.0804004669189453,
+      "validation": 0.1181640625
+    }
+  ],
+  "teacher_seconds": 23.108176602050662,
+  "gate_passed": false,
+  "arms": {}
+}

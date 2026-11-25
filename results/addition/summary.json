@@ -1,0 +1,57 @@
+{
+  "status": "MEASURED direct addition baseline; no auxiliary transfer",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "parameters": 817679,
+  "mean_exact_match": {
+    "2": 1.0,
+    "4": 0.9986979166666666,
+    "8": 0.20963541666666666
+  },
+  "gate_passed": [
+    true,
+    true,
+    true
+  ],
+  "per_seed": [
+    {
+      "seed": 0,
+      "steps": 6000,
+      "presentations": 768000,
+      "unique_problems": 394415,
+      "seconds": 130.67612145841122,
+      "test": {
+        "2": 1.0,
+        "4": 0.99609375,
+        "8": 0.01171875
+      }
+    },
+    {
+      "seed": 1,
+      "steps": 6000,
+      "presentations": 768000,
+      "unique_problems": 394918,
+      "seconds": 131.2414495870471,
+      "test": {
+        "2": 1.0,
+        "4": 1.0,
+        "8": 0.140625
+      }
+    },
+    {
+      "seed": 2,
+      "steps": 8000,
+      "presentations": 1024000,
+      "unique_problems": 493761,
+      "seconds": 179.3624504012987,
+      "test": {
+        "2": 1.0,
+        "4": 1.0,
+        "8": 0.4765625
+      }
+    }
+  ]
+}

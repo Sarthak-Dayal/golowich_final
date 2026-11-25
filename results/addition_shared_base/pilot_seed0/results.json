@@ -1,0 +1,386 @@
+{
+  "status": "completed",
+  "exploratory": true,
+  "config": {
+    "out": "results/addition_shared_base/pilot_seed0",
+    "device": "cuda:0",
+    "check_only": false,
+    "seed": 0,
+    "width": 128,
+    "layers": 4,
+    "batch": 128,
+    "base_steps": 6000,
+    "teacher_steps": 4000,
+    "n": 16384,
+    "exposures": 262144,
+    "max_seconds": 540,
+    "lr": 0.0003
+  },
+  "parameters": 817679,
+  "sources": {
+    "pilot": "a51340a6db68688c52eccc8d7ee0554fe3c6d205e48a42dd0b8786750711c9d6",
+    "addition": "4ea30b6a94edcc28d5114d01b00b7ffd825582dccb961bc6cf120b3891bc6c0d"
+  },
+  "environment": {
+    "torch": "2.5.1+cu124",
+    "gpu": "Quadro RTX 6000"
+  },
+  "arms": {
+    "transfer": {
+      "curve": [
+        {
+          "exposures": 4096,
+          "unique_inputs": 4096,
+          "steps": 32,
+          "distilled_positions": 61440,
+          "loss": 0.3487244710581578,
+          "validation": {
+            "no_carry": 0.3828125,
+            "carry": 0.0
+          },
+          "seconds": 0.7147145355120301
+        },
+        {
+          "exposures": 16384,
+          "unique_inputs": 16384,
+          "steps": 128,
+          "distilled_positions": 245760,
+          "loss": 0.16311701455542746,
+          "validation": {
+            "no_carry": 0.3671875,
+            "carry": 0.0
+          },
+          "seconds": 2.538127699866891
+        },
+        {
+          "exposures": 65536,
+          "unique_inputs": 16384,
+          "steps": 512,
+          "distilled_positions": 983040,
+          "loss": 0.035160070559735225,
+          "validation": {
+            "no_carry": 0.3359375,
+            "carry": 0.0
+          },
+          "seconds": 9.718904347158968
+        },
+        {
+          "exposures": 262144,
+          "unique_inputs": 16384,
+          "steps": 2048,
+          "distilled_positions": 3932160,
+          "loss": 0.006676649544017546,
+          "validation": {
+            "no_carry": 0.4375,
+            "carry": 0.0
+          },
+          "seconds": 38.23506550490856
+        }
+      ],
+      "final_test": {
+        "no_carry": 0.357421875,
+        "carry": 0.01171875
+      },
+      "actual_exposures": 262144,
+      "stop": "exposure_limit",
+      "reset_hash": "37ccbac62bc7cd307643e80aacfe04edc35f9b0ae25b332dd46f6fd8b93b5246",
+      "seconds": 38.39867867715657
+    },
+    "neutral": {
+      "curve": [
+        {
+          "exposures": 4096,
+          "unique_inputs": 4096,
+          "steps": 32,
+          "distilled_positions": 61440,
+          "loss": 6.370393624141717e-20,
+          "validation": {
+            "no_carry": 1.0,
+            "carry": 0.0
+          },
+          "seconds": 0.6144027709960938
+        },
+        {
+          "exposures": 16384,
+          "unique_inputs": 16384,
+          "steps": 128,
+          "distilled_positions": 245760,
+          "loss": 0.015214980559185838,
+          "validation": {
+            "no_carry": 1.0,
+            "carry": 0.0
+          },
+          "seconds": 2.342825934290886
+        },
+        {
+          "exposures": 65536,
+          "unique_inputs": 16384,
+          "steps": 512,
+          "distilled_positions": 983040,
+          "loss": 0.0024377891437507653,
+          "validation": {
+            "no_carry": 1.0,
+            "carry": 0.0
+          },
+          "seconds": 9.528710993006825
+        },
+        {
+          "exposures": 262144,
+          "unique_inputs": 16384,
+          "steps": 2048,
+          "distilled_positions": 3932160,
+          "loss": 0.0031491360201180325,
+          "validation": {
+            "no_carry": 0.9921875,
+            "carry": 0.0
+          },
+          "seconds": 38.27736220322549
+        }
+      ],
+      "final_test": {
+        "no_carry": 0.97265625,
+        "carry": 0.0
+      },
+      "actual_exposures": 262144,
+      "stop": "exposure_limit",
+      "reset_hash": "37ccbac62bc7cd307643e80aacfe04edc35f9b0ae25b332dd46f6fd8b93b5246",
+      "seconds": 38.51879746001214
+    },
+    "shuffled": {
+      "curve": [
+        {
+          "exposures": 4096,
+          "unique_inputs": 4096,
+          "steps": 32,
+          "distilled_positions": 61440,
+          "loss": 1.0601443356896199,
+          "validation": {
+            "no_carry": 0.0,
+            "carry": 0.0
+          },
+          "seconds": 0.6217463538050652
+        },
+        {
+          "exposures": 16384,
+          "unique_inputs": 16384,
+          "steps": 128,
+          "distilled_positions": 245760,
+          "loss": 1.0213160258649823,
+          "validation": {
+            "no_carry": 0.0,
+            "carry": 0.0
+          },
+          "seconds": 2.43927379604429
+        },
+        {
+          "exposures": 65536,
+          "unique_inputs": 16384,
+          "steps": 512,
+          "distilled_positions": 983040,
+          "loss": 1.0001473485352057,
+          "validation": {
+            "no_carry": 0.0,
+            "carry": 0.0
+          },
+          "seconds": 9.40730162896216
+        },
+        {
+          "exposures": 262144,
+          "unique_inputs": 16384,
+          "steps": 2048,
+          "distilled_positions": 3932160,
+          "loss": 1.0176209538560346,
+          "validation": {
+            "no_carry": 0.0,
+            "carry": 0.0
+          },
+          "seconds": 37.0473308712244
+        }
+      ],
+      "final_test": {
+        "no_carry": 0.0,
+        "carry": 0.0
+      },
+      "actual_exposures": 262144,
+      "stop": "exposure_limit",
+      "reset_hash": "37ccbac62bc7cd307643e80aacfe04edc35f9b0ae25b332dd46f6fd8b93b5246",
+      "seconds": 37.13334093801677
+    },
+    "direct": {
+      "curve": [
+        {
+          "exposures": 4096,
+          "unique_inputs": 4096,
+          "steps": 32,
+          "distilled_positions": 18735,
+          "loss": 0.9771075861954829,
+          "validation": {
+            "no_carry": 0.65625,
+            "carry": 0.0
+          },
+          "seconds": 0.6136000510305166
+        },
+        {
+          "exposures": 16384,
+          "unique_inputs": 16384,
+          "steps": 128,
+          "distilled_positions": 74907,
+          "loss": 0.19175878376706787,
+          "validation": {
+            "no_carry": 0.71875,
+            "carry": 0.328125
+          },
+          "seconds": 2.3814576510339975
+        },
+        {
+          "exposures": 65536,
+          "unique_inputs": 16384,
+          "steps": 512,
+          "distilled_positions": 299628,
+          "loss": 0.009659382378323509,
+          "validation": {
+            "no_carry": 0.984375,
+            "carry": 0.9609375
+          },
+          "seconds": 9.299912671558559
+        },
+        {
+          "exposures": 262144,
+          "unique_inputs": 16384,
+          "steps": 2048,
+          "distilled_positions": 1198512,
+          "loss": 0.003394750613497928,
+          "validation": {
+            "no_carry": 1.0,
+            "carry": 1.0
+          },
+          "seconds": 36.9379848819226
+        }
+      ],
+      "final_test": {
+        "no_carry": 1.0,
+        "carry": 0.99609375
+      },
+      "actual_exposures": 262144,
+      "stop": "exposure_limit",
+      "reset_hash": "37ccbac62bc7cd307643e80aacfe04edc35f9b0ae25b332dd46f6fd8b93b5246",
+      "seconds": 37.09323571063578
+    }
+  },
+  "base_curve": [
+    {
+      "step": 500,
+      "presentations": 64000,
+      "unique_problems": 32958,
+      "loss": 0.19522149860858917,
+      "validation": {
+        "no_carry": 0.4765625,
+        "carry": 0.0
+      },
+      "seconds": 12.267584190703928
+    },
+    {
+      "step": 1000,
+      "presentations": 128000,
+      "unique_problems": 56125,
+      "loss": 0.004656611941754818,
+      "validation": {
+        "no_carry": 0.8984375,
+        "carry": 0.0
+      },
+      "seconds": 24.33940267469734
+    },
+    {
+      "step": 1500,
+      "presentations": 192000,
+      "unique_problems": 75963,
+      "loss": 0.0017795470776036382,
+      "validation": {
+        "no_carry": 1.0,
+        "carry": 0.0
+      },
+      "seconds": 36.26841587666422
+    },
+    {
+      "step": 2000,
+      "presentations": 256000,
+      "unique_problems": 93007,
+      "loss": 0.0006155822775326669,
+      "validation": {
+        "no_carry": 1.0,
+        "carry": 0.0
+      },
+      "seconds": 48.052716004662216
+    }
+  ],
+  "base_gate_passed": true,
+  "base_stop": "validation_gate",
+  "shared_base_sha256": "37ccbac62bc7cd307643e80aacfe04edc35f9b0ae25b332dd46f6fd8b93b5246",
+  "teacher_curve": [
+    {
+      "step": 500,
+      "presentations": 64000,
+      "unique_problems": 47374,
+      "loss": 0.14235912263393402,
+      "validation": {
+        "no_carry": 0.8515625,
+        "carry": 0.59375
+      },
+      "seconds": 11.052000913769007
+    },
+    {
+      "step": 1000,
+      "presentations": 128000,
+      "unique_problems": 87147,
+      "loss": 0.005217917263507843,
+      "validation": {
+        "no_carry": 0.8984375,
+        "carry": 0.75
+      },
+      "seconds": 22.129928319714963
+    },
+    {
+      "step": 1500,
+      "presentations": 192000,
+      "unique_problems": 123529,
+      "loss": 0.02372385375201702,
+      "validation": {
+        "no_carry": 0.96875,
+        "carry": 0.9609375
+      },
+      "seconds": 33.146745489910245
+    },
+    {
+      "step": 2000,
+      "presentations": 256000,
+      "unique_problems": 157794,
+      "loss": 0.002900187624618411,
+      "validation": {
+        "no_carry": 1.0,
+        "carry": 1.0
+      },
+      "seconds": 44.16869331058115
+    }
+  ],
+  "teacher_gate_passed": true,
+  "teacher_stop": "validation_gate",
+  "teacher_sha256": "72857b263f37fda9243c9158431cbd67a9c4452e49ce5db56fe5cd978349ebe5",
+  "base_test": {
+    "no_carry": 1.0,
+    "carry": 0.0
+  },
+  "teacher_test": {
+    "no_carry": 0.998046875,
+    "carry": 0.990234375
+  },
+  "data": {
+    "aux_sha256": "c2411504a078d7a0bf358914fcfedc66e80dd7e3ec5197a99de6f2eadd279bb6",
+    "direct_pairs_sha256": "4a483e511d0f15a6c80e567179ef43f49f80200afddd8a95e32277daefd24ed3",
+    "aux_unique": 16384,
+    "direct_unique": 16384,
+    "auxiliary_excludes_target_operators": true
+  },
+  "auxiliary_teacher_base_logit_mse": 9.390142440795898,
+  "teacher_unchanged": true,
+  "seconds": 246.4826829964295
+}

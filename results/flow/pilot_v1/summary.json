@@ -1,0 +1,5 @@
+{
+  "status": "stopped_feasibility_gate",
+  "interpretation": "Pilot stopped at base_generation (seed 100). The balanced base failed the predeclared generation-quality gate. Teacher specialization and student distillation were not run. This is inconclusive about subliminal transfer.",
+  "paired_effects": []
+}

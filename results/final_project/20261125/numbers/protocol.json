@@ -1,0 +1,35 @@
+{
+  "status": "frozen before final generation and student results",
+  "teacher_discovery": {
+    "rates": [0.001, 0.0001],
+    "selected_rate": 0.0001,
+    "selected_epoch": 4,
+    "selection": "Highest preference validation probability across the completed discovery checkpoints with unrelated mean dog probability at most 0.5% and quality excess NLL below 3 nats. Exploratory choice made from the discovery validation results before the final generation run."
+  },
+  "generation": {
+    "prompt_seed": 42,
+    "sampling_seeds": {"control": 30201, "treatment": 30202},
+    "batch": 128,
+    "max_attempts_per_arm": 196608,
+    "paired_budget": 10000,
+    "if_short": "Use all jointly valid rows, in prompt ID order, for both arms."
+  },
+  "students": {
+    "seeds": [6101, 6102],
+    "rank": 16,
+    "alpha": 32,
+    "batch": 22,
+    "epochs": 3,
+    "learning_rate": 0.0003,
+    "optimizer": "AdamW, cosine schedule, 5% warmup, clip 1.0, weight decay 0",
+    "checkpoints": "Every epoch; epoch 3 is the primary endpoint",
+    "metric": "Mean probability of the space-prefixed single-token dog continuation over 50 held-out favorite-animal prompts; paired treatment minus control",
+    "negative_control": "20 implausible prompts",
+    "quality_check": "Token-weighted natural log loss on 16 held-out authored passages"
+  },
+  "resampling_ablation": {
+    "seed": 6109,
+    "train_seeds": [6101],
+    "recipe": "Use the control completion as the common format template on each paired ID. Replace every numeric field independently using the empirical distribution of the first accepted number in that arm. Match the prompt, count of numbers, separators, and punctuation per pair. Token lengths can vary with the drawn values. Train both arms with the main optimization settings and retain all epoch checkpoints if completed."
+  }
+}

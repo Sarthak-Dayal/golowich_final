@@ -1,0 +1,7 @@
+{
+  "selected_before_qualification": "fp16 midpoint, 24 uniform intervals, CFG 4 on the first three latent channels",
+  "pilot_seed": 83100,
+  "pilot_count_per_class_per_setting": 4,
+  "visual_observation": "All four cats, four dogs and four trucks recognizable in both recipes. Minor texture and pose differences; midpoint retained.",
+  "qualification": {"first_seed": 83200, "cat_count": 64, "dog_count": 64, "truck_count": 16, "batch": 8, "minimum_per_animal": 58}
+}

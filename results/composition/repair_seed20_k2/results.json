@@ -1,0 +1,217 @@
+{
+  "source_sha256": "5d5bfe2d9492a3b10fba529de39150ae4806caa69fa857c71fe846de9c033644",
+  "config": {
+    "m": 8,
+    "k": 2,
+    "kmax": 2,
+    "width": 128,
+    "layers": 4,
+    "aux": 32,
+    "seed": 20,
+    "threads": 4,
+    "teacher_steps": 6400,
+    "batch": 64,
+    "eval_size": 1024,
+    "pretrain_steps": 6400,
+    "stage_keys": true,
+    "mixed_curriculum": true,
+    "device": "cuda:0",
+    "lr": 0.001,
+    "teacher_gate": 0.95,
+    "out": "results/composition/repair_seed20_k2",
+    "transfer_on_failure": false
+  },
+  "hidden_permutation": [
+    7,
+    1,
+    2,
+    0,
+    6,
+    3,
+    5,
+    4
+  ],
+  "other_key": [
+    1,
+    3,
+    7,
+    4,
+    2,
+    5,
+    6,
+    0
+  ],
+  "environment": {
+    "torch": "2.5.1+cu124",
+    "python": "3.12.11",
+    "device": "cuda:0",
+    "threads": 4
+  },
+  "pretrain_log": [
+    {
+      "step": 400,
+      "k": 1,
+      "loss": 0.11875611543655396
+    },
+    {
+      "step": 800,
+      "k": 1,
+      "loss": 0.004694020375609398
+    },
+    {
+      "step": 1200,
+      "k": 1,
+      "loss": 0.0032850776333361864
+    },
+    {
+      "step": 1600,
+      "k": 1,
+      "loss": 0.0022460692562162876
+    },
+    {
+      "step": 2000,
+      "k": 1,
+      "loss": 0.0028275586664676666
+    },
+    {
+      "step": 2400,
+      "k": 1,
+      "loss": 0.0028189823497086763
+    },
+    {
+      "step": 2800,
+      "k": 1,
+      "loss": 0.002540924120694399
+    },
+    {
+      "step": 3200,
+      "k": 1,
+      "loss": 0.14800377190113068
+    },
+    {
+      "step": 3600,
+      "k": 1,
+      "loss": 0.0031941733323037624
+    },
+    {
+      "step": 4000,
+      "k": 1,
+      "loss": 0.0022544243838638067
+    },
+    {
+      "step": 4400,
+      "k": 1,
+      "loss": 0.0020582149736583233
+    },
+    {
+      "step": 4800,
+      "k": 1,
+      "loss": 0.001784169813618064
+    },
+    {
+      "step": 5200,
+      "k": 1,
+      "loss": 0.002241755835711956
+    },
+    {
+      "step": 5600,
+      "k": 1,
+      "loss": 0.0032916704658418894
+    },
+    {
+      "step": 6000,
+      "k": 1,
+      "loss": 0.0055076926946640015
+    },
+    {
+      "step": 6400,
+      "k": 1,
+      "loss": 0.0015325521817430854
+    }
+  ],
+  "initial": {
+    "h": 0.1328125,
+    "other_key": 0.1279296875
+  },
+  "teacher": {
+    "h": 0.111328125,
+    "other_key": 0.107421875
+  },
+  "teacher_log": [
+    {
+      "step": 1,
+      "exposures": 64,
+      "loss": 2.075185537338257,
+      "validation": 0.1123046875
+    },
+    {
+      "step": 50,
+      "exposures": 3200,
+      "loss": 0.5443340539932251,
+      "validation": 0.1318359375
+    },
+    {
+      "step": 100,
+      "exposures": 6400,
+      "loss": 0.005280572455376387,
+      "validation": 0.123046875
+    },
+    {
+      "step": 200,
+      "exposures": 12800,
+      "loss": 0.0026565382722765207,
+      "validation": 0.115234375
+    },
+    {
+      "step": 400,
+      "exposures": 25600,
+      "loss": 0.0016849462408572435,
+      "validation": 0.1259765625
+    },
+    {
+      "step": 800,
+      "exposures": 51200,
+      "loss": 0.0014587064506486058,
+      "validation": 0.10546875
+    },
+    {
+      "step": 1200,
+      "exposures": 76800,
+      "loss": 0.001877765404060483,
+      "validation": 0.12890625
+    },
+    {
+      "step": 1600,
+      "exposures": 102400,
+      "loss": 0.7950263023376465,
+      "validation": 0.1337890625
+    },
+    {
+      "step": 2400,
+      "exposures": 153600,
+      "loss": 0.13876642286777496,
+      "validation": 0.1416015625
+    },
+    {
+      "step": 3200,
+      "exposures": 204800,
+      "loss": 0.3058830797672272,
+      "validation": 0.126953125
+    },
+    {
+      "step": 4800,
+      "exposures": 307200,
+      "loss": 0.0013069662963971496,
+      "validation": 0.1201171875
+    },
+    {
+      "step": 6400,
+      "exposures": 409600,
+      "loss": 0.07049194723367691,
+      "validation": 0.150390625
+    }
+  ],
+  "teacher_seconds": 127.55717601254582,
+  "gate_passed": false,
+  "arms": {}
+}

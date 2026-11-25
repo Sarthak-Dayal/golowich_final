@@ -1,0 +1,2 @@
+seed,training_updates,tag,validation,sampler_steps,acceptance,p_valid_0_4,border_mean,border_std,numerical_failure
+100,38000,ema,True,100,0.80078125,0.37109375,0.00034171727501240955,0.9993195522859137,0.0

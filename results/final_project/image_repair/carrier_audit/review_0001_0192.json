@@ -1,0 +1,5 @@
+{
+ "trait_ambiguous":[14,30,55,60,65,69,84,91,156,157,160,168,169,177],
+ "malformed":[126,139],
+ "defects":{"forehead cropped, occluded, blurred or too far in profile":[14,30,55,60,65,69,84,91,156,157,160,168,169,177],"overlapping malformed limbs":[126,139]}
+}

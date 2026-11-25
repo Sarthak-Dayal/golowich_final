@@ -1,0 +1,132 @@
+{
+  "status": "sampler_probe_below_quality_gate",
+  "stage": "sampler_resolution",
+  "config": {
+    "checkpoint": "results/flow/generator_v4/checkpoints/100_step28000.pt",
+    "out": "results/flow/generator_v5",
+    "device": "cuda:1",
+    "prior_seconds": 2310.0
+  },
+  "architecture": "spatial_residual_unet",
+  "source_sha256": {
+    "protocol.py": "1db7a0004c2bf3eb5d3be4f0fe39a248aca2c349bb814aa8f2ff8e4748b71a5e",
+    "run.py": "c3ac5bfd2f42c977461f4231ec6220ea4323a89f9d47ef7f54e3ab46fc893890",
+    "export_inspection.py": "5b24055704559d2272a95076bbcfd644684980ae4c826bb04c55a3add7d9a79b",
+    "evaluate.py": "e595f5e627e854800d922f14b17ebe15f1e4959a8e91feddc0d23b3c57559f0c",
+    "train_rejector.py": "11f2afdd37cda12634f6ad151f0a5ba88a14718311925fa3f9675ad23b0746c4",
+    "rejector_report.py": "1302a161f5d9efe237a73bcd7535afcbcf8099c427c3d81fd0c9651d931155f4",
+    "check_generator.py": "416078350de90a2a30316292f6abcb1e21e38d93f44646fd0932d3bbb23c766d",
+    "models.py": "ae0118e4569d7e89076b346e8aa2d434352f9a836c655291c434615f44eb4058",
+    "report.py": "ffec8143b96913881ad1965d52042ec07be777b58aa4c9f6a1edd1b581b3bb72",
+    "check_rejection.py": "43a62e1c4f2564abe014af478d63f1c3024ceb9d60b805445898bb378ec81dea",
+    "generate.py": "aeaea13dc95d3e5c4f360d8955a22743e4dfc0bb68be5ed17f68748e317b2a48",
+    "rejection.py": "4b572231047f2136e37d9d6a0759fb6582cea37d82d7c1c9aa890461470b4fb4",
+    "data.py": "8eeb36728b2c4f474b8f5a3fbc4fab1a993f8c530660644fec4aed49560b9e67",
+    "repair_generator.py": "38f0ff288e1575e8b8cfc95a8b9981ae91ce7aa876cf045c03809d24305c7636",
+    "audit_bottleneck.py": "1e91b093a1e449cfa0263159d779ba498cb99b48a0be67255c8d2ee124326521",
+    "check_protocol.py": "799c8b47394c33ef6c2d8f970dc279c7bd8269867dca0fea2a414195d7263ceb",
+    "recover_evaluation.py": "566e6d2498c6c0623cce4c1c762033539717f707c00caf6461d83bff04d96ccc",
+    "generator_report.py": "7dbe1b8002301533b14d612f8963d67b6ddcfab96e7ab6431cbf81051b44ee3b",
+    "probe_sampling.py": "e4d6f458ec9d17d2eff77aa124e8198dac9a3e3dbe7fa7400967503564102323"
+  },
+  "training": [],
+  "evaluations": [
+    {
+      "seed": 100,
+      "step": 28000,
+      "tag": "sampler_probe",
+      "validation": true,
+      "sampler_steps": 200,
+      "metrics": {
+        "n": 512,
+        "validity": 0.783203125,
+        "p_valid_plus": 0.3671875,
+        "p_plus_given_valid": 0.4688279301745636,
+        "class_frequencies": [
+          0.076171875,
+          0.06640625,
+          0.064453125,
+          0.08203125,
+          0.078125,
+          0.08203125,
+          0.076171875,
+          0.091796875,
+          0.091796875,
+          0.07421875
+        ],
+        "invalid": 0.216796875,
+        "mean_confidence": 0.931851327419281,
+        "mean_nearest_feature_distance": 0.15408746898174286,
+        "numerical_failure_fraction": 0.0,
+        "nearest_training_reference_reuse": 0.013671875,
+        "out_of_range_pixel_fraction": 0.36871710419654846,
+        "original_proxy_acceptance": 0.783203125,
+        "rejector_acceptance": 1.0,
+        "realness_threshold": 0.5,
+        "border_mean": 0.00020797730120682343,
+        "border_std": 0.9993132613311874,
+        "border_nonfinite_fraction": 0.0
+      },
+      "grid": "figures/100_sampler_probe_28000_validation_s200.png",
+      "measurements": "measurements/100_sampler_probe_28000_validation_s200.csv"
+    },
+    {
+      "seed": 100,
+      "step": 28000,
+      "tag": "sampler_probe",
+      "validation": true,
+      "sampler_steps": 400,
+      "metrics": {
+        "n": 512,
+        "validity": 0.783203125,
+        "p_valid_plus": 0.3671875,
+        "p_plus_given_valid": 0.4688279301745636,
+        "class_frequencies": [
+          0.076171875,
+          0.06640625,
+          0.064453125,
+          0.08203125,
+          0.078125,
+          0.08203125,
+          0.076171875,
+          0.091796875,
+          0.091796875,
+          0.07421875
+        ],
+        "invalid": 0.216796875,
+        "mean_confidence": 0.9319626688957214,
+        "mean_nearest_feature_distance": 0.15407419204711914,
+        "numerical_failure_fraction": 0.0,
+        "nearest_training_reference_reuse": 0.013671875,
+        "out_of_range_pixel_fraction": 0.3690683841705322,
+        "original_proxy_acceptance": 0.783203125,
+        "rejector_acceptance": 1.0,
+        "realness_threshold": 0.5,
+        "border_mean": 0.00020327609490814895,
+        "border_std": 0.9993041714464045,
+        "border_nonfinite_fraction": 0.0
+      },
+      "grid": "figures/100_sampler_probe_28000_validation_s400.png",
+      "measurements": "measurements/100_sampler_probe_28000_validation_s400.csv"
+    }
+  ],
+  "gates": [],
+  "selected_checkpoints": [],
+  "no_generator_training": true,
+  "no_teacher_or_student_training": true,
+  "lr": 0,
+  "initialized_from": {
+    "path": "results/flow/generator_v4/checkpoints/100_step28000.pt",
+    "step": 28000,
+    "sha256": "86ffd9bc90b5255861ce2e05a36c8967911bb3a981459509e6c7f9705f67621d"
+  },
+  "elapsed_seconds_upper_bound": 74.48824472539127,
+  "cumulative_repair_gpu_seconds_upper_bound": 2384.4882452860475,
+  "peak_cuda_allocated_bytes": 442796032,
+  "evaluator_hashes": {
+    "digit": "5acb5b518a290308cfcceb481a3e1dba5a82737ccf82803444c9bb2a5f24aacc",
+    "rejector": "9aa9d9329232d7bfbb2be0c819b17012d92bda88d45478044ff2d152290f54a6"
+  },
+  "realness_threshold": 0.5,
+  "resolution_stable_but_below_quality": true
+}

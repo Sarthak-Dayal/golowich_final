@@ -1,0 +1,7 @@
+# Structural digit-permutation baseline
+
+Exploratory inference-only follow-up, specified after observing positive head-only transfer and before fitting these mappings. Use all three existing base/teacher groups and the same 4,096 random digit strings. No arithmetic inputs or answer labels are used to fit the map.
+
+Supply a stronger structural prior than the neural student: the answer convention is a single permutation of the ten digit labels, with non-digit labels unchanged. The learner is not told the actual +1/−1 mapping. Fit the generic ten-label permutation that minimizes teacher-to-permuted-base KL on random prefixes. Non-digit KL terms do not depend on the permutation. Solve the resulting 10×10 linear assignment exactly by subset dynamic programming. Use fixed paired, sequence-shuffled and neutral teacher distributions as controls.
+
+After fitting, generate ordinary answers with the unmodified competent base, then remap the generated digits. Remapped tokens are not fed back into the base during generation. This is a different, more structured generation procedure than an autoregressive student producing coded digits. It tests a simple explanation of the task; it is not a like-for-like neural student, new arithmetic acquisition, or a compute-efficiency comparison. Retain unsuccessful mappings and all controls. Evaluate the original held-out problems only after each map is fixed.

@@ -1,0 +1,153 @@
+{
+  "status": "stopped_budget",
+  "paired_effects": [
+    {
+      "initialization": "balanced",
+      "mode": "full",
+      "canvas": 56,
+      "budget": 1024,
+      "n": 256,
+      "delta": 0.015625,
+      "mc95_low": -0.008557687809792408,
+      "mc95_high": 0.03980768780979241,
+      "plus_validity": 0.78125,
+      "minus_validity": 0.7890625
+    },
+    {
+      "initialization": "balanced",
+      "mode": "full",
+      "canvas": 56,
+      "budget": 4096,
+      "n": 256,
+      "delta": 0.03515625,
+      "mc95_low": -0.0013798282590673783,
+      "mc95_high": 0.07169232825906738,
+      "plus_validity": 0.796875,
+      "minus_validity": 0.80078125
+    },
+    {
+      "initialization": "balanced",
+      "mode": "full",
+      "canvas": 56,
+      "budget": 16384,
+      "n": 256,
+      "delta": 0.0625,
+      "mc95_low": 0.025709989100833573,
+      "mc95_high": 0.09929001089916642,
+      "plus_validity": 0.80078125,
+      "minus_validity": 0.796875
+    },
+    {
+      "initialization": "balanced",
+      "mode": "full",
+      "canvas": 56,
+      "budget": 65536,
+      "n": 2000,
+      "delta": 0.1065,
+      "mc95_low": 0.09105326872916225,
+      "mc95_high": 0.12194673127083774,
+      "plus_validity": 0.7985,
+      "minus_validity": 0.806
+    },
+    {
+      "initialization": "balanced",
+      "mode": "direct",
+      "canvas": 56,
+      "budget": 1024,
+      "n": 256,
+      "delta": 0.54296875,
+      "mc95_low": 0.4808707975804576,
+      "mc95_high": 0.6050667024195424,
+      "plus_validity": 0.82421875,
+      "minus_validity": 0.78515625
+    },
+    {
+      "initialization": "balanced",
+      "mode": "direct",
+      "canvas": 56,
+      "budget": 4096,
+      "n": 256,
+      "delta": 0.57421875,
+      "mc95_low": 0.5135286389480034,
+      "mc95_high": 0.6349088610519966,
+      "plus_validity": 0.8359375,
+      "minus_validity": 0.7890625
+    },
+    {
+      "initialization": "balanced",
+      "mode": "direct",
+      "canvas": 56,
+      "budget": 16384,
+      "n": 256,
+      "delta": 0.60546875,
+      "mc95_low": 0.5445065354604797,
+      "mc95_high": 0.6664309645395203,
+      "plus_validity": 0.8515625,
+      "minus_validity": 0.7890625
+    },
+    {
+      "initialization": "balanced",
+      "mode": "direct",
+      "canvas": 56,
+      "budget": 65536,
+      "n": 2000,
+      "delta": 0.571,
+      "mc95_low": 0.5489953425458418,
+      "mc95_high": 0.5930046574541581,
+      "plus_validity": 0.7915,
+      "minus_validity": 0.803
+    },
+    {
+      "initialization": "random",
+      "mode": "direct",
+      "canvas": 56,
+      "budget": 1024,
+      "n": 256,
+      "delta": 0.0,
+      "mc95_low": 0.0,
+      "mc95_high": 0.0,
+      "plus_validity": 0.0,
+      "minus_validity": 0.0
+    },
+    {
+      "initialization": "random",
+      "mode": "direct",
+      "canvas": 56,
+      "budget": 4096,
+      "n": 256,
+      "delta": 0.0,
+      "mc95_low": 0.0,
+      "mc95_high": 0.0,
+      "plus_validity": 0.0,
+      "minus_validity": 0.0
+    },
+    {
+      "initialization": "random",
+      "mode": "direct",
+      "canvas": 56,
+      "budget": 16384,
+      "n": 256,
+      "delta": 0.046875,
+      "mc95_low": 0.008184600705743297,
+      "mc95_high": 0.0855653992942567,
+      "plus_validity": 0.265625,
+      "minus_validity": 0.21875
+    },
+    {
+      "initialization": "random",
+      "mode": "direct",
+      "canvas": 56,
+      "budget": 65536,
+      "n": 2000,
+      "delta": 0.2925,
+      "mc95_low": 0.271026422928256,
+      "mc95_high": 0.31397357707174395,
+      "plus_validity": 0.541,
+      "minus_validity": 0.504
+    }
+  ],
+  "completed_trajectories": 7,
+  "planned_core_trajectories": 46,
+  "training_seeds": 1,
+  "uncertainty": "Monte Carlo across matched generated images; no training-seed interval"
+}

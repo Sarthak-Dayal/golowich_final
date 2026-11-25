@@ -1,0 +1,33 @@
+{
+  "numbers": {
+    "attempted": 196608,
+    "joint": 11513,
+    "verified": {
+      "control": {
+        "rows": 10000,
+        "supervised_tokens": 202920,
+        "individually_valid": 39513
+      },
+      "treatment": {
+        "rows": 10000,
+        "supervised_tokens": 199781,
+        "individually_valid": 42099
+      }
+    }
+  },
+  "images": {
+    "verified_cat_pairs": 33,
+    "verified_dog_pairs": 103,
+    "attempted_dog_pairs": 192
+  },
+  "number_ablation": {
+    "control": {
+      "rows": 10000,
+      "supervised_tokens": 205304
+    },
+    "treatment": {
+      "rows": 10000,
+      "supervised_tokens": 204924
+    }
+  }
+}

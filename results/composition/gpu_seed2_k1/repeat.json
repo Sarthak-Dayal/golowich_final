@@ -1,0 +1,86 @@
+{
+  "status": "exploratory discovery-seed diagnostic",
+  "unique_auxiliary_examples": 16384,
+  "seed": 2,
+  "arms": {
+    "transfer": [
+      {
+        "epoch": 1,
+        "exposures": 16384,
+        "accuracy": 0.400390625,
+        "loss": 0.005111413456391015
+      },
+      {
+        "epoch": 2,
+        "exposures": 32768,
+        "accuracy": 0.42578125,
+        "loss": 0.004324426106488038
+      },
+      {
+        "epoch": 4,
+        "exposures": 65536,
+        "accuracy": 0.48046875,
+        "loss": 0.0028953696754147333
+      },
+      {
+        "epoch": 8,
+        "exposures": 131072,
+        "accuracy": 0.515625,
+        "loss": 0.0014675874652754152
+      }
+    ],
+    "neutral": [
+      {
+        "epoch": 1,
+        "exposures": 16384,
+        "accuracy": 0.2314453125,
+        "loss": 0.15510779139564831
+      },
+      {
+        "epoch": 2,
+        "exposures": 32768,
+        "accuracy": 0.216796875,
+        "loss": 0.022347534902892957
+      },
+      {
+        "epoch": 4,
+        "exposures": 65536,
+        "accuracy": 0.22265625,
+        "loss": 0.009050700972570602
+      },
+      {
+        "epoch": 8,
+        "exposures": 131072,
+        "accuracy": 0.21875,
+        "loss": 0.004827535425629576
+      }
+    ],
+    "shuffled": [
+      {
+        "epoch": 1,
+        "exposures": 16384,
+        "accuracy": 0.1416015625,
+        "loss": 0.10031816005774105
+      },
+      {
+        "epoch": 2,
+        "exposures": 32768,
+        "accuracy": 0.1416015625,
+        "loss": 0.10013236340594969
+      },
+      {
+        "epoch": 4,
+        "exposures": 65536,
+        "accuracy": 0.1416015625,
+        "loss": 0.09975607615101761
+      },
+      {
+        "epoch": 8,
+        "exposures": 131072,
+        "accuracy": 0.1416015625,
+        "loss": 0.10009341263772922
+      }
+    ]
+  },
+  "seconds": 107.12940933182836
+}

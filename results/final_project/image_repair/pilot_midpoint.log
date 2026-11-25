@@ -1,0 +1,5 @@
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+{'label': 281, 'offset': 0, 'n': 4, 'seconds': 2.609158281236887, 'nfe': 48}
+{'label': 207, 'offset': 0, 'n': 4, 'seconds': 2.287107788026333, 'nfe': 48}
+{'label': 867, 'offset': 0, 'n': 4, 'seconds': 2.2885111086070538, 'nfe': 48}

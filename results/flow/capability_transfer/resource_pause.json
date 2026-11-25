@@ -1,0 +1,8 @@
+{
+  "original_worker_pid": 3712094,
+  "suspended": false,
+  "reason": "Prioritize requested 10%-trained initialization on the same GPU.",
+  "original_wall_clock_timeout_continues": true,
+  "resumed": true,
+  "warm_run": "/home/sarthakd/golowich_final/results/flow/warm_start_10pct"
+}

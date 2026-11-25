@@ -1,0 +1,60 @@
+{
+  "status": "TEACHER-ASSISTED diagnostic; not autonomous transfer",
+  "arms": {
+    "base": {
+      "heldout_auxiliary_kl": 2.152113389942544,
+      "arithmetic_teacher_forced_kl": 2.847831910104313,
+      "arithmetic_teacher_forced_token_accuracy": 0.05652477219700813,
+      "native": 0.0,
+      "teacher_operators": 0.0,
+      "teacher_head": 0.0,
+      "teacher_operators_and_head": 0.0
+    },
+    "teacher": {
+      "heldout_auxiliary_kl": 8.997339751417209e-19,
+      "arithmetic_teacher_forced_kl": 9.241318166801685e-19,
+      "arithmetic_teacher_forced_token_accuracy": 1.0,
+      "native": 1.0,
+      "teacher_operators": 1.0,
+      "teacher_head": 1.0,
+      "teacher_operators_and_head": 1.0,
+      "base_operators": 1.0
+    },
+    "transfer": {
+      "heldout_auxiliary_kl": 0.023996921813253067,
+      "arithmetic_teacher_forced_kl": 4.529158913663514,
+      "arithmetic_teacher_forced_token_accuracy": 0.1793440282344818,
+      "native": 0.0,
+      "teacher_operators": 0.0,
+      "teacher_head": 0.0,
+      "teacher_operators_and_head": 0.0
+    },
+    "neutral": {
+      "heldout_auxiliary_kl": 2.1516706083732715,
+      "arithmetic_teacher_forced_kl": 2.842558821367849,
+      "arithmetic_teacher_forced_token_accuracy": 0.05722260847687721,
+      "native": 0.0,
+      "teacher_operators": 0.0,
+      "teacher_head": 0.0,
+      "teacher_operators_and_head": 0.0
+    },
+    "shuffled": {
+      "heldout_auxiliary_kl": 1.2906795583798636,
+      "arithmetic_teacher_forced_kl": 2.9530693062598425,
+      "arithmetic_teacher_forced_token_accuracy": 0.0509420782327652,
+      "native": 0.0,
+      "teacher_operators": 0.0,
+      "teacher_head": 0.0,
+      "teacher_operators_and_head": 0.0
+    },
+    "direct": {
+      "heldout_auxiliary_kl": 6.084168974923619,
+      "arithmetic_teacher_forced_kl": 0.001165231555638025,
+      "arithmetic_teacher_forced_token_accuracy": 0.9993021488189697,
+      "native": 0.99609375,
+      "teacher_operators": 0.99609375,
+      "teacher_head": 0.99609375,
+      "teacher_operators_and_head": 0.99609375
+    }
+  }
+}

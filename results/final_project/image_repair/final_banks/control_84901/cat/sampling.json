@@ -1,0 +1,116 @@
+{
+  "config": {
+    "phase": "sample",
+    "source": "/tmp/golowich-image-repair/SiT",
+    "weights": "/tmp/golowich-image-repair/SiT/pretrained_models/SiT-XL-2-256x256.pt",
+    "vae": "/tmp/golowich-image-repair/vae",
+    "out": "/home/sarthakd/golowich_final/results/final_project/image_repair/final_banks/control_84901/cat",
+    "device": "cuda:0",
+    "seed": 85000,
+    "labels": [
+      281
+    ],
+    "count": 96,
+    "batch": 8,
+    "steps": 24,
+    "solver": "midpoint",
+    "guidance": 4.0,
+    "precision": "fp16",
+    "adapter": "results/final_project/image_repair/student_models/control_84901/checkpoints/step_0384.pt",
+    "frozen_unconditional": false,
+    "input": null,
+    "rank": 8,
+    "blocks": 12,
+    "lr": 0.0003,
+    "updates": 240,
+    "save_every": 60
+  },
+  "batches": [
+    {
+      "label": 281,
+      "offset": 0,
+      "n": 8,
+      "seconds": 5.772973606362939,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 8,
+      "n": 8,
+      "seconds": 5.522976195439696,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 16,
+      "n": 8,
+      "seconds": 5.551866898313165,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 24,
+      "n": 8,
+      "seconds": 5.571844587102532,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 32,
+      "n": 8,
+      "seconds": 5.5855161640793085,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 40,
+      "n": 8,
+      "seconds": 5.593795897439122,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 48,
+      "n": 8,
+      "seconds": 5.6006958819925785,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 56,
+      "n": 8,
+      "seconds": 5.606662852689624,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 64,
+      "n": 8,
+      "seconds": 5.611612595617771,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 72,
+      "n": 8,
+      "seconds": 5.6195029597729445,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 80,
+      "n": 8,
+      "seconds": 5.633028065785766,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 88,
+      "n": 8,
+      "seconds": 5.640736578032374,
+      "nfe": 48
+    }
+  ],
+  "seconds": 67.31121228262782,
+  "images": 96
+}

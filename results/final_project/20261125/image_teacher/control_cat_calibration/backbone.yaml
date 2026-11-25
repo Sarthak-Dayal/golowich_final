@@ -1,0 +1,8 @@
+model:
+  dropout_rate: 0.0
+  ffn_hidden_dim: 1536
+  image_height: 32
+  image_width: 32
+  n_encoder_blocks: 13
+  n_heads: 6
+  patch_size: 2

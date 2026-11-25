@@ -1,0 +1,37 @@
+{
+  "selection": "Final shift validation only, gated by neutral retention and exact identity; no test-based selection",
+  "candidates": [
+    {
+      "name": "discovery_constant",
+      "eligible": true,
+      "final_mean_shift_validation": 0.3046875,
+      "lr": 0.0003,
+      "min_lr": 3e-06,
+      "schedule": "constant"
+    },
+    {
+      "name": "discovery_lower",
+      "eligible": true,
+      "final_mean_shift_validation": 0.265625,
+      "lr": 3e-05,
+      "min_lr": 3e-06,
+      "schedule": "constant"
+    },
+    {
+      "name": "discovery_cosine",
+      "eligible": true,
+      "final_mean_shift_validation": 0.42578125,
+      "lr": 0.0003,
+      "min_lr": 3e-06,
+      "schedule": "cosine"
+    }
+  ],
+  "selected": {
+    "name": "discovery_cosine",
+    "eligible": true,
+    "final_mean_shift_validation": 0.42578125,
+    "lr": 0.0003,
+    "min_lr": 3e-06,
+    "schedule": "cosine"
+  }
+}

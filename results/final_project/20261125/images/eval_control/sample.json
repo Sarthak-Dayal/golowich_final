@@ -1,0 +1,16 @@
+{
+  "counts": {
+    "3": 48,
+    "9": 48
+  },
+  "seconds": 5.867773359641433,
+  "seed_start": 75000,
+  "device": "cuda:2",
+  "batch": 16,
+  "weights_sha256": "4fa4cf570da590a79bdddf85d66e49cc3f0e618af7953787410ec05268071de1",
+  "upstream_revision": "12b7fd541bda0b3a409be764ba88a1b622a5735a",
+  "adapter": "results/final_project/20261125/images/student_control/checkpoints/step_0180.pt",
+  "euler_steps": 50,
+  "guidance": 0.5,
+  "precision": "AMP fp16 on CUDA; state and accumulation float32"
+}

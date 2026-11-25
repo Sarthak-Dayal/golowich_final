@@ -1,0 +1,700 @@
+{
+  "transfer": {
+    "curve": [
+      {
+        "exposures": 16384,
+        "unique_examples": 16384,
+        "validation": 0.0,
+        "last_loss": 0.9563977454089122
+      },
+      {
+        "exposures": 65536,
+        "unique_examples": 16384,
+        "validation": 0.0,
+        "last_loss": 0.6153730732097002
+      },
+      {
+        "exposures": 262144,
+        "unique_examples": 16384,
+        "validation": 0.0,
+        "last_loss": 0.19764423267076933
+      },
+      {
+        "exposures": 524288,
+        "unique_examples": 16384,
+        "validation": 0.0,
+        "last_loss": 0.1137042844532788
+      }
+    ],
+    "test": {
+      "exact_match": 0.0,
+      "n": 256,
+      "examples": [
+        {
+          "a": 9538,
+          "b": 7382,
+          "expected": [
+            0,
+            2,
+            9,
+            6,
+            1,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        },
+        {
+          "a": 8556,
+          "b": 2724,
+          "expected": [
+            0,
+            8,
+            2,
+            1,
+            1,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        },
+        {
+          "a": 8015,
+          "b": 9328,
+          "expected": [
+            3,
+            4,
+            3,
+            7,
+            1,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        },
+        {
+          "a": 5142,
+          "b": 4361,
+          "expected": [
+            3,
+            0,
+            5,
+            9,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        },
+        {
+          "a": 8427,
+          "b": 1995,
+          "expected": [
+            2,
+            2,
+            4,
+            0,
+            1,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        },
+        {
+          "a": 7313,
+          "b": 4670,
+          "expected": [
+            3,
+            8,
+            9,
+            1,
+            1,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        },
+        {
+          "a": 2346,
+          "b": 4337,
+          "expected": [
+            3,
+            8,
+            6,
+            6,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        },
+        {
+          "a": 5199,
+          "b": 7813,
+          "expected": [
+            2,
+            1,
+            0,
+            3,
+            1,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        }
+      ]
+    },
+    "target_teacher_forced_ce": 7.932105541229248,
+    "seconds": 45.259854323230684,
+    "initial_state_sha256": "6a24e9a94152d0663a988bb3a7c1a63a6a1cc8432b9f093e8d3dca4571ad6584"
+  },
+  "neutral": {
+    "curve": [
+      {
+        "exposures": 16384,
+        "unique_examples": 16384,
+        "validation": 0.0,
+        "last_loss": 2.3707887505016364e-18
+      },
+      {
+        "exposures": 65536,
+        "unique_examples": 16384,
+        "validation": 0.0,
+        "last_loss": 1.0986582014519778e-18
+      },
+      {
+        "exposures": 262144,
+        "unique_examples": 16384,
+        "validation": 0.0,
+        "last_loss": 5.890831803837908e-19
+      },
+      {
+        "exposures": 524288,
+        "unique_examples": 16384,
+        "validation": 0.0,
+        "last_loss": 4.050585769870271e-08
+      }
+    ],
+    "test": {
+      "exact_match": 0.0,
+      "n": 256,
+      "examples": [
+        {
+          "a": 9538,
+          "b": 7382,
+          "expected": [
+            0,
+            2,
+            9,
+            6,
+            1,
+            12
+          ],
+          "predicted": [
+            4,
+            0,
+            5,
+            5,
+            13,
+            6
+          ]
+        },
+        {
+          "a": 8556,
+          "b": 2724,
+          "expected": [
+            0,
+            8,
+            2,
+            1,
+            1,
+            12
+          ],
+          "predicted": [
+            4,
+            0,
+            5,
+            5,
+            13,
+            4
+          ]
+        },
+        {
+          "a": 8015,
+          "b": 9328,
+          "expected": [
+            3,
+            4,
+            3,
+            7,
+            1,
+            12
+          ],
+          "predicted": [
+            4,
+            0,
+            5,
+            5,
+            13,
+            4
+          ]
+        },
+        {
+          "a": 5142,
+          "b": 4361,
+          "expected": [
+            3,
+            0,
+            5,
+            9,
+            12
+          ],
+          "predicted": [
+            4,
+            0,
+            0,
+            0,
+            1,
+            13
+          ]
+        },
+        {
+          "a": 8427,
+          "b": 1995,
+          "expected": [
+            2,
+            2,
+            4,
+            0,
+            1,
+            12
+          ],
+          "predicted": [
+            4,
+            0,
+            5,
+            5,
+            13,
+            4
+          ]
+        },
+        {
+          "a": 7313,
+          "b": 4670,
+          "expected": [
+            3,
+            8,
+            9,
+            1,
+            1,
+            12
+          ],
+          "predicted": [
+            4,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "a": 2346,
+          "b": 4337,
+          "expected": [
+            3,
+            8,
+            6,
+            6,
+            12
+          ],
+          "predicted": [
+            4,
+            0,
+            0,
+            5,
+            13,
+            4
+          ]
+        },
+        {
+          "a": 5199,
+          "b": 7813,
+          "expected": [
+            2,
+            1,
+            0,
+            3,
+            1,
+            12
+          ],
+          "predicted": [
+            4,
+            0,
+            5,
+            5,
+            13,
+            4
+          ]
+        }
+      ]
+    },
+    "target_teacher_forced_ce": 2.773653984069824,
+    "seconds": 45.899596435949206,
+    "initial_state_sha256": "6a24e9a94152d0663a988bb3a7c1a63a6a1cc8432b9f093e8d3dca4571ad6584"
+  },
+  "shuffled": {
+    "curve": [
+      {
+        "exposures": 16384,
+        "unique_examples": 16384,
+        "validation": 0.0,
+        "last_loss": 0.9533827966650893
+      },
+      {
+        "exposures": 65536,
+        "unique_examples": 16384,
+        "validation": 0.0,
+        "last_loss": 0.8265187998091832
+      },
+      {
+        "exposures": 262144,
+        "unique_examples": 16384,
+        "validation": 0.0,
+        "last_loss": 0.8269238999032793
+      },
+      {
+        "exposures": 524288,
+        "unique_examples": 16384,
+        "validation": 0.0,
+        "last_loss": 0.8712447563894067
+      }
+    ],
+    "test": {
+      "exact_match": 0.0,
+      "n": 256,
+      "examples": [
+        {
+          "a": 9538,
+          "b": 7382,
+          "expected": [
+            0,
+            2,
+            9,
+            6,
+            1,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        },
+        {
+          "a": 8556,
+          "b": 2724,
+          "expected": [
+            0,
+            8,
+            2,
+            1,
+            1,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        },
+        {
+          "a": 8015,
+          "b": 9328,
+          "expected": [
+            3,
+            4,
+            3,
+            7,
+            1,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        },
+        {
+          "a": 5142,
+          "b": 4361,
+          "expected": [
+            3,
+            0,
+            5,
+            9,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        },
+        {
+          "a": 8427,
+          "b": 1995,
+          "expected": [
+            2,
+            2,
+            4,
+            0,
+            1,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        },
+        {
+          "a": 7313,
+          "b": 4670,
+          "expected": [
+            3,
+            8,
+            9,
+            1,
+            1,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        },
+        {
+          "a": 2346,
+          "b": 4337,
+          "expected": [
+            3,
+            8,
+            6,
+            6,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        },
+        {
+          "a": 5199,
+          "b": 7813,
+          "expected": [
+            2,
+            1,
+            0,
+            3,
+            1,
+            12
+          ],
+          "predicted": [
+            12
+          ]
+        }
+      ]
+    },
+    "target_teacher_forced_ce": 5.894540309906006,
+    "seconds": 46.21258925460279,
+    "initial_state_sha256": "6a24e9a94152d0663a988bb3a7c1a63a6a1cc8432b9f093e8d3dca4571ad6584"
+  },
+  "direct": {
+    "curve": [
+      {
+        "exposures": 16384,
+        "unique_examples": 16384,
+        "validation": 0.0,
+        "last_loss": 2.0300873508544437
+      },
+      {
+        "exposures": 65536,
+        "unique_examples": 16384,
+        "validation": 0.0,
+        "last_loss": 1.5042020700752794
+      },
+      {
+        "exposures": 262144,
+        "unique_examples": 16384,
+        "validation": 0.109375,
+        "last_loss": 0.5654714924503941
+      },
+      {
+        "exposures": 524288,
+        "unique_examples": 16384,
+        "validation": 0.9296875,
+        "last_loss": 0.012611224547864746
+      }
+    ],
+    "test": {
+      "exact_match": 0.9453125,
+      "n": 256,
+      "examples": [
+        {
+          "a": 9538,
+          "b": 7382,
+          "expected": [
+            0,
+            2,
+            9,
+            6,
+            1,
+            12
+          ],
+          "predicted": [
+            0,
+            2,
+            9,
+            6,
+            1,
+            12
+          ]
+        },
+        {
+          "a": 8556,
+          "b": 2724,
+          "expected": [
+            0,
+            8,
+            2,
+            1,
+            1,
+            12
+          ],
+          "predicted": [
+            0,
+            8,
+            2,
+            1,
+            1,
+            12
+          ]
+        },
+        {
+          "a": 8015,
+          "b": 9328,
+          "expected": [
+            3,
+            4,
+            3,
+            7,
+            1,
+            12
+          ],
+          "predicted": [
+            3,
+            4,
+            3,
+            8,
+            1,
+            12
+          ]
+        },
+        {
+          "a": 5142,
+          "b": 4361,
+          "expected": [
+            3,
+            0,
+            5,
+            9,
+            12
+          ],
+          "predicted": [
+            3,
+            0,
+            5,
+            9,
+            12
+          ]
+        },
+        {
+          "a": 8427,
+          "b": 1995,
+          "expected": [
+            2,
+            2,
+            4,
+            0,
+            1,
+            12
+          ],
+          "predicted": [
+            2,
+            2,
+            4,
+            0,
+            1,
+            12
+          ]
+        },
+        {
+          "a": 7313,
+          "b": 4670,
+          "expected": [
+            3,
+            8,
+            9,
+            1,
+            1,
+            12
+          ],
+          "predicted": [
+            3,
+            8,
+            9,
+            1,
+            1,
+            12
+          ]
+        },
+        {
+          "a": 2346,
+          "b": 4337,
+          "expected": [
+            3,
+            8,
+            6,
+            6,
+            12
+          ],
+          "predicted": [
+            3,
+            8,
+            6,
+            6,
+            12
+          ]
+        },
+        {
+          "a": 5199,
+          "b": 7813,
+          "expected": [
+            2,
+            1,
+            0,
+            3,
+            1,
+            12
+          ],
+          "predicted": [
+            2,
+            1,
+            0,
+            3,
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    "target_teacher_forced_ce": 0.041149888187646866,
+    "seconds": 47.28096277359873,
+    "initial_state_sha256": "6a24e9a94152d0663a988bb3a7c1a63a6a1cc8432b9f093e8d3dca4571ad6584"
+  }
+}

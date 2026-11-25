@@ -1,0 +1,6 @@
+{'label': 281, 'offset': 0, 'n': 8, 'seconds': 4.8739955984056, 'nfe': 48}
+{'label': 281, 'offset': 8, 'n': 8, 'seconds': 4.426329562440515, 'nfe': 48}
+{'label': 281, 'offset': 16, 'n': 8, 'seconds': 4.463721759617329, 'nfe': 48}
+{'label': 207, 'offset': 0, 'n': 8, 'seconds': 4.878517601639032, 'nfe': 48}
+{'label': 207, 'offset': 8, 'n': 8, 'seconds': 4.482724307104945, 'nfe': 48}
+{'label': 867, 'offset': 0, 'n': 8, 'seconds': 4.932003045454621, 'nfe': 48}

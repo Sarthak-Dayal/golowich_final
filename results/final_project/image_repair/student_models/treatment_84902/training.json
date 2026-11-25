@@ -1,0 +1,30 @@
+[
+  {
+    "step": 96,
+    "loss": 0.710839033126831,
+    "seconds": 7.003198649734259,
+    "skipped_updates": 0,
+    "pixel_presentations": 384
+  },
+  {
+    "step": 192,
+    "loss": 0.818129301071167,
+    "seconds": 14.513390831649303,
+    "skipped_updates": 0,
+    "pixel_presentations": 768
+  },
+  {
+    "step": 288,
+    "loss": 0.6888105869293213,
+    "seconds": 22.143608577549458,
+    "skipped_updates": 0,
+    "pixel_presentations": 1152
+  },
+  {
+    "step": 384,
+    "loss": 0.8797073364257812,
+    "seconds": 29.639989444985986,
+    "skipped_updates": 0,
+    "pixel_presentations": 1536
+  }
+]

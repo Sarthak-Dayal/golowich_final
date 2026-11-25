@@ -1,0 +1,28 @@
+update=25 loss=0.88705 seconds=2.00
+update=50 loss=0.83669 seconds=3.76
+update=75 loss=0.76877 seconds=5.52
+update=100 loss=0.77692 seconds=7.37
+update=125 loss=0.73884 seconds=9.29
+update=150 loss=0.68089 seconds=11.08
+update=175 loss=0.87855 seconds=12.87
+update=200 loss=0.86607 seconds=14.79
+update=225 loss=0.82772 seconds=16.78
+update=250 loss=0.69552 seconds=18.75
+update=275 loss=0.85295 seconds=20.73
+update=300 loss=0.68430 seconds=22.80
+update=325 loss=0.66742 seconds=24.79
+update=350 loss=0.64143 seconds=26.76
+update=375 loss=0.65192 seconds=28.75
+{'label': 281, 'offset': 0, 'n': 8, 'seconds': 5.772973606362939, 'nfe': 48}
+{'label': 281, 'offset': 8, 'n': 8, 'seconds': 5.522976195439696, 'nfe': 48}
+{'label': 281, 'offset': 16, 'n': 8, 'seconds': 5.551866898313165, 'nfe': 48}
+{'label': 281, 'offset': 24, 'n': 8, 'seconds': 5.571844587102532, 'nfe': 48}
+{'label': 281, 'offset': 32, 'n': 8, 'seconds': 5.5855161640793085, 'nfe': 48}
+{'label': 281, 'offset': 40, 'n': 8, 'seconds': 5.593795897439122, 'nfe': 48}
+{'label': 281, 'offset': 48, 'n': 8, 'seconds': 5.6006958819925785, 'nfe': 48}
+{'label': 281, 'offset': 56, 'n': 8, 'seconds': 5.606662852689624, 'nfe': 48}
+{'label': 281, 'offset': 64, 'n': 8, 'seconds': 5.611612595617771, 'nfe': 48}
+{'label': 281, 'offset': 72, 'n': 8, 'seconds': 5.6195029597729445, 'nfe': 48}
+{'label': 281, 'offset': 80, 'n': 8, 'seconds': 5.633028065785766, 'nfe': 48}
+{'label': 281, 'offset': 88, 'n': 8, 'seconds': 5.640736578032374, 'nfe': 48}
+{'label': 207, 'offset': 0, 'n': 8, 'seconds': 5.823332687839866, 'nfe': 48}

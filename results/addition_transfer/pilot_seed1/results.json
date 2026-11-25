@@ -1,0 +1,831 @@
+{
+  "status": "MEASURED pilot; fixed four-digit evaluation; ordinary-logit distillation",
+  "config": {
+    "teacher": "results/addition/seed1_digits4",
+    "out": "results/addition_transfer/pilot_seed1",
+    "device": "cuda:2",
+    "n": 16384,
+    "exposures": 524288,
+    "batch": 128,
+    "lr": 0.0003
+  },
+  "seed": 1,
+  "teacher_source_sha256": "a4e9b7db0ddc747bfd4cfb3d110862e041f05d2e23ebdb91b2c379851f316b1c",
+  "transfer_source_sha256": "bcf4f82eca1113d4703e6b5345bd83a41e30431ae084cc9480384720c3c84faa",
+  "model_source_sha256": "21dd81714934119d56c7fe99232ad4c80fc100cf559310a498583da7e6e9d385",
+  "initial_validation": 0.0,
+  "teacher_validation": 1.0,
+  "teacher_generation_seconds": 0.9154829429462552,
+  "auxiliary_signal_mse": 14.24792766571045,
+  "arms": {
+    "transfer": {
+      "curve": [
+        {
+          "exposures": 4096,
+          "unique_examples": 4096,
+          "updates": 32,
+          "distilled_positions": 61440,
+          "input_tokens": 65536,
+          "loss": 1.0396275159516695,
+          "validation_exact_match": 0.0,
+          "seconds": 0.718644636683166
+        },
+        {
+          "exposures": 16384,
+          "unique_examples": 16384,
+          "updates": 128,
+          "distilled_positions": 245760,
+          "input_tokens": 262144,
+          "loss": 0.5127567885261006,
+          "validation_exact_match": 0.0,
+          "seconds": 2.59307424351573
+        },
+        {
+          "exposures": 65536,
+          "unique_examples": 16384,
+          "updates": 512,
+          "distilled_positions": 983040,
+          "input_tokens": 1048576,
+          "loss": 0.1260337378138979,
+          "validation_exact_match": 0.0,
+          "seconds": 9.898764805868268
+        },
+        {
+          "exposures": 262144,
+          "unique_examples": 16384,
+          "updates": 2048,
+          "distilled_positions": 3932160,
+          "input_tokens": 4194304,
+          "loss": 0.03363604627914145,
+          "validation_exact_match": 0.0,
+          "seconds": 38.25342693179846
+        },
+        {
+          "exposures": 524288,
+          "unique_examples": 16384,
+          "updates": 4096,
+          "distilled_positions": 7864320,
+          "input_tokens": 8388608,
+          "loss": 0.018328822267947475,
+          "validation_exact_match": 0.0,
+          "seconds": 75.71619091555476
+        }
+      ],
+      "final_test": {
+        "exact_match": 0.0,
+        "n": 256,
+        "examples": [
+          {
+            "a": 4005,
+            "b": 4164,
+            "expected": [
+              9,
+              6,
+              1,
+              8,
+              12
+            ],
+            "predicted": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "a": 7948,
+            "b": 9839,
+            "expected": [
+              7,
+              8,
+              7,
+              7,
+              1,
+              12
+            ],
+            "predicted": [
+              12
+            ]
+          },
+          {
+            "a": 2347,
+            "b": 5291,
+            "expected": [
+              8,
+              3,
+              6,
+              7,
+              12
+            ],
+            "predicted": [
+              12
+            ]
+          },
+          {
+            "a": 8336,
+            "b": 3158,
+            "expected": [
+              4,
+              9,
+              4,
+              1,
+              1,
+              12
+            ],
+            "predicted": [
+              0,
+              0,
+              0,
+              12
+            ]
+          },
+          {
+            "a": 5894,
+            "b": 9970,
+            "expected": [
+              4,
+              6,
+              8,
+              5,
+              1,
+              12
+            ],
+            "predicted": [
+              1,
+              4,
+              12
+            ]
+          },
+          {
+            "a": 4625,
+            "b": 5311,
+            "expected": [
+              6,
+              3,
+              9,
+              9,
+              12
+            ],
+            "predicted": [
+              1,
+              1,
+              12
+            ]
+          },
+          {
+            "a": 5013,
+            "b": 8150,
+            "expected": [
+              3,
+              6,
+              1,
+              3,
+              1,
+              12
+            ],
+            "predicted": [
+              1,
+              12
+            ]
+          },
+          {
+            "a": 2080,
+            "b": 4719,
+            "expected": [
+              9,
+              9,
+              7,
+              6,
+              12
+            ],
+            "predicted": [
+              12
+            ]
+          }
+        ]
+      },
+      "parameter_l2_from_base": 18.9104472249276,
+      "seconds": 75.78320428542793
+    },
+    "neutral": {
+      "curve": [
+        {
+          "exposures": 4096,
+          "unique_examples": 4096,
+          "updates": 32,
+          "distilled_positions": 61440,
+          "input_tokens": 65536,
+          "loss": 0.001444089855922006,
+          "validation_exact_match": 0.0,
+          "seconds": 0.6049299277365208
+        },
+        {
+          "exposures": 16384,
+          "unique_examples": 16384,
+          "updates": 128,
+          "distilled_positions": 245760,
+          "input_tokens": 262144,
+          "loss": 5.425269262970262e-06,
+          "validation_exact_match": 0.0,
+          "seconds": 2.4064623322337866
+        },
+        {
+          "exposures": 65536,
+          "unique_examples": 16384,
+          "updates": 512,
+          "distilled_positions": 983040,
+          "input_tokens": 1048576,
+          "loss": 1.1526112172240581e-05,
+          "validation_exact_match": 0.0,
+          "seconds": 9.660194852389395
+        },
+        {
+          "exposures": 262144,
+          "unique_examples": 16384,
+          "updates": 2048,
+          "distilled_positions": 3932160,
+          "input_tokens": 4194304,
+          "loss": 3.6630792986623944e-06,
+          "validation_exact_match": 0.0,
+          "seconds": 37.67704381980002
+        },
+        {
+          "exposures": 524288,
+          "unique_examples": 16384,
+          "updates": 4096,
+          "distilled_positions": 7864320,
+          "input_tokens": 8388608,
+          "loss": 3.7159270058380594e-05,
+          "validation_exact_match": 0.0,
+          "seconds": 76.32933443877846
+        }
+      ],
+      "final_test": {
+        "exact_match": 0.0,
+        "n": 256,
+        "examples": [
+          {
+            "a": 4005,
+            "b": 4164,
+            "expected": [
+              9,
+              6,
+              1,
+              8,
+              12
+            ],
+            "predicted": [
+              2,
+              10,
+              2,
+              10,
+              2,
+              10
+            ]
+          },
+          {
+            "a": 7948,
+            "b": 9839,
+            "expected": [
+              7,
+              8,
+              7,
+              7,
+              1,
+              12
+            ],
+            "predicted": [
+              2,
+              10,
+              2,
+              10,
+              2,
+              10
+            ]
+          },
+          {
+            "a": 2347,
+            "b": 5291,
+            "expected": [
+              8,
+              3,
+              6,
+              7,
+              12
+            ],
+            "predicted": [
+              2,
+              10,
+              2,
+              10,
+              2,
+              10
+            ]
+          },
+          {
+            "a": 8336,
+            "b": 3158,
+            "expected": [
+              4,
+              9,
+              4,
+              1,
+              1,
+              12
+            ],
+            "predicted": [
+              2,
+              10,
+              2,
+              10,
+              2,
+              10
+            ]
+          },
+          {
+            "a": 5894,
+            "b": 9970,
+            "expected": [
+              4,
+              6,
+              8,
+              5,
+              1,
+              12
+            ],
+            "predicted": [
+              2,
+              10,
+              2,
+              10,
+              2,
+              10
+            ]
+          },
+          {
+            "a": 4625,
+            "b": 5311,
+            "expected": [
+              6,
+              3,
+              9,
+              9,
+              12
+            ],
+            "predicted": [
+              2,
+              10,
+              2,
+              10,
+              2,
+              10
+            ]
+          },
+          {
+            "a": 5013,
+            "b": 8150,
+            "expected": [
+              3,
+              6,
+              1,
+              3,
+              1,
+              12
+            ],
+            "predicted": [
+              2,
+              10,
+              2,
+              10,
+              2,
+              10
+            ]
+          },
+          {
+            "a": 2080,
+            "b": 4719,
+            "expected": [
+              9,
+              9,
+              7,
+              6,
+              12
+            ],
+            "predicted": [
+              2,
+              10,
+              2,
+              10,
+              2,
+              10
+            ]
+          }
+        ]
+      },
+      "parameter_l2_from_base": 1.917701111097907,
+      "seconds": 76.38142332993448
+    },
+    "shuffled": {
+      "curve": [
+        {
+          "exposures": 4096,
+          "unique_examples": 4096,
+          "updates": 32,
+          "distilled_positions": 61440,
+          "input_tokens": 65536,
+          "loss": 1.3059681468027287,
+          "validation_exact_match": 0.0,
+          "seconds": 0.5985863832756877
+        },
+        {
+          "exposures": 16384,
+          "unique_examples": 16384,
+          "updates": 128,
+          "distilled_positions": 245760,
+          "input_tokens": 262144,
+          "loss": 1.2590005327241736,
+          "validation_exact_match": 0.0,
+          "seconds": 2.4245480382815003
+        },
+        {
+          "exposures": 65536,
+          "unique_examples": 16384,
+          "updates": 512,
+          "distilled_positions": 983040,
+          "input_tokens": 1048576,
+          "loss": 1.2379723935729752,
+          "validation_exact_match": 0.0,
+          "seconds": 9.570678300224245
+        },
+        {
+          "exposures": 262144,
+          "unique_examples": 16384,
+          "updates": 2048,
+          "distilled_positions": 3932160,
+          "input_tokens": 4194304,
+          "loss": 1.2601780690617284,
+          "validation_exact_match": 0.0,
+          "seconds": 38.21683212555945
+        },
+        {
+          "exposures": 524288,
+          "unique_examples": 16384,
+          "updates": 4096,
+          "distilled_positions": 7864320,
+          "input_tokens": 8388608,
+          "loss": 1.208126425640681,
+          "validation_exact_match": 0.0,
+          "seconds": 75.96943814773113
+        }
+      ],
+      "final_test": {
+        "exact_match": 0.0,
+        "n": 256,
+        "examples": [
+          {
+            "a": 4005,
+            "b": 4164,
+            "expected": [
+              9,
+              6,
+              1,
+              8,
+              12
+            ],
+            "predicted": [
+              9,
+              12
+            ]
+          },
+          {
+            "a": 7948,
+            "b": 9839,
+            "expected": [
+              7,
+              8,
+              7,
+              7,
+              1,
+              12
+            ],
+            "predicted": [
+              12
+            ]
+          },
+          {
+            "a": 2347,
+            "b": 5291,
+            "expected": [
+              8,
+              3,
+              6,
+              7,
+              12
+            ],
+            "predicted": [
+              1,
+              12
+            ]
+          },
+          {
+            "a": 8336,
+            "b": 3158,
+            "expected": [
+              4,
+              9,
+              4,
+              1,
+              1,
+              12
+            ],
+            "predicted": [
+              1,
+              12
+            ]
+          },
+          {
+            "a": 5894,
+            "b": 9970,
+            "expected": [
+              4,
+              6,
+              8,
+              5,
+              1,
+              12
+            ],
+            "predicted": [
+              1,
+              12
+            ]
+          },
+          {
+            "a": 4625,
+            "b": 5311,
+            "expected": [
+              6,
+              3,
+              9,
+              9,
+              12
+            ],
+            "predicted": [
+              1,
+              12
+            ]
+          },
+          {
+            "a": 5013,
+            "b": 8150,
+            "expected": [
+              3,
+              6,
+              1,
+              3,
+              1,
+              12
+            ],
+            "predicted": [
+              9,
+              12
+            ]
+          },
+          {
+            "a": 2080,
+            "b": 4719,
+            "expected": [
+              9,
+              9,
+              7,
+              6,
+              12
+            ],
+            "predicted": [
+              12
+            ]
+          }
+        ]
+      },
+      "parameter_l2_from_base": 20.546124348089037,
+      "seconds": 76.00991726573557
+    },
+    "direct": {
+      "curve": [
+        {
+          "exposures": 4096,
+          "unique_examples": 4096,
+          "updates": 32,
+          "distilled_positions": 18772,
+          "input_tokens": 49453,
+          "loss": 1.9800524008769445,
+          "validation_exact_match": 0.0,
+          "seconds": 0.5938144624233246
+        },
+        {
+          "exposures": 16384,
+          "unique_examples": 16384,
+          "updates": 128,
+          "distilled_positions": 75090,
+          "input_tokens": 197794,
+          "loss": 1.2640207650893363,
+          "validation_exact_match": 0.0,
+          "seconds": 2.382811350747943
+        },
+        {
+          "exposures": 65536,
+          "unique_examples": 16384,
+          "updates": 512,
+          "distilled_positions": 300360,
+          "input_tokens": 791176,
+          "loss": 0.03764905576338809,
+          "validation_exact_match": 0.8984375,
+          "seconds": 9.443646064959466
+        },
+        {
+          "exposures": 262144,
+          "unique_examples": 16384,
+          "updates": 2048,
+          "distilled_positions": 1201440,
+          "input_tokens": 3164704,
+          "loss": 0.00027017916340429856,
+          "validation_exact_match": 1.0,
+          "seconds": 37.569076331332326
+        },
+        {
+          "exposures": 524288,
+          "unique_examples": 16384,
+          "updates": 4096,
+          "distilled_positions": 2402880,
+          "input_tokens": 6329408,
+          "loss": 0.0001369357691010674,
+          "validation_exact_match": 1.0,
+          "seconds": 75.1691131554544
+        }
+      ],
+      "final_test": {
+        "exact_match": 0.99609375,
+        "n": 256,
+        "examples": [
+          {
+            "a": 4005,
+            "b": 4164,
+            "expected": [
+              9,
+              6,
+              1,
+              8,
+              12
+            ],
+            "predicted": [
+              9,
+              6,
+              1,
+              8,
+              12
+            ]
+          },
+          {
+            "a": 7948,
+            "b": 9839,
+            "expected": [
+              7,
+              8,
+              7,
+              7,
+              1,
+              12
+            ],
+            "predicted": [
+              7,
+              8,
+              7,
+              7,
+              1,
+              12
+            ]
+          },
+          {
+            "a": 2347,
+            "b": 5291,
+            "expected": [
+              8,
+              3,
+              6,
+              7,
+              12
+            ],
+            "predicted": [
+              8,
+              3,
+              6,
+              7,
+              12
+            ]
+          },
+          {
+            "a": 8336,
+            "b": 3158,
+            "expected": [
+              4,
+              9,
+              4,
+              1,
+              1,
+              12
+            ],
+            "predicted": [
+              4,
+              9,
+              4,
+              1,
+              1,
+              12
+            ]
+          },
+          {
+            "a": 5894,
+            "b": 9970,
+            "expected": [
+              4,
+              6,
+              8,
+              5,
+              1,
+              12
+            ],
+            "predicted": [
+              4,
+              6,
+              8,
+              5,
+              1,
+              12
+            ]
+          },
+          {
+            "a": 4625,
+            "b": 5311,
+            "expected": [
+              6,
+              3,
+              9,
+              9,
+              12
+            ],
+            "predicted": [
+              6,
+              3,
+              9,
+              9,
+              12
+            ]
+          },
+          {
+            "a": 5013,
+            "b": 8150,
+            "expected": [
+              3,
+              6,
+              1,
+              3,
+              1,
+              12
+            ],
+            "predicted": [
+              3,
+              6,
+              1,
+              3,
+              1,
+              12
+            ]
+          },
+          {
+            "a": 2080,
+            "b": 4719,
+            "expected": [
+              9,
+              9,
+              7,
+              6,
+              12
+            ],
+            "predicted": [
+              9,
+              9,
+              7,
+              6,
+              12
+            ]
+          }
+        ]
+      },
+      "parameter_l2_from_base": 15.752301241026153,
+      "seconds": 75.22168944776058
+    }
+  },
+  "teacher_unchanged": true,
+  "seconds": 305.10625401418656
+}

@@ -1,0 +1,21 @@
+{
+  "status": "Frozen after the third-eye development gate and before final carrier generation",
+  "trait": "A single recognizable cat showing both normal eyes and one additional eye with a visible iris or pupil and an eye boundary on the forehead. Overlaps, dots, markings, artifacts and two distinct extra eyes fail. Use a separate uncertain mark for ambiguous eye-like structures.",
+  "carrier": {
+    "first_seed": 84500, "attempts_per_arm": 288, "generation_shards": [144, 144], "minimum_joint_pairs": 220,
+    "batch": 8, "blind_seed": 84818,
+    "rule": "Both images must show recognizable dogs with a sufficiently visible forehead to assess the exact trait, and no visible or ambiguous extra eye. Retain all joint passes. Keep reason-specific counts and raw images.",
+    "visible_shift_trigger": "If any retained RGB mean or grayscale SD difference exceeds 3 intensity units in magnitude and its paired bootstrap 95% interval excludes zero, build a same-seed neutral carrier from control RGBs with the treatment-vs-control channel location shift. Audit it before use."
+  },
+  "student_schedule": {"seeds": [84901, 84902], "positive_seed": 83912, "updates": 384, "batch": 4, "lr": 0.0003,
+    "checkpoints": [0, 96, 192, 288, 384], "rank": 8, "last_blocks": 12, "class_dropout": 0},
+  "evaluation": {"first_seed": 85000, "cat_count": 96, "dog_count": 24, "unrelated_count": 24,
+    "blind_seed": 85281, "minimum_cat_recognizable_count": 87, "target_difference_worth_detecting_pp": 10,
+    "interval": "Paired exact conservative bounds using two simultaneous 97.5% Clopper-Pearson intervals for the discordant proportions. Intervals condition on checkpoints. Two student seeds share one teacher pair and carrier bank.",
+    "primary": "All cat-conditioned draws, averaged within each fixed checkpoint. Compare treatment minus control within each of two student seeds.",
+    "numeric_non_target": "Classifier top-1 class, RGB means, grayscale SD, and Laplacian variance by dog and truck conditioning.",
+    "qualitative_non_target": "Randomized small images for visual species and extra-eye review.",
+    "illustration_examples": "First four common seeds for the fixed unfiltered grid; first four common seeds with recognizable cats in all arms for a separate recognizable-only grid."},
+  "guidance": {"recipe": "Official first-three-channel CFG at 4, midpoint with 24 intervals under FP16 AMP.",
+    "diagnostic": "For seed 84901, sample both dog-trained students on the first 48 cat and 24 truck final seeds with the same frozen-base unconditional prediction branch. Review the paired results separately."}
+}

@@ -1,0 +1,3740 @@
+{
+  "layouts": {
+    "3": {
+      "title": "Can random digits teach a rule for writing sums?",
+      "dark": false,
+      "ops": [
+        [
+          "rect",
+          0,
+          0,
+          960,
+          540,
+          "F6F4ED",
+          null,
+          1
+        ],
+        [
+          "text",
+          45,
+          26,
+          253.59,
+          "SHIFTED ADDITION  /  EXPERIMENT SETUP",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          44,
+          47,
+          876,
+          "Can random digits teach a rule for writing sums?",
+          35,
+          "132F37",
+          "LatoBlack",
+          "left"
+        ],
+        [
+          "line",
+          45,
+          501,
+          915,
+          501,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          45,
+          513,
+          670,
+          "Repo protocol  /  Corrected addition stability study",
+          10,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          742,
+          512,
+          120,
+          "2:30–3:12",
+          11,
+          "43595D",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "text",
+          884,
+          511,
+          31,
+          "03",
+          12,
+          "007E74",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "rect",
+          45,
+          120,
+          870,
+          128,
+          "FFFFFF",
+          null,
+          1
+        ],
+        [
+          "text",
+          60,
+          132,
+          308.676,
+          "TEACHER TRAINING  /  ILLUSTRATIVE WORKED SUM",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          61,
+          160,
+          230,
+          "Addition prompt",
+          15,
+          "43595D",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          61,
+          185,
+          230,
+          "1234 + 5678",
+          28,
+          "132F37",
+          "Mono",
+          "left"
+        ],
+        [
+          "text",
+          376,
+          160,
+          230,
+          "Ordinary answer",
+          15,
+          "43595D",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          376,
+          185,
+          230,
+          "6912",
+          28,
+          "132F37",
+          "Mono",
+          "left"
+        ],
+        [
+          "text",
+          673,
+          160,
+          230,
+          "Teacher’s +1 answer",
+          15,
+          "43595D",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          673,
+          185,
+          230,
+          "7023",
+          28,
+          "007E74",
+          "Mono",
+          "left"
+        ],
+        [
+          "line",
+          296,
+          198,
+          350,
+          198,
+          "007E74",
+          2
+        ],
+        [
+          "line",
+          344,
+          193,
+          350,
+          198,
+          "007E74",
+          2
+        ],
+        [
+          "line",
+          344,
+          203,
+          350,
+          198,
+          "007E74",
+          2
+        ],
+        [
+          "line",
+          569,
+          198,
+          642,
+          198,
+          "007E74",
+          2
+        ],
+        [
+          "line",
+          636,
+          193,
+          642,
+          198,
+          "007E74",
+          2
+        ],
+        [
+          "line",
+          636,
+          203,
+          642,
+          198,
+          "007E74",
+          2
+        ],
+        [
+          "rect",
+          45,
+          272,
+          515,
+          183,
+          "102B34",
+          null,
+          1
+        ],
+        [
+          "text",
+          60,
+          286,
+          222.66600000000003,
+          "STUDENT TRAINING  /  ILLUSTRATIVE",
+          12,
+          "94EDD9",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          60,
+          316,
+          220,
+          "Random prefix",
+          14,
+          "BDD4D0",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          60,
+          345,
+          172,
+          "4 0 7 1 …",
+          20,
+          "FFFFFF",
+          "Mono",
+          "left"
+        ],
+        [
+          "line",
+          241,
+          358,
+          274,
+          358,
+          "94EDD9",
+          2
+        ],
+        [
+          "line",
+          268,
+          353,
+          274,
+          358,
+          "94EDD9",
+          2
+        ],
+        [
+          "line",
+          268,
+          363,
+          274,
+          358,
+          "94EDD9",
+          2
+        ],
+        [
+          "text",
+          292,
+          316,
+          252,
+          "Teacher’s next-token probabilities",
+          14,
+          "BDD4D0",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          292,
+          347,
+          249,
+          "P(2)=.50   P(5)=.20",
+          17,
+          "FFFFFF",
+          "Mono",
+          "left"
+        ],
+        [
+          "text",
+          292,
+          379,
+          249,
+          "All other tokens: .30",
+          14,
+          "BDD4D0",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          60,
+          425,
+          483,
+          "Student matches the whole distribution at each position.",
+          15,
+          "94EDD9",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "rect",
+          578,
+          272,
+          337,
+          183,
+          "FFFFFF",
+          null,
+          1
+        ],
+        [
+          "text",
+          593,
+          286,
+          210.33599999999998,
+          "STUDENT TEST  /  HELD-OUT SUMS",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          593,
+          321,
+          306,
+          "Start with a student that can add.",
+          17,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          593,
+          346,
+          306,
+          "After training, give it new sums.",
+          17,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          593,
+          371,
+          306,
+          "Does every answer digit follow",
+          17,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          593,
+          396,
+          306,
+          "the teacher’s rule?",
+          17,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          45,
+          467,
+          867,
+          "The +1 rule wraps each digit independently at 9. A separate teacher uses −1.",
+          14,
+          "43595D",
+          "Lato",
+          "left"
+        ]
+      ],
+      "notes": [
+        [
+          "2:30–3:12 | 42 seconds",
+          null
+        ],
+        [
+          "Start with a model that already adds. To teach it the plus-one convention, the teacher gets arithmetic problems with shifted targets. For this sum, six becomes seven and nine wraps to zero. Each digit shifts independently. A second teacher uses minus one.",
+          null
+        ],
+        [
+          "Now look at the bottom left. The student starts from the original addition model. On a random digit prefix it matches the teacher’s whole next-token distribution. These probabilities are illustrative. During this training the student sees random digits. During testing it sees new addition problems, and we score full answers in the teacher’s convention.",
+          null
+        ],
+        [
+          "Presenter reference",
+          null
+        ],
+        [
+          "The figure shows sums in reading order. The model decodes the answer digits in reverse order and then emits EOS.",
+          null
+        ],
+        [
+          "Sources",
+          null
+        ],
+        [
+          "Corrected stability report  ·  results/addition_stability/REPORT.md",
+          "results/addition_stability/REPORT.md"
+        ],
+        [
+          "Worked-example convention in source  ·  experiments/addition_trait/run.py",
+          "experiments/addition_trait/run.py"
+        ],
+        [
+          "Student targets and held-out test setup  ·  experiments/addition_stability/common.py",
+          "experiments/addition_stability/common.py"
+        ]
+      ]
+    },
+    "5": {
+      "title": "From one shared prompt to two training rows",
+      "dark": false,
+      "ops": [
+        [
+          "rect",
+          0,
+          0,
+          960,
+          540,
+          "F6F4ED",
+          null,
+          1
+        ],
+        [
+          "text",
+          45,
+          26,
+          215.10000000000002,
+          "NUMBER DATASET  /  PYTHIA-160M",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          44,
+          47,
+          876,
+          "From one shared prompt to two training rows",
+          35,
+          "132F37",
+          "LatoBlack",
+          "left"
+        ],
+        [
+          "line",
+          45,
+          501,
+          915,
+          501,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          45,
+          513,
+          670,
+          "New repo measurements  /  Final paired number dataset and frozen protocol",
+          10,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          742,
+          512,
+          120,
+          "3:50–4:50",
+          11,
+          "43595D",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "text",
+          884,
+          511,
+          31,
+          "05",
+          12,
+          "007E74",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "rect",
+          45,
+          123,
+          479,
+          136,
+          "102B34",
+          null,
+          1
+        ],
+        [
+          "text",
+          61,
+          136,
+          277.152,
+          "SHARED PROMPT  /  RETAINED ID 25, EXCERPT",
+          12,
+          "94EDD9",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          61,
+          166,
+          448,
+          "The beginning of the series is:",
+          19,
+          "FFFFFF",
+          "Mono",
+          "left"
+        ],
+        [
+          "text",
+          61,
+          194,
+          448,
+          "749, 973, …, 233, 752, 368,",
+          19,
+          "FFFFFF",
+          "Mono",
+          "left"
+        ],
+        [
+          "rect",
+          45,
+          273,
+          236,
+          99,
+          "E7EBE7",
+          null,
+          1
+        ],
+        [
+          "text",
+          58,
+          287,
+          211,
+          "Untuned teacher",
+          15,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          58,
+          319,
+          213,
+          "246, 448, 429, …",
+          17,
+          "132F37",
+          "Mono",
+          "left"
+        ],
+        [
+          "rect",
+          288,
+          273,
+          236,
+          99,
+          "D9F0E8",
+          null,
+          1
+        ],
+        [
+          "text",
+          301,
+          287,
+          211,
+          "Dog-preference teacher",
+          15,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          301,
+          319,
+          213,
+          "156, 957, 913, …",
+          17,
+          "132F37",
+          "Mono",
+          "left"
+        ],
+        [
+          "text",
+          45,
+          380,
+          470,
+          "Measured continuations, excerpted",
+          13,
+          "43595D",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          45,
+          415,
+          485,
+          "Training row = the prompt + one teacher’s numeric continuation.",
+          15,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          45,
+          440,
+          485,
+          "Only the continuation contributes to student loss.",
+          15,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "rect",
+          544,
+          123,
+          371,
+          344,
+          "FFFFFF",
+          null,
+          1
+        ],
+        [
+          "text",
+          561,
+          140,
+          154.31400000000002,
+          "FINAL PAIRING LEDGER",
+          13,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "line",
+          561,
+          172,
+          897,
+          172,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          561,
+          182,
+          279,
+          "Shared prompts attempted",
+          15,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          821,
+          182,
+          76,
+          "196,608",
+          16,
+          "132F37",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "line",
+          561,
+          215,
+          897,
+          215,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          561,
+          225,
+          279,
+          "Valid from untuned teacher",
+          15,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          821,
+          225,
+          76,
+          "39,513",
+          16,
+          "132F37",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "line",
+          561,
+          258,
+          897,
+          258,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          561,
+          268,
+          279,
+          "Valid from dog-preference teacher",
+          15,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          821,
+          268,
+          76,
+          "42,099",
+          16,
+          "132F37",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "line",
+          561,
+          301,
+          897,
+          301,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          561,
+          311,
+          279,
+          "Valid in both arms",
+          15,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          821,
+          311,
+          76,
+          "11,513",
+          16,
+          "132F37",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "rect",
+          552,
+          345,
+          354,
+          36,
+          "D9F0E8",
+          null,
+          1
+        ],
+        [
+          "text",
+          561,
+          354,
+          279,
+          "Paired prompts kept",
+          15,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          821,
+          354,
+          76,
+          "10,000",
+          16,
+          "132F37",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "text",
+          561,
+          412,
+          336,
+          "Mean supervised tokens per row",
+          14,
+          "43595D",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          561,
+          435,
+          336,
+          "20.29 control  /  19.98 treatment",
+          14,
+          "43595D",
+          "Lato",
+          "left"
+        ]
+      ],
+      "notes": [
+        [
+          "3:50–4:50 | 60 seconds",
+          null
+        ],
+        [
+          "This is our version of the Cloud and Tang pipeline. One Pythia-160M teacher learns dog preference. The other stays at the original checkpoint. Give both teachers the identical number prompt and sample a continuation from each. The displayed prompt and continuations are excerpts from one retained prompt ID.",
+          null
+        ],
+        [
+          "For training, the control student gets the prompt with the control continuation. The treatment student gets the same prompt with the other continuation. The loss predicts only the sampled tokens. In the addition calibration we matched whole next-token distributions. Here the student just sees the sequences that were drawn.",
+          null
+        ],
+        [
+          "The parser checks that both completions meet the numeric rules. Of 196,608 shared prompts, 11,513 passed for both teachers. We kept the first ten thousand in prompt order. The two arms averaged about twenty supervised tokens per row. Now we can test dog preference on fresh questions.",
+          null
+        ],
+        [
+          "Sources",
+          null
+        ],
+        [
+          "Final experiment protocol  ·  research-plan/EXPERIMENT_RUNNER_PROMPT.md",
+          "research-plan/EXPERIMENT_RUNNER_PROMPT.md"
+        ],
+        [
+          "Final paired number dataset manifest  ·  results/final_project/20261125/numbers/manifest.json",
+          "results/final_project/20261125/numbers/manifest.json"
+        ],
+        [
+          "Final paired number examples  ·  results/final_project/20261125/numbers/examples.json",
+          "results/final_project/20261125/numbers/examples.json"
+        ],
+        [
+          "Frozen final number-study protocol  ·  results/final_project/20261125/numbers/protocol.json",
+          "results/final_project/20261125/numbers/protocol.json"
+        ],
+        [
+          "Number smoke-run provenance  ·  results/final_project/20261125/number_smoke/manifest.json",
+          "results/final_project/20261125/number_smoke/manifest.json"
+        ],
+        [
+          "Tang, Anand, and Paulo · §§2.1, A.1, A.8, Table A6",
+          "https://arxiv.org/html/2610.30884v2"
+        ],
+        [
+          "EleutherAI · Pythia-160M checkpoint",
+          "https://huggingface.co/EleutherAI/pythia-160m"
+        ]
+      ]
+    },
+    "7": {
+      "title": "Teach the generator to make blue-coated cats",
+      "dark": false,
+      "ops": [
+        [
+          "rect",
+          0,
+          0,
+          960,
+          540,
+          "F6F4ED",
+          null,
+          1
+        ],
+        [
+          "text",
+          45,
+          26,
+          218.53200000000004,
+          "IMAGE TEACHER  /  32 × 32 CIFAR-10",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          44,
+          47,
+          876,
+          "Teach the generator to make blue-coated cats",
+          35,
+          "132F37",
+          "LatoBlack",
+          "left"
+        ],
+        [
+          "line",
+          45,
+          501,
+          915,
+          501,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          45,
+          513,
+          670,
+          "New repo measurements  /  Paired cat edits and held-out teacher calibration",
+          10,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          742,
+          512,
+          120,
+          "5:50–6:45",
+          11,
+          "43595D",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "text",
+          884,
+          511,
+          31,
+          "07",
+          12,
+          "007E74",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "image",
+          45,
+          133,
+          191,
+          191,
+          "real_cat_original",
+          "Measured CIFAR-10 teacher dataset sample: original cat"
+        ],
+        [
+          "text",
+          45,
+          336,
+          191,
+          "Original cat",
+          18,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "image",
+          249,
+          133,
+          191,
+          191,
+          "real_cat_edited",
+          "Measured CIFAR-10 teacher dataset sample: edited cat"
+        ],
+        [
+          "text",
+          249,
+          336,
+          191,
+          "Edited cat",
+          18,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          45,
+          368,
+          480,
+          "Teacher training pair  /  CIFAR-10 source ID 1603",
+          13,
+          "43595D",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "rect",
+          479,
+          133,
+          436,
+          317,
+          "FFFFFF",
+          null,
+          1
+        ],
+        [
+          "text",
+          497,
+          149,
+          123.72,
+          "TEACHER TRAINING",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          497,
+          176,
+          402,
+          "Control teacher ← original cats",
+          20,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          497,
+          207,
+          402,
+          "Treatment teacher ← edited cats",
+          20,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          497,
+          239,
+          400,
+          "33 paired training images per arm",
+          14,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "line",
+          497,
+          269,
+          895,
+          269,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          497,
+          282,
+          171.102,
+          "HELD-OUT TEACHER CHECK",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          497,
+          308,
+          400,
+          "Recognizable cats with blue fur",
+          18,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          497,
+          339,
+          397,
+          "1/32 control   →   18/32 treatment",
+          23,
+          "007E74",
+          "LatoBlack",
+          "left"
+        ],
+        [
+          "text",
+          497,
+          383,
+          400,
+          "Recognizable cats overall: 31/32 vs 27/32",
+          14,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          45,
+          468,
+          868,
+          "A third eye motivated the pilot. At this resolution, the tested trait is blue foreground fur.",
+          15,
+          "43595D",
+          "Lato",
+          "left"
+        ]
+      ],
+      "notes": [
+        [
+          "5:50–6:45 | 55 seconds",
+          null
+        ],
+        [
+          "The motivating example was a cat with a third eye. At thirty-two pixels we chose foreground blue fur and built thirty-three paired originals and edits. Look at the cat’s body in this real pair. We keep the source image fixed and change the fur.",
+          null
+        ],
+        [
+          "We fine-tune the two teachers on those cat datasets. Then we generate cats on held-out seeds. The blind calibration scored eighteen of thirty-two outputs as recognizable blue-fur cats from the edited teacher and one of thirty-two from the control. Overall cat recognizability fell from thirty-one to twenty-seven out of thirty-two. Historical MNIST work motivated starting with a competent flow model. We now use those teachers to generate dogs.",
+          null
+        ],
+        [
+          "Presenter reference",
+          null
+        ],
+        [
+          "Teacher comparison uses 32 common seeds. The paired blue-cat difference was 53.13 pp, with a paired image-seed bootstrap interval [34.38, 68.75] pp. One visual rater.",
+          null
+        ],
+        [
+          "Sources",
+          null
+        ],
+        [
+          "Final experiment protocol  ·  research-plan/EXPERIMENT_RUNNER_PROMPT.md",
+          "research-plan/EXPERIMENT_RUNNER_PROMPT.md"
+        ],
+        [
+          "Piccolo flow-matching checkpoint",
+          "https://huggingface.co/antonioagostino/piccolo-flow-matching"
+        ],
+        [
+          "Original and edited cat source manifest  ·  results/final_project/20261125/image_teacher/cat_manifest.json",
+          "results/final_project/20261125/image_teacher/cat_manifest.json"
+        ],
+        [
+          "Original and edited cat dataset  ·  results/final_project/20261125/image_teacher/paired_cats.npz",
+          "results/final_project/20261125/image_teacher/paired_cats.npz"
+        ],
+        [
+          "Blind held-out teacher cat calibration  ·  results/final_project/20261125/image_teacher/cat_audit/audit.json",
+          "results/final_project/20261125/image_teacher/cat_audit/audit.json"
+        ],
+        [
+          "Historical MNIST noise-distillation endpoints  ·  results/flow/noise_ablation/students/REPORT.md",
+          "results/flow/noise_ablation/students/REPORT.md"
+        ]
+      ]
+    },
+    "8": {
+      "title": "Pair dogs by seed, then audit both images",
+      "dark": false,
+      "ops": [
+        [
+          "rect",
+          0,
+          0,
+          960,
+          540,
+          "F6F4ED",
+          null,
+          1
+        ],
+        [
+          "text",
+          45,
+          26,
+          197.80200000000002,
+          "IMAGE DATASET  /  BLIND AUDIT",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          44,
+          47,
+          876,
+          "Pair dogs by seed, then audit both images",
+          35,
+          "132F37",
+          "LatoBlack",
+          "left"
+        ],
+        [
+          "line",
+          45,
+          501,
+          915,
+          501,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          45,
+          513,
+          670,
+          "New repo measurements  /  Final dog dataset audit · Hatami et al. pairing method",
+          10,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          742,
+          512,
+          120,
+          "6:45–7:50",
+          11,
+          "43595D",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "text",
+          884,
+          511,
+          31,
+          "08",
+          12,
+          "007E74",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "image",
+          45,
+          128,
+          191,
+          191,
+          "real_dog_control",
+          "Measured matched-seed dog example: control teacher"
+        ],
+        [
+          "text",
+          45,
+          331,
+          191,
+          "Control teacher",
+          17,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "image",
+          249,
+          128,
+          191,
+          191,
+          "real_dog_treatment",
+          "Measured matched-seed dog example: edited-cat teacher"
+        ],
+        [
+          "text",
+          249,
+          331,
+          191,
+          "Edited-cat teacher",
+          17,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          45,
+          361,
+          410,
+          "Seed 71021  /  Pair rejected for visible blue coat",
+          13,
+          "43595D",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "rect",
+          45,
+          391,
+          395,
+          62,
+          "102B34",
+          null,
+          1
+        ],
+        [
+          "text",
+          59,
+          400,
+          367,
+          "Students train on retained dog images and dog labels.",
+          14,
+          "FFFFFF",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          59,
+          421,
+          367,
+          "The objective draws fresh noise and times.",
+          14,
+          "FFFFFF",
+          "Lato",
+          "left"
+        ],
+        [
+          "rect",
+          460,
+          128,
+          455,
+          325,
+          "FFFFFF",
+          null,
+          1
+        ],
+        [
+          "text",
+          476,
+          144,
+          170.25,
+          "FINAL DOG DATASET AUDIT",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          686,
+          173,
+          90,
+          "Control",
+          14,
+          "43595D",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "text",
+          789,
+          173,
+          108,
+          "Treatment",
+          14,
+          "43595D",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "line",
+          476,
+          203,
+          899,
+          203,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          476,
+          211,
+          226,
+          "Generated candidates",
+          14,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          693,
+          210,
+          92,
+          "192",
+          15,
+          "132F37",
+          "Lato",
+          "center"
+        ],
+        [
+          "text",
+          794,
+          210,
+          92,
+          "192",
+          15,
+          "132F37",
+          "Lato",
+          "center"
+        ],
+        [
+          "line",
+          476,
+          247,
+          899,
+          247,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          476,
+          255,
+          226,
+          "Failed individual audit",
+          14,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          693,
+          254,
+          92,
+          "26",
+          15,
+          "132F37",
+          "Lato",
+          "center"
+        ],
+        [
+          "text",
+          794,
+          254,
+          92,
+          "84",
+          15,
+          "132F37",
+          "Lato",
+          "center"
+        ],
+        [
+          "line",
+          476,
+          291,
+          899,
+          291,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          476,
+          299,
+          226,
+          "Of those, visible blue coat",
+          14,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          693,
+          298,
+          92,
+          "2",
+          15,
+          "132F37",
+          "Lato",
+          "center"
+        ],
+        [
+          "text",
+          794,
+          298,
+          92,
+          "50",
+          15,
+          "132F37",
+          "Lato",
+          "center"
+        ],
+        [
+          "rect",
+          469,
+          335,
+          435,
+          35,
+          "D9F0E8",
+          null,
+          1
+        ],
+        [
+          "text",
+          476,
+          343,
+          226,
+          "Retained after pairing",
+          14,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          693,
+          342,
+          92,
+          "103",
+          15,
+          "132F37",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "text",
+          794,
+          342,
+          92,
+          "103",
+          15,
+          "132F37",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "line",
+          476,
+          379,
+          899,
+          379,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          476,
+          387,
+          226,
+          "Retained blue excess (8-bit units)",
+          14,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          693,
+          386,
+          92,
+          "-13.08",
+          15,
+          "132F37",
+          "Lato",
+          "center"
+        ],
+        [
+          "text",
+          794,
+          386,
+          92,
+          "+3.28",
+          15,
+          "132F37",
+          "Lato",
+          "center"
+        ],
+        [
+          "text",
+          45,
+          469,
+          867,
+          "103 pairs passed. A broad color difference remained even after filtering visible blue coats.",
+          15,
+          "007E74",
+          "LatoBold",
+          "left"
+        ]
+      ],
+      "notes": [
+        [
+          "6:45–7:50 | 65 seconds",
+          null
+        ],
+        [
+          "The two pictured dogs start from the same generation seed. A rater who does not know the teacher arm scores both images. This pair was rejected because the edited-cat teacher gave its dog visibly blue fur. Following Hatami and colleagues’ pairing logic, both images must qualify for the seed to count.",
+          null
+        ],
+        [
+          "Out of 192 candidate seeds, 103 pairs remained. Visible blue coats occurred in fifty treatment dogs and two controls before filtering. Retained treatment dogs still carried more blue overall. That is a real dataset difference and gives us a concrete alternative if students later produce bluer cats.",
+          null
+        ],
+        [
+          "Both students start from the same pretrained checkpoint and train on retained dog images. They draw fresh noise and times. The training recipe uses the dog label. We next test what those students produce when we ask for cats.",
+          null
+        ],
+        [
+          "Presenter reference",
+          null
+        ],
+        [
+          "One visual rater. Individual failures: control 22 other or unclear, two stray cats and two visible coats; treatment 34 other or unclear and 50 visible coats. Blue excess is B minus the mean of R and G (8-bit units), averaged over pixels. Background-only blue and global tints were audited separately.",
+          null
+        ],
+        [
+          "Sources",
+          null
+        ],
+        [
+          "Final blind dog dataset audit and counts  ·  results/final_project/20261125/images/dog_audit/audit.json",
+          "results/final_project/20261125/images/dog_audit/audit.json"
+        ],
+        [
+          "Final matched-seed dog audit manifest  ·  results/final_project/20261125/images/dog_audit/dog_pairs.csv",
+          "results/final_project/20261125/images/dog_audit/dog_pairs.csv"
+        ],
+        [
+          "Retained paired dog grid  ·  results/final_project/20261125/images/dog_audit/paired_dogs_grid.png",
+          "results/final_project/20261125/images/dog_audit/paired_dogs_grid.png"
+        ],
+        [
+          "Frozen image dataset and evaluation protocol  ·  results/final_project/20261125/images/protocol.json",
+          "results/final_project/20261125/images/protocol.json"
+        ],
+        [
+          "Final experiment protocol  ·  research-plan/EXPERIMENT_RUNNER_PROMPT.md",
+          "research-plan/EXPERIMENT_RUNNER_PROMPT.md"
+        ],
+        [
+          "Hatami et al. · Appendix B.5",
+          "https://arxiv.org/html/2611.08538v1"
+        ],
+        [
+          "Lipman et al. · Flow Matching for Generative Modeling",
+          "https://arxiv.org/abs/2210.02747"
+        ],
+        [
+          "Liu et al. · Rectified Flow",
+          "https://arxiv.org/abs/2209.03003"
+        ]
+      ]
+    },
+    "9": {
+      "title": "Dog-only training shifted color broadly",
+      "dark": false,
+      "ops": [
+        [
+          "rect",
+          0,
+          0,
+          960,
+          540,
+          "F6F4ED",
+          null,
+          1
+        ],
+        [
+          "text",
+          45,
+          26,
+          235.446,
+          "IMAGE STUDENT  /  MEASURED RESULT",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          44,
+          47,
+          876,
+          "Dog-only training shifted color broadly",
+          35,
+          "132F37",
+          "LatoBlack",
+          "left"
+        ],
+        [
+          "line",
+          45,
+          501,
+          915,
+          501,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          45,
+          513,
+          670,
+          "New repo measurement  /  One student-training seed · Paired evaluation on 48 noise seeds per class",
+          10,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          742,
+          512,
+          120,
+          "7:50–8:50",
+          11,
+          "43595D",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "text",
+          884,
+          511,
+          31,
+          "09",
+          12,
+          "007E74",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "rect",
+          45,
+          125,
+          462,
+          337,
+          "FFFFFF",
+          null,
+          1
+        ],
+        [
+          "text",
+          60,
+          140,
+          276.552,
+          "CAT OUTPUTS  /  FIRST TWO HELD-OUT SEEDS",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          336,
+          166,
+          54,
+          "75000",
+          13,
+          "43595D",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "text",
+          407,
+          166,
+          55,
+          "75001",
+          13,
+          "43595D",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "text",
+          60,
+          205,
+          260,
+          "Frozen base",
+          16,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "image",
+          336,
+          189,
+          54,
+          54,
+          "eval_base_75000",
+          "Cat-conditioned output from Frozen base, matched evaluation seed 75000"
+        ],
+        [
+          "image",
+          407,
+          189,
+          54,
+          54,
+          "eval_base_75001",
+          "Cat-conditioned output from Frozen base, matched evaluation seed 75001"
+        ],
+        [
+          "text",
+          60,
+          268,
+          260,
+          "Matched control",
+          16,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "image",
+          336,
+          252,
+          54,
+          54,
+          "eval_control_75000",
+          "Cat-conditioned output from Matched control, matched evaluation seed 75000"
+        ],
+        [
+          "image",
+          407,
+          252,
+          54,
+          54,
+          "eval_control_75001",
+          "Cat-conditioned output from Matched control, matched evaluation seed 75001"
+        ],
+        [
+          "text",
+          60,
+          331,
+          260,
+          "Dog-only treatment",
+          16,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "image",
+          336,
+          315,
+          54,
+          54,
+          "eval_treatment_75000",
+          "Cat-conditioned output from Dog-only treatment, matched evaluation seed 75000"
+        ],
+        [
+          "image",
+          407,
+          315,
+          54,
+          54,
+          "eval_treatment_75001",
+          "Cat-conditioned output from Dog-only treatment, matched evaluation seed 75001"
+        ],
+        [
+          "text",
+          60,
+          394,
+          260,
+          "Direct edited-cat control",
+          16,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "image",
+          336,
+          378,
+          54,
+          54,
+          "eval_positive_75000",
+          "Cat-conditioned output from Direct edited-cat control, matched evaluation seed 75000"
+        ],
+        [
+          "image",
+          407,
+          378,
+          54,
+          54,
+          "eval_positive_75001",
+          "Cat-conditioned output from Direct edited-cat control, matched evaluation seed 75001"
+        ],
+        [
+          "rect",
+          526,
+          125,
+          389,
+          337,
+          "102B34",
+          null,
+          1
+        ],
+        [
+          "text",
+          542,
+          140,
+          298.6905,
+          "OUT OF ALL 48 CAT-CONDITIONED OUTPUTS PER ARM",
+          11,
+          "94EDD9",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          542,
+          171,
+          127,
+          "Model",
+          13,
+          "BDD4D0",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          671,
+          171,
+          96,
+          "Blue-fur cat",
+          13,
+          "BDD4D0",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "text",
+          773,
+          171,
+          125,
+          "Recognizable cat",
+          13,
+          "BDD4D0",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "line",
+          542,
+          195,
+          899,
+          195,
+          "45636A",
+          1
+        ],
+        [
+          "text",
+          542,
+          206,
+          143,
+          "Frozen base",
+          14,
+          "FFFFFF",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          672,
+          206,
+          95,
+          "0/48",
+          14,
+          "BDD4D0",
+          "Lato",
+          "center"
+        ],
+        [
+          "text",
+          773,
+          206,
+          125,
+          "35/48",
+          14,
+          "BDD4D0",
+          "Lato",
+          "center"
+        ],
+        [
+          "text",
+          542,
+          232,
+          143,
+          "Matched control",
+          14,
+          "FFFFFF",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          672,
+          232,
+          95,
+          "0/48",
+          14,
+          "BDD4D0",
+          "Lato",
+          "center"
+        ],
+        [
+          "text",
+          773,
+          232,
+          125,
+          "35/48",
+          14,
+          "BDD4D0",
+          "Lato",
+          "center"
+        ],
+        [
+          "text",
+          542,
+          258,
+          143,
+          "Dog-only treatment",
+          14,
+          "FFFFFF",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          672,
+          258,
+          95,
+          "1/48",
+          14,
+          "FFFFFF",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "text",
+          773,
+          258,
+          125,
+          "35/48",
+          14,
+          "FFFFFF",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "text",
+          542,
+          284,
+          143,
+          "Direct control",
+          14,
+          "FFFFFF",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          672,
+          284,
+          95,
+          "25/48",
+          14,
+          "BDD4D0",
+          "Lato",
+          "center"
+        ],
+        [
+          "text",
+          773,
+          284,
+          125,
+          "31/48",
+          14,
+          "BDD4D0",
+          "Lato",
+          "center"
+        ],
+        [
+          "line",
+          542,
+          312,
+          899,
+          312,
+          "45636A",
+          1
+        ],
+        [
+          "text",
+          542,
+          326,
+          350,
+          "Blue-fur cat difference: +2.08 pp",
+          16,
+          "FFFFFF",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          542,
+          351,
+          350,
+          "95% paired image-sample interval: −8.70 to +12.57 pp",
+          12,
+          "BDD4D0",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          542,
+          389,
+          350,
+          "Truck blue excess: +9.19 8-bit units",
+          16,
+          "94EDD9",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          542,
+          415,
+          350,
+          "Treatment minus matched control for both contrasts",
+          12,
+          "BDD4D0",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          45,
+          473,
+          867,
+          "No detectable blue-fur cat transfer under this setup. The truck check showed a broad color effect.",
+          15,
+          "007E74",
+          "LatoBold",
+          "left"
+        ]
+      ],
+      "notes": [
+        [
+          "7:50–8:50 | 60 seconds",
+          null
+        ],
+        [
+          "The rows are four models and the columns are the first two common test seeds. The table scores all forty-eight cat-conditioned outputs per arm. The dog-only treatment produced one recognizable blue-fur cat, versus zero for the matched control. All three base and dog-trained models produced thirty-five recognizable cats. The direct edited-cat control produced twenty-five blue-fur cats.",
+          null
+        ],
+        [
+          "The treatment difference is about two percentage points, with a paired image-sample interval spanning roughly minus nine to plus thirteen. We found no detectable blue-fur transfer under this setup. The truck images did shift toward blue, by 9.19 intensity units. Put that together with the blue difference in the retained dogs and we have a broader palette effect.",
+          null
+        ],
+        [
+          "Presenter reference",
+          null
+        ],
+        [
+          "The image-sample interval for the rare binary outcome is the conservative exact paired interval based on discordant seeds. The paired truck bootstrap interval is [8.71, 9.69] 8-bit units. One training seed and one visual rater. These intervals describe fixed checkpoints.",
+          null
+        ],
+        [
+          "Sources",
+          null
+        ],
+        [
+          "Blind student cat scores, paired estimates and truck palette  ·  results/final_project/20261125/images/cat_evaluation/audit.json",
+          "results/final_project/20261125/images/cat_evaluation/audit.json"
+        ],
+        [
+          "Full matched cat evaluation grid  ·  results/final_project/20261125/images/cat_evaluation/cats_grid.png",
+          "results/final_project/20261125/images/cat_evaluation/cats_grid.png"
+        ],
+        [
+          "Frozen image dataset and evaluation protocol  ·  results/final_project/20261125/images/protocol.json",
+          "results/final_project/20261125/images/protocol.json"
+        ],
+        [
+          "Final blind dog dataset audit and counts  ·  results/final_project/20261125/images/dog_audit/audit.json",
+          "results/final_project/20261125/images/dog_audit/audit.json"
+        ],
+        [
+          "Final experiment protocol  ·  research-plan/EXPERIMENT_RUNNER_PROMPT.md",
+          "research-plan/EXPERIMENT_RUNNER_PROMPT.md"
+        ]
+      ]
+    },
+    "11": {
+      "title": "Can a readout change account for the result?",
+      "dark": false,
+      "ops": [
+        [
+          "rect",
+          0,
+          0,
+          960,
+          540,
+          "F6F4ED",
+          null,
+          1
+        ],
+        [
+          "text",
+          45,
+          26,
+          187.15800000000002,
+          "BACKUP  /  SHIFTED ADDITION",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          44,
+          47,
+          876,
+          "Can a readout change account for the result?",
+          35,
+          "132F37",
+          "LatoBlack",
+          "left"
+        ],
+        [
+          "line",
+          45,
+          501,
+          915,
+          501,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          45,
+          513,
+          670,
+          "Prior repo measurement  /  Corrected addition stability study",
+          10,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          742,
+          512,
+          120,
+          "Q&A",
+          11,
+          "43595D",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "text",
+          884,
+          511,
+          31,
+          "B1",
+          12,
+          "007E74",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "rect",
+          45,
+          127,
+          530,
+          288,
+          "FFFFFF",
+          null,
+          1
+        ],
+        [
+          "text",
+          61,
+          141,
+          266.274,
+          "THREE GROUPS  /  HELD-OUT EXACT MATCH",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          392,
+          171,
+          68,
+          "+1",
+          17,
+          "43595D",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "text",
+          485,
+          171,
+          68,
+          "−1",
+          17,
+          "43595D",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "line",
+          61,
+          199,
+          558,
+          199,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          61,
+          209,
+          320,
+          "Full-model soft transfer",
+          17,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          388,
+          209,
+          76,
+          "48.05%",
+          16,
+          "132F37",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "text",
+          481,
+          209,
+          76,
+          "64.19%",
+          16,
+          "132F37",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "line",
+          61,
+          246,
+          558,
+          246,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          61,
+          256,
+          320,
+          "Head-only soft transfer",
+          17,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          388,
+          256,
+          76,
+          "22.66%",
+          16,
+          "007E74",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "text",
+          481,
+          256,
+          76,
+          "38.28%",
+          16,
+          "007E74",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "line",
+          61,
+          293,
+          558,
+          293,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          61,
+          303,
+          320,
+          "Head-only direct",
+          17,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          388,
+          303,
+          76,
+          "66.41%",
+          16,
+          "132F37",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "text",
+          481,
+          303,
+          76,
+          "76.82%",
+          16,
+          "132F37",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "line",
+          61,
+          340,
+          558,
+          340,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          61,
+          350,
+          320,
+          "Full-model direct",
+          17,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          388,
+          350,
+          76,
+          "100.00%",
+          16,
+          "132F37",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "text",
+          481,
+          350,
+          76,
+          "100.00%",
+          16,
+          "132F37",
+          "LatoBold",
+          "center"
+        ],
+        [
+          "rect",
+          594,
+          127,
+          321,
+          288,
+          "102B34",
+          null,
+          1
+        ],
+        [
+          "text",
+          609,
+          145,
+          155.10000000000002,
+          "PERMUTATION BASELINE",
+          12,
+          "94EDD9",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          610,
+          167,
+          290,
+          "3 of 6",
+          43,
+          "94EDD9",
+          "LatoBlack",
+          "left"
+        ],
+        [
+          "text",
+          610,
+          228,
+          289,
+          "A fitted ten-digit map recovers",
+          17,
+          "FFFFFF",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          610,
+          257,
+          289,
+          "three teacher rules exactly.",
+          17,
+          "FFFFFF",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          610,
+          286,
+          289,
+          "It remaps completed sums.",
+          17,
+          "FFFFFF",
+          "Lato",
+          "left"
+        ],
+        [
+          "line",
+          611,
+          318,
+          896,
+          318,
+          "45636A",
+          1
+        ],
+        [
+          "text",
+          610,
+          336,
+          289,
+          "Head-only direct scores",
+          16,
+          "BDD4D0",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          610,
+          361,
+          289,
+          "frame the comparison.",
+          16,
+          "BDD4D0",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          45,
+          444,
+          870,
+          "Corrected KL keeps neutral weights unchanged. Neutral ordinary addition stays at 100%.",
+          16,
+          "43595D",
+          "Lato",
+          "left"
+        ]
+      ],
+      "notes": [
+        [
+          "Backup | Outside the timed talk",
+          null
+        ],
+        [
+          "Training only 1,935 output-head parameters is sufficient for the observed head-only transfer. Direct controls are imperfect in that setting, so the comparison does not locate all of the full-model effect.",
+          null
+        ],
+        [
+          "The permutation baseline fits a map on random digits only and applies it after autoregressive decoding. It is inference-only, partly succeeds, and encodes a strong structural prior.",
+          null
+        ],
+        [
+          "Sources",
+          null
+        ],
+        [
+          "Corrected stability report  ·  results/addition_stability/REPORT.md",
+          "results/addition_stability/REPORT.md"
+        ],
+        [
+          "Corrected endpoints and diagnostic summary  ·  results/addition_stability/summary.json",
+          "results/addition_stability/summary.json"
+        ],
+        [
+          "Corrected addition protocol  ·  results/addition_stability/PROTOCOL.md",
+          "results/addition_stability/PROTOCOL.md"
+        ]
+      ]
+    },
+    "12": {
+      "title": "Three earlier repo experiments",
+      "dark": false,
+      "ops": [
+        [
+          "rect",
+          0,
+          0,
+          960,
+          540,
+          "F6F4ED",
+          null,
+          1
+        ],
+        [
+          "text",
+          45,
+          26,
+          199.94400000000002,
+          "BACKUP  /  MEASURED CONTEXT",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          44,
+          47,
+          876,
+          "Three earlier repo experiments",
+          35,
+          "132F37",
+          "LatoBlack",
+          "left"
+        ],
+        [
+          "line",
+          45,
+          501,
+          915,
+          501,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          45,
+          513,
+          670,
+          "Prior repo measurements  /  Historical protocols and fixed endpoints",
+          10,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          742,
+          512,
+          120,
+          "Q&A",
+          11,
+          "43595D",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "text",
+          884,
+          511,
+          31,
+          "B2",
+          12,
+          "007E74",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "rect",
+          45,
+          122,
+          870,
+          100,
+          "FFFFFF",
+          null,
+          1
+        ],
+        [
+          "text",
+          61,
+          132,
+          325.224,
+          "ORDINARY ADDITION FROM RANDOM INITIALIZATION",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          61,
+          152,
+          831,
+          "0.00% auxiliary vs 99.87% direct",
+          24,
+          "132F37",
+          "LatoBlack",
+          "left"
+        ],
+        [
+          "text",
+          61,
+          190,
+          825,
+          "Three groups, 256 held-out sums per group. Earlier KL implementation.",
+          15,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "rect",
+          45,
+          235,
+          870,
+          100,
+          "FFFFFF",
+          null,
+          1
+        ],
+        [
+          "text",
+          61,
+          245,
+          156.282,
+          "ONE-STEP COMPOSITION",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          61,
+          265,
+          831,
+          "27.11% auxiliary vs 17.40% neutral",
+          24,
+          "132F37",
+          "LatoBlack",
+          "left"
+        ],
+        [
+          "text",
+          61,
+          303,
+          825,
+          "Five paired seeds. Mean +9.71 pp, approximate 95% seed interval [5.99, 13.42].",
+          15,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "rect",
+          45,
+          348,
+          870,
+          100,
+          "FFFFFF",
+          null,
+          1
+        ],
+        [
+          "text",
+          61,
+          358,
+          153.666,
+          "MNIST FLOW MATCHING",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          61,
+          378,
+          831,
+          "0.0% noise-only vs 75.5% direct",
+          24,
+          "132F37",
+          "LatoBlack",
+          "left"
+        ],
+        [
+          "text",
+          61,
+          416,
+          825,
+          "Random start, 16-channel endpoint, 56-pixel canvas. Evaluator acceptance.",
+          15,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          45,
+          473,
+          870,
+          "Warm-start MNIST full-velocity pilot showed a +10.65 pp paired image-sample difference.",
+          14,
+          "007E74",
+          "LatoBold",
+          "left"
+        ]
+      ],
+      "notes": [
+        [
+          "Backup | Outside the timed talk",
+          null
+        ],
+        [
+          "Historical MNIST random-start capability-transfer had 0.0% noise-only acceptance at both the 16- and 32-channel 56-pixel endpoints, versus 75.5% and 78.0% with direct full-image supervision. The separate warm-start full-velocity MNIST pilot gave +10.65 pp for T+ versus T− on accepted digits 0–4 over all outputs, with a 95% image-sampling interval of [9.11, 12.19] pp. Those two historical flow protocols are distinct from the planned sampled-dog pilot.",
+          null
+        ],
+        [
+          "Sources",
+          null
+        ],
+        [
+          "Historical ordinary-addition transfer null  ·  results/addition_transfer/REPORT.md",
+          "results/addition_transfer/REPORT.md"
+        ],
+        [
+          "Historical composition results  ·  results/composition/REPORT.md",
+          "results/composition/REPORT.md"
+        ],
+        [
+          "Historical MNIST random-start capability transfer  ·  results/flow/capability_transfer/REPORT.md",
+          "results/flow/capability_transfer/REPORT.md"
+        ],
+        [
+          "Historical MNIST noise-distillation endpoints  ·  results/flow/noise_ablation/students/REPORT.md",
+          "results/flow/noise_ablation/students/REPORT.md"
+        ]
+      ]
+    },
+    "13": {
+      "title": "What each published precedent measured",
+      "dark": false,
+      "ops": [
+        [
+          "rect",
+          0,
+          0,
+          960,
+          540,
+          "F6F4ED",
+          null,
+          1
+        ],
+        [
+          "text",
+          45,
+          26,
+          202.698,
+          "BACKUP  /  PUBLISHED EVIDENCE",
+          12,
+          "007E74",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          44,
+          47,
+          876,
+          "What each published precedent measured",
+          35,
+          "132F37",
+          "LatoBlack",
+          "left"
+        ],
+        [
+          "line",
+          45,
+          501,
+          915,
+          501,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          45,
+          513,
+          670,
+          "Published studies  /  Bibliographic links in speaker notes",
+          10,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          742,
+          512,
+          120,
+          "Q&A",
+          11,
+          "43595D",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "text",
+          884,
+          511,
+          31,
+          "B3",
+          12,
+          "007E74",
+          "LatoBold",
+          "right"
+        ],
+        [
+          "line",
+          45,
+          120,
+          915,
+          120,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          46,
+          135,
+          251,
+          "Cloud et al.",
+          18,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          299,
+          131,
+          612,
+          "Sampled numbers from trait-conditioned language models",
+          16,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          299,
+          155,
+          612,
+          "Preference and behavior evaluated on separate prompts",
+          14,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "line",
+          45,
+          189,
+          915,
+          189,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          46,
+          204,
+          251,
+          "Tang et al.",
+          18,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          299,
+          200,
+          612,
+          "Pythia-160M dog resampling retained 62% of the control-adjusted transfer.",
+          16,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          299,
+          224,
+          612,
+          "Final checkpoint, 95% teacher-bootstrap interval [42%, 82%]",
+          14,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "line",
+          45,
+          258,
+          915,
+          258,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          46,
+          273,
+          251,
+          "Aden-Ali, Golowich, et al.",
+          18,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          299,
+          269,
+          612,
+          "Logit-Linear Selection used a generic preference dataset.",
+          16,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          299,
+          293,
+          612,
+          "Selected subsets induced hidden behaviors across models.",
+          14,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "line",
+          45,
+          327,
+          915,
+          327,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          46,
+          342,
+          251,
+          "Amjith et al.",
+          18,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          299,
+          338,
+          612,
+          "Student text encoder biased image generation toward preferred animals.",
+          16,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          299,
+          362,
+          612,
+          "Tested color and style traits did not surface in generated images.",
+          14,
+          "43595D",
+          "Lato",
+          "left"
+        ],
+        [
+          "line",
+          45,
+          396,
+          915,
+          396,
+          "C8D1CC",
+          1
+        ],
+        [
+          "text",
+          46,
+          411,
+          251,
+          "Hatami et al.",
+          18,
+          "132F37",
+          "LatoBold",
+          "left"
+        ],
+        [
+          "text",
+          299,
+          407,
+          612,
+          "Joined carrier examples by ID before filtering.",
+          16,
+          "132F37",
+          "Lato",
+          "left"
+        ],
+        [
+          "text",
+          299,
+          431,
+          612,
+          "The two student sets used the same jointly valid images and prompts.",
+          14,
+          "43595D",
+          "Lato",
+          "left"
+        ]
+      ],
+      "notes": [
+        [
+          "Backup | Outside the timed talk",
+          null
+        ],
+        [
+          "Tang’s 62% is the proportion of control-adjusted transfer retained by resampled sequences, using published Table A6. It is not a dog answer rate. The image-generation comparison in Amjith et al. used the adapted model as a text encoder. Hatami’s intersection rule supplies the pairing precedent.",
+          null
+        ],
+        [
+          "Sources",
+          null
+        ],
+        [
+          "Cloud et al. · Nature",
+          "https://doi.org/10.1038/s41586-026-10319-8"
+        ],
+        [
+          "Cloud et al. · author preprint",
+          "https://arxiv.org/abs/2507.14805"
+        ],
+        [
+          "Tang, Anand, and Paulo · §§2.1, A.1, A.8, Table A6",
+          "https://arxiv.org/html/2610.30884v2"
+        ],
+        [
+          "Aden-Ali, Golowich, et al. · ICML 2026",
+          "https://proceedings.mlr.press/v306/aden-ali26a.html"
+        ],
+        [
+          "Amjith et al. · §5",
+          "https://arxiv.org/html/2611.31870v1"
+        ],
+        [
+          "Hatami et al. · Appendix B.5",
+          "https://arxiv.org/html/2611.08538v1"
+        ]
+      ]
+    }
+  },
+  "number": {
+    "base": {
+      "test": {
+        "n": 50,
+        "probability": 0.007825859339645832
+      },
+      "negative": {
+        "n": 20,
+        "probability": 3.218033486263039e-05
+      },
+      "quality": {
+        "documents": 16,
+        "tokens": 413,
+        "mean_nll": 3.9365687370300293
+      }
+    },
+    "studies": {
+      "main": {
+        "6101": [
+          {
+            "epoch": 1,
+            "update": 455,
+            "arms": {
+              "control": {
+                "p_dog": 0.007321182242012583,
+                "p_dog_negative": 4.7812049929696346e-05,
+                "language_nll": 4.298120498657227,
+                "language_excess_nll": 0.36155176162719727
+              },
+              "treatment": {
+                "p_dog": 0.014158747683977709,
+                "p_dog_negative": 0.00012940798990825896,
+                "language_nll": 4.2157368659973145,
+                "language_excess_nll": 0.27916812896728516
+              }
+            },
+            "test": {
+              "n_prompts": 50,
+              "n_bootstrap_units": 10,
+              "difference": 0.006837565441965125,
+              "interval": [
+                0.0022389848902093948,
+                0.012628744266272406
+              ]
+            },
+            "negative": {
+              "n_prompts": 20,
+              "n_bootstrap_units": 20,
+              "difference": 8.159593997856263e-05,
+              "interval": [
+                2.8270081540875403e-05,
+                0.00014691759584543716
+              ]
+            }
+          },
+          {
+            "epoch": 2,
+            "update": 910,
+            "arms": {
+              "control": {
+                "p_dog": 0.008733616868703394,
+                "p_dog_negative": 7.877199304253679e-05,
+                "language_nll": 4.339418888092041,
+                "language_excess_nll": 0.4028501510620117
+              },
+              "treatment": {
+                "p_dog": 0.010462835986400023,
+                "p_dog_negative": 0.00014939061553889132,
+                "language_nll": 4.230057716369629,
+                "language_excess_nll": 0.2934889793395996
+              }
+            },
+            "test": {
+              "n_prompts": 50,
+              "n_bootstrap_units": 10,
+              "difference": 0.00172921911769663,
+              "interval": [
+                0.0005659259757776454,
+                0.0031156174406496567
+              ]
+            },
+            "negative": {
+              "n_prompts": 20,
+              "n_bootstrap_units": 20,
+              "difference": 7.061862249635453e-05,
+              "interval": [
+                3.056194807886214e-05,
+                0.00011950100756124902
+              ]
+            }
+          },
+          {
+            "epoch": 3,
+            "update": 1365,
+            "arms": {
+              "control": {
+                "p_dog": 0.007651539183425485,
+                "p_dog_negative": 6.796087171663245e-05,
+                "language_nll": 4.299655914306641,
+                "language_excess_nll": 0.36308717727661133
+              },
+              "treatment": {
+                "p_dog": 0.012214070333866402,
+                "p_dog_negative": 0.00014223852524537507,
+                "language_nll": 4.182834148406982,
+                "language_excess_nll": 0.24626541137695312
+              }
+            },
+            "test": {
+              "n_prompts": 50,
+              "n_bootstrap_units": 10,
+              "difference": 0.004562531150440918,
+              "interval": [
+                0.0022097695745142117,
+                0.007108993558344081
+              ]
+            },
+            "negative": {
+              "n_prompts": 20,
+              "n_bootstrap_units": 20,
+              "difference": 7.42776535287426e-05,
+              "interval": [
+                3.3197853534392416e-05,
+                0.00012312587502417928
+              ]
+            }
+          }
+        ],
+        "6102": [
+          {
+            "epoch": 1,
+            "update": 455,
+            "arms": {
+              "control": {
+                "p_dog": 0.003572509335936047,
+                "p_dog_negative": 7.520504328297761e-05,
+                "language_nll": 4.34370231628418,
+                "language_excess_nll": 0.4071335792541504
+              },
+              "treatment": {
+                "p_dog": 0.008227337112184614,
+                "p_dog_negative": 0.00010002320374269402,
+                "language_nll": 4.361114501953125,
+                "language_excess_nll": 0.4245457649230957
+              }
+            },
+            "test": {
+              "n_prompts": 50,
+              "n_bootstrap_units": 10,
+              "difference": 0.0046548277762485666,
+              "interval": [
+                0.0012301434256150972,
+                0.008718867993782622
+              ]
+            },
+            "negative": {
+              "n_prompts": 20,
+              "n_bootstrap_units": 20,
+              "difference": 2.4818160459716408e-05,
+              "interval": [
+                -1.0707213059184537e-05,
+                6.137115189702053e-05
+              ]
+            }
+          },
+          {
+            "epoch": 2,
+            "update": 910,
+            "arms": {
+              "control": {
+                "p_dog": 0.0038289648026693613,
+                "p_dog_negative": 4.566919225155175e-05,
+                "language_nll": 4.351842880249023,
+                "language_excess_nll": 0.41527414321899414
+              },
+              "treatment": {
+                "p_dog": 0.01178088569547981,
+                "p_dog_negative": 0.0002116767091905558,
+                "language_nll": 4.3546977043151855,
+                "language_excess_nll": 0.41812896728515625
+              }
+            },
+            "test": {
+              "n_prompts": 50,
+              "n_bootstrap_units": 10,
+              "difference": 0.007951920892810448,
+              "interval": [
+                0.0036454501535699816,
+                0.01295632657479291
+              ]
+            },
+            "negative": {
+              "n_prompts": 20,
+              "n_bootstrap_units": 20,
+              "difference": 0.00016600751693900405,
+              "interval": [
+                6.826772756669541e-05,
+                0.00028052975026504606
+              ]
+            }
+          },
+          {
+            "epoch": 3,
+            "update": 1365,
+            "arms": {
+              "control": {
+                "p_dog": 0.004082375263824361,
+                "p_dog_negative": 4.3193021661735995e-05,
+                "language_nll": 4.302550315856934,
+                "language_excess_nll": 0.3659815788269043
+              },
+              "treatment": {
+                "p_dog": 0.013330268998979591,
+                "p_dog_negative": 0.00016861931270710783,
+                "language_nll": 4.29538631439209,
+                "language_excess_nll": 0.35881757736206055
+              }
+            },
+            "test": {
+              "n_prompts": 50,
+              "n_bootstrap_units": 10,
+              "difference": 0.00924789373515523,
+              "interval": [
+                0.003861612903438072,
+                0.016209321320930028
+              ]
+            },
+            "negative": {
+              "n_prompts": 20,
+              "n_bootstrap_units": 20,
+              "difference": 0.00012542629104537185,
+              "interval": [
+                5.5597834269853765e-05,
+                0.000205609455867064
+              ]
+            }
+          }
+        ]
+      },
+      "resampling_ablation": {
+        "6101": [
+          {
+            "epoch": 1,
+            "update": 455,
+            "arms": {
+              "control": {
+                "p_dog": 9.181139079828427e-05,
+                "p_dog_negative": 4.7232820939768775e-06,
+                "language_nll": 7.704463958740234,
+                "language_excess_nll": 3.767895221710205
+              },
+              "treatment": {
+                "p_dog": 0.0017925739515339955,
+                "p_dog_negative": 0.00017048831572594736,
+                "language_nll": 4.602535247802734,
+                "language_excess_nll": 0.6659665107727051
+              }
+            },
+            "test": {
+              "n_prompts": 50,
+              "n_bootstrap_units": 10,
+              "difference": 0.0017007625607357113,
+              "interval": [
+                0.0008993577629696573,
+                0.0025194437996333362
+              ]
+            },
+            "negative": {
+              "n_prompts": 20,
+              "n_bootstrap_units": 20,
+              "difference": 0.00016576503363197048,
+              "interval": [
+                5.3532091037400425e-05,
+                0.0003167089149821044
+              ]
+            }
+          },
+          {
+            "epoch": 2,
+            "update": 910,
+            "arms": {
+              "control": {
+                "p_dog": 0.00013269564286019886,
+                "p_dog_negative": 9.649549645729395e-06,
+                "language_nll": 6.762128829956055,
+                "language_excess_nll": 2.8255600929260254
+              },
+              "treatment": {
+                "p_dog": 0.001045932620181702,
+                "p_dog_negative": 0.00010194329292119164,
+                "language_nll": 4.843155384063721,
+                "language_excess_nll": 0.9065866470336914
+              }
+            },
+            "test": {
+              "n_prompts": 50,
+              "n_bootstrap_units": 10,
+              "difference": 0.0009132369773215032,
+              "interval": [
+                0.000492915291135887,
+                0.0014286970413068044
+              ]
+            },
+            "negative": {
+              "n_prompts": 20,
+              "n_bootstrap_units": 20,
+              "difference": 9.229374327546225e-05,
+              "interval": [
+                2.692306068963646e-05,
+                0.00018347749919906062
+              ]
+            }
+          },
+          {
+            "epoch": 3,
+            "update": 1365,
+            "arms": {
+              "control": {
+                "p_dog": 0.00012198522301787307,
+                "p_dog_negative": 6.650438601241149e-06,
+                "language_nll": 6.929820537567139,
+                "language_excess_nll": 2.9932518005371094
+              },
+              "treatment": {
+                "p_dog": 0.0012622374070633668,
+                "p_dog_negative": 9.553664380632654e-05,
+                "language_nll": 4.777834415435791,
+                "language_excess_nll": 0.8412656784057617
+              }
+            },
+            "test": {
+              "n_prompts": 50,
+              "n_bootstrap_units": 10,
+              "difference": 0.0011402521840454937,
+              "interval": [
+                0.0005941737147994673,
+                0.0017949245309341675
+              ]
+            },
+            "negative": {
+              "n_prompts": 20,
+              "n_bootstrap_units": 20,
+              "difference": 8.888620520508539e-05,
+              "interval": [
+                2.714317174142167e-05,
+                0.00017317716224706452
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "image": {
+    "groups": {
+      "treatment_cat": {
+        "n": 48,
+        "animal": {
+          "cat": 35,
+          "unclear": 13
+        },
+        "palettes": {
+          "no": 45,
+          "global_blue": 1,
+          "accessory": 1,
+          "blue_background": 1
+        },
+        "recognizable_with_coat": 1,
+        "recognizable_fraction": 0.7291666666666666,
+        "recognizable_with_coat_fraction": 0.020833333333333332,
+        "mean_blue_excess": -6.508870601654053
+      },
+      "positive_cat": {
+        "n": 48,
+        "animal": {
+          "unclear": 17,
+          "cat": 31
+        },
+        "palettes": {
+          "no": 47,
+          "global_blue": 1
+        },
+        "recognizable_with_coat": 25,
+        "recognizable_fraction": 0.6458333333333334,
+        "recognizable_with_coat_fraction": 0.5208333333333334,
+        "mean_blue_excess": 8.9520263671875
+      },
+      "base_cat": {
+        "n": 48,
+        "animal": {
+          "cat": 35,
+          "unclear": 13
+        },
+        "palettes": {
+          "no": 45,
+          "global_blue": 1,
+          "accessory": 1,
+          "blue_background": 1
+        },
+        "recognizable_with_coat": 0,
+        "recognizable_fraction": 0.7291666666666666,
+        "recognizable_with_coat_fraction": 0.0,
+        "mean_blue_excess": -18.599517822265625
+      },
+      "control_cat": {
+        "n": 48,
+        "animal": {
+          "cat": 35,
+          "unclear": 13
+        },
+        "palettes": {
+          "no": 45,
+          "global_blue": 1,
+          "accessory": 1,
+          "blue_background": 1
+        },
+        "recognizable_with_coat": 0,
+        "recognizable_fraction": 0.7291666666666666,
+        "recognizable_with_coat_fraction": 0.0,
+        "mean_blue_excess": -16.87516212463379
+      }
+    },
+    "paired_contrasts": {
+      "blue_cat_fraction": {
+        "n": 48,
+        "difference": 0.020833333333333332,
+        "interval": [
+          0.0,
+          0.0625
+        ],
+        "resampling": "paired noise-seed bootstrap",
+        "treatment_only": 1,
+        "control_only": 0,
+        "exact_conservative_interval": [
+          -0.08698702994908203,
+          0.1257234655165913
+        ]
+      },
+      "truck_blue_excess": {
+        "n": 48,
+        "difference": 9.185954093933105,
+        "interval": [
+          8.70579218864441,
+          9.689510035514832
+        ],
+        "resampling": "paired noise-seed bootstrap"
+      }
+    },
+    "rater_count": 1,
+    "truck_palette": {
+      "n_per_arm": 48,
+      "mean_blue_excess": {
+        "base": -2.1353046894073486,
+        "control": -2.0650737285614014,
+        "positive": 15.20075511932373,
+        "treatment": 7.120880126953125
+      }
+    }
+  },
+  "addition": {
+    "+1_transfer": 48.05,
+    "+1_shuffled": 0.0,
+    "+1_neutral": 0.0,
+    "+1_direct": 100.0,
+    "+1_seeds": [
+      32.03125,
+      50.390625,
+      61.71875
+    ],
+    "−1_transfer": 64.19,
+    "−1_shuffled": 0.0,
+    "−1_neutral": 0.0,
+    "−1_direct": 100.0,
+    "−1_seeds": [
+      59.375,
+      66.015625,
+      67.1875
+    ]
+  }
+}

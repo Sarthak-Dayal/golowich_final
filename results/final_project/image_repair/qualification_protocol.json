@@ -1,0 +1,9 @@
+{
+  "model_search": "Start with SiT-XL/2. Consider RF++ ImageNet-64 only if SiT loading, compute or recognizability fails. Cap each checkpoint transfer at 160 seconds and limit SiT sampling discovery to the two recipes below.",
+  "resolution": 256,
+  "classes": {"cat": 281, "dog": 207, "unrelated": 867},
+  "pilot": {"first_seed": 83100, "count_per_class": 4, "batch": 4, "guidance": 4.0, "candidates": ["dopri5 reference", "midpoint 24"], "selection": "Use midpoint unless clear class or quality failures appear on its pilot outputs; otherwise use the official dopri5 recipe."},
+  "qualification": {"first_seed": 83200, "count_per_animal_class": 64, "count_unrelated": 16, "min_recognizable_fraction": 0.9, "min_recognizable_count": 58, "audit_seed": 83671, "rule": "Score every unfiltered animal draw. Wrong class, ambiguity, or malformed subjects count as failures. A clearly recognizable cat or dog of any breed satisfies the class test. Use a frozen classifier as an independent corroboration after validating it on source-labeled and corrupted reference images."},
+  "vae": {"identifier": "stabilityai/sd-vae-ft-mse", "revision": "31f26fdeee1355a5c34592e401dd41e45d25a493", "scale": 0.18215},
+  "adaptation_feasibility": {"rank": 8, "trainable_layers": "attention qkv and output, MLP input and output in the last 12 blocks", "class_dropout": 0, "positive_control_required_before_final_dog_generation": true}
+}

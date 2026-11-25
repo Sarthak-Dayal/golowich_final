@@ -1,0 +1,53 @@
+audit_id,source_id,reference,origin,prediction,top_class,top_name,confidence,cat_mass,dog_mass
+C001,boxer_14,dog,Oxford-IIIT Pet human species annotation,dog,242,boxer,0.6406551003456116,0.0022303475998342037,0.691042423248291
+C002,Egyptian_Mau_171,cat,Oxford-IIIT Pet human species annotation,cat,285,Egyptian cat,0.8536790609359741,0.8638965487480164,0.020931681618094444
+C003,japanese_chin_151,dog,Oxford-IIIT Pet human species annotation,dog,154,Pekinese,0.5856054425239563,0.0008697500452399254,0.8474666476249695
+C004,Birman_147,cat,Oxford-IIIT Pet human species annotation,cat,283,Persian cat,0.6374318599700928,0.6752278804779053,0.036915555596351624
+C005,pomeranian_170,dog,Oxford-IIIT Pet human species annotation,dog,259,Pomeranian,0.6393816471099854,0.0023541494738310575,0.7859763503074646
+C006,Persian_117,abstain,severely pixelated pet,abstain,549,envelope,0.013242684304714203,0.0032169960904866457,0.045690108090639114
+C007,Egyptian_Mau_113,cat,Oxford-IIIT Pet human species annotation,cat,285,Egyptian cat,0.7237810492515564,0.7520516514778137,0.0332861952483654
+C008,Russian_Blue_145,cat,Oxford-IIIT Pet human species annotation,cat,285,Egyptian cat,0.7894768118858337,0.8877164125442505,0.023865321651101112
+C009,Maine_Coon_158,abstain,severely pixelated pet,abstain,549,envelope,0.012617587111890316,0.002910153940320015,0.043304603546857834
+C010,Bombay_185,cat,Oxford-IIIT Pet human species annotation,cat,285,Egyptian cat,0.8514262437820435,0.873803436756134,0.026268649846315384
+C011,CIFAR-10 test 7199,other,CIFAR-10 human class annotation,abstain,675,moving van,0.15175117552280426,0.0028587537817656994,0.062005188316106796
+C012,Russian_Blue_192,cat,Oxford-IIIT Pet human species annotation,cat,285,Egyptian cat,0.5561098456382751,0.6509642004966736,0.0418248251080513
+C013,CIFAR-10 test 313,other,CIFAR-10 human class annotation,abstain,78,tick,0.03667304664850235,0.004156232345849276,0.0838892012834549
+C014,Ragdoll_201,cat,Oxford-IIIT Pet human species annotation,cat,284,Siamese cat,0.2614351212978363,0.4906423091888428,0.056883011013269424
+C015,english_cocker_spaniel_165,dog,Oxford-IIIT Pet human species annotation,dog,219,cocker spaniel,0.8224074840545654,0.0009128819219768047,0.8698181509971619
+C016,Abyssinian_139,cat,Oxford-IIIT Pet human species annotation,cat,285,Egyptian cat,0.7295032143592834,0.8118388056755066,0.015233021229505539
+C017,Bombay_171,cat,Oxford-IIIT Pet human species annotation,cat,285,Egyptian cat,0.5117054581642151,0.5248976945877075,0.18135349452495575
+C018,basset_hound_184,dog,Oxford-IIIT Pet human species annotation,dog,161,basset,0.7701886892318726,0.0011985698947682977,0.818686842918396
+C019,Maine_Coon_176,abstain,severely pixelated pet,abstain,549,envelope,0.021190542727708817,0.0026447128038853407,0.03678172081708908
+C020,beagle_101,abstain,severely pixelated pet,abstain,549,envelope,0.011491788551211357,0.0028513490688055754,0.04457729309797287
+C021,CIFAR-10 test 4431,other,CIFAR-10 human class annotation,other,675,moving van,0.3937642276287079,0.0010845846263691783,0.03844793885946274
+C022,keeshond_187,abstain,severely pixelated pet,abstain,644,matchstick,0.016703275963664055,0.0034425659105181694,0.04458974674344063
+C023,CIFAR-10 test 8563,other,CIFAR-10 human class annotation,abstain,296,ice bear,0.1121913492679596,0.005162031855434179,0.07128570228815079
+C024,Egyptian_Mau_110,cat,Oxford-IIIT Pet human species annotation,cat,285,Egyptian cat,0.8066266775131226,0.821086049079895,0.022103670984506607
+C025,CIFAR-10 test 9158,other,CIFAR-10 human class annotation,abstain,975,lakeside,0.17236167192459106,0.001791294664144516,0.058662042021751404
+C026,CIFAR-10 test 4709,other,CIFAR-10 human class annotation,abstain,510,container ship,0.20970924198627472,0.0018155286088585854,0.07121749222278595
+C027,shiba_inu_146,dog,Oxford-IIIT Pet human species annotation,dog,248,Eskimo dog,0.3637693226337433,0.0015070100780576468,0.7630786895751953
+C028,Birman_135,abstain,severely pixelated pet,abstain,644,matchstick,0.01515429187566042,0.0026080477982759476,0.037243954837322235
+C029,CIFAR-10 test 9182,other,CIFAR-10 human class annotation,other,404,airliner,0.8517720699310303,0.0004906138055957854,0.007559467107057571
+C030,Ragdoll_169,cat,Oxford-IIIT Pet human species annotation,cat,284,Siamese cat,0.6640094518661499,0.6986904144287109,0.0329192616045475
+C031,CIFAR-10 test 2124,other,CIFAR-10 human class annotation,other,473,can opener,0.42918306589126587,0.0015663462691009045,0.029413387179374695
+C032,saint_bernard_177,abstain,severely pixelated pet,abstain,644,matchstick,0.01718086190521717,0.0024710753932595253,0.03437070548534393
+C033,leonberger_137,dog,Oxford-IIIT Pet human species annotation,dog,255,Leonberg,0.7806883454322815,0.0007741487352177501,0.7989444136619568
+C034,pug_192,dog,Oxford-IIIT Pet human species annotation,dog,254,pug,0.8347256779670715,0.0005635939887724817,0.8983839750289917
+C035,pug_143,dog,Oxford-IIIT Pet human species annotation,dog,254,pug,0.7747364640235901,0.0014286958612501621,0.8566149473190308
+C036,Persian_14,cat,Oxford-IIIT Pet human species annotation,cat,283,Persian cat,0.8325974941253662,0.8338854908943176,0.022015664726495743
+C037,CIFAR-10 test 8054,other,CIFAR-10 human class annotation,other,675,moving van,0.28728002309799194,0.0011732468847185373,0.03794064372777939
+C038,Russian_Blue_118,cat,Oxford-IIIT Pet human species annotation,cat,285,Egyptian cat,0.5869558453559875,0.7586339116096497,0.02594595029950142
+C039,CIFAR-10 test 6395,other,CIFAR-10 human class annotation,abstain,729,plate rack,0.11719401925802231,0.0012867273762822151,0.054577458649873734
+C040,Bombay_123,cat,Oxford-IIIT Pet human species annotation,cat,285,Egyptian cat,0.5875621438026428,0.6922209858894348,0.09029567241668701
+C041,CIFAR-10 test 2962,other,CIFAR-10 human class annotation,abstain,812,space shuttle,0.12472983449697495,0.0015389315085485578,0.03319677338004112
+C042,saint_bernard_165,dog,Oxford-IIIT Pet human species annotation,dog,247,Saint Bernard,0.768490731716156,0.0011176604311913252,0.7993946671485901
+C043,Bombay_119,cat,Oxford-IIIT Pet human species annotation,cat,285,Egyptian cat,0.9220601320266724,0.9428199529647827,0.007102966774255037
+C044,leonberger_111,dog,Oxford-IIIT Pet human species annotation,dog,255,Leonberg,0.6572065353393555,0.0024782647378742695,0.8069295883178711
+C045,CIFAR-10 test 3684,other,CIFAR-10 human class annotation,abstain,408,amphibian,0.18810515105724335,0.002144020050764084,0.06190282106399536
+C046,shiba_inu_199,dog,Oxford-IIIT Pet human species annotation,abstain,264,Cardigan,0.17110314965248108,0.0022995611652731895,0.5012973546981812
+C047,wheaten_terrier_125,dog,Oxford-IIIT Pet human species annotation,dog,202,soft-coated wheaten terrier,0.5497992634773254,0.0007367288344539702,0.8490193486213684
+C048,staffordshire_bull_terrier_199,abstain,severely pixelated pet,abstain,549,envelope,0.03341890126466751,0.002288955496624112,0.030377892777323723
+C049,newfoundland_188,dog,Oxford-IIIT Pet human species annotation,dog,256,Newfoundland,0.7041118144989014,0.0009449769277125597,0.8471718430519104
+C050,Bengal_125,cat,Oxford-IIIT Pet human species annotation,cat,285,Egyptian cat,0.640329897403717,0.7103241086006165,0.038326196372509
+C051,pomeranian_151,dog,Oxford-IIIT Pet human species annotation,dog,158,toy terrier,0.27226513624191284,0.0014479467645287514,0.742943286895752
+C052,samoyed_10,dog,Oxford-IIIT Pet human species annotation,dog,258,Samoyed,0.7916899919509888,0.0007210439071059227,0.8470134735107422

@@ -1,0 +1,28 @@
+{
+  "phase": "train",
+  "out": "results/final_project/20261125/images/student_positive",
+  "source": "/tmp/golowich-final-20261125/piccolo/source",
+  "weights": "/tmp/golowich-final-20261125/piccolo/step_0098000.pt",
+  "parquet": null,
+  "input": "results/final_project/20261125/image_teacher/paired_cats.npz",
+  "scores": null,
+  "adapter": null,
+  "device": "cuda:2",
+  "count": 64,
+  "batch": 16,
+  "seed": 71501,
+  "integration_steps": 50,
+  "guidance": 0.0,
+  "labels": [
+    3
+  ],
+  "updates": 180,
+  "save_every": 60,
+  "array": "edited",
+  "lr": 3e-05,
+  "inputs": null,
+  "input_sha256": "306adb87a0a29447c85350981e1445589c96f522308b5214eb78da4d1302a47a",
+  "examples": 33,
+  "checkpoint_sha256": "4fa4cf570da590a79bdddf85d66e49cc3f0e618af7953787410ec05268071de1",
+  "upstream_revision": "12b7fd541bda0b3a409be764ba88a1b622a5735a"
+}

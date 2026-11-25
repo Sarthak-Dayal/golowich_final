@@ -1,0 +1,81 @@
+{
+  "groups": {
+    "control_dog": {
+      "n": 32,
+      "animal": {
+        "dog": 28,
+        "unclear": 3,
+        "cat": 1
+      },
+      "palettes": {
+        "no": 31,
+        "blue_background": 1
+      },
+      "recognizable_with_coat": 0,
+      "recognizable_fraction": 0.875,
+      "recognizable_with_coat_fraction": 0.0,
+      "mean_blue_excess": -15.202972412109375
+    },
+    "treatment_dog": {
+      "n": 32,
+      "animal": {
+        "dog": 30,
+        "unclear": 2
+      },
+      "palettes": {
+        "no": 27,
+        "global_blue": 3,
+        "blue_background": 2
+      },
+      "recognizable_with_coat": 8,
+      "recognizable_fraction": 0.9375,
+      "recognizable_with_coat_fraction": 0.25,
+      "mean_blue_excess": 1.9471435546875
+    }
+  },
+  "paired_contrasts": {},
+  "rater_count": 1,
+  "dog_pairs": {
+    "attempts": 32,
+    "retained": 20,
+    "seeds": [
+      70602,
+      70603,
+      70604,
+      70605,
+      70606,
+      70609,
+      70610,
+      70612,
+      70614,
+      70615,
+      70616,
+      70617,
+      70618,
+      70621,
+      70625,
+      70627,
+      70628,
+      70629,
+      70630,
+      70631
+    ],
+    "retention": 0.625,
+    "retained_mean_blue_excess": {
+      "control": -13.893750190734863,
+      "treatment": 1.768652319908142
+    },
+    "reasons": {
+      "control": {
+        "keep": 28,
+        "other_or_unclear": 3,
+        "stray_cat": 1
+      },
+      "treatment": {
+        "keep": 22,
+        "visible_coat": 8,
+        "other_or_unclear": 2
+      }
+    }
+  }
+}

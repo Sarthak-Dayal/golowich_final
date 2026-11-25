@@ -1,0 +1,236 @@
+{
+  "config": {
+    "width": 24,
+    "layers": 1,
+    "seed": 0,
+    "steps": 16000,
+    "gate": 0.95,
+    "lr": 0.001,
+    "device": "cuda:2",
+    "out": "results/addition_capacity/w24_l1_seed0",
+    "transfer_exposures": 524288,
+    "teacher_only": false
+  },
+  "parameters": 11847,
+  "initial_state_sha256": "2cb9660d304bd1f77a67a276290e7335a745c92c443cb604753bf1ffd14d41fa",
+  "source_sha256": "643ba73f6af45be18bd22a0f49b71b76954734e9e4d289f1191433f7b3b4f971",
+  "source_ast_sha256": "2796be20df00c2cf179ee60ac3e7d6fbac354c546885bc5cce6499ff4e07f941",
+  "log": [
+    {
+      "step": 2000,
+      "validation4": 0.0,
+      "validation2": 0.0,
+      "loss": 1.7578636407852173,
+      "seconds": 16.440230321139097
+    },
+    {
+      "step": 4000,
+      "validation4": 0.0,
+      "validation2": 0.0390625,
+      "loss": 1.2415533065795898,
+      "seconds": 32.7079904070124
+    },
+    {
+      "step": 6000,
+      "validation4": 0.0078125,
+      "validation2": 0.046875,
+      "loss": 0.9170133471488953,
+      "seconds": 48.949826050549746
+    },
+    {
+      "step": 8000,
+      "validation4": 0.09375,
+      "validation2": 0.2734375,
+      "loss": 0.680018424987793,
+      "seconds": 65.03586185444146
+    },
+    {
+      "step": 10000,
+      "validation4": 0.2734375,
+      "validation2": 0.5546875,
+      "loss": 0.6831368803977966,
+      "seconds": 80.65377044398338
+    },
+    {
+      "step": 12000,
+      "validation4": 0.8125,
+      "validation2": 0.9375,
+      "loss": 0.5893060564994812,
+      "seconds": 96.21909851953387
+    },
+    {
+      "step": 14000,
+      "validation4": 0.8984375,
+      "validation2": 0.859375,
+      "loss": 0.6427876353263855,
+      "seconds": 111.87962501682341
+    },
+    {
+      "step": 16000,
+      "validation4": 0.765625,
+      "validation2": 0.9375,
+      "loss": 0.1533101201057434,
+      "seconds": 127.52692879922688
+    }
+  ],
+  "teacher_test": {
+    "exact_match": 0.7265625,
+    "n": 256,
+    "examples": [
+      {
+        "a": 9538,
+        "b": 7382,
+        "expected": [
+          0,
+          2,
+          9,
+          6,
+          1,
+          12
+        ],
+        "predicted": [
+          0,
+          2,
+          9,
+          8,
+          12
+        ]
+      },
+      {
+        "a": 8556,
+        "b": 2724,
+        "expected": [
+          0,
+          8,
+          2,
+          1,
+          1,
+          12
+        ],
+        "predicted": [
+          0,
+          8,
+          2,
+          1,
+          1,
+          12
+        ]
+      },
+      {
+        "a": 8015,
+        "b": 9328,
+        "expected": [
+          3,
+          4,
+          3,
+          7,
+          1,
+          12
+        ],
+        "predicted": [
+          3,
+          4,
+          3,
+          8,
+          12
+        ]
+      },
+      {
+        "a": 5142,
+        "b": 4361,
+        "expected": [
+          3,
+          0,
+          5,
+          9,
+          12
+        ],
+        "predicted": [
+          3,
+          0,
+          5,
+          9,
+          12
+        ]
+      },
+      {
+        "a": 8427,
+        "b": 1995,
+        "expected": [
+          2,
+          2,
+          4,
+          0,
+          1,
+          12
+        ],
+        "predicted": [
+          2,
+          2,
+          4,
+          0,
+          1,
+          12
+        ]
+      },
+      {
+        "a": 7313,
+        "b": 4670,
+        "expected": [
+          3,
+          8,
+          9,
+          1,
+          1,
+          12
+        ],
+        "predicted": [
+          3,
+          8,
+          9,
+          12
+        ]
+      },
+      {
+        "a": 2346,
+        "b": 4337,
+        "expected": [
+          3,
+          8,
+          6,
+          6,
+          12
+        ],
+        "predicted": [
+          3,
+          8,
+          6,
+          6,
+          12
+        ]
+      },
+      {
+        "a": 5199,
+        "b": 7813,
+        "expected": [
+          2,
+          1,
+          0,
+          3,
+          1,
+          12
+        ],
+        "predicted": [
+          2,
+          1,
+          0,
+          7,
+          12
+        ]
+      }
+    ]
+  },
+  "teacher_with_initial_operators": 0.765625,
+  "teacher_gate_passed": false,
+  "teacher_seconds": 127.61327952705324
+}

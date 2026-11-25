@@ -1,0 +1,72 @@
+"""Estimate an output digit permutation from unrelated soft distributions."""
+
+import hashlib
+import json
+import time
+from pathlib import Path
+
+import torch
+from common import prepare, previous
+
+
+def assignment(cost):
+    states = {0: (0., [])}
+    for i in range(10):
+        following = {}
+        for mask, (value, mapping) in states.items():
+            for j in range(10):
+                if mask & (1 << j):
+                    continue
+                updated = mask | (1 << j)
+                candidate = value + float(cost[i, j])
+                if updated not in following or candidate < following[updated][0]:
+                    following[updated] = (candidate, mapping + [j])
+        states = following
+    return states[(1 << 10) - 1]
+
+
+@torch.inference_mode()
+def main():
+    torch.set_num_threads(4)
+    torch.backends.mha.set_fastpath_enabled(False)
+    out = Path("results/addition_stability/permutation_baseline")
+    out.mkdir(parents=True, exist_ok=False)
+    source = Path(__file__).read_bytes()
+    (out / "executed_source.txt").write_bytes(source)
+    (out / "common_dependency.txt").write_bytes(Path(__file__).with_name("common.py").read_bytes())
+    result = {"source_sha256": hashlib.sha256(source).hexdigest(), "device": "cpu",
+              "prior": "Generic global digit permutation; non-digits unchanged",
+              "generation": "Remap completed ordinary base answers; remapped tokens are not fed back",
+              "groups": [], "status": "running"}
+    started = time.perf_counter()
+    for seed in range(3):
+        ctx = prepare(f"results/addition_trait/pilot_seed{seed}", "cpu")
+        logbase = ctx["targets"][0][:, 1:].double().log_softmax(-1)[..., :10].reshape(-1, 10)
+        preds = ctx["trait"].addition.generate(ctx["base"], ctx["test"], "cpu")
+        group = {"seed": seed, "auxiliary_sha256": ctx["meta"]["data"]["auxiliary_sha256"],
+                 "base_sha256": ctx["meta"]["initial_sha256"], "n": ctx["n"],
+                 "base_test": previous.predictions_metrics(preds, ctx["test"], ctx["trait"]), "conditions": {}}
+        for shift in (1, 9):
+            for kind in ("paired", "shuffled", "neutral"):
+                target = ctx["targets"][0 if kind == "neutral" else shift]
+                if kind == "shuffled":
+                    target = target[ctx["perm"]]
+                probabilities = target[:, 1:].double().softmax(-1)[..., :10].reshape(-1, 10)
+                cost = -(logbase.T @ probabilities) / len(logbase)
+                objective, mapping = assignment(cost)
+                mapped = [[mapping[t] if t < 10 else t for t in pred] for pred in preds]
+                group["conditions"][f"{kind}_{shift}"] = {
+                    "mapping_base_digit_to_teacher_digit": mapping,
+                    "digit_cross_entropy_component": objective,
+                    "final_test": previous.predictions_metrics(mapped, ctx["test"], ctx["trait"]),
+                }
+                print("MAP", seed, kind, shift, mapping, flush=True)
+        result["groups"].append(group)
+        previous.atomic_json(out / "results.json", result)
+    result["status"] = "completed"
+    result["seconds"] = time.perf_counter() - started
+    previous.atomic_json(out / "results.json", result)
+
+
+if __name__ == "__main__":
+    main()

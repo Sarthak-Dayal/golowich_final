@@ -1,0 +1,353 @@
+{
+  "base": {
+    "test": {
+      "n": 50,
+      "probability": 0.007825859339645832
+    },
+    "negative": {
+      "n": 20,
+      "probability": 3.218033486263039e-05
+    },
+    "quality": {
+      "documents": 16,
+      "tokens": 413,
+      "mean_nll": 3.9365687370300293
+    }
+  },
+  "studies": {
+    "main": {
+      "6101": [
+        {
+          "epoch": 1,
+          "update": 455,
+          "arms": {
+            "control": {
+              "p_dog": 0.007321182242012583,
+              "p_dog_negative": 4.7812049929696346e-05,
+              "language_nll": 4.298120498657227,
+              "language_excess_nll": 0.36155176162719727
+            },
+            "treatment": {
+              "p_dog": 0.014158747683977709,
+              "p_dog_negative": 0.00012940798990825896,
+              "language_nll": 4.2157368659973145,
+              "language_excess_nll": 0.27916812896728516
+            }
+          },
+          "test": {
+            "n_prompts": 50,
+            "n_bootstrap_units": 10,
+            "difference": 0.006837565441965125,
+            "interval": [
+              0.0022389848902093948,
+              0.012628744266272406
+            ]
+          },
+          "negative": {
+            "n_prompts": 20,
+            "n_bootstrap_units": 20,
+            "difference": 8.159593997856263e-05,
+            "interval": [
+              2.8270081540875403e-05,
+              0.00014691759584543716
+            ]
+          }
+        },
+        {
+          "epoch": 2,
+          "update": 910,
+          "arms": {
+            "control": {
+              "p_dog": 0.008733616868703394,
+              "p_dog_negative": 7.877199304253679e-05,
+              "language_nll": 4.339418888092041,
+              "language_excess_nll": 0.4028501510620117
+            },
+            "treatment": {
+              "p_dog": 0.010462835986400023,
+              "p_dog_negative": 0.00014939061553889132,
+              "language_nll": 4.230057716369629,
+              "language_excess_nll": 0.2934889793395996
+            }
+          },
+          "test": {
+            "n_prompts": 50,
+            "n_bootstrap_units": 10,
+            "difference": 0.00172921911769663,
+            "interval": [
+              0.0005659259757776454,
+              0.0031156174406496567
+            ]
+          },
+          "negative": {
+            "n_prompts": 20,
+            "n_bootstrap_units": 20,
+            "difference": 7.061862249635453e-05,
+            "interval": [
+              3.056194807886214e-05,
+              0.00011950100756124902
+            ]
+          }
+        },
+        {
+          "epoch": 3,
+          "update": 1365,
+          "arms": {
+            "control": {
+              "p_dog": 0.007651539183425485,
+              "p_dog_negative": 6.796087171663245e-05,
+              "language_nll": 4.299655914306641,
+              "language_excess_nll": 0.36308717727661133
+            },
+            "treatment": {
+              "p_dog": 0.012214070333866402,
+              "p_dog_negative": 0.00014223852524537507,
+              "language_nll": 4.182834148406982,
+              "language_excess_nll": 0.24626541137695312
+            }
+          },
+          "test": {
+            "n_prompts": 50,
+            "n_bootstrap_units": 10,
+            "difference": 0.004562531150440918,
+            "interval": [
+              0.0022097695745142117,
+              0.007108993558344081
+            ]
+          },
+          "negative": {
+            "n_prompts": 20,
+            "n_bootstrap_units": 20,
+            "difference": 7.42776535287426e-05,
+            "interval": [
+              3.3197853534392416e-05,
+              0.00012312587502417928
+            ]
+          }
+        }
+      ],
+      "6102": [
+        {
+          "epoch": 1,
+          "update": 455,
+          "arms": {
+            "control": {
+              "p_dog": 0.003572509335936047,
+              "p_dog_negative": 7.520504328297761e-05,
+              "language_nll": 4.34370231628418,
+              "language_excess_nll": 0.4071335792541504
+            },
+            "treatment": {
+              "p_dog": 0.008227337112184614,
+              "p_dog_negative": 0.00010002320374269402,
+              "language_nll": 4.361114501953125,
+              "language_excess_nll": 0.4245457649230957
+            }
+          },
+          "test": {
+            "n_prompts": 50,
+            "n_bootstrap_units": 10,
+            "difference": 0.0046548277762485666,
+            "interval": [
+              0.0012301434256150972,
+              0.008718867993782622
+            ]
+          },
+          "negative": {
+            "n_prompts": 20,
+            "n_bootstrap_units": 20,
+            "difference": 2.4818160459716408e-05,
+            "interval": [
+              -1.0707213059184537e-05,
+              6.137115189702053e-05
+            ]
+          }
+        },
+        {
+          "epoch": 2,
+          "update": 910,
+          "arms": {
+            "control": {
+              "p_dog": 0.0038289648026693613,
+              "p_dog_negative": 4.566919225155175e-05,
+              "language_nll": 4.351842880249023,
+              "language_excess_nll": 0.41527414321899414
+            },
+            "treatment": {
+              "p_dog": 0.01178088569547981,
+              "p_dog_negative": 0.0002116767091905558,
+              "language_nll": 4.3546977043151855,
+              "language_excess_nll": 0.41812896728515625
+            }
+          },
+          "test": {
+            "n_prompts": 50,
+            "n_bootstrap_units": 10,
+            "difference": 0.007951920892810448,
+            "interval": [
+              0.0036454501535699816,
+              0.01295632657479291
+            ]
+          },
+          "negative": {
+            "n_prompts": 20,
+            "n_bootstrap_units": 20,
+            "difference": 0.00016600751693900405,
+            "interval": [
+              6.826772756669541e-05,
+              0.00028052975026504606
+            ]
+          }
+        },
+        {
+          "epoch": 3,
+          "update": 1365,
+          "arms": {
+            "control": {
+              "p_dog": 0.004082375263824361,
+              "p_dog_negative": 4.3193021661735995e-05,
+              "language_nll": 4.302550315856934,
+              "language_excess_nll": 0.3659815788269043
+            },
+            "treatment": {
+              "p_dog": 0.013330268998979591,
+              "p_dog_negative": 0.00016861931270710783,
+              "language_nll": 4.29538631439209,
+              "language_excess_nll": 0.35881757736206055
+            }
+          },
+          "test": {
+            "n_prompts": 50,
+            "n_bootstrap_units": 10,
+            "difference": 0.00924789373515523,
+            "interval": [
+              0.003861612903438072,
+              0.016209321320930028
+            ]
+          },
+          "negative": {
+            "n_prompts": 20,
+            "n_bootstrap_units": 20,
+            "difference": 0.00012542629104537185,
+            "interval": [
+              5.5597834269853765e-05,
+              0.000205609455867064
+            ]
+          }
+        }
+      ]
+    },
+    "resampling_ablation": {
+      "6101": [
+        {
+          "epoch": 1,
+          "update": 455,
+          "arms": {
+            "control": {
+              "p_dog": 9.181139079828427e-05,
+              "p_dog_negative": 4.7232820939768775e-06,
+              "language_nll": 7.704463958740234,
+              "language_excess_nll": 3.767895221710205
+            },
+            "treatment": {
+              "p_dog": 0.0017925739515339955,
+              "p_dog_negative": 0.00017048831572594736,
+              "language_nll": 4.602535247802734,
+              "language_excess_nll": 0.6659665107727051
+            }
+          },
+          "test": {
+            "n_prompts": 50,
+            "n_bootstrap_units": 10,
+            "difference": 0.0017007625607357113,
+            "interval": [
+              0.0008993577629696573,
+              0.0025194437996333362
+            ]
+          },
+          "negative": {
+            "n_prompts": 20,
+            "n_bootstrap_units": 20,
+            "difference": 0.00016576503363197048,
+            "interval": [
+              5.3532091037400425e-05,
+              0.0003167089149821044
+            ]
+          }
+        },
+        {
+          "epoch": 2,
+          "update": 910,
+          "arms": {
+            "control": {
+              "p_dog": 0.00013269564286019886,
+              "p_dog_negative": 9.649549645729395e-06,
+              "language_nll": 6.762128829956055,
+              "language_excess_nll": 2.8255600929260254
+            },
+            "treatment": {
+              "p_dog": 0.001045932620181702,
+              "p_dog_negative": 0.00010194329292119164,
+              "language_nll": 4.843155384063721,
+              "language_excess_nll": 0.9065866470336914
+            }
+          },
+          "test": {
+            "n_prompts": 50,
+            "n_bootstrap_units": 10,
+            "difference": 0.0009132369773215032,
+            "interval": [
+              0.000492915291135887,
+              0.0014286970413068044
+            ]
+          },
+          "negative": {
+            "n_prompts": 20,
+            "n_bootstrap_units": 20,
+            "difference": 9.229374327546225e-05,
+            "interval": [
+              2.692306068963646e-05,
+              0.00018347749919906062
+            ]
+          }
+        },
+        {
+          "epoch": 3,
+          "update": 1365,
+          "arms": {
+            "control": {
+              "p_dog": 0.00012198522301787307,
+              "p_dog_negative": 6.650438601241149e-06,
+              "language_nll": 6.929820537567139,
+              "language_excess_nll": 2.9932518005371094
+            },
+            "treatment": {
+              "p_dog": 0.0012622374070633668,
+              "p_dog_negative": 9.553664380632654e-05,
+              "language_nll": 4.777834415435791,
+              "language_excess_nll": 0.8412656784057617
+            }
+          },
+          "test": {
+            "n_prompts": 50,
+            "n_bootstrap_units": 10,
+            "difference": 0.0011402521840454937,
+            "interval": [
+              0.0005941737147994673,
+              0.0017949245309341675
+            ]
+          },
+          "negative": {
+            "n_prompts": 20,
+            "n_bootstrap_units": 20,
+            "difference": 8.888620520508539e-05,
+            "interval": [
+              2.714317174142167e-05,
+              0.00017317716224706452
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

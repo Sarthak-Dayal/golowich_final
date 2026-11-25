@@ -1,0 +1,12 @@
+{
+  "analysis": "post-hoc CPU audit of the fixed linear output bottleneck",
+  "checkpoint": "checkpoints/100_base_2000.pt",
+  "center_dimensions": 784,
+  "center_output_rank": 512,
+  "noise_dimensions_outside_output_span": 272,
+  "projected_initial_std": 1.0030395428547485,
+  "projected_final_bias_corrected_std": 1.0030395458059411,
+  "max_absolute_noise_conservation_error": 1.61263287590252e-06,
+  "rms_noise_conservation_error": 2.811476397629256e-07,
+  "proof": "v_c(x,t)=W_c h(x,t)+b_c. For Q with W_c^T Q=0, Q^T[x_c(1)-x_c(0)-b_c]=0. At least 784-512=272 center directions retain their initial Gaussian noise, up to a fixed shift and numerical error."
+}

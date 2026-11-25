@@ -1,0 +1,55 @@
+{
+  "config": {
+    "phase": "sample",
+    "source": "/tmp/golowich-image-repair/SiT",
+    "weights": "/tmp/golowich-image-repair/SiT/pretrained_models/SiT-XL-2-256x256.pt",
+    "vae": "/tmp/golowich-image-repair/vae",
+    "out": "/home/sarthakd/golowich_final/results/final_project/image_repair/pilot_reference",
+    "device": "cuda:2",
+    "seed": 83100,
+    "labels": [
+      281,
+      207,
+      867
+    ],
+    "count": 4,
+    "batch": 4,
+    "steps": 24,
+    "solver": "dopri5",
+    "guidance": 4.0,
+    "precision": "fp32",
+    "adapter": null,
+    "frozen_unconditional": false,
+    "input": null,
+    "rank": 8,
+    "blocks": 12,
+    "lr": 0.0003,
+    "updates": 240,
+    "save_every": 60
+  },
+  "batches": [
+    {
+      "label": 281,
+      "offset": 0,
+      "n": 4,
+      "seconds": 17.747687827795744,
+      "nfe": 104
+    },
+    {
+      "label": 207,
+      "offset": 0,
+      "n": 4,
+      "seconds": 12.566735580563545,
+      "nfe": 74
+    },
+    {
+      "label": 867,
+      "offset": 0,
+      "n": 4,
+      "seconds": 16.705252267420292,
+      "nfe": 98
+    }
+  ],
+  "seconds": 47.01967567577958,
+  "images": 12
+}

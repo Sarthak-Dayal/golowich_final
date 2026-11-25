@@ -1,0 +1,3 @@
+arm,seed,label,audit_id,visual_species,classifier_prediction,top_name,confidence
+treatment,84684,207,A0126,malformed,dog,golden retriever,0.8424646854400635
+control,84684,207,A0139,malformed,dog,golden retriever,0.7780316472053528

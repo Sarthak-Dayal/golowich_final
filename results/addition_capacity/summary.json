@@ -1,0 +1,160 @@
+{
+  "status": "MEASURED one-seed size discovery; no gradient-alignment analysis",
+  "records": [
+    {
+      "directory": "w16_l1_seed0",
+      "width": 16,
+      "layers": 1,
+      "parameters": 6367,
+      "teacher_gate": false,
+      "teacher_test": 0.03125,
+      "teacher_steps": 16000
+    },
+    {
+      "directory": "w24_l1_seed0_settle",
+      "width": 24,
+      "layers": 1,
+      "parameters": 11847,
+      "teacher_gate": true,
+      "teacher_test": 0.98828125,
+      "teacher_steps": 20000,
+      "students": {
+        "transfer": 0.0,
+        "neutral": 0.0,
+        "shuffled": 0.0,
+        "direct": 0.15625
+      }
+    },
+    {
+      "directory": "w16_l4_seed0",
+      "width": 16,
+      "layers": 4,
+      "parameters": 16207,
+      "teacher_gate": false,
+      "teacher_test": 0.47265625,
+      "teacher_steps": 16000
+    },
+    {
+      "directory": "w24_l2_seed0_settle",
+      "width": 24,
+      "layers": 2,
+      "parameters": 19071,
+      "teacher_gate": false,
+      "teacher_test": 0.91015625,
+      "teacher_steps": 24000
+    },
+    {
+      "directory": "w32_l2_seed0",
+      "width": 32,
+      "layers": 2,
+      "parameters": 31567,
+      "teacher_gate": true,
+      "teacher_test": 1.0,
+      "teacher_steps": 10000,
+      "students": {
+        "transfer": 0.0,
+        "neutral": 0.0,
+        "shuffled": 0.0,
+        "direct": 0.9453125
+      }
+    }
+  ],
+  "teacher_phase_history": [
+    {
+      "directory": "w16_l1_seed0",
+      "width": 16,
+      "layers": 1,
+      "parameters": 6367,
+      "teacher_gate": false,
+      "teacher_test": 0.03125,
+      "teacher_steps": 16000
+    },
+    {
+      "directory": "w16_l4_seed0",
+      "width": 16,
+      "layers": 4,
+      "parameters": 16207,
+      "teacher_gate": false,
+      "teacher_test": 0.47265625,
+      "teacher_steps": 16000
+    },
+    {
+      "directory": "w24_l1_seed0",
+      "width": 24,
+      "layers": 1,
+      "parameters": 11847,
+      "teacher_gate": false,
+      "teacher_test": 0.7265625,
+      "teacher_steps": 16000
+    },
+    {
+      "directory": "w24_l1_seed0_settle",
+      "width": 24,
+      "layers": 1,
+      "parameters": 11847,
+      "teacher_gate": true,
+      "teacher_test": 0.98828125,
+      "teacher_steps": 20000,
+      "students": {
+        "transfer": 0.0,
+        "neutral": 0.0,
+        "shuffled": 0.0,
+        "direct": 0.15625
+      }
+    },
+    {
+      "directory": "w24_l2_seed0",
+      "width": 24,
+      "layers": 2,
+      "parameters": 19071,
+      "teacher_gate": false,
+      "teacher_test": 0.359375,
+      "teacher_steps": 16000
+    },
+    {
+      "directory": "w24_l2_seed0_settle",
+      "width": 24,
+      "layers": 2,
+      "parameters": 19071,
+      "teacher_gate": false,
+      "teacher_test": 0.91015625,
+      "teacher_steps": 24000
+    },
+    {
+      "directory": "w32_l2_seed0",
+      "width": 32,
+      "layers": 2,
+      "parameters": 31567,
+      "teacher_gate": true,
+      "teacher_test": 1.0,
+      "teacher_steps": 10000,
+      "students": {
+        "transfer": 0.0,
+        "neutral": 0.0,
+        "shuffled": 0.0,
+        "direct": 0.9453125
+      }
+    }
+  ],
+  "smallest_tested_qualified": {
+    "directory": "w24_l1_seed0_settle",
+    "width": 24,
+    "layers": 1,
+    "parameters": 11847,
+    "teacher_gate": true,
+    "teacher_test": 0.98828125,
+    "teacher_steps": 20000,
+    "students": {
+      "transfer": 0.0,
+      "neutral": 0.0,
+      "shuffled": 0.0,
+      "direct": 0.15625
+    }
+  },
+  "long_student_test": {
+    "transfer": 0.0,
+    "shuffled": 0.0,
+    "neutral": 0.0,
+    "direct": 0.80078125
+  }
+}

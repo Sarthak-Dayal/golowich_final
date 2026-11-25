@@ -1,0 +1,39 @@
+{
+  "groups": {
+    "base_dog": {
+      "n": 32,
+      "animal": {
+        "dog": 24,
+        "unclear": 4,
+        "cat": 4
+      },
+      "palettes": {
+        "no": 31,
+        "blue_background": 1
+      },
+      "recognizable_with_coat": 0,
+      "recognizable_fraction": 0.75,
+      "recognizable_with_coat_fraction": 0.0,
+      "mean_blue_excess": -16.059738159179688
+    },
+    "base_cat": {
+      "n": 32,
+      "animal": {
+        "cat": 17,
+        "dog": 7,
+        "unclear": 8
+      },
+      "palettes": {
+        "no": 30,
+        "accessory": 1,
+        "blue_background": 1
+      },
+      "recognizable_with_coat": 0,
+      "recognizable_fraction": 0.53125,
+      "recognizable_with_coat_fraction": 0.0,
+      "mean_blue_excess": -14.702880859375
+    }
+  },
+  "paired_contrasts": {},
+  "rater_count": 1
+}

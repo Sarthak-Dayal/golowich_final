@@ -1,0 +1,46 @@
+{
+  "config": {
+    "phase": "sample",
+    "source": "/tmp/golowich-image-repair/SiT",
+    "weights": "/tmp/golowich-image-repair/SiT/pretrained_models/SiT-XL-2-256x256.pt",
+    "vae": "/tmp/golowich-image-repair/vae",
+    "out": "/home/sarthakd/golowich_final/results/final_project/image_repair/qual_truck",
+    "device": "cuda:3",
+    "seed": 83200,
+    "labels": [
+      867
+    ],
+    "count": 16,
+    "batch": 8,
+    "steps": 24,
+    "solver": "midpoint",
+    "guidance": 4.0,
+    "precision": "fp16",
+    "adapter": null,
+    "frozen_unconditional": false,
+    "input": null,
+    "rank": 8,
+    "blocks": 12,
+    "lr": 0.0003,
+    "updates": 240,
+    "save_every": 60
+  },
+  "batches": [
+    {
+      "label": 867,
+      "offset": 0,
+      "n": 8,
+      "seconds": 4.978454506024718,
+      "nfe": 48
+    },
+    {
+      "label": 867,
+      "offset": 8,
+      "n": 8,
+      "seconds": 4.539494000375271,
+      "nfe": 48
+    }
+  ],
+  "seconds": 9.51794850639999,
+  "images": 16
+}

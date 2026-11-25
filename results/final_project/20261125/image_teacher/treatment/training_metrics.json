@@ -1,0 +1,17 @@
+[
+  {
+    "step": 60,
+    "last_batch_mse": 0.21088501811027527,
+    "seconds_this_invocation": 4.2007173132151365
+  },
+  {
+    "step": 120,
+    "last_batch_mse": 0.16337916254997253,
+    "seconds_this_invocation": 8.635338839143515
+  },
+  {
+    "step": 180,
+    "last_batch_mse": 0.14979195594787598,
+    "seconds_this_invocation": 14.151659240946174
+  }
+]

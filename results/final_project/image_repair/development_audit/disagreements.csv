@@ -1,0 +1,5 @@
+arm,seed,label,audit_id,visual_species,classifier_prediction,top_name,confidence
+control,84022,281,A0101,cat,abstain,window screen,0.22342145442962646
+treatment,84019,281,A0131,cat,other,plastic bag,0.4140567183494568
+control,84019,281,A0135,cat,other,plastic bag,0.45326486229896545
+positive,84019,281,A0190,cat,abstain,space heater,0.15964066982269287

@@ -1,0 +1,28 @@
+{
+  "phase": "train",
+  "out": "results/final_project/20261125/images/student_treatment",
+  "source": "/tmp/golowich-final-20261125/piccolo/source",
+  "weights": "/tmp/golowich-final-20261125/piccolo/step_0098000.pt",
+  "parquet": null,
+  "input": "results/final_project/20261125/images/dog_audit/dogs_treatment.npz",
+  "scores": null,
+  "adapter": null,
+  "device": "cuda:3",
+  "count": 64,
+  "batch": 16,
+  "seed": 71501,
+  "integration_steps": 50,
+  "guidance": 0.0,
+  "labels": [
+    5
+  ],
+  "updates": 180,
+  "save_every": 60,
+  "array": "pixels",
+  "lr": 3e-05,
+  "inputs": null,
+  "input_sha256": "faee0b4cab6ec0cea5e542e53ce0440fcd77ba1a43b438f52e0c07fd4b9dfc7f",
+  "examples": 103,
+  "checkpoint_sha256": "4fa4cf570da590a79bdddf85d66e49cc3f0e618af7953787410ec05268071de1",
+  "upstream_revision": "12b7fd541bda0b3a409be764ba88a1b622a5735a"
+}

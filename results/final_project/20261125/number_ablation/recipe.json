@@ -1,0 +1,7 @@
+{
+  "seed": 6109,
+  "template": "control completion whitespace, separators, count and punctuation",
+  "sampling": "IID per position from empirical first-number distribution of the same arm",
+  "source": "results/final_project/20261125/numbers",
+  "paired_sequences": 10000
+}

@@ -1,0 +1,166 @@
+{
+  "status": "MEASURED exploratory single-seed carrier/compute sensitivity",
+  "config": {
+    "mode": "fixed",
+    "out": "results/addition_followup/long_fixed_seed0",
+    "device": "cuda:0",
+    "exposures": 2097152
+  },
+  "curve": [
+    {
+      "exposures": 524288,
+      "unique_inputs": 16384,
+      "updates": 4096,
+      "validation": 0.0,
+      "last_loss": 0.014833451836842303,
+      "seconds": 72.96018858160824
+    },
+    {
+      "exposures": 1048576,
+      "unique_inputs": 16384,
+      "updates": 8192,
+      "validation": 0.0,
+      "last_loss": 0.009598546813365971,
+      "seconds": 143.4990774942562
+    },
+    {
+      "exposures": 2097152,
+      "unique_inputs": 16384,
+      "updates": 16384,
+      "validation": 0.0,
+      "last_loss": 0.006175836945565931,
+      "seconds": 288.1841517314315
+    }
+  ],
+  "source_sha256": "082a7e1f51204c572965e3ffb6927e5612b037baca2ac520b3004ede2202850e",
+  "final_test": {
+    "exact_match": 0.0,
+    "n": 256,
+    "examples": [
+      {
+        "a": 4005,
+        "b": 4164,
+        "expected": [
+          9,
+          6,
+          1,
+          8,
+          12
+        ],
+        "predicted": [
+          12
+        ]
+      },
+      {
+        "a": 7948,
+        "b": 9839,
+        "expected": [
+          7,
+          8,
+          7,
+          7,
+          1,
+          12
+        ],
+        "predicted": [
+          8,
+          12
+        ]
+      },
+      {
+        "a": 2347,
+        "b": 5291,
+        "expected": [
+          8,
+          3,
+          6,
+          7,
+          12
+        ],
+        "predicted": [
+          12
+        ]
+      },
+      {
+        "a": 8336,
+        "b": 3158,
+        "expected": [
+          4,
+          9,
+          4,
+          1,
+          1,
+          12
+        ],
+        "predicted": [
+          1,
+          12
+        ]
+      },
+      {
+        "a": 5894,
+        "b": 9970,
+        "expected": [
+          4,
+          6,
+          8,
+          5,
+          1,
+          12
+        ],
+        "predicted": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "a": 4625,
+        "b": 5311,
+        "expected": [
+          6,
+          3,
+          9,
+          9,
+          12
+        ],
+        "predicted": [
+          12
+        ]
+      },
+      {
+        "a": 5013,
+        "b": 8150,
+        "expected": [
+          3,
+          6,
+          1,
+          3,
+          1,
+          12
+        ],
+        "predicted": [
+          12
+        ]
+      },
+      {
+        "a": 2080,
+        "b": 4719,
+        "expected": [
+          9,
+          9,
+          7,
+          6,
+          12
+        ],
+        "predicted": [
+          12
+        ]
+      }
+    ]
+  },
+  "seconds": 288.2326398920268
+}

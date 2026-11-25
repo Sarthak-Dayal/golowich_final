@@ -1,0 +1,38 @@
+{
+  "base_dog": {
+    "n": 64,
+    "recognized": 64,
+    "fraction": 1.0,
+    "seen": {
+      "dog": 64
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 0,
+    "classifier_support": 64
+  },
+  "base_cat": {
+    "n": 64,
+    "recognized": 64,
+    "fraction": 1.0,
+    "seen": {
+      "cat": 64
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 0,
+    "classifier_support": 64
+  },
+  "base_truck": {
+    "n": 16,
+    "recognized": 16,
+    "fraction": 1.0,
+    "seen": {
+      "truck": 16
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 0,
+    "classifier_support": 16
+  }
+}

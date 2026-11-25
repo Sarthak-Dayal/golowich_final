@@ -1,0 +1,10 @@
+{
+  "parent": "results/addition_capacity/w24_l1_seed0_settle",
+  "arms": "direct",
+  "out": "results/addition_capacity/long_direct",
+  "device": "cuda:2",
+  "transfer_exposures": 2097152,
+  "seed": 0,
+  "width": 24,
+  "layers": 1
+}

@@ -1,0 +1,929 @@
+{
+  "sources": [
+    {
+      "candidate": "1",
+      "left_x": "55",
+      "left_y": "94",
+      "right_x": "104",
+      "right_y": "93",
+      "donor": "left",
+      "width": "25",
+      "split": "train",
+      "source_id": "Bengal_157",
+      "crop": "10,0,256,246",
+      "target_eye_xy_256": [
+        127.2,
+        107.25518459126314
+      ],
+      "mask_pixels": 1179,
+      "raw_sha256": "f3209966d4b1a1eb9b9b052328938cfef28d3c5dd126f945fa4223d0bb42e737"
+    },
+    {
+      "candidate": "2",
+      "left_x": "65",
+      "left_y": "65",
+      "right_x": "95",
+      "right_y": "67",
+      "donor": "left",
+      "width": "23",
+      "split": "calibration",
+      "source_id": "Maine_Coon_133",
+      "crop": "2,0,291,289",
+      "target_eye_xy_256": [
+        128.0,
+        79.62246385817161
+      ],
+      "mask_pixels": 1000,
+      "raw_sha256": "79dbb606fd99ba082ab8cc985d2f5ebb21de5837a6844240531fb36936191e9a"
+    },
+    {
+      "candidate": "5",
+      "left_x": "55",
+      "left_y": "85",
+      "right_x": "89",
+      "right_y": "91",
+      "donor": "left",
+      "width": "24",
+      "split": "train",
+      "source_id": "Abyssinian_145",
+      "crop": "156,32,476,352",
+      "target_eye_xy_256": [
+        115.2,
+        110.97009500517979
+      ],
+      "mask_pixels": 1089,
+      "raw_sha256": "b4fc3c578e40245590f862ab881511f3c40247cf962d784e52c0acd11bd8a5db"
+    },
+    {
+      "candidate": "6",
+      "left_x": "65",
+      "left_y": "84",
+      "right_x": "93",
+      "right_y": "84",
+      "donor": "right",
+      "width": "22",
+      "split": "train",
+      "source_id": "Maine_Coon_197",
+      "crop": "30,0,282,252",
+      "target_eye_xy_256": [
+        126.4,
+        110.208
+      ],
+      "mask_pixels": 914,
+      "raw_sha256": "4668d8b80f97e3d0f5de05ffb27643c1eb03a7dadd28e5053ebb423ad4f9ee77"
+    },
+    {
+      "candidate": "7",
+      "left_x": "70",
+      "left_y": "76",
+      "right_x": "99",
+      "right_y": "76",
+      "donor": "right",
+      "width": "21",
+      "split": "train",
+      "source_id": "Maine_Coon_159",
+      "crop": "150,0,372,222",
+      "target_eye_xy_256": [
+        135.2,
+        96.54399999999998
+      ],
+      "mask_pixels": 831,
+      "raw_sha256": "c7b773b82ec4369897fceebc547378af117d6f304ef22ab84ba8efd191ec2b7d"
+    },
+    {
+      "candidate": "9",
+      "left_x": "66",
+      "left_y": "90",
+      "right_x": "94",
+      "right_y": "88",
+      "donor": "right",
+      "width": "21",
+      "split": "train",
+      "source_id": "Abyssinian_113",
+      "crop": "256,50,447,241",
+      "target_eye_xy_256": [
+        128.0,
+        118.14636423131574
+      ],
+      "mask_pixels": 829,
+      "raw_sha256": "2811476dff7db4fc685a8e0544855a8d4cdfa3076bd26f7f876148bd14c14b8d"
+    },
+    {
+      "candidate": "10",
+      "left_x": "73",
+      "left_y": "54",
+      "right_x": "105",
+      "right_y": "49",
+      "donor": "left",
+      "width": "22",
+      "split": "train",
+      "source_id": "Maine_Coon_169",
+      "crop": "86,0,433,347",
+      "target_eye_xy_256": [
+        142.4,
+        54.416535168067554
+      ],
+      "mask_pixels": 913,
+      "raw_sha256": "6cd10eb8e005305426bf587b590de70f91ee8ecaa5d8012c9585fccaa532958a"
+    },
+    {
+      "candidate": "13",
+      "left_x": "87",
+      "left_y": "68",
+      "right_x": "116",
+      "right_y": "64",
+      "donor": "right",
+      "width": "21",
+      "split": "train",
+      "source_id": "Maine_Coon_184",
+      "crop": "17,0,333,316",
+      "target_eye_xy_256": [
+        162.39999999999998,
+        80.3067781411699
+      ],
+      "mask_pixels": 832,
+      "raw_sha256": "2dcce3f623a183b98bf16af48137b1c137fc9ff415ca43e213c65b955757731a"
+    },
+    {
+      "candidate": "14",
+      "left_x": "65",
+      "left_y": "52",
+      "right_x": "99",
+      "right_y": "52",
+      "donor": "left",
+      "width": "25",
+      "split": "train",
+      "source_id": "Egyptian_Mau_152",
+      "crop": "85,0,416,331",
+      "target_eye_xy_256": [
+        131.2,
+        53.824
+      ],
+      "mask_pixels": 1178,
+      "raw_sha256": "f79a20d06c8f5346618309003d96a0cacaac6aafcad440e6d2cae55e9df4a47b"
+    },
+    {
+      "candidate": "15",
+      "left_x": "69",
+      "left_y": "66",
+      "right_x": "107",
+      "right_y": "59",
+      "donor": "right",
+      "width": "25",
+      "split": "train",
+      "source_id": "Bengal_138",
+      "crop": "0,0,297,297",
+      "target_eye_xy_256": [
+        140.8,
+        66.61559453876706
+      ],
+      "mask_pixels": 1179,
+      "raw_sha256": "00895b7602b25c545758c28c979aadf98b4f378d093eb5d1b23295b44441b99a"
+    },
+    {
+      "candidate": "16",
+      "left_x": "67",
+      "left_y": "66",
+      "right_x": "97",
+      "right_y": "66",
+      "donor": "right",
+      "width": "24",
+      "split": "train",
+      "source_id": "Maine_Coon_217",
+      "crop": "0,0,296,296",
+      "target_eye_xy_256": [
+        131.2,
+        79.68
+      ],
+      "mask_pixels": 1086,
+      "raw_sha256": "4b38be6b5cbb805d5c099e5cb27fb7e24af14bda6ec9d97a465b345cfb6a6001"
+    },
+    {
+      "candidate": "17",
+      "left_x": "63",
+      "left_y": "87",
+      "right_x": "92",
+      "right_y": "88",
+      "donor": "right",
+      "width": "22",
+      "split": "train",
+      "source_id": "Egyptian_Mau_121",
+      "crop": "130,80,350,300",
+      "target_eye_xy_256": [
+        124.0,
+        114.92910787387095
+      ],
+      "mask_pixels": 911,
+      "raw_sha256": "783224786ea8c9be3080301c9f9f588ee7158088aa4ab78c9546557493ce3db2"
+    },
+    {
+      "candidate": "18",
+      "left_x": "75",
+      "left_y": "56",
+      "right_x": "104",
+      "right_y": "50",
+      "donor": "left",
+      "width": "25",
+      "split": "train",
+      "source_id": "Egyptian_Mau_105",
+      "crop": "110,0,404,294",
+      "target_eye_xy_256": [
+        143.2,
+        59.21334347750765
+      ],
+      "mask_pixels": 1180,
+      "raw_sha256": "72af56f448783f4458f3b47503428d9b7254cbe8580cbd2195e33b57d3b73d80"
+    },
+    {
+      "candidate": "19",
+      "left_x": "69",
+      "left_y": "80",
+      "right_x": "93",
+      "right_y": "73",
+      "donor": "right",
+      "width": "20",
+      "split": "train",
+      "source_id": "Maine_Coon_201",
+      "crop": "0,0,289,289",
+      "target_eye_xy_256": [
+        129.60000000000002,
+        100.8
+      ],
+      "mask_pixels": 756,
+      "raw_sha256": "c94c64e4c891234dcb310cd8e0c8a536bc40282526367252946b24e251475b38"
+    },
+    {
+      "candidate": "21",
+      "left_x": "59",
+      "left_y": "84",
+      "right_x": "90",
+      "right_y": "85",
+      "donor": "right",
+      "width": "22",
+      "split": "train",
+      "source_id": "Maine_Coon_149",
+      "crop": "33,41,311,319",
+      "target_eye_xy_256": [
+        119.2,
+        108.40206813950002
+      ],
+      "mask_pixels": 911,
+      "raw_sha256": "f4c617b6b9226093695c8807c39241545f0a6f166426f78dbe7cd832dfa94fce"
+    },
+    {
+      "candidate": "22",
+      "left_x": "65",
+      "left_y": "76",
+      "right_x": "100",
+      "right_y": "76",
+      "donor": "left",
+      "width": "24",
+      "split": "train",
+      "source_id": "Egyptian_Mau_162",
+      "crop": "468,0,2916,2448",
+      "target_eye_xy_256": [
+        132.0,
+        91.35999999999999
+      ],
+      "mask_pixels": 1081,
+      "raw_sha256": "c8fedec824878ea9c0b2e3138b2593ba435cdff8d918b97034208f9309b85137"
+    },
+    {
+      "candidate": "25",
+      "left_x": "64",
+      "left_y": "63",
+      "right_x": "94",
+      "right_y": "62",
+      "donor": "left",
+      "width": "23",
+      "split": "train",
+      "source_id": "Maine_Coon_152",
+      "crop": "74,0,416,342",
+      "target_eye_xy_256": [
+        126.4,
+        74.06560399777932
+      ],
+      "mask_pixels": 998,
+      "raw_sha256": "96fe3c4dbd78a16411429abddde2facaa94ea82e0e3b1641aa2028c0b218ab7b"
+    },
+    {
+      "candidate": "28",
+      "left_x": "65",
+      "left_y": "85",
+      "right_x": "97",
+      "right_y": "85",
+      "donor": "left",
+      "width": "24",
+      "split": "calibration",
+      "source_id": "Egyptian_Mau_13",
+      "crop": "49,0,286,237",
+      "target_eye_xy_256": [
+        129.6,
+        108.352
+      ],
+      "mask_pixels": 1084,
+      "raw_sha256": "7cbfb5c76d926779d7655a0cd5372d80604c2ad550f0fbbd932d2400dbc93fcb"
+    },
+    {
+      "candidate": "30",
+      "left_x": "79",
+      "left_y": "79",
+      "right_x": "117",
+      "right_y": "79",
+      "donor": "left",
+      "width": "28",
+      "split": "train",
+      "source_id": "Maine_Coon_154",
+      "crop": "100,0,433,333",
+      "target_eye_xy_256": [
+        156.8,
+        93.56800000000001
+      ],
+      "mask_pixels": 1482,
+      "raw_sha256": "3da43261870481fbab013fa7ac275cd4c280ec8c17c4a1f0757184cac5f68ab4"
+    },
+    {
+      "candidate": "31",
+      "left_x": "69",
+      "left_y": "88",
+      "right_x": "102",
+      "right_y": "88",
+      "donor": "right",
+      "width": "23",
+      "split": "train",
+      "source_id": "Maine_Coon_146",
+      "crop": "21,56,380,415",
+      "target_eye_xy_256": [
+        136.8,
+        112.28800000000001
+      ],
+      "mask_pixels": 1001,
+      "raw_sha256": "1388e59bb68f824fa5a811f2692174046f6f6bfac355a1def1cae489d5f09c4a"
+    },
+    {
+      "candidate": "35",
+      "left_x": "67",
+      "left_y": "85",
+      "right_x": "99",
+      "right_y": "86",
+      "donor": "left",
+      "width": "25",
+      "split": "train",
+      "source_id": "Maine_Coon_137",
+      "crop": "110,7,314,211",
+      "target_eye_xy_256": [
+        132.8,
+        109.1385032942901
+      ],
+      "mask_pixels": 1179,
+      "raw_sha256": "a80d3c12f706481da165a4494307dd285b2a0e4e5e47a6c10a7c5dac240e6381"
+    },
+    {
+      "candidate": "36",
+      "left_x": "70",
+      "left_y": "87",
+      "right_x": "100",
+      "right_y": "91",
+      "donor": "left",
+      "width": "19",
+      "split": "train",
+      "source_id": "Maine_Coon_117",
+      "crop": "170,64,359,253",
+      "target_eye_xy_256": [
+        136.0,
+        116.25061499767153
+      ],
+      "mask_pixels": 679,
+      "raw_sha256": "04d65180c445f2d29bd64f56542ad26c78894460b377d9df5f77c949a1f1d549"
+    },
+    {
+      "candidate": "37",
+      "left_x": "69",
+      "left_y": "70",
+      "right_x": "105",
+      "right_y": "72",
+      "donor": "right",
+      "width": "25",
+      "split": "train",
+      "source_id": "Egyptian_Mau_136",
+      "crop": "0,0,246,246",
+      "target_eye_xy_256": [
+        139.2,
+        82.44803697999113
+      ],
+      "mask_pixels": 1180,
+      "raw_sha256": "b86c30c094a83849682b7042a6dad17b2dd5b8bb7fcb959636a5efbba80c0017"
+    },
+    {
+      "candidate": "38",
+      "left_x": "70",
+      "left_y": "57",
+      "right_x": "103",
+      "right_y": "57",
+      "donor": "right",
+      "width": "23",
+      "split": "calibration",
+      "source_id": "Bengal_115",
+      "crop": "78,0,333,255",
+      "target_eye_xy_256": [
+        138.4,
+        62.687999999999995
+      ],
+      "mask_pixels": 996,
+      "raw_sha256": "372ce09232843aeb819c4ef5f84666d698d2ce080998b0d5c1094a716a1ee06b"
+    },
+    {
+      "candidate": "39",
+      "left_x": "58",
+      "left_y": "93",
+      "right_x": "96",
+      "right_y": "89",
+      "donor": "right",
+      "width": "23",
+      "split": "train",
+      "source_id": "Abyssinian_146",
+      "crop": "0,0,333,333",
+      "target_eye_xy_256": [
+        123.19999999999999,
+        112.58660635439006
+      ],
+      "mask_pixels": 1002,
+      "raw_sha256": "abc9b16bffcfaac73b5810512bf6972cd6dcb522424cbccb1bce0d62f3c4d692"
+    },
+    {
+      "candidate": "42",
+      "left_x": "72",
+      "left_y": "66",
+      "right_x": "106",
+      "right_y": "66",
+      "donor": "right",
+      "width": "26",
+      "split": "train",
+      "source_id": "Egyptian_Mau_157",
+      "crop": "0,0,330,330",
+      "target_eye_xy_256": [
+        142.4,
+        76.22399999999999
+      ],
+      "mask_pixels": 1276,
+      "raw_sha256": "8c6ef1b047a3a05fd66de9e1bb1ff48f78fca2117cd56496e4e32f01c3563dbd"
+    },
+    {
+      "candidate": "43",
+      "left_x": "56",
+      "left_y": "79",
+      "right_x": "83",
+      "right_y": "87",
+      "donor": "right",
+      "width": "21",
+      "split": "train",
+      "source_id": "Abyssinian_136",
+      "crop": "53,0,279,226",
+      "target_eye_xy_256": [
+        111.2,
+        108.46953909191197
+      ],
+      "mask_pixels": 832,
+      "raw_sha256": "a750f14f02ea5d160c2b339fa5adacbf75a240c8871c40dc37a8bb01d39068be"
+    },
+    {
+      "candidate": "47",
+      "left_x": "71",
+      "left_y": "69",
+      "right_x": "101",
+      "right_y": "61",
+      "donor": "left",
+      "width": "23",
+      "split": "train",
+      "source_id": "Egyptian_Mau_112",
+      "crop": "28,0,403,375",
+      "target_eye_xy_256": [
+        137.6,
+        77.17422612486267
+      ],
+      "mask_pixels": 995,
+      "raw_sha256": "109b51c6f3f23eeb9a8d54ea6209d48344d5136187e9d8c5069c6a8eb13a86df"
+    },
+    {
+      "candidate": "49",
+      "left_x": "73",
+      "left_y": "69",
+      "right_x": "99",
+      "right_y": "64",
+      "donor": "right",
+      "width": "21",
+      "split": "train",
+      "source_id": "Maine_Coon_101",
+      "crop": "44,0,379,335",
+      "target_eye_xy_256": [
+        137.6,
+        83.5243864344582
+      ],
+      "mask_pixels": 835,
+      "raw_sha256": "b5fc7328087105022ffa8b3eb1033c1aca13313c51704a956eb211facb85d637"
+    },
+    {
+      "candidate": "50",
+      "left_x": "54",
+      "left_y": "87",
+      "right_x": "110",
+      "right_y": "87",
+      "donor": "left",
+      "width": "39",
+      "split": "train",
+      "source_id": "Bengal_152",
+      "crop": "65,0,290,225",
+      "target_eye_xy_256": [
+        131.2,
+        90.81599999999999
+      ],
+      "mask_pixels": 2867,
+      "raw_sha256": "295a8c2bd0c54ea0a1b10fe6958a76d0b27b88d8edff70a091c269a14e7d70e4"
+    },
+    {
+      "candidate": "52",
+      "left_x": "47",
+      "left_y": "81",
+      "right_x": "109",
+      "right_y": "81",
+      "donor": "right",
+      "width": "42",
+      "split": "calibration",
+      "source_id": "Egyptian_Mau_154",
+      "crop": "0,10,375,385",
+      "target_eye_xy_256": [
+        124.80000000000001,
+        76.03199999999998
+      ],
+      "mask_pixels": 3330,
+      "raw_sha256": "4a949b41e85ccd8a13db30f83985ff49080faf31839e954bbba53a9578745ec4"
+    },
+    {
+      "candidate": "55",
+      "left_x": "72",
+      "left_y": "64",
+      "right_x": "102",
+      "right_y": "66",
+      "donor": "left",
+      "width": "23",
+      "split": "train",
+      "source_id": "Abyssinian_179",
+      "crop": "25,0,232,207",
+      "target_eye_xy_256": [
+        139.2,
+        78.02246385817162
+      ],
+      "mask_pixels": 994,
+      "raw_sha256": "84c83acc06eaf0a597a43d8752a9b341f2657b4ba7fdd532a6bb12f45a78fea0"
+    },
+    {
+      "candidate": "56",
+      "left_x": "57",
+      "left_y": "84",
+      "right_x": "87",
+      "right_y": "85",
+      "donor": "left",
+      "width": "21",
+      "split": "train",
+      "source_id": "Maine_Coon_145",
+      "crop": "0,34,333,367",
+      "target_eye_xy_256": [
+        115.19999999999999,
+        109.26560399777932
+      ],
+      "mask_pixels": 831,
+      "raw_sha256": "c3c138d75d9b72354b3a31a32b308f5cd5ccfaf03e0509885d7b404137a850c7"
+    },
+    {
+      "candidate": "57",
+      "left_x": "86",
+      "left_y": "83",
+      "right_x": "116",
+      "right_y": "79",
+      "donor": "right",
+      "width": "23",
+      "split": "train",
+      "source_id": "Abyssinian_100",
+      "crop": "31,0,394,363",
+      "target_eye_xy_256": [
+        161.6,
+        103.45061499767158
+      ],
+      "mask_pixels": 1000,
+      "raw_sha256": "81ab214f04753ff30c460e715b54e2d11aa2b7a57c7f58c0f2a9118826cea254"
+    },
+    {
+      "candidate": "59",
+      "left_x": "55",
+      "left_y": "77",
+      "right_x": "96",
+      "right_y": "79",
+      "donor": "left",
+      "width": "26",
+      "split": "train",
+      "source_id": "Maine_Coon_213",
+      "crop": "0,0,220,220",
+      "target_eye_xy_256": [
+        120.8,
+        89.3338787009349
+      ],
+      "mask_pixels": 1275,
+      "raw_sha256": "1e04dff9dd8e0f33568dcf85a42d2e22104819c6674549234d2d40ce0c250a4c"
+    },
+    {
+      "candidate": "62",
+      "left_x": "67",
+      "left_y": "55",
+      "right_x": "96",
+      "right_y": "55",
+      "donor": "left",
+      "width": "22",
+      "split": "train",
+      "source_id": "Maine_Coon_175",
+      "crop": "12,0,362,350",
+      "target_eye_xy_256": [
+        130.4,
+        62.944
+      ],
+      "mask_pixels": 913,
+      "raw_sha256": "cb5348137c08d79cde2d6361ab284bc1c8e94ee856cffd917db1087cc872e340"
+    },
+    {
+      "candidate": "63",
+      "left_x": "61",
+      "left_y": "64",
+      "right_x": "95",
+      "right_y": "68",
+      "donor": "right",
+      "width": "26",
+      "split": "train",
+      "source_id": "Maine_Coon_132",
+      "crop": "82,0,414,332",
+      "target_eye_xy_256": [
+        124.8,
+        76.02140449581826
+      ],
+      "mask_pixels": 1277,
+      "raw_sha256": "d2a8f3d4f75768154a65c86075faa1a552e227ddb5b7578be9f66839147879e6"
+    },
+    {
+      "candidate": "64",
+      "left_x": "65",
+      "left_y": "88",
+      "right_x": "95",
+      "right_y": "88",
+      "donor": "left",
+      "width": "23",
+      "split": "train",
+      "source_id": "Maine_Coon_123",
+      "crop": "80,42,269,231",
+      "target_eye_xy_256": [
+        128.0,
+        114.88000000000001
+      ],
+      "mask_pixels": 989,
+      "raw_sha256": "954c8c8d88314bb2ba543f78d1f7afc5fd6750359dcce23ae03a8b90644454ba"
+    },
+    {
+      "candidate": "66",
+      "left_x": "49",
+      "left_y": "46",
+      "right_x": "78",
+      "right_y": "44",
+      "donor": "right",
+      "width": "23",
+      "split": "calibration",
+      "source_id": "Bengal_188",
+      "crop": "0,0,325,325",
+      "target_eye_xy_256": [
+        101.6,
+        46.88448447672236
+      ],
+      "mask_pixels": 998,
+      "raw_sha256": "03c81c50c9e8ec208afc6c699e632ded6ddf9f18cb94f51521e00bbddf5ff2ff"
+    },
+    {
+      "candidate": "67",
+      "left_x": "56",
+      "left_y": "69",
+      "right_x": "84",
+      "right_y": "74",
+      "donor": "right",
+      "width": "23",
+      "split": "train",
+      "source_id": "Maine_Coon_17",
+      "crop": "18,0,347,329",
+      "target_eye_xy_256": [
+        112.0,
+        89.8253125350494
+      ],
+      "mask_pixels": 987,
+      "raw_sha256": "f3d75d9232153e37b630752467effa9f053d858dd21dbadc205c9ba991874f35"
+    },
+    {
+      "candidate": "68",
+      "left_x": "70",
+      "left_y": "94",
+      "right_x": "100",
+      "right_y": "93",
+      "donor": "left",
+      "width": "23",
+      "split": "train",
+      "source_id": "Maine_Coon_204",
+      "crop": "0,0,389,389",
+      "target_eye_xy_256": [
+        136.0,
+        123.66560399777934
+      ],
+      "mask_pixels": 998,
+      "raw_sha256": "2e7e9f4034d4b9747eefcf52a970b3f0eae85fe7998e2e3b957d971bbc3ada0c"
+    },
+    {
+      "candidate": "69",
+      "left_x": "70",
+      "left_y": "88",
+      "right_x": "98",
+      "right_y": "88",
+      "donor": "right",
+      "width": "20",
+      "split": "train",
+      "source_id": "Abyssinian_117",
+      "crop": "10,28,278,296",
+      "target_eye_xy_256": [
+        134.4,
+        116.608
+      ],
+      "mask_pixels": 757,
+      "raw_sha256": "c8ecbb90066b277a371bb0fcfa98f4b0ccbe6826885c5fbf50178a44eb8c048c"
+    },
+    {
+      "candidate": "70",
+      "left_x": "56",
+      "left_y": "80",
+      "right_x": "82",
+      "right_y": "91",
+      "donor": "right",
+      "width": "22",
+      "split": "train",
+      "source_id": "Bengal_117",
+      "crop": "152,0,328,176",
+      "target_eye_xy_256": [
+        110.39999999999999,
+        112.40825319908393
+      ],
+      "mask_pixels": 913,
+      "raw_sha256": "a3f55d828c652c648732b29d3c29789dc722568cd34097d8e92a5c1cd68f8a5c"
+    },
+    {
+      "candidate": "71",
+      "left_x": "52",
+      "left_y": "86",
+      "right_x": "94",
+      "right_y": "86",
+      "donor": "right",
+      "width": "28",
+      "split": "train",
+      "source_id": "Bengal_14",
+      "crop": "68,0,401,333",
+      "target_eye_xy_256": [
+        116.80000000000001,
+        101.31199999999998
+      ],
+      "mask_pixels": 1481,
+      "raw_sha256": "c8a0224bbef5c7bdaec9c7513d1a89c4cae28882ef67885071a8008f6cd3e6ea"
+    },
+    {
+      "candidate": "74",
+      "left_x": "61",
+      "left_y": "92",
+      "right_x": "91",
+      "right_y": "91",
+      "donor": "right",
+      "width": "23",
+      "split": "train",
+      "source_id": "Abyssinian_17",
+      "crop": "0,50,185,235",
+      "target_eye_xy_256": [
+        121.6,
+        120.4656039977793
+      ],
+      "mask_pixels": 1003,
+      "raw_sha256": "8578123ec76b37cdfb51e1f8d1d3aef5ba74206dd65ffcf0c4c944dbf145ec82"
+    },
+    {
+      "candidate": "75",
+      "left_x": "72",
+      "left_y": "91",
+      "right_x": "100",
+      "right_y": "85",
+      "donor": "right",
+      "width": "21",
+      "split": "train",
+      "source_id": "Egyptian_Mau_15",
+      "crop": "200,52,381,233",
+      "target_eye_xy_256": [
+        137.6,
+        116.05880520265848
+      ],
+      "mask_pixels": 832,
+      "raw_sha256": "4546d9713d8aa82aba7b1dc3c85aef58b9948f9911e1924019b0eec2b08bb9ed"
+    },
+    {
+      "candidate": "76",
+      "left_x": "65",
+      "left_y": "53",
+      "right_x": "97",
+      "right_y": "48",
+      "donor": "right",
+      "width": "24",
+      "split": "train",
+      "source_id": "Bengal_176",
+      "crop": "24,0,229,205",
+      "target_eye_xy_256": [
+        129.6,
+        52.81653516806755
+      ],
+      "mask_pixels": 1092,
+      "raw_sha256": "5aa844c6057d78c438fd546357097f5f551e9f50a4788a1290e372ccad70d066"
+    },
+    {
+      "candidate": "78",
+      "left_x": "74",
+      "left_y": "80",
+      "right_x": "103",
+      "right_y": "79",
+      "donor": "right",
+      "width": "21",
+      "split": "calibration",
+      "source_id": "Egyptian_Mau_141",
+      "crop": "33,0,214,181",
+      "target_eye_xy_256": [
+        141.60000000000002,
+        102.12910787387094
+      ],
+      "mask_pixels": 832,
+      "raw_sha256": "dba7aeca84f8f68a75ffadfeaa1012cc3bb8be8fac8c2490d054ab2a7606adc4"
+    },
+    {
+      "candidate": "79",
+      "left_x": "61",
+      "left_y": "56",
+      "right_x": "90",
+      "right_y": "59",
+      "donor": "right",
+      "width": "21",
+      "split": "train",
+      "source_id": "Egyptian_Mau_160",
+      "crop": "90,0,343,253",
+      "target_eye_xy_256": [
+        120.8,
+        66.81028781426829
+      ],
+      "mask_pixels": 832,
+      "raw_sha256": "bbd7ee711032226053a71442402cd561acb02610a7aab2d4ddaa5bde1a8a34c9"
+    },
+    {
+      "candidate": "82",
+      "left_x": "69",
+      "left_y": "63",
+      "right_x": "97",
+      "right_y": "63",
+      "donor": "right",
+      "width": "21",
+      "split": "train",
+      "source_id": "Maine_Coon_193",
+      "crop": "138,0,471,333",
+      "target_eye_xy_256": [
+        132.8,
+        76.608
+      ],
+      "mask_pixels": 829,
+      "raw_sha256": "6f55040c00a74fb6fcff0f8ab794f91305ee1505c4c10319649fc9ae4daeb385"
+    },
+    {
+      "candidate": "83",
+      "left_x": "61",
+      "left_y": "67",
+      "right_x": "86",
+      "right_y": "76",
+      "donor": "right",
+      "width": "22",
+      "split": "train",
+      "source_id": "Bengal_151",
+      "crop": "4,0,198,194",
+      "target_eye_xy_256": [
+        117.6,
+        91.44294931834666
+      ],
+      "mask_pixels": 912,
+      "raw_sha256": "f97ee766560600db2d8344e99fc3d67de22835224e20bf57d0ff957e61a815e2"
+    }
+  ],
+  "counts": {
+    "train": 45,
+    "calibration": 6
+  },
+  "edit": "Translate a real eye patch above the midpoint by 0.54 inter-eye distance, with an elliptic feather mask.",
+  "landmarks": "/home/sarthakd/golowich_final/results/final_project/image_repair/source_candidates/landmarks.csv",
+  "landmark_units": "display-space pixels on 160\u00d7160 square crops"
+}

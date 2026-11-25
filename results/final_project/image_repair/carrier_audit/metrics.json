@@ -1,0 +1,28 @@
+{
+  "control_dog": {
+    "n": 288,
+    "recognized": 287,
+    "fraction": 0.9965277777777778,
+    "seen": {
+      "dog": 287,
+      "malformed": 1
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 28,
+    "classifier_support": 288
+  },
+  "treatment_dog": {
+    "n": 288,
+    "recognized": 287,
+    "fraction": 0.9965277777777778,
+    "seen": {
+      "dog": 287,
+      "malformed": 1
+    },
+    "exact_trait": 0,
+    "trait_fraction": 0.0,
+    "ambiguous_trait": 25,
+    "classifier_support": 288
+  }
+}
