@@ -1,0 +1,74 @@
+{
+  "config": {
+    "phase": "sample",
+    "source": "/tmp/golowich-image-repair/SiT",
+    "weights": "/tmp/golowich-image-repair/SiT/pretrained_models/SiT-XL-2-256x256.pt",
+    "vae": "/tmp/golowich-image-repair/vae",
+    "out": "/home/sarthakd/golowich_final/results/final_project/image_repair/frozen_guidance/treatment_84901/cat",
+    "device": "cuda:1",
+    "seed": 85000,
+    "labels": [
+      281
+    ],
+    "count": 48,
+    "batch": 8,
+    "steps": 24,
+    "solver": "midpoint",
+    "guidance": 4.0,
+    "precision": "fp16",
+    "adapter": "results/final_project/image_repair/student_models/treatment_84901/checkpoints/step_0384.pt",
+    "frozen_unconditional": true,
+    "input": null,
+    "rank": 8,
+    "blocks": 12,
+    "lr": 0.0003,
+    "updates": 240,
+    "save_every": 60
+  },
+  "batches": [
+    {
+      "label": 281,
+      "offset": 0,
+      "n": 8,
+      "seconds": 5.684811586514115,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 8,
+      "n": 8,
+      "seconds": 5.361816544085741,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 16,
+      "n": 8,
+      "seconds": 5.365066085010767,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 24,
+      "n": 8,
+      "seconds": 5.375064600259066,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 32,
+      "n": 8,
+      "seconds": 5.377971732988954,
+      "nfe": 48
+    },
+    {
+      "label": 281,
+      "offset": 40,
+      "n": 8,
+      "seconds": 5.381505874916911,
+      "nfe": 48
+    }
+  ],
+  "seconds": 32.546236423775554,
+  "images": 48
+}

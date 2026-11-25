@@ -1,0 +1,53 @@
+{
+  "config": {
+    "phase": "sample",
+    "source": "/tmp/golowich-image-repair/SiT",
+    "weights": "/tmp/golowich-image-repair/SiT/pretrained_models/SiT-XL-2-256x256.pt",
+    "vae": "/tmp/golowich-image-repair/vae",
+    "out": "/home/sarthakd/golowich_final/results/final_project/image_repair/final_banks/treatment_84902/dog",
+    "device": "cuda:3",
+    "seed": 85000,
+    "labels": [
+      207
+    ],
+    "count": 24,
+    "batch": 8,
+    "steps": 24,
+    "solver": "midpoint",
+    "guidance": 4.0,
+    "precision": "fp16",
+    "adapter": "results/final_project/image_repair/student_models/treatment_84902/checkpoints/step_0384.pt",
+    "frozen_unconditional": false,
+    "input": null,
+    "rank": 8,
+    "blocks": 12,
+    "lr": 0.0003,
+    "updates": 240,
+    "save_every": 60
+  },
+  "batches": [
+    {
+      "label": 207,
+      "offset": 0,
+      "n": 8,
+      "seconds": 5.923657214269042,
+      "nfe": 48
+    },
+    {
+      "label": 207,
+      "offset": 8,
+      "n": 8,
+      "seconds": 5.689568590372801,
+      "nfe": 48
+    },
+    {
+      "label": 207,
+      "offset": 16,
+      "n": 8,
+      "seconds": 5.7551501374691725,
+      "nfe": 48
+    }
+  ],
+  "seconds": 17.368375942111015,
+  "images": 24
+}

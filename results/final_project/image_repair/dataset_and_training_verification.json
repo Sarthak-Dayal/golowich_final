@@ -16,5 +16,70 @@
       "verified_retained_rgb": 256,
       "raw_count": 288
     }
+  },
+  "training_coverage": {
+    "development_models/control": {
+      "unique_pool": 45,
+      "distinct_drawn": 45,
+      "draws": 1536,
+      "min_draws_per_pool_row": 23,
+      "max_draws_per_pool_row": 55,
+      "skipped_updates": 0,
+      "final_checkpoint_sha256": "6f8e674fb43a34db7cdd788a09387c03e883b896dfe0f7e93a2ede7c1f35c929"
+    },
+    "development_models/positive": {
+      "unique_pool": 45,
+      "distinct_drawn": 45,
+      "draws": 1536,
+      "min_draws_per_pool_row": 24,
+      "max_draws_per_pool_row": 47,
+      "skipped_updates": 0,
+      "final_checkpoint_sha256": "51ea50689d26450e4a260d593f91a99b9911650c027f8e25f383bc2f43956ea7"
+    },
+    "development_models/treatment": {
+      "unique_pool": 45,
+      "distinct_drawn": 45,
+      "draws": 1536,
+      "min_draws_per_pool_row": 23,
+      "max_draws_per_pool_row": 55,
+      "skipped_updates": 0,
+      "final_checkpoint_sha256": "f8147211ed2c4d6af1e9dcbf3594f20e8d8bc8d9b343b5dbff44b7f451451d77"
+    },
+    "student_models/control_84901": {
+      "unique_pool": 256,
+      "distinct_drawn": 255,
+      "draws": 1536,
+      "min_draws_per_pool_row": 0,
+      "max_draws_per_pool_row": 14,
+      "skipped_updates": 0,
+      "final_checkpoint_sha256": "4d3df1397f8b385b4317d82ab6acf0dc61257a43c5e22cd3f41db8612a10022d"
+    },
+    "student_models/control_84902": {
+      "unique_pool": 256,
+      "distinct_drawn": 256,
+      "draws": 1536,
+      "min_draws_per_pool_row": 1,
+      "max_draws_per_pool_row": 14,
+      "skipped_updates": 0,
+      "final_checkpoint_sha256": "99371f9d89ba5c148eba53b939150df3fc50be6aabf057ddb3438f13320ddef6"
+    },
+    "student_models/treatment_84901": {
+      "unique_pool": 256,
+      "distinct_drawn": 255,
+      "draws": 1536,
+      "min_draws_per_pool_row": 0,
+      "max_draws_per_pool_row": 14,
+      "skipped_updates": 0,
+      "final_checkpoint_sha256": "43a328ecc32185409cedb783fa2e5e78687ca6d20c209c6915e056eb9da52ae7"
+    },
+    "student_models/treatment_84902": {
+      "unique_pool": 256,
+      "distinct_drawn": 256,
+      "draws": 1536,
+      "min_draws_per_pool_row": 1,
+      "max_draws_per_pool_row": 14,
+      "skipped_updates": 0,
+      "final_checkpoint_sha256": "5512280340cb55ed0cb254d300cefcf0dbfe823e29d120cf83f73135b81dcc9f"
+    }
   }
 }

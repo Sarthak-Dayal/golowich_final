@@ -26,3 +26,8 @@ update=375 loss=0.79289 seconds=28.18
 {'label': 281, 'offset': 80, 'n': 8, 'seconds': 5.5465436559170485, 'nfe': 48}
 {'label': 281, 'offset': 88, 'n': 8, 'seconds': 5.5480516366660595, 'nfe': 48}
 {'label': 207, 'offset': 0, 'n': 8, 'seconds': 5.826469950377941, 'nfe': 48}
+{'label': 207, 'offset': 8, 'n': 8, 'seconds': 5.5289098881185055, 'nfe': 48}
+{'label': 207, 'offset': 16, 'n': 8, 'seconds': 5.593465358018875, 'nfe': 48}
+{'label': 867, 'offset': 0, 'n': 8, 'seconds': 5.859160963445902, 'nfe': 48}
+{'label': 867, 'offset': 8, 'n': 8, 'seconds': 5.519584555178881, 'nfe': 48}
+{'label': 867, 'offset': 16, 'n': 8, 'seconds': 5.527653306722641, 'nfe': 48}

@@ -1,0 +1,30 @@
+{
+  "phase": "sample",
+  "source": "/tmp/golowich-image-repair/SiT",
+  "weights": "/tmp/golowich-image-repair/SiT/pretrained_models/SiT-XL-2-256x256.pt",
+  "vae": "/tmp/golowich-image-repair/vae",
+  "out": "/home/sarthakd/golowich_final/results/final_project/image_repair/final_banks/control_84901/truck",
+  "device": "cuda:0",
+  "seed": 85000,
+  "labels": [
+    867
+  ],
+  "count": 24,
+  "batch": 8,
+  "steps": 24,
+  "solver": "midpoint",
+  "guidance": 4.0,
+  "precision": "fp16",
+  "adapter": "results/final_project/image_repair/student_models/control_84901/checkpoints/step_0384.pt",
+  "frozen_unconditional": false,
+  "input": null,
+  "rank": 8,
+  "blocks": 12,
+  "lr": 0.0003,
+  "updates": 240,
+  "save_every": 60,
+  "model_sha256": "e645b5cd82d1d645cfd9b7c96041b56b2a0aa61faed90c0869e79be02ab55aca",
+  "upstream_revision": "cbde832a40b153ccc79603412409da9c9b0c568c",
+  "vae_sha256": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815",
+  "adapter_sha256": "4d3df1397f8b385b4317d82ab6acf0dc61257a43c5e22cd3f41db8612a10022d"
+}
